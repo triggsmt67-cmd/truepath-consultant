@@ -1,0 +1,163 @@
+True Path Digital Website Product Brief
+Industry: Marketing consulting, local business growth strategy, website design, and digital implementation for owner-operated service businesses.
+Business type: Founder-led boutique marketing consultancy and website design practice.
+True Path Digital operates as a strategic decision partner rather than a traditional full-service marketing agency. The business diagnoses where local demand is being lost and provides focused consulting, implementation, and website improvements that address those problems.
+Location or market: Based in Missoula, Montana, initially serving owner-operated service businesses throughout Montana and selected regional markets.
+The website should communicate strong Montana roots without making the business appear limited to one city or dependent on rustic Montana branding.
+Primary audience: Owners of established local service businesses, particularly companies in the trades and home-service industries.
+These businesses are typically owner-operated, have a small internal team, and rely heavily on phone calls, estimates, appointments, and local reputation. They may already spend money on marketing but lack confidence that their website, Google visibility, advertising, reviews, and follow-up systems are working together.
+Potential industries include:
+	•	Electrical contractors
+	•	Septic and excavation companies
+	•	Commercial cleaning companies
+	•	Garage door companies
+	•	Appliance repair companies
+	•	Landscaping companies
+	•	Automotive repair businesses
+	•	Other owner-operated local service companies
+Primary objective: Establish True Path Digital as a credible, practical alternative to conventional marketing agencies and generate qualified conversations with business owners who need clearer marketing decisions, stronger lead handling, or a better-performing website.
+The website should help visitors understand:
+	•	What True Path Digital does
+	•	Which business problems it solves
+	•	How the consulting and website process works
+	•	Why Trevor is qualified to diagnose these problems
+	•	What the visitor should do next
+Desired visitor action: Request a review of their current marketing and website setup.
+Primary call to action:
+Review My Current Setup
+Secondary actions may include:
+	•	Explore the Demand Leak Audit
+	•	View website design services
+	•	Read practical marketing insights
+	•	Review selected projects or case studies
+The site should avoid pushing every visitor directly into a generic sales call.
+Services or products:
+Demand Leak Audit
+A paid diagnostic engagement that identifies where the business is losing visibility, leads, trust, or booked work.
+The audit may examine:
+	•	Google visibility
+	•	Website messaging and conversion
+	•	Missed-call handling
+	•	Lead response time
+	•	Estimate follow-up
+	•	Review generation
+	•	Advertising efficiency
+	•	Customer journey gaps
+The current entry offer is a $750 flat-fee audit, including a concise findings memo, review call, and prioritized 90-day plan.
+Marketing Advisory
+A focused 90-day advisory engagement for businesses that need help making and implementing better marketing decisions.
+This may include:
+	•	Prioritizing marketing investments
+	•	Reviewing vendor or agency recommendations
+	•	Improving measurement and reporting
+	•	Clarifying offers and customer messaging
+	•	Planning practical implementation
+	•	Preventing wasted spending and unnecessary activity
+Website Strategy and Design
+Strategy-led website design for owner-operated service businesses.
+This service should not be positioned as generic website production. It should focus on building websites that:
+	•	Clearly explain what the company does
+	•	Make the business easier to trust
+	•	Support local search visibility
+	•	Turn qualified visitors into calls or estimate requests
+	•	Present services in language customers understand
+	•	Work properly on mobile devices
+	•	Give the business a maintainable long-term foundation
+Possible service name:
+Website Strategy & Conversion Builds
+Possible positioning statement:
+Websites built around how local customers choose, call, and hire.
+Website Conversion Repair
+Focused improvements for businesses that already have a website but do not need a complete rebuild.
+This may include:
+	•	Homepage restructuring
+	•	Service-page improvements
+	•	Calls-to-action
+	•	Mobile usability
+	•	Trust signals
+	•	Estimate or booking forms
+	•	Analytics and conversion tracking
+	•	Local SEO structure
+	•	Page speed and technical cleanup
+Google Business Profile Optimization
+Improving the completeness, relevance, credibility, and ongoing usefulness of the company’s Google Business Profile.
+Missed Call and Lead Response Systems
+Practical systems that reduce lost leads caused by missed calls, delayed responses, and inconsistent follow-up.
+Review Generation Systems
+Simple processes that help businesses consistently request, receive, and respond to customer reviews.
+Estimate Follow-Up and Booking Automation
+Follow-up systems that help prevent estimates and inquiries from going cold.
+Advertising Review and Cleanup
+Independent review of paid advertising, Local Services Ads, tracking, targeting, landing pages, and agency reporting.
+Preferred brand personality: Calm, direct, experienced, practical, independent, and trustworthy.
+True Path Digital should feel like a clear-thinking advisor sitting beside the business owner—not an agency pitching from across the table.
+The brand should be:
+	•	Plainspoken
+	•	Confident without exaggeration
+	•	Modern without chasing trends
+	•	Strategic but not abstract
+	•	Honest about tradeoffs
+	•	Comfortable identifying what is not working
+	•	Focused on business outcomes rather than marketing activity
+	•	Personal and founder-led
+	•	Montana-based without leaning on clichés
+The brand should avoid:
+	•	Agency jargon
+	•	Loud growth claims
+	•	Artificial urgency
+	•	Generic “scale your business” language
+	•	Excessive animation
+	•	Overly polished corporate photography
+	•	Large-team imagery that misrepresents the business
+	•	Vague promises about transformation
+	•	Positioning Trevor as a guru or marketing personality
+Preferred technology: Next.js, Tailwind CSS, and custom CSS.
+Recommended technical direction:
+	•	Current stable version of Next.js
+	•	TypeScript
+	•	Tailwind CSS for layout and design-system utilities
+	•	Custom CSS for distinctive branded elements
+	•	Component-based page architecture
+	•	Server-rendered or statically generated service pages
+	•	Structured data for services, articles, FAQs, and local business information
+	•	Optimized images and fonts
+	•	Accessible semantic HTML
+	•	Lightweight analytics and conversion tracking
+	•	Simple content management for articles, case studies, and service pages
+	•	Vercel hosting and deployment
+	•	Strong mobile performance
+	•	Minimal unnecessary JavaScript
+Visual direction: A restrained, modern editorial design.
+Suggested visual system:
+	•	Near-black charcoal or deep slate foundation
+	•	Soft white and warm gray typography
+	•	Muted orange or copper accent
+	•	Generous open space
+	•	Strong typography
+	•	Thin borders and subtle surface changes
+	•	Minimal gradients
+	•	Occasional diagrams, annotations, or diagnostic-style visuals
+	•	Real project imagery, screenshots, or local-business environments
+	•	Limited use of stock photography
+	•	Subtle motion used only when it improves orientation or understanding
+The site should feel more like an independent strategic publication or specialist consultancy than a conventional digital agency.
+Recommended homepage structure:
+	•	Direct positioning statement
+	•	Specific problems True Path identifies and fixes
+	•	Introduction to the Demand Leak Audit
+	•	Website strategy and design offering
+	•	Other focused services
+	•	Explanation of how the process works
+	•	Evidence, selected projects, or case studies
+	•	Trevor’s perspective and experience
+	•	Practical articles or insights
+	•	Final invitation to review the visitor’s current setup
+Recommended primary message:
+Clearer marketing. Better websites. Fewer lost opportunities.
+Supporting copy:
+True Path Digital helps owner-operated service businesses find the gaps between visibility, customer trust, lead response, and booked work. We provide practical marketing guidance, focused implementation, and websites built around how local customers actually choose and hire.
+Recommended website-design message:
+Your website should make the next decision easier.
+We design and rebuild websites for service businesses that need to explain their work clearly, establish trust quickly, and turn local demand into phone calls, estimates, and appointments.
+Key measure of success: The redesigned website should produce fewer unqualified inquiries and more conversations with established business owners who understand that True Path provides paid strategic diagnosis, website development, and focused implementation—not inexpensive one-off marketing tasks.
+
