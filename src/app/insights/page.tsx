@@ -157,10 +157,10 @@ export default async function InsightsPage() {
               Ready to fix the leaks in your business?
             </h2>
             <p className="text-background/80 text-lg leading-relaxed mb-10 max-w-xl">
-              Stop guessing where you are losing jobs. Schedule a brief 15-minute diagnostic call or request a Demand Leak Audit.
+              Stop guessing where you are losing jobs. Schedule a brief 15-minute diagnostic call or request an Under the Hood Audit.
             </p>
             <Button href="/#contact" variant="light">
-              Schedule a Lead Review
+              Find My Leaks
             </Button>
           </div>
         </section>

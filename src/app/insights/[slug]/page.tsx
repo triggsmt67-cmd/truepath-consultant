@@ -353,11 +353,11 @@ export default async function SingleInsightPage({
               </h3>
               
               <p className="text-muted-text text-base leading-relaxed mb-8 max-w-xl">
-                Stop guessing where your marketing is breaking down. Schedule a 15-minute diagnostic call or order a $750 Demand Leak Audit for your business.
+                Stop guessing where your marketing is breaking down. Schedule a 15-minute diagnostic call or order a $750 Under the Hood Audit for your business.
               </p>
               
               <DrawerButton variant="primary">
-                Schedule a Lead Review
+                Find My Leaks
               </DrawerButton>
             </div>
 

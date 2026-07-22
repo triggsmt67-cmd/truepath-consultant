@@ -9,13 +9,13 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { href: "/#audit", label: "Demand Leak Audit" },
+  { href: "/work", label: "My Work" },
   { href: "/#services", label: "Capabilities" },
   { href: "/services/google-profile", label: "Google Profile" },
   { href: "/services/website-builds", label: "Website Builds" },
   { href: "/services/lead-response", label: "Lead Response" },
+  { href: "/#audit", label: "Under the Hood Audit" },
   { href: "/insights", label: "Insights" },
-  { href: "/work", label: "My Work" },
 ];
 
 export default function Header() {
@@ -58,24 +58,24 @@ export default function Header() {
           
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/#audit" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
-              Demand Leak Audit
+            <Link href="/work" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
+              My Work
             </Link>
             <Link href="/#services" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
               Capabilities
             </Link>
+            <Link href="/#audit" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
+              Under the Hood Audit
+            </Link>
             <Link href="/insights" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
               Insights
-            </Link>
-            <Link href="/work" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
-              My Work
             </Link>
           </nav>
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <Button href="/#contact" variant="primary" size="sm">
-              Schedule a Lead Review
+              Find My Leaks
             </Button>
           </div>
 
@@ -138,7 +138,7 @@ export default function Header() {
                     openDrawer();
                   }}
                 >
-                  Schedule a Lead Review
+                  Find My Leaks
                 </Button>
               </motion.div>
             </motion.nav>

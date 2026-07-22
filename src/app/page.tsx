@@ -57,8 +57,18 @@ export default function Home() {
                 </p>
                 
                 <Button href="/#contact" variant="primary">
-                  Schedule a Lead Review
+                  Find My Leaks
                 </Button>
+                <p className="flex items-center gap-3 text-sm text-muted-text tracking-wide">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 text-primary">
+                    {/* Magnifying glass */}
+                    <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" strokeWidth="1.5" fill="none" />
+                    <line x1="12.5" y1="12.5" x2="17" y2="17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    {/* Leak droplet inside the glass */}
+                    <path d="M8.5 6C8.5 6 7 8 7 9.2C7 10 7.67 10.5 8.5 10.5C9.33 10.5 10 10 10 9.2C10 8 8.5 6 8.5 6Z" fill="currentColor" opacity="0.6" />
+                  </svg>
+                  15 minutes. No pitch. We&apos;ll look at where jobs may be leaking.
+                </p>
                 <LeadFlowAnimation />
               </motion.div>
             </motion.div>
@@ -153,7 +163,8 @@ export default function Home() {
           </motion.div>
         </section>
 
-        <section className="border-t border-muted-border px-6 py-32 md:px-12 md:py-48">
+        {/* Credibility */}
+        <section id="credibility" className="border-t border-muted-border px-6 py-32 md:px-12 md:py-48">
           <motion.div 
             initial="hidden"
             whileInView="visible"
@@ -164,71 +175,79 @@ export default function Home() {
             }}
             className="mx-auto w-full max-w-[1400px]"
           >
-            <div className="mb-16 md:mb-24 max-w-4xl">
-              <motion.h2 
-                variants={{
-                  hidden: { opacity: 0, filter: "blur(10px)", y: 10 },
-                  visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
-                }}
-                className="text-sm font-medium uppercase tracking-widest text-primary mb-8 flex items-center gap-3"
-              >
-                <span className="w-8 h-px bg-primary"></span> The Disconnect
-              </motion.h2>
-              <motion.h3 
-                variants={{
-                  hidden: { opacity: 0, filter: "blur(15px)", y: 15 },
-                  visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
-                }}
-                className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] tracking-tight text-foreground"
-              >
-                Marketing agencies sell noise. <br className="hidden lg:block" />
-                <span className="text-muted-text">You need a decision partner.</span>
-              </motion.h3>
-            </div>
-
-            <div className="grid gap-12 lg:grid-cols-12 items-center">
+            <div className="grid gap-16 lg:grid-cols-12 items-start">
+              
+              {/* Left Column: Photo */}
               <motion.div 
                 variants={{
                   hidden: { opacity: 0, scale: 0.98 },
                   visible: { opacity: 1, scale: 1, transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] } }
                 }}
-                className="lg:col-span-7"
+                className="lg:col-span-5 lg:sticky lg:top-32"
               >
                 <ScrollImage 
                   src="/images/decision-partner-final.jpg" 
-                  alt="Trevor meeting over coffee with a business owner to review marketing strategy"
-                  title="Trevor Riggs consulting with a service business owner on demand leak strategy"
-                  containerClassName="w-full aspect-video"
+                  alt="Trevor Riggs — founder of True Path Digital"
+                  title="Trevor Riggs, True Path Digital"
+                  containerClassName="w-full aspect-[4/3]"
                 />
+                <blockquote className="mt-8 border-l-2 border-primary pl-6">
+                  <p className="font-serif text-[clamp(1.25rem,2vw,1.5rem)] leading-relaxed text-foreground italic">
+                    "I help you cut through the noise, find the real leak, and make clearer decisions about what to fix first."
+                  </p>
+                  <cite className="mt-4 block text-sm font-medium uppercase tracking-widest text-muted-text not-italic">
+                    — Trevor Riggs
+                  </cite>
+                </blockquote>
               </motion.div>
               
-              <div className="flex flex-col gap-8 lg:col-span-4 lg:col-start-9">
-                <motion.p 
+              {/* Right Column: Copy */}
+              <div className="lg:col-span-6 lg:col-start-7 flex flex-col gap-12">
+                <motion.h2 
                   variants={{
-                    hidden: { opacity: 0, filter: "blur(10px)", x: 10 },
-                    visible: { opacity: 1, filter: "blur(0px)", x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    hidden: { opacity: 0, filter: "blur(10px)", y: 10 },
+                    visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
                   }}
-                  className="text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-muted-text"
+                  className="text-sm font-medium uppercase tracking-widest text-primary flex items-center gap-3"
                 >
-                  As an owner-operator in the trades, you spend money on marketing but lack confidence that your website, visibility, and follow-up systems are actually working together.
-                </motion.p>
-                <motion.div 
+                  <span className="w-8 h-px bg-primary"></span> Credibility
+                </motion.h2>
+                <motion.h3 
                   variants={{
-                    hidden: { opacity: 0, filter: "blur(10px)", x: 10 },
-                    visible: { opacity: 1, filter: "blur(0px)", x: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                    hidden: { opacity: 0, filter: "blur(15px)", y: 15 },
+                    visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 1, ease: [0.16, 1, 0.3, 1] } }
                   }}
-                  className="border-l-2 border-primary pl-6"
+                  className="font-serif font-medium text-[clamp(2.5rem,5vw,4rem)] leading-[1.05] tracking-tight"
                 >
-                  <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-foreground font-medium">
-                    I don't push generic retainers. I diagnose exactly where you are losing leads, trust, or booked work—and provide focused implementation to fix it.
+                  Results over <em className="text-primary not-italic">promises.</em>
+                </motion.h3>
+
+                <motion.div
+                  variants={{
+                    hidden: { opacity: 0, filter: "blur(10px)", y: 10 },
+                    visible: { opacity: 1, filter: "blur(0px)", y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }
+                  }}
+                  className="flex flex-col gap-8 text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-muted-text"
+                >
+                  <p>
+                    I work with <span className="text-foreground font-medium">owner-operated service businesses</span> that need more calls, more booked work, and fewer wasted dollars — not more noise.
                   </p>
+                  <p>
+                    That means finding what is actually costing you jobs — missed calls, weak local visibility, slow follow-up, a website that doesn't convert — and fixing it directly.
+                  </p>
+                  <div className="border-l-2 border-primary pl-6">
+                    <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-foreground font-medium">
+                      I am not interested in trends, busywork, or marketing activity for its own sake. Every recommendation ties back to one question: is this going to generate revenue?
+                    </p>
+                  </div>
                 </motion.div>
+
               </div>
             </div>
           </motion.div>
         </section>
 
-        {/* 3. The Demand Leak Audit */}
+        {/* 3. Under the Hood Audit */}
         <section id="audit" className="border-y border-muted-border bg-surface-alt px-6 py-32 md:px-12 md:py-48">
           <div className="mx-auto w-full max-w-[1400px]">
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-24">
@@ -244,13 +263,13 @@ export default function Home() {
                   <span className="w-8 h-px bg-primary"></span> Diagnostic Phase
                 </h2>
                 <h3 className="font-serif font-medium text-[clamp(2.5rem,4vw,3.5rem)] leading-tight tracking-tight mb-8">
-                  The Demand<br />Leak Audit
+                  Under the Hood<br />Audit
                 </h3>
 
                 <ScrollImage 
                   src="/images/demand-leak-audit-final.jpg" 
-                  alt="Trevor presenting the Demand Leak Audit report to a contractor in his shop"
-                  title="The Demand Leak Audit — a diagnostic review for local service businesses"
+                  alt="Trevor presenting the Under the Hood Audit report to a contractor in his shop"
+                  title="Under the Hood Audit — a diagnostic review for local service businesses"
                   containerClassName="w-full max-w-sm aspect-[4/3] mb-8"
                 />
 
@@ -263,7 +282,7 @@ export default function Home() {
                 </p>
                 <div className="mt-12">
                   <Button href="/#contact" variant="secondary">
-                    Schedule a Lead Review
+                    Find My Leaks
                   </Button>
                 </div>
               </motion.div>
@@ -332,14 +351,14 @@ export default function Home() {
             <div className="grid gap-8 md:grid-cols-2">
               {[
                 { 
-                  client: "Local HVAC Contractor", 
-                  metric: "$40k+", 
-                  result: "Recovered in lost pipeline due to broken lead routing and a weak Google Profile."
+                  client: "B2B Chemical Manufacturer", 
+                  metric: "200%", 
+                  result: "Increase in customer retention after launching an e-commerce website with easy reordering and AI-powered product support."
                 },
                 { 
-                  client: "Regional Plumbing Service", 
+                  client: "Local Auto Repair Shop", 
                   metric: "30%", 
-                  result: "Increase in inbound calls without any additional ad spend by optimizing local visibility."
+                  result: "Increase in inbound calls after correcting outdated business listings and launching a faster, conversion-focused website."
                 }
               ].map((proof, i) => (
                 <motion.div 
@@ -492,7 +511,7 @@ export default function Home() {
                 }}
                 className="text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-background/80 max-w-md mb-16"
               >
-                Schedule a brief conversation to review your current setup and see if a Demand Leak Audit makes sense for your business.
+                Schedule a brief conversation to review your current setup and see if an Under the Hood Audit makes sense for your business.
               </motion.p>
 
               <motion.div 
@@ -560,7 +579,7 @@ export default function Home() {
                 </div>
                 <div className="mt-8">
                   <Button variant="light" className="w-full justify-center">
-                    Request a Lead Review
+                    Find My Leaks
                   </Button>
                 </div>
               </form>

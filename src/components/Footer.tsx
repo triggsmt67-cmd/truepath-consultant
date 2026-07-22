@@ -46,7 +46,7 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-medium uppercase tracking-widest mb-6">Services</h4>
           <ul className="space-y-4 text-muted-text text-sm">
-            <li><a href="/#audit" className="hover:text-primary transition-colors">Demand Leak Audit</a></li>
+            <li><a href="/#audit" className="hover:text-primary transition-colors">Under the Hood Audit</a></li>
             <li><a href="/services/google-profile" className="hover:text-primary transition-colors">Google Profile & Local Search</a></li>
             <li><a href="/services/website-builds" className="hover:text-primary transition-colors">Website Strategy & Builds</a></li>
             <li><a href="/services/lead-response" className="hover:text-primary transition-colors">Lead Response & Follow-Up</a></li>

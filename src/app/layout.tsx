@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "Google Business Profile optimization",
     "website design for contractors",
     "lead response systems",
-    "demand leak audit",
+    "under the hood audit",
     "service business website",
     "Missoula Montana marketing",
     "trade contractor marketing",

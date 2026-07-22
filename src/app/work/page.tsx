@@ -10,33 +10,36 @@ import { ArrowRight } from "lucide-react";
 const CASE_STUDIES = [
   {
     id: "01",
-    client: "Northwest Plumbing Co.",
-    industry: "HVAC & Plumbing",
-    symptom: "High website traffic, but incoming phone calls were completely flat despite spending $2,000/mo on local SEO.",
-    diagnosis: "The mobile experience hid the phone number behind a 3-tap menu. Trust signals (Google reviews) were buried on a separate page that no one visited.",
-    cure: "Rebuilt the mobile navigation with a sticky 'Call Now' header. Pulled verified Google reviews directly into the hero section to establish immediate credibility.",
-    result: "300% increase in qualified lead calls within 30 days.",
-    image: "/images/tools.png"
+    client: "Benchmark Automotive Service",
+    industry: "Automotive Repair",
+    url: "https://www.benchmarkmissoula.com",
+    symptom: "As a new business, Benchmark Automotive was nearly invisible on Google. The website received no meaningful search traffic and didn't reflect the quality of the shop or its work.",
+    diagnosis: "Google had very few signals confirming the business's relevance and credibility. Its business profile, service categories, website information, local citations, and inbound links were either incomplete or missing.",
+    cure: "We rebuilt the Google Business Profile, corrected and completed its categories and business information, strengthened its local listings, and created a new website that aligned with the profile and better represented the shop.",
+    result: "Benchmark Automotive now receives calls from Google and its website every day.",
+    image: "/images/benchmark-automotive.png"
   },
   {
     id: "02",
-    client: "Elite Custom Builders",
-    industry: "Custom Home Construction",
-    symptom: "Receiving too many low-budget 'tire-kicker' leads, wasting the sales team's time.",
-    diagnosis: "The website looked identical to budget contractors. There was no pricing friction and no qualifying intake form to filter out bad fits.",
-    cure: "Implemented a premium, high-contrast visual identity to signal high-end positioning. Replaced the basic contact form with a multi-step project qualification questionnaire.",
-    result: "80% drop in unqualified leads. Average project size increased by $150k.",
-    image: "/images/meeting.png"
+    client: "United Formulas",
+    industry: "Chemical Manufacturing",
+    url: "https://www.unitedformulas.com",
+    symptom: "United Formulas sold directly to businesses, but customers had no simple way to find products, place orders, or return to the website when it was time to reorder.",
+    diagnosis: "The website wasn't built around how customers actually purchased. Product information was difficult to navigate, online ordering wasn't available, and customers had no quick way to get answers about the products.",
+    cure: "We built a complete e-commerce website that made products easier to find, purchase, and reorder. We also added an AI-powered assistant connected to the company's product database, giving customers accurate answers while helping the sales team guide buying decisions.",
+    result: "Approximately 200% increase in customer retention, with the website now serving as an everyday sales tool for the United Formulas team.",
+    image: "/images/united-formulas.png"
   },
   {
     id: "03",
-    client: "Apex Roofing Specialists",
-    industry: "Commercial Roofing",
-    symptom: "Losing commercial bids to larger, out-of-state competitors.",
-    diagnosis: "The website lacked any proof of commercial capability. Case studies were just generic photos of roofs without any narrative or scale.",
-    cure: "Developed deep editorial case studies detailing the symptom, diagnosis, and cure for massive commercial projects. Added drone footage and safety compliance markers to the homepage.",
-    result: "Secured three 6-figure commercial contracts directly attributed to the new trust markers.",
-    image: "/images/audit.png"
+    client: "Accurate Auto Repair",
+    industry: "Auto Repair",
+    url: "https://www.accurateautorepair.net",
+    symptom: "Accurate Auto Repair's online information hadn't been updated in nearly 20 years. Customers were finding the wrong address and phone numbers, causing confusion and missed calls.",
+    diagnosis: "Outdated business information had spread across Google Maps, Bing, Yelp, and other major directories. The company also lacked a modern website that could turn local searches into calls.",
+    cure: "We corrected and unified their information across the major online listings. Then we built a fast, industry-specific website that made the shop easy to find, understand, and contact from any device.",
+    result: "Accurate Auto Repair now has a consistent, credible online presence that is generating 30% more calls.",
+    image: "/images/accurate-auto-repair.png"
   }
 ];
 
@@ -90,11 +93,24 @@ export default function WorkPage() {
                     </p>
 
                     {/* Premium Scroll Image Insert */}
-                    <ScrollImage 
-                      src={study.image} 
-                      alt={`${study.client} website preview`}
-                      containerClassName="w-full max-w-sm aspect-[4/3] mb-12"
-                    />
+                    {study.url ? (
+                      <a href={study.url} target="_blank" rel="noopener noreferrer" className="block group/img">
+                        <ScrollImage 
+                          src={study.image} 
+                          alt={`${study.client} website preview`}
+                          containerClassName="w-full max-w-lg aspect-[16/9] mb-12 transition-shadow duration-300 group-hover/img:shadow-xl group-hover/img:shadow-primary/10"
+                        />
+                        <span className="inline-flex items-center gap-1.5 text-xs font-medium uppercase tracking-widest text-muted-text mt-[-0.5rem] mb-4 transition-colors duration-300 group-hover/img:text-primary">
+                          Visit live site <ArrowRight className="w-3 h-3" />
+                        </span>
+                      </a>
+                    ) : (
+                      <ScrollImage 
+                        src={study.image} 
+                        alt={`${study.client} website preview`}
+                        containerClassName="w-full max-w-lg aspect-[16/9] mb-12"
+                      />
+                    )}
 
                     <div className="mt-auto">
                       <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">The Result</p>
@@ -150,7 +166,7 @@ export default function WorkPage() {
             </h2>
             <div className="mt-16">
               <Button href="/#contact" variant="light">
-                Schedule a Lead Review
+                Find My Leaks
               </Button>
             </div>
           </motion.div>
