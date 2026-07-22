@@ -1,10 +1,17 @@
 const WP_GRAPHQL_URL = "https://admin.truepath406.com/graphql";
 
+export interface AiOverviewsData {
+  ai_quick_answer?: string | null;
+  ai_faqs?: string | null;
+  ai_takeaways?: string | null;
+}
+
 export interface PostNode {
   id: string;
   title: string;
   slug: string;
   date: string;
+  modified?: string;
   excerpt: string;
   content?: string;
   featuredImage?: {
@@ -13,6 +20,9 @@ export interface PostNode {
       altText?: string;
     };
   };
+  aiOverviews?: {
+    ai_overviews?: AiOverviewsData | null;
+  } | null;
 }
 
 export async function fetchGraphQL<T>(
@@ -74,12 +84,20 @@ export async function getPostBySlug(slug: string): Promise<PostNode | null> {
           title
           slug
           date
+          modified
           content
           excerpt
           featuredImage {
             node {
               sourceUrl
               altText
+            }
+          }
+          aiOverviews {
+            ai_overviews {
+              ai_quick_answer
+              ai_faqs
+              ai_takeaways
             }
           }
         }
