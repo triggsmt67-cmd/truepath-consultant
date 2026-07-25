@@ -5,9 +5,10 @@ import Footer from "@/components/Footer";
 import Button from "@/components/Button";
 import ScrollImage from "@/components/ScrollImage";
 import { useLeadDrawer } from "@/context/LeadDrawerContext";
-import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
-import { ArrowRight, CheckCircle2, AlertTriangle, AlertCircle, Quote, Smartphone, Code, Target, MapPin, MousePointerClick, ShieldCheck, Mail, LineChart, LayoutDashboard, Search } from "lucide-react";
+import { serializeJsonLd } from "@/lib/json-ld";
+import { useServicePhase } from "@/hooks/useServicePhase";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, CheckCircle2, AlertTriangle, AlertCircle, Quote, Smartphone, Code, Target, MapPin, ShieldCheck, Mail, LineChart, LayoutDashboard, Search } from "lucide-react";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -123,24 +124,24 @@ const faqSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Website Design and Conversion Repair",
-  "url": "https://truepathdigital.com/services/website-builds",
-  "provider": {
-    "@type": "ProfessionalService",
+  "@id": "https://truepathdigital.com/services/website-builds#service",
+  name: "Website Design and Conversion Repair",
+  url: "https://truepathdigital.com/services/website-builds",
+  provider: {
     "@id": "https://truepathdigital.com/#business",
-    "name": "True Path Digital",
-    "url": "https://truepathdigital.com"
   },
-  "serviceType": "Web Development",
-  "description": "Website design and conversion repair for owner-operated local service businesses that turns more visitors into calls, estimates, and booked work.",
-  "areaServed": [
-    { "@type": "City", "name": "Missoula" },
-    { "@type": "State", "name": "Montana" }
+  image: "https://truepathdigital.com/images/website-builds.webp",
+  serviceType: "Web Development",
+  category: "Website strategy, design, and conversion repair",
+  description: "Website design and conversion repair for owner-operated local service businesses that turns more visitors into calls, estimates, and booked work.",
+  areaServed: [
+    { "@type": "City", name: "Missoula" },
+    { "@type": "State", name: "Montana" },
   ],
-  "audience": {
+  audience: {
     "@type": "Audience",
-    "audienceType": "Owner-operated local service businesses"
-  }
+    audienceType: "Owner-operated local service businesses",
+  },
 };
 
 const failureReasons = [
@@ -242,40 +243,27 @@ export default function WebsiteBuildsPage() {
     }
   };
 
-  const [activePhase, setActivePhase] = useState(1);
-  const phase1Ref = useRef(null);
-  const phase2Ref = useRef(null);
-  const phase3Ref = useRef(null);
-
-  const isPhase1InView = useInView(phase1Ref, { margin: "-20% 0px -20% 0px" });
-  const isPhase2InView = useInView(phase2Ref, { margin: "-20% 0px -20% 0px" });
-  const isPhase3InView = useInView(phase3Ref, { margin: "-20% 0px -20% 0px" });
-
-  useEffect(() => {
-    if (isPhase3InView) setActivePhase(3);
-    else if (isPhase2InView) setActivePhase(2);
-    else if (isPhase1InView) setActivePhase(1);
-  }, [isPhase1InView, isPhase2InView, isPhase3InView]);
+  const { activePhase, getPhaseProps } = useServicePhase();
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(serviceSchema) }}
       />
       <div className="noise-overlay" />
       <Header />
       <main className="flex-1 w-full overflow-x-clip pt-32 relative z-10">
-        
+
         {/* Hero Section */}
         <section className="relative flex flex-col justify-center px-6 md:px-12 py-16 md:py-24 border-b border-muted-border">
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
-            
-            <motion.div 
+
+            <motion.div
               variants={containerVariants}
               initial="hidden"
               animate="visible"
@@ -285,11 +273,11 @@ export default function WebsiteBuildsPage() {
                 <LayoutDashboard className="w-4 h-4" />
                 Custom Strategy & Builds
               </motion.div>
-              
+
               <motion.h1 variants={itemVariants} className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-medium leading-[1.05] tracking-tight text-foreground mb-8">
                 Turn More Website Visitors Into Calls & Booked Work.
               </motion.h1>
-              
+
               <motion.div variants={itemVariants} className="space-y-6 text-lg text-muted-text leading-relaxed mb-10">
                 <p>
                   A service-business website does not need to be flashy. It needs to help the right customer understand what you do, trust your business, and take the next step without getting lost.
@@ -298,7 +286,7 @@ export default function WebsiteBuildsPage() {
                   I design and improve websites for owner-operated local service businesses that need clearer messaging, stronger trust, better local visibility, and a simpler path from search to phone call.
                 </p>
               </motion.div>
-              
+
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
                 <Button onClick={() => openDrawer()} variant="primary" size="lg" className="group">
                   Request a Website Review
@@ -307,14 +295,14 @@ export default function WebsiteBuildsPage() {
               </motion.div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative h-[400px] md:h-[600px] w-full rounded-sm overflow-hidden border border-muted-border"
             >
-              <ScrollImage 
-                src="/images/website-builds.png" 
+              <ScrollImage
+                src="/images/website-builds.webp"
                 alt="Website design and conversion layout for contractors"
                 title="Custom website design and conversion repair for local service businesses"
                 containerClassName="w-full h-full"
@@ -359,7 +347,7 @@ export default function WebsiteBuildsPage() {
           <div className="mx-auto w-full max-w-4xl text-center relative z-10 px-4">
             <blockquote className="space-y-8">
               <p className="font-serif text-[clamp(1.75rem,3.5vw,3.25rem)] font-medium leading-tight text-foreground">
-                "A website can have polished graphics, modern animations, and stock photos, while still burying the exact information your customer needs."
+                &ldquo;A website can have polished graphics, modern animations, and stock photos, while still burying the exact information your customer needs.&rdquo;
               </p>
               <footer className="text-base md:text-lg text-muted-text uppercase tracking-widest font-medium">
                 The goal is to remove friction &mdash; not just <span className="text-primary font-bold">redesign for appearance</span>.
@@ -378,17 +366,17 @@ export default function WebsiteBuildsPage() {
               <h3 className="font-serif font-medium text-[clamp(2.5rem,4vw,4rem)] leading-tight tracking-tight text-foreground mb-8">
                 What I Do to Improve Your Website
               </h3>
-              <p className="text-xl text-muted-text leading-relaxed">
+              <p className="text-lg text-muted-text leading-[1.65]">
                 I do not begin with colors, animations, or design trends. I begin by looking at how the customer finds the site, what they need to understand, what may be causing hesitation, and what action you want them to take.
               </p>
             </div>
 
             <div className="grid lg:grid-cols-[1fr_1.2fr] gap-16 lg:gap-24 relative">
-              
+
               {/* Sticky Left Column (Animated Visuals) */}
               <div className="hidden lg:block relative">
                  <div className="sticky top-40 w-full h-[600px] bg-background border border-muted-border rounded-sm overflow-hidden flex flex-col items-center justify-center p-12">
-                   
+
                    <AnimatePresence mode="wait">
                      {/* Phase 1 Graphic */}
                      {activePhase === 1 && (
@@ -449,7 +437,7 @@ export default function WebsiteBuildsPage() {
                        >
                          <div className="relative mb-8">
                            <LineChart className="w-40 h-40 text-primary" />
-                           <motion.div 
+                           <motion.div
                              className="absolute top-0 right-0 w-8 h-8 bg-background rounded-full flex items-center justify-center"
                              animate={{ y: [0, -10, 0] }}
                              transition={{ repeat: Infinity, duration: 2 }}
@@ -462,7 +450,7 @@ export default function WebsiteBuildsPage() {
                    </AnimatePresence>
 
                    <AnimatePresence mode="wait">
-                     <motion.h4 
+                     <motion.h4
                        key={activePhase}
                        initial={{ opacity: 0, y: 10 }}
                        animate={{ opacity: 1, y: 0 }}
@@ -479,9 +467,12 @@ export default function WebsiteBuildsPage() {
 
               {/* Scrollable Phases Column */}
               <div className="space-y-24">
-                
+
                 {/* Phase 1 */}
-                <div className="space-y-12" ref={phase1Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(1)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 01</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Strategy & Structure</h3>
@@ -497,10 +488,13 @@ export default function WebsiteBuildsPage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Phase 2 */}
-                <div className="space-y-12" ref={phase2Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(2)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 02</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Design & Foundation</h3>
@@ -516,10 +510,13 @@ export default function WebsiteBuildsPage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Phase 3 */}
-                <div className="space-y-12" ref={phase3Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(3)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 03</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Routing & Measurement</h3>
@@ -535,7 +532,7 @@ export default function WebsiteBuildsPage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
               </div>
             </div>
@@ -545,22 +542,22 @@ export default function WebsiteBuildsPage() {
         {/* Stronger Website & Audience Section */}
         <section className="px-6 py-24 md:px-12 md:py-32 bg-foreground text-background overflow-hidden relative border-b border-muted-border">
           <div className="absolute top-0 right-0 w-full h-full opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, var(--color-primary) 0%, transparent 50%)' }}></div>
-          
+
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-24 relative z-10">
-            
+
             {/* What a Stronger Website Looks Like */}
             <div>
               <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-12">
                 What a Good Result Looks Like
               </h2>
-              
+
               <div className="mb-10 text-background/80 text-lg leading-relaxed">
                 <p>
                   A successful service-business website should make the company easier to understand and easier to hire. The goal is to create a useful path from customer need to business response.
                 </p>
               </div>
 
-              <motion.div 
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-10%" }}
@@ -568,14 +565,14 @@ export default function WebsiteBuildsPage() {
                 className="grid gap-4"
               >
                 {[
-                  "Visitors quickly identify main services", 
-                  "The service area is explicitly clear", 
-                  "Phone numbers are easy to find & tap", 
-                  "Quote forms are simple & frictionless", 
-                  "Real proof replaces generic claims", 
+                  "Visitors quickly identify main services",
+                  "The service area is explicitly clear",
+                  "Phone numbers are easy to find & tap",
+                  "Quote forms are simple & frictionless",
+                  "Real proof replaces generic claims",
                   "Leads actually reach the correct person"
                 ].map((item, i) => (
-                  <motion.div 
+                  <motion.div
                     key={i}
                     variants={{
                       hidden: { opacity: 0, x: -20 },
@@ -597,7 +594,7 @@ export default function WebsiteBuildsPage() {
               <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-12">
                 Who This Service Is For
               </h2>
-              
+
               <div className="text-background/80 text-lg leading-relaxed mb-8">
                 <p>
                   This service is built for owner-operated and family-run local service businesses that depend on customers within a defined geographic area.
@@ -605,7 +602,7 @@ export default function WebsiteBuildsPage() {
               </div>
 
               {/* Industry Badges */}
-              <motion.div 
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -613,11 +610,11 @@ export default function WebsiteBuildsPage() {
                 className="flex flex-wrap gap-2 md:gap-3 mb-12"
               >
                 {[
-                  "HVAC", "Plumbers", "Electricians", "Roofers", "Septic & Excavation", 
-                  "Cleaning Companies", "Landscapers", "Pest Control", "Garage Door Cos.", 
+                  "HVAC", "Plumbers", "Electricians", "Roofers", "Septic & Excavation",
+                  "Cleaning Companies", "Landscapers", "Pest Control", "Garage Door Cos.",
                   "Auto Repair", "Appliance Repair"
                 ].map((industry, i) => (
-                  <motion.span 
+                  <motion.span
                     key={i}
                     variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}
                     className="px-4 py-2 rounded-full border border-background/20 bg-background/5 text-background text-sm font-medium hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-colors cursor-default"
@@ -631,12 +628,12 @@ export default function WebsiteBuildsPage() {
                 <div className="absolute -top-4 -right-4 p-6 opacity-10">
                   <AlertTriangle className="w-32 h-32 text-primary" />
                 </div>
-                
+
                 <h3 className="font-serif text-2xl font-medium mb-8 relative z-10 text-primary">
                   It is especially useful when:
                 </h3>
-                
-                <motion.ul 
+
+                <motion.ul
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: "-10%" }}
@@ -652,7 +649,7 @@ export default function WebsiteBuildsPage() {
                     "Leads are not reaching the correct person",
                     "Your business has outgrown the existing site"
                   ].map((item, i) => (
-                    <motion.li 
+                    <motion.li
                       key={i}
                       variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0 } }}
                       className="flex items-start gap-4 group"
@@ -677,7 +674,7 @@ export default function WebsiteBuildsPage() {
             </h2>
             <div className="text-lg text-muted-text leading-relaxed space-y-6 mb-10">
               <p>
-                Not every underperforming website needs to be completely replaced. Sometimes the highest-value improvements are focused: rewriting the homepage, shortening forms, fixing mobile speed, or connecting leads to a CRM. 
+                Not every underperforming website needs to be completely replaced. Sometimes the highest-value improvements are focused: rewriting the homepage, shortening forms, fixing mobile speed, or connecting leads to a CRM.
               </p>
               <p>
                 I will review your current website, explain where it may be losing calls, and show you what I would fix first.

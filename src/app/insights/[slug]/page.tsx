@@ -3,7 +3,9 @@ import Footer from "@/components/Footer";
 import DrawerButton from "@/components/DrawerButton";
 import Link from "next/link";
 import Image from "next/image";
-import { getPostBySlug, getAllPosts, type AiOverviewsData } from "@/lib/wordpress";
+import { getPostBySlug, getAllPosts } from "@/lib/wordpress";
+import { sanitizeWordPressHtml } from "@/lib/wordpress-content";
+import { serializeJsonLd } from "@/lib/json-ld";
 import { ArrowLeft, Calendar, Zap } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -38,7 +40,7 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: cleanDescription,
-    authors: [{ name: "Trevor Riggs" }],
+    authors: [{ name: "Trevor Riggs", url: "https://truepathdigital.com/#credibility" }],
     alternates: {
       canonical: `/insights/${post.slug}`,
     },
@@ -48,6 +50,7 @@ export async function generateMetadata({
       type: "article",
       url: `https://truepathdigital.com/insights/${post.slug}`,
       publishedTime: post.date,
+      modifiedTime: post.modified || post.date,
       authors: ["Trevor Riggs"],
       ...(imageUrl ? { images: [{ url: imageUrl, width: 1200, height: 630, alt: post.title }] } : {})
     },
@@ -68,16 +71,6 @@ function formatDate(dateString: string): string {
     day: "numeric",
     year: "numeric"
   });
-}
-
-function cleanHtmlContent(html: string): string {
-  if (!html) return "";
-  return html
-    .replace(/<p><a class="more-link".*?<\/a><\/p>/gi, "")
-    .replace(/—|–/g, " - ")
-    // Rewrite old domain links to new canonical domain
-    .replace(/https?:\/\/(www\.)?truepath406\.com\/blog\//g, "https://truepathdigital.com/insights/")
-    .replace(/https?:\/\/(www\.)?truepath406\.com\//g, "https://truepathdigital.com/");
 }
 
 interface ParsedFaq {
@@ -145,37 +138,35 @@ export default async function SingleInsightPage({
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": post.title,
-    "description": cleanDescription,
-    "datePublished": post.date,
-    "dateModified": post.modified || post.date,
-    "mainEntityOfPage": {
+    "@id": `https://truepathdigital.com/insights/${post.slug}#article`,
+    headline: post.title,
+    description: cleanDescription,
+    url: `https://truepathdigital.com/insights/${post.slug}`,
+    inLanguage: "en-US",
+    datePublished: post.date,
+    dateModified: post.modified || post.date,
+    mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://truepathdigital.com/insights/${post.slug}`
+      "@id": `https://truepathdigital.com/insights/${post.slug}`,
+      url: `https://truepathdigital.com/insights/${post.slug}`,
     },
-    "author": {
-      "@type": "Person",
-      "name": "Trevor Riggs"
+    isPartOf: {
+      "@id": "https://truepathdigital.com/insights#blog",
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "True Path Digital",
-      "url": "https://truepathdigital.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://truepathdigital.com/images/logo.png",
-        "width": 512,
-        "height": 512
-      }
+    author: {
+      "@id": "https://truepathdigital.com/#trevor-riggs",
     },
-    ...(imageUrl ? { "image": [imageUrl] } : {}),
-    ...(takeaways.length > 0 ? { "abstract": takeaways.join(". ") + "." } : {}),
+    publisher: {
+      "@id": "https://truepathdigital.com/#business",
+    },
+    ...(imageUrl ? { image: [imageUrl] } : {}),
+    ...(takeaways.length > 0 ? { abstract: takeaways.join(". ") + "." } : {}),
     ...(quickAnswer ? {
-      "speakable": {
+      speakable: {
         "@type": "SpeakableSpecification",
-        "cssSelector": ["[data-ai-speakable='quick-answer']", "[data-ai-speakable='takeaways']"]
-      }
-    } : {})
+        cssSelector: ["[data-ai-speakable='quick-answer']", "[data-ai-speakable='takeaways']"],
+      },
+    } : {}),
   };
 
   // BreadcrumbList structured data
@@ -187,19 +178,19 @@ export default async function SingleInsightPage({
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://truepathdigital.com/"
+        "item": "https://truepathdigital.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Insights",
-        "item": "https://truepathdigital.com/insights/"
+        "item": "https://truepathdigital.com/insights"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://truepathdigital.com/insights/${post.slug}/`
+        "item": `https://truepathdigital.com/insights/${post.slug}`
       }
     ]
   };
@@ -222,16 +213,16 @@ export default async function SingleInsightPage({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbSchema) }}
       />
       {faqSchema && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
         />
       )}
       <div className="noise-overlay" />
@@ -313,7 +304,7 @@ export default async function SingleInsightPage({
             <div 
               className="article-content text-foreground text-lg leading-relaxed space-y-6"
               data-ai-main-content="true"
-              dangerouslySetInnerHTML={{ __html: cleanHtmlContent(post.content || "") }}
+              dangerouslySetInnerHTML={{ __html: sanitizeWordPressHtml(post.content || "") }}
             />
 
             {/* FAQ Section */}

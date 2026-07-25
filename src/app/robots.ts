@@ -1,77 +1,36 @@
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
+  const searchAndAiCrawlers = [
+    "Googlebot",
+    "bingbot",
+    "Applebot",
+    "OAI-SearchBot",
+    "ChatGPT-User",
+    "GPTBot",
+    "PerplexityBot",
+    "Perplexity-User",
+    "ClaudeBot",
+    "anthropic-ai",
+    "Google-Extended",
+    "FacebookBot",
+    "cohere-ai",
+  ];
+
   return {
     rules: [
-      // Standard search engine crawlers
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
-      },
-      // Google (including AI Overviews)
-      {
-        userAgent: "Googlebot",
-        allow: "/",
-      },
-      // Bing / Microsoft (including Copilot)
-      {
-        userAgent: "bingbot",
-        allow: "/",
-      },
-      // OpenAI / ChatGPT
-      {
-        userAgent: "GPTBot",
-        allow: "/",
+        disallow: "/api/",
       },
       {
-        userAgent: "ChatGPT-User",
+        userAgent: searchAndAiCrawlers,
         allow: "/",
-      },
-      // Perplexity AI
-      {
-        userAgent: "PerplexityBot",
-        allow: "/",
-      },
-      // Anthropic / Claude
-      {
-        userAgent: "anthropic-ai",
-        allow: "/",
-      },
-      {
-        userAgent: "ClaudeBot",
-        allow: "/",
-      },
-      // Google Gemini
-      {
-        userAgent: "Google-Extended",
-        allow: "/",
-      },
-      // Meta AI
-      {
-        userAgent: "FacebookBot",
-        allow: "/",
-      },
-      // Apple / Applebot (Siri, Spotlight, Apple Intelligence)
-      {
-        userAgent: "Applebot",
-        allow: "/",
-      },
-      // Common SEO crawlers
-      {
-        userAgent: "Slurp",
-        allow: "/",
-      },
-      {
-        userAgent: "DuckDuckBot",
-        allow: "/",
-      },
-      // Cohere AI
-      {
-        userAgent: "cohere-ai",
-        allow: "/",
+        disallow: "/api/",
       },
     ],
     sitemap: "https://truepathdigital.com/sitemap.xml",
+    host: "https://truepathdigital.com",
   };
 }

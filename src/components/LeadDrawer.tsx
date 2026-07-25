@@ -4,19 +4,22 @@ import { useLeadDrawer } from "@/context/LeadDrawerContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, CheckCircle2 } from "lucide-react";
 import Button from "./Button";
-import { useState, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 
 export default function LeadDrawer() {
   const { isOpen, closeDrawer } = useLeadDrawer();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [honeypot, setHoneypot] = useState("");
   const openedAt = useRef<number>(0);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const handleClose = useCallback(() => closeDrawer(), [closeDrawer]);
+
+  useFocusTrap(dialogRef, isOpen, handleClose);
 
   // Reset form state and record open time when drawer opens
   useEffect(() => {
     if (isOpen) {
-      setIsSubmitted(false);
-      setHoneypot("");
       openedAt.current = Date.now();
     }
   }, [isOpen]);
@@ -47,7 +50,12 @@ export default function LeadDrawer() {
   };
 
   return (
-    <AnimatePresence>
+    <AnimatePresence
+      onExitComplete={() => {
+        setIsSubmitted(false);
+        setHoneypot("");
+      }}
+    >
       {isOpen && (
         <>
           {/* Backdrop */}
@@ -56,11 +64,17 @@ export default function LeadDrawer() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeDrawer}
+            aria-hidden="true"
             className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm"
           />
 
           {/* Drawer */}
           <motion.div
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="lead-drawer-title"
+            aria-describedby="lead-drawer-description"
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
@@ -69,9 +83,10 @@ export default function LeadDrawer() {
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-muted-border">
-              <h2 className="font-serif text-2xl font-medium">Request a Review</h2>
+              <h2 id="lead-drawer-title" className="font-serif text-2xl font-medium">Request a Review</h2>
               <button
                 onClick={closeDrawer}
+                aria-label="Close request form"
                 className="p-2 rounded-full hover:bg-muted-border transition-colors text-muted-text hover:text-foreground"
               >
                 <X className="w-5 h-5" />
@@ -91,8 +106,8 @@ export default function LeadDrawer() {
                   >
                     <div className="mb-10">
                       <h3 className="font-serif text-3xl font-medium mb-4">Plug the leaks.</h3>
-                      <p className="text-muted-text leading-relaxed">
-                        Give me a little context on your business and where you feel you are losing jobs. I'll review your setup and let you know if I can help.
+                      <p id="lead-drawer-description" className="text-muted-text leading-relaxed">
+                        Give me a little context on your business and where you feel you are losing jobs. I&apos;ll review your setup and let you know if I can help.
                       </p>
                     </div>
 
@@ -111,57 +126,74 @@ export default function LeadDrawer() {
                         />
                       </div>
                       <div className="flex flex-col gap-3">
-                        <label className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Name *</label>
-                        <input 
-                          type="text" 
+                        <label htmlFor="drawer-name" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Name *</label>
+                        <input
+                          id="drawer-name"
+                          name="name"
+                          type="text"
                           required
-                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors" 
-                          placeholder="John Doe" 
+                          autoComplete="name"
+                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors"
+                          placeholder="John Doe"
                         />
                       </div>
-                      
+
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="flex flex-col gap-3">
-                          <label className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Business Name</label>
-                          <input 
-                            type="text" 
-                            className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors" 
-                            placeholder="Your Company" 
+                          <label htmlFor="drawer-business" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Business Name</label>
+                          <input
+                            id="drawer-business"
+                            name="business"
+                            type="text"
+                            autoComplete="organization"
+                            className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors"
+                            placeholder="Your Company"
                           />
                         </div>
                         <div className="flex flex-col gap-3">
-                          <label className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Phone Number</label>
-                          <input 
-                            type="tel" 
-                            className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors" 
-                            placeholder="(555) 555-5555" 
+                          <label htmlFor="drawer-phone" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Phone Number</label>
+                          <input
+                            id="drawer-phone"
+                            name="phone"
+                            type="tel"
+                            autoComplete="tel"
+                            className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors"
+                            placeholder="(555) 555-5555"
                           />
                         </div>
                       </div>
 
                       <div className="flex flex-col gap-3">
-                        <label className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Email Address</label>
-                        <input 
-                          type="email" 
-                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors" 
-                          placeholder="john@example.com" 
+                        <label htmlFor="drawer-email" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Email Address</label>
+                        <input
+                          id="drawer-email"
+                          name="email"
+                          type="email"
+                          autoComplete="email"
+                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors"
+                          placeholder="john@example.com"
                         />
                       </div>
 
                       <div className="flex flex-col gap-3">
-                        <label className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Website URL *</label>
-                        <input 
-                          type="text" 
+                        <label htmlFor="drawer-website" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Website URL *</label>
+                        <input
+                          id="drawer-website"
+                          name="website"
+                          type="url"
                           required
-                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors" 
-                          placeholder="yourwebsite.com" 
+                          autoComplete="url"
+                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors"
+                          placeholder="yourwebsite.com"
                         />
                       </div>
                       <div className="flex flex-col gap-3">
-                        <label className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Biggest Challenge *</label>
-                        <textarea 
+                        <label htmlFor="drawer-challenge" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Biggest Challenge *</label>
+                        <textarea
+                          id="drawer-challenge"
+                          name="challenge"
                           required
-                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors resize-none h-20" 
+                          className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors resize-none h-20"
                           placeholder="Where do you feel like you are losing jobs?"
                         ></textarea>
                       </div>

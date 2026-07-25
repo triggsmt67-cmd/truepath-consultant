@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Button from "@/components/Button";
 import { useLeadDrawer } from "@/context/LeadDrawerContext";
+import { useFocusTrap } from "@/hooks/useFocusTrap";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -22,6 +23,10 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { openDrawer } = useLeadDrawer();
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const closeMobileMenu = useCallback(() => setIsMobileMenuOpen(false), []);
+
+  useFocusTrap(mobileMenuRef, isMobileMenuOpen, closeMobileMenu);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,16 +63,16 @@ export default function Header() {
           
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/work" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
+            <Link href="/work" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
               My Work
             </Link>
-            <Link href="/#services" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
+            <Link href="/#services" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
               Capabilities
             </Link>
-            <Link href="/#audit" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
+            <Link href="/#audit" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
               Under the Hood Audit
             </Link>
-            <Link href="/insights" className="text-sm font-medium tracking-wide hover:text-primary transition-colors">
+            <Link href="/insights" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
               Insights
             </Link>
           </nav>
@@ -84,6 +89,8 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 -mr-2 text-foreground hover:text-primary transition-colors"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-navigation"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -94,6 +101,8 @@ export default function Header() {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
+            ref={mobileMenuRef}
+            id="mobile-navigation"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -101,6 +110,7 @@ export default function Header() {
             className="fixed inset-0 z-30 bg-background pt-24"
           >
             <motion.nav
+              aria-label="Mobile navigation"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}

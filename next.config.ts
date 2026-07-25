@@ -1,5 +1,13 @@
 import type { NextConfig } from "next";
 
+const wordpressApiUrl = new URL(
+  process.env.WORDPRESS_API_URL || "https://admin.truepath406.com",
+);
+
+if (wordpressApiUrl.protocol !== "http:" && wordpressApiUrl.protocol !== "https:") {
+  throw new Error("WORDPRESS_API_URL must use the http or https protocol");
+}
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -8,8 +16,8 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
       },
       {
-        protocol: 'https',
-        hostname: 'admin.truepath406.com',
+        protocol: wordpressApiUrl.protocol.slice(0, -1) as "http" | "https",
+        hostname: wordpressApiUrl.hostname,
       },
     ],
     // Serve modern image formats for smaller file sizes

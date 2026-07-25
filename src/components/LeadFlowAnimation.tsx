@@ -12,8 +12,10 @@ export default function LeadFlowAnimation() {
     ).matches;
 
     if (reducedMotion || !("IntersectionObserver" in window)) {
-      setIsAnimated(true);
-      return;
+      const animationFrame = requestAnimationFrame(() => {
+        setIsAnimated(true);
+      });
+      return () => cancelAnimationFrame(animationFrame);
     }
 
     const observer = new IntersectionObserver(

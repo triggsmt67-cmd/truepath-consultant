@@ -99,9 +99,12 @@ Blog posts output **5 structured data blocks** for maximum AI crawler visibility
 Create a `.env.local` file with:
 
 ```bash
-NEXT_PUBLIC_WORDPRESS_API_URL=https://admin.truepath406.com
-NEXT_PUBLIC_WORDPRESS_API_HOSTNAME=admin.truepath406.com
+WORDPRESS_API_URL=https://admin.truepath406.com
 ```
+
+`WORDPRESS_API_URL` is server-only and may be either the WordPress base URL or
+the full `/graphql` endpoint. The production default above is used when the
+variable is not set.
 
 ## Development
 

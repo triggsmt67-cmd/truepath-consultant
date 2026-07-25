@@ -5,9 +5,10 @@ import Footer from "@/components/Footer";
 import Button from "@/components/Button";
 import ScrollImage from "@/components/ScrollImage";
 import { useLeadDrawer } from "@/context/LeadDrawerContext";
-import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
-import { ArrowRight, MapPin, Search, CheckCircle2, ShieldAlert, BarChart3, AlertTriangle, AlertCircle, Wrench, RefreshCw, MessageSquare, Quote } from "lucide-react";
+import { serializeJsonLd } from "@/lib/json-ld";
+import { useServicePhase } from "@/hooks/useServicePhase";
+import { motion, AnimatePresence } from "framer-motion";
+import { MapPin, Search, CheckCircle2, ShieldAlert, BarChart3, AlertTriangle, AlertCircle, Wrench, RefreshCw, MessageSquare, Quote } from "lucide-react";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -115,24 +116,24 @@ const faqSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Google Business Profile Optimization",
-  "url": "https://truepathdigital.com/services/google-profile",
-  "provider": {
-    "@type": "ProfessionalService",
+  "@id": "https://truepathdigital.com/services/google-profile#service",
+  name: "Google Business Profile Optimization",
+  url: "https://truepathdigital.com/services/google-profile",
+  provider: {
     "@id": "https://truepathdigital.com/#business",
-    "name": "True Path Digital",
-    "url": "https://truepathdigital.com"
   },
-  "serviceType": "Local Search Optimization",
-  "description": "Google Business Profile optimization, category audit, review systems, spam removal, and local search visibility for owner-operated service businesses.",
-  "areaServed": [
-    { "@type": "City", "name": "Missoula" },
-    { "@type": "State", "name": "Montana" }
+  image: "https://truepathdigital.com/images/google-profile.webp",
+  serviceType: "Local Search Optimization",
+  category: "Google Business Profile consulting",
+  description: "Google Business Profile optimization, category audit, review systems, spam removal, and local search visibility for owner-operated service businesses.",
+  areaServed: [
+    { "@type": "City", name: "Missoula" },
+    { "@type": "State", name: "Montana" },
   ],
-  "audience": {
+  audience: {
     "@type": "Audience",
-    "audienceType": "Owner-operated local service businesses"
-  }
+    audienceType: "Owner-operated local service businesses",
+  },
 };
 
 const failureReasons = [
@@ -217,20 +218,7 @@ const methodologySteps = [
 
 export default function GoogleProfilePage() {
   const { openDrawer } = useLeadDrawer();
-  const [activePhase, setActivePhase] = useState(1);
-  const phase1Ref = useRef(null);
-  const phase2Ref = useRef(null);
-  const phase3Ref = useRef(null);
-
-  const isPhase1InView = useInView(phase1Ref, { margin: "-20% 0px -20% 0px" });
-  const isPhase2InView = useInView(phase2Ref, { margin: "-20% 0px -20% 0px" });
-  const isPhase3InView = useInView(phase3Ref, { margin: "-20% 0px -20% 0px" });
-
-  useEffect(() => {
-    if (isPhase3InView) setActivePhase(3);
-    else if (isPhase2InView) setActivePhase(2);
-    else if (isPhase1InView) setActivePhase(1);
-  }, [isPhase1InView, isPhase2InView, isPhase3InView]);
+  const { activePhase, getPhaseProps } = useServicePhase();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -253,21 +241,21 @@ export default function GoogleProfilePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(serviceSchema) }}
       />
       <div className="noise-overlay" />
       <Header />
       <main className="flex-1 w-full overflow-x-clip pt-32 relative z-10">
-        
+
         {/* Hero Section */}
         <section className="relative flex flex-col justify-center px-6 md:px-12 py-16 md:py-24">
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
-            
-            <motion.div 
+
+            <motion.div
               variants={containerVariants}
               initial="hidden"
               animate="visible"
@@ -281,26 +269,26 @@ export default function GoogleProfilePage() {
                 <motion.span variants={itemVariants} className="block text-foreground">Show Up Better</motion.span>
                 <motion.span variants={itemVariants} className="block text-primary">on Google Maps.</motion.span>
               </h1>
-              
+
               <motion.div variants={itemVariants} className="mt-8 flex flex-col items-start gap-8">
                 <p className="max-w-xl text-[clamp(1.125rem,1.4vw,1.25rem)] leading-relaxed text-muted-text">
                   Your Google Business Profile is often the first thing a potential customer sees. I help owner-operated service businesses clean up, strengthen, and better manage their profiles so they can turn more local searches into phone calls.
                 </p>
-                
+
                 <Button onClick={() => openDrawer()} variant="primary">
                   Get Your Google Profile Reviewed
                 </Button>
               </motion.div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
               className="w-full lg:h-[70vh] h-[45vh]"
             >
-              <ScrollImage 
-                src="/images/google-profile.png" 
+              <ScrollImage
+                src="/images/google-profile.webp"
                 alt="Google Profile optimization analysis on tablet"
                 title="Google Business Profile optimization for local service businesses in Missoula, Montana"
                 containerClassName="w-full h-full"
@@ -345,7 +333,7 @@ export default function GoogleProfilePage() {
           <div className="mx-auto w-full max-w-4xl text-center relative z-10 px-4">
             <blockquote className="space-y-8">
               <p className="font-serif text-[clamp(1.75rem,3.5vw,3.25rem)] font-medium leading-tight text-foreground">
-                "An inaccurate or incomplete Google Profile means a ready-to-buy customer may never even reach your website."
+                &ldquo;An inaccurate or incomplete Google Profile means a ready-to-buy customer may never even reach your website.&rdquo;
               </p>
               <footer className="text-base md:text-lg text-muted-text uppercase tracking-widest font-medium">
                 Optimization is not just an SEO task &mdash; it is a <span className="text-primary font-bold">trust and conversion</span> problem.
@@ -367,7 +355,7 @@ export default function GoogleProfilePage() {
             </div>
 
             <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16 lg:gap-24 items-start">
-              
+
               {/* Sticky Animation Column */}
               <div className="hidden lg:flex flex-col justify-center items-center sticky top-40 h-[65vh] border border-muted-border bg-background p-12">
                  <div className="relative w-full max-w-[240px] h-[340px]">
@@ -382,7 +370,7 @@ export default function GoogleProfilePage() {
                            <line x1="20" y1="30" x2="80" y2="30" stroke="currentColor" className="text-muted-border" strokeWidth="3" strokeLinecap="round" />
                            <line x1="20" y1="50" x2="60" y2="50" stroke="currentColor" className="text-muted-border" strokeWidth="3" strokeLinecap="round" />
                            <line x1="20" y1="70" x2="70" y2="70" stroke="currentColor" className="text-muted-border" strokeWidth="3" strokeLinecap="round" />
-                           
+
                            <motion.g
                               initial={{ x: -10, y: -10 }}
                               animate={{ x: [ -10, 25, -10 ], y: [ -10, 25, -10 ] }}
@@ -393,7 +381,7 @@ export default function GoogleProfilePage() {
                            </motion.g>
                         </motion.svg>
                       )}
-                      
+
                       {activePhase === 2 && (
                         <motion.svg key="phase2" viewBox="0 0 100 100" className="absolute inset-0 w-full h-full overflow-visible"
                            initial={{ opacity: 0, y: 10 }}
@@ -401,20 +389,20 @@ export default function GoogleProfilePage() {
                            exit={{ opacity: 0, y: -10 }}
                            transition={{ duration: 0.4 }}
                         >
-                          <motion.circle cx="50" cy="50" r="30" fill="transparent" stroke="currentColor" className="text-muted-border" strokeWidth="2" strokeDasharray="4 4" 
+                          <motion.circle cx="50" cy="50" r="30" fill="transparent" stroke="currentColor" className="text-muted-border" strokeWidth="2" strokeDasharray="4 4"
                             animate={{ rotate: 360 }}
                             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                             style={{ originX: "50px", originY: "50px" }}
                           />
-                          <motion.circle cx="50" cy="50" r="10" fill="transparent" stroke="var(--color-primary, #A16207)" strokeWidth="3" 
+                          <motion.circle cx="50" cy="50" r="10" fill="transparent" stroke="var(--color-primary, #A16207)" strokeWidth="3"
                             initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.2 }}
                           />
-                          <motion.line x1="10" y1="90" x2="43" y2="57" stroke="var(--color-primary, #A16207)" strokeWidth="3" strokeLinecap="round" 
+                          <motion.line x1="10" y1="90" x2="43" y2="57" stroke="var(--color-primary, #A16207)" strokeWidth="3" strokeLinecap="round"
                             initial={{ pathLength: 0, opacity: 0 }}
                             animate={{ pathLength: 1, opacity: 1 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
                           />
-                          <motion.polygon points="43,57 33,57 43,67" fill="var(--color-primary, #A16207)" 
+                          <motion.polygon points="43,57 33,57 43,67" fill="var(--color-primary, #A16207)"
                             initial={{ scale: 0, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ duration: 0.3, delay: 0.5 }}
@@ -433,7 +421,7 @@ export default function GoogleProfilePage() {
                           <line x1="0" y1="80" x2="100" y2="80" stroke="currentColor" className="text-muted-border" strokeWidth="1" strokeDasharray="2 2" />
                           <line x1="0" y1="50" x2="100" y2="50" stroke="currentColor" className="text-muted-border" strokeWidth="1" strokeDasharray="2 2" />
                           <line x1="0" y1="20" x2="100" y2="20" stroke="currentColor" className="text-muted-border" strokeWidth="1" strokeDasharray="2 2" />
-                          
+
                           <motion.path
                             d="M 5,85 C 30,85 40,50 60,50 C 80,50 90,20 95,15"
                             fill="transparent"
@@ -444,7 +432,7 @@ export default function GoogleProfilePage() {
                             animate={{ pathLength: 1 }}
                             transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
                           />
-                          
+
                           <motion.path
                             d="M 85,15 L 95,15 L 95,25"
                             fill="transparent"
@@ -463,7 +451,7 @@ export default function GoogleProfilePage() {
                  <div className="mt-8 text-center relative h-16 w-full flex flex-col items-center">
                    <div className="text-xs font-medium uppercase tracking-widest text-primary mb-2">The Objective</div>
                    <AnimatePresence mode="wait">
-                     <motion.h4 
+                     <motion.h4
                        key={activePhase}
                        initial={{ opacity: 0, y: 5 }}
                        animate={{ opacity: 1, y: 0 }}
@@ -480,9 +468,12 @@ export default function GoogleProfilePage() {
 
               {/* Scrollable Phases Column */}
               <div className="space-y-24">
-                
+
                 {/* Phase 1 */}
-                <div className="space-y-12" ref={phase1Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(1)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 01</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Audit & Cleanup</h3>
@@ -498,10 +489,13 @@ export default function GoogleProfilePage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Phase 2 */}
-                <div className="space-y-12" ref={phase2Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(2)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 02</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Authority & Alignment</h3>
@@ -517,10 +511,13 @@ export default function GoogleProfilePage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Phase 3 */}
-                <div className="space-y-12" ref={phase3Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(3)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 03</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Tracking & Growth</h3>
@@ -536,7 +533,7 @@ export default function GoogleProfilePage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
               </div>
             </div>
@@ -546,22 +543,22 @@ export default function GoogleProfilePage() {
         {/* Stronger Profile & Audience Section */}
         <section className="px-6 py-24 md:px-12 md:py-32 bg-foreground text-background overflow-hidden relative">
           <div className="absolute top-0 right-0 w-full h-full opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, var(--color-primary) 0%, transparent 50%)' }}></div>
-          
+
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-24 relative z-10">
-            
+
             {/* What a Stronger Profile Looks Like */}
             <div>
               <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-12">
                 What a Stronger Profile Looks Like
               </h2>
-              
+
               <div className="mb-10 text-background/80 text-lg leading-relaxed">
                 <p>
                   A good result is not simply a profile with more fields filled out. It is a profile that accurately represents the business and makes it easier for the right customer to take the next step. That usually means:
                 </p>
               </div>
 
-              <motion.div 
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-10%" }}
@@ -569,14 +566,14 @@ export default function GoogleProfilePage() {
                 className="grid gap-4"
               >
                 {[
-                  "Accurate categories & service details", 
-                  "A consistent, healthy review flow", 
-                  "Stronger alignment with your website", 
-                  "Reduced suspension & compliance risks", 
-                  "Clearer performance tracking", 
+                  "Accurate categories & service details",
+                  "A consistent, healthy review flow",
+                  "Stronger alignment with your website",
+                  "Reduced suspension & compliance risks",
+                  "Clearer performance tracking",
                   "A frictionless path from search to a phone call"
                 ].map((item, i) => (
-                  <motion.div 
+                  <motion.div
                     key={i}
                     variants={{
                       hidden: { opacity: 0, x: -20 },
@@ -604,7 +601,7 @@ export default function GoogleProfilePage() {
               <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-12">
                 Who This Service Is For
               </h2>
-              
+
               <div className="text-background/80 text-lg leading-relaxed mb-8">
                 <p>
                   Optimization is best suited for owner-operated and family-run service businesses that depend on customers within a defined geographic area.
@@ -612,7 +609,7 @@ export default function GoogleProfilePage() {
               </div>
 
               {/* Industry Badges */}
-              <motion.div 
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -620,11 +617,11 @@ export default function GoogleProfilePage() {
                 className="flex flex-wrap gap-2 md:gap-3 mb-12"
               >
                 {[
-                  "HVAC", "Plumbers", "Electricians", "Roofers", "Septic & Excavation", 
-                  "Cleaning Companies", "Landscapers", "Pest Control", "Garage Door Cos.", 
+                  "HVAC", "Plumbers", "Electricians", "Roofers", "Septic & Excavation",
+                  "Cleaning Companies", "Landscapers", "Pest Control", "Garage Door Cos.",
                   "Auto Repair", "Appliance Repair"
                 ].map((industry, i) => (
-                  <motion.span 
+                  <motion.span
                     key={i}
                     variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}
                     className="px-4 py-2 rounded-full border border-background/20 bg-background/5 text-background text-sm font-medium hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-colors cursor-default"
@@ -638,12 +635,12 @@ export default function GoogleProfilePage() {
                 <div className="absolute -top-4 -right-4 p-6 opacity-10">
                   <AlertTriangle className="w-32 h-32 text-primary" />
                 </div>
-                
+
                 <h3 className="font-serif text-2xl font-medium mb-8 relative z-10 text-primary">
                   It is especially useful when:
                 </h3>
-                
-                <motion.ul 
+
+                <motion.ul
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: "-10%" }}
@@ -662,7 +659,7 @@ export default function GoogleProfilePage() {
                     "Your website and profile do not match",
                     "You are paying for ads while your local profile remains weak"
                   ].map((item, i) => (
-                    <motion.li 
+                    <motion.li
                       key={i}
                       variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0 } }}
                       className="flex items-start gap-4 group"

@@ -5,9 +5,10 @@ import Footer from "@/components/Footer";
 import Button from "@/components/Button";
 import ScrollImage from "@/components/ScrollImage";
 import { useLeadDrawer } from "@/context/LeadDrawerContext";
-import { motion, useInView, AnimatePresence } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
-import { ArrowRight, CheckCircle2, AlertTriangle, AlertCircle, Quote, Smartphone, Target, Search, ShieldCheck, Mail, LineChart, MessageSquare, ClipboardCheck, BellRing, PhoneCall, Workflow, Clock } from "lucide-react";
+import { serializeJsonLd } from "@/lib/json-ld";
+import { useServicePhase } from "@/hooks/useServicePhase";
+import { motion, AnimatePresence } from "framer-motion";
+import { ArrowRight, CheckCircle2, AlertTriangle, AlertCircle, Quote, Target, Search, ShieldCheck, Mail, LineChart, MessageSquare, ClipboardCheck, BellRing, PhoneCall, Workflow, Clock } from "lucide-react";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -139,24 +140,24 @@ const faqSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Lead Response and Follow-Up Systems",
-  "url": "https://truepathdigital.com/services/lead-response",
-  "provider": {
-    "@type": "ProfessionalService",
+  "@id": "https://truepathdigital.com/services/lead-response#service",
+  name: "Lead Response and Follow-Up Systems",
+  url: "https://truepathdigital.com/services/lead-response",
+  provider: {
     "@id": "https://truepathdigital.com/#business",
-    "name": "True Path Digital",
-    "url": "https://truepathdigital.com"
   },
-  "serviceType": "CRM & Automation",
-  "description": "Lead response and follow-up systems for local service businesses to stop losing good leads to missed calls and slow follow-up.",
-  "areaServed": [
-    { "@type": "City", "name": "Missoula" },
-    { "@type": "State", "name": "Montana" }
+  image: "https://truepathdigital.com/images/lead-response.webp",
+  serviceType: "CRM and automation",
+  category: "Lead response and follow-up consulting",
+  description: "Lead response and follow-up systems for local service businesses to stop losing good leads to missed calls and slow follow-up.",
+  areaServed: [
+    { "@type": "City", name: "Missoula" },
+    { "@type": "State", name: "Montana" },
   ],
-  "audience": {
+  audience: {
     "@type": "Audience",
-    "audienceType": "Owner-operated local service businesses"
-  }
+    audienceType: "Owner-operated local service businesses",
+  },
 };
 
 const failureReasons = [
@@ -268,40 +269,27 @@ export default function LeadResponsePage() {
     }
   };
 
-  const [activePhase, setActivePhase] = useState(1);
-  const phase1Ref = useRef(null);
-  const phase2Ref = useRef(null);
-  const phase3Ref = useRef(null);
-
-  const isPhase1InView = useInView(phase1Ref, { margin: "-20% 0px -20% 0px" });
-  const isPhase2InView = useInView(phase2Ref, { margin: "-20% 0px -20% 0px" });
-  const isPhase3InView = useInView(phase3Ref, { margin: "-20% 0px -20% 0px" });
-
-  useEffect(() => {
-    if (isPhase3InView) setActivePhase(3);
-    else if (isPhase2InView) setActivePhase(2);
-    else if (isPhase1InView) setActivePhase(1);
-  }, [isPhase1InView, isPhase2InView, isPhase3InView]);
+  const { activePhase, getPhaseProps } = useServicePhase();
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(serviceSchema) }}
       />
       <div className="noise-overlay" />
       <Header />
       <main className="flex-1 w-full overflow-x-clip pt-32 relative z-10">
-        
+
         {/* Hero Section */}
         <section className="relative flex flex-col justify-center px-6 md:px-12 py-16 md:py-24 border-b border-muted-border">
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
-            
-            <motion.div 
+
+            <motion.div
               variants={containerVariants}
               initial="hidden"
               animate="visible"
@@ -311,11 +299,11 @@ export default function LeadResponsePage() {
                 <BellRing className="w-4 h-4" />
                 Response & Follow-Up
               </motion.div>
-              
+
               <motion.h1 variants={itemVariants} className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-medium leading-[1.05] tracking-tight text-foreground mb-8">
                 Stop Losing Good Leads to Missed Calls & Slow Follow-Up.
               </motion.h1>
-              
+
               <motion.div variants={itemVariants} className="space-y-6 text-lg text-muted-text leading-relaxed mb-10">
                 <p>
                   Most local service businesses do not lose leads because nobody is interested. They lose them because the phone rings at the wrong time, an estimate is never followed up, or nobody is clearly responsible for the next step.
@@ -324,7 +312,7 @@ export default function LeadResponsePage() {
                   I help local service businesses build simple response systems that ensure inquiries are acknowledged, assigned, and followed up without adding unnecessary software.
                 </p>
               </motion.div>
-              
+
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
                 <Button onClick={() => openDrawer()} variant="primary" size="lg" className="group">
                   Review My Response Process
@@ -333,14 +321,14 @@ export default function LeadResponsePage() {
               </motion.div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative h-[400px] md:h-[600px] w-full rounded-sm overflow-hidden border border-muted-border"
             >
-              <ScrollImage 
-                src="/images/lead-response.png" 
+              <ScrollImage
+                src="/images/lead-response.webp"
                 alt="Lead response systems and CRM dashboard for local businesses"
                 title="Lead response and follow-up systems for service business owners"
                 containerClassName="w-full h-full"
@@ -385,7 +373,7 @@ export default function LeadResponsePage() {
           <div className="mx-auto w-full max-w-4xl text-center relative z-10 px-4">
             <blockquote className="space-y-8">
               <p className="font-serif text-[clamp(1.75rem,3.5vw,3.25rem)] font-medium leading-tight text-foreground">
-                "The business continues paying for expensive advertising while good opportunities quietly disappear between the first inquiry and the booked job."
+                &ldquo;The business continues paying for expensive advertising while good opportunities quietly disappear between the first inquiry and the booked job.&rdquo;
               </p>
               <footer className="text-base md:text-lg text-muted-text uppercase tracking-widest font-medium">
                 More traffic will not repair a <span className="text-primary font-bold">broken response process</span>.
@@ -404,17 +392,17 @@ export default function LeadResponsePage() {
               <h3 className="font-serif font-medium text-[clamp(2.5rem,4vw,4rem)] leading-tight tracking-tight text-foreground mb-8">
                 What I Build to Improve Lead Response
               </h3>
-              <p className="text-xl text-muted-text leading-relaxed">
+              <p className="text-lg text-muted-text leading-[1.65]">
                 I do not begin by forcing you into a complicated software platform. I begin by reviewing where inquiries come from, who is responsible for them, and where they lose momentum.
               </p>
             </div>
 
             <div className="grid lg:grid-cols-[1fr_1.2fr] gap-16 lg:gap-24 relative">
-              
+
               {/* Sticky Left Column (Animated Visuals) */}
               <div className="hidden lg:block relative">
                  <div className="sticky top-40 w-full h-[600px] bg-background border border-muted-border rounded-sm overflow-hidden flex flex-col items-center justify-center p-12">
-                   
+
                    <AnimatePresence mode="wait">
                      {/* Phase 1 Graphic */}
                      {activePhase === 1 && (
@@ -448,14 +436,14 @@ export default function LeadResponsePage() {
                          className="flex flex-col items-center"
                        >
                          <div className="flex gap-4 mb-8">
-                           <motion.div 
+                           <motion.div
                              animate={{ y: [0, -15, 0] }}
                              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
                              className="w-20 h-20 bg-primary/10 rounded-full border border-primary/30 flex items-center justify-center"
                            >
                              <MessageSquare className="w-8 h-8 text-primary" />
                            </motion.div>
-                           <motion.div 
+                           <motion.div
                              animate={{ y: [0, -15, 0] }}
                              transition={{ repeat: Infinity, duration: 2, delay: 0.5, ease: "easeInOut" }}
                              className="w-20 h-20 bg-primary/10 rounded-full border border-primary/30 flex items-center justify-center"
@@ -478,7 +466,7 @@ export default function LeadResponsePage() {
                        >
                          <div className="relative mb-8">
                            <ClipboardCheck className="w-40 h-40 text-primary" />
-                           <motion.div 
+                           <motion.div
                              className="absolute bottom-0 right-0 w-12 h-12 bg-background border border-primary rounded-full flex items-center justify-center"
                              animate={{ scale: [1, 1.2, 1] }}
                              transition={{ repeat: Infinity, duration: 2 }}
@@ -491,7 +479,7 @@ export default function LeadResponsePage() {
                    </AnimatePresence>
 
                    <AnimatePresence mode="wait">
-                     <motion.h4 
+                     <motion.h4
                        key={activePhase}
                        initial={{ opacity: 0, y: 10 }}
                        animate={{ opacity: 1, y: 0 }}
@@ -508,9 +496,12 @@ export default function LeadResponsePage() {
 
               {/* Scrollable Phases Column */}
               <div className="space-y-24">
-                
+
                 {/* Phase 1 */}
-                <div className="space-y-12" ref={phase1Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(1)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 01</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Foundation & Assignment</h3>
@@ -526,10 +517,13 @@ export default function LeadResponsePage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Phase 2 */}
-                <div className="space-y-12" ref={phase2Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(2)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 02</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Immediate Response</h3>
@@ -545,10 +539,13 @@ export default function LeadResponsePage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
                 {/* Phase 3 */}
-                <div className="space-y-12" ref={phase3Ref}>
+                <motion.div
+                  className="space-y-12"
+                  {...getPhaseProps(3)}
+                >
                   <div className="border-b border-muted-border pb-4">
                     <span className="text-sm font-medium uppercase tracking-widest text-primary block mb-3">Phase 03</span>
                     <h3 className="font-serif text-3xl font-medium text-foreground">Nurturing & Closeout</h3>
@@ -564,7 +561,7 @@ export default function LeadResponsePage() {
                       </div>
                     ))}
                   </div>
-                </div>
+                </motion.div>
 
               </div>
             </div>
@@ -574,22 +571,22 @@ export default function LeadResponsePage() {
         {/* Stronger System & Audience Section */}
         <section className="px-6 py-24 md:px-12 md:py-32 bg-foreground text-background overflow-hidden relative border-b border-muted-border">
           <div className="absolute top-0 right-0 w-full h-full opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, var(--color-primary) 0%, transparent 50%)' }}></div>
-          
+
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-24 relative z-10">
-            
+
             {/* What a Good Result Looks Like */}
             <div>
               <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-12">
                 What a Good Result Looks Like
               </h2>
-              
+
               <div className="mb-10 text-background/80 text-lg leading-relaxed">
                 <p>
                   A useful system creates a clear, repeatable path. The goal is to make sure good opportunities do not disappear for preventable reasons.
                 </p>
               </div>
 
-              <motion.div 
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, margin: "-10%" }}
@@ -597,14 +594,14 @@ export default function LeadResponsePage() {
                 className="grid gap-4"
               >
                 {[
-                  "Fewer unanswered inquiries", 
-                  "Immediate, automated acknowledgment", 
-                  "Clear, designated lead ownership", 
-                  "More consistent call-backs & follow-ups", 
-                  "Fewer forgotten prospects & lost quotes", 
+                  "Fewer unanswered inquiries",
+                  "Immediate, automated acknowledgment",
+                  "Clear, designated lead ownership",
+                  "More consistent call-backs & follow-ups",
+                  "Fewer forgotten prospects & lost quotes",
                   "Drastically reduced administrative stress"
                 ].map((item, i) => (
-                  <motion.div 
+                  <motion.div
                     key={i}
                     variants={{
                       hidden: { opacity: 0, x: -20 },
@@ -626,7 +623,7 @@ export default function LeadResponsePage() {
               <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-12">
                 Who This Service Is For
               </h2>
-              
+
               <div className="text-background/80 text-lg leading-relaxed mb-8">
                 <p>
                   Lead response systems are built for owner-operated and family-run local service businesses that receive estimates or appointment requests.
@@ -634,7 +631,7 @@ export default function LeadResponsePage() {
               </div>
 
               {/* Industry Badges */}
-              <motion.div 
+              <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -642,11 +639,11 @@ export default function LeadResponsePage() {
                 className="flex flex-wrap gap-2 md:gap-3 mb-12"
               >
                 {[
-                  "HVAC", "Plumbers", "Electricians", "Roofers", "Septic & Excavation", 
-                  "Cleaning Companies", "Landscapers", "Pest Control", "Garage Door Cos.", 
+                  "HVAC", "Plumbers", "Electricians", "Roofers", "Septic & Excavation",
+                  "Cleaning Companies", "Landscapers", "Pest Control", "Garage Door Cos.",
                   "Auto Repair", "Appliance Repair", "Remodelers"
                 ].map((industry, i) => (
-                  <motion.span 
+                  <motion.span
                     key={i}
                     variants={{ hidden: { opacity: 0, scale: 0.8 }, visible: { opacity: 1, scale: 1 } }}
                     className="px-4 py-2 rounded-full border border-background/20 bg-background/5 text-background text-sm font-medium hover:bg-primary/20 hover:border-primary/50 hover:text-primary transition-colors cursor-default"
@@ -660,12 +657,12 @@ export default function LeadResponsePage() {
                 <div className="absolute -top-4 -right-4 p-6 opacity-10">
                   <AlertTriangle className="w-32 h-32 text-primary" />
                 </div>
-                
+
                 <h3 className="font-serif text-2xl font-medium mb-8 relative z-10 text-primary">
                   It is especially useful when:
                 </h3>
-                
-                <motion.ul 
+
+                <motion.ul
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, margin: "-10%" }}
@@ -680,7 +677,7 @@ export default function LeadResponsePage() {
                     "You pay for ads but cannot track the actual outcomes",
                     "The current CRM is underused or far too complicated"
                   ].map((item, i) => (
-                    <motion.li 
+                    <motion.li
                       key={i}
                       variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0 } }}
                       className="flex items-start gap-4 group"
@@ -705,7 +702,7 @@ export default function LeadResponsePage() {
             </h2>
             <div className="text-lg text-muted-text leading-relaxed space-y-6 mb-10">
               <p>
-                You may not need more leads. You may just need to answer the leads you already have more consistently. 
+                You may not need more leads. You may just need to answer the leads you already have more consistently.
               </p>
               <p>
                 I will review how calls, forms, messages, and estimates currently move through your business and identify the points where opportunities are going cold.

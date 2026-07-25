@@ -4,6 +4,7 @@ import Button from "@/components/Button";
 import Link from "next/link";
 import Image from "next/image";
 import { getAllPosts } from "@/lib/wordpress";
+import { serializeJsonLd } from "@/lib/json-ld";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
@@ -56,28 +57,35 @@ export default async function InsightsPage() {
   const blogCollectionSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "True Path Digital Insights & Field Notes",
-    "description": "Practical marketing insights, profit leak diagnostics, and conversion advice written specifically for trade contractors.",
-    "url": "https://truepathdigital.com/insights",
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://truepathdigital.com/#business",
-      "name": "True Path Digital",
-      "url": "https://truepathdigital.com"
+    "@id": "https://truepathdigital.com/insights#blog",
+    name: "True Path Digital Insights & Field Notes",
+    description: "Practical marketing insights, profit leak diagnostics, and conversion advice written specifically for trade contractors.",
+    url: "https://truepathdigital.com/insights",
+    inLanguage: "en-US",
+    isPartOf: {
+      "@id": "https://truepathdigital.com/#website",
     },
-    "blogPost": posts.slice(0, 20).map((post: { title: string; slug: string; date: string }) => ({
+    publisher: {
+      "@id": "https://truepathdigital.com/#business",
+    },
+    blogPost: posts.slice(0, 20).map((post) => ({
       "@type": "BlogPosting",
-      "headline": post.title,
-      "url": `https://truepathdigital.com/insights/${post.slug}`,
-      "datePublished": post.date
-    }))
+      "@id": `https://truepathdigital.com/insights/${post.slug}#article`,
+      headline: post.title,
+      url: `https://truepathdigital.com/insights/${post.slug}`,
+      datePublished: post.date,
+      dateModified: post.modified || post.date,
+      author: {
+        "@id": "https://truepathdigital.com/#trevor-riggs",
+      },
+    })),
   };
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogCollectionSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(blogCollectionSchema) }}
       />
       <div className="noise-overlay" />
       <Header />
@@ -92,7 +100,7 @@ export default async function InsightsPage() {
             <h1 className="font-serif font-medium text-[clamp(2.75rem,5vw,4.5rem)] leading-[1.08] tracking-tight max-w-4xl mb-6">
               Practical Marketing Insights for Trade Owners.
             </h1>
-            <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] text-muted-text max-w-2xl leading-relaxed">
+            <p className="text-lg text-muted-text max-w-2xl leading-[1.65]">
               No agency buzzwords or fluff. Honest articles on diagnostic marketing, profit leaks, website conversion, and local search visibility.
             </p>
           </div>

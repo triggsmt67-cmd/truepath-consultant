@@ -8,55 +8,62 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
+      images: [
+        `${baseUrl}/images/hero-carpenter.jpg`,
+        `${baseUrl}/images/decision-partner-final.jpg`,
+        `${baseUrl}/images/demand-leak-audit-final.jpg`,
+      ],
     },
     {
       url: `${baseUrl}/services/google-profile`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
+      images: [`${baseUrl}/images/google-profile.webp`],
     },
     {
       url: `${baseUrl}/services/website-builds`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
+      images: [`${baseUrl}/images/website-builds.webp`],
     },
     {
       url: `${baseUrl}/services/lead-response`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
+      images: [`${baseUrl}/images/lead-response.webp`],
     },
     {
       url: `${baseUrl}/work`,
-      lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
+      images: [
+        `${baseUrl}/images/benchmark-automotive.webp`,
+        `${baseUrl}/images/united-formulas.webp`,
+        `${baseUrl}/images/accurate-auto-repair.webp`,
+      ],
     },
     {
       url: `${baseUrl}/insights`,
-      lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
+      images: [`${baseUrl}/images/decision-partner-final.jpg`],
     },
   ];
 
-  // Dynamic blog posts from WordPress
-  let blogPages: MetadataRoute.Sitemap = [];
-  try {
-    const posts = await getAllPosts();
-    blogPages = posts.map((post: { slug: string; date: string }) => ({
-      url: `${baseUrl}/insights/${post.slug}`,
-      lastModified: new Date(post.date),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    }));
-  } catch {
-    // If WordPress is unreachable, generate sitemap without blog posts
-  }
+  // Dynamic blog posts from WordPress. Let CMS failures surface so a
+  // deployment cannot silently publish an incomplete sitemap.
+  const posts = await getAllPosts();
+  const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${baseUrl}/insights/${post.slug}`,
+    lastModified: new Date(post.modified || post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+    ...(post.featuredImage?.node?.sourceUrl
+      ? { images: [post.featuredImage.node.sourceUrl] }
+      : {}),
+  }));
 
   return [...staticPages, ...blogPages];
 }

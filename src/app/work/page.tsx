@@ -1,15 +1,16 @@
-"use client";
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollImage from "@/components/ScrollImage";
 import Button from "@/components/Button";
-import { motion } from "framer-motion";
+import HashScrollHandler from "@/components/HashScrollHandler";
+import { MotionArticle, MotionDiv } from "@/components/MotionPrimitives";
+import { serializeJsonLd } from "@/lib/json-ld";
 import { ArrowRight } from "lucide-react";
 
 const CASE_STUDIES = [
   {
     id: "01",
+    slug: "benchmark-automotive-service",
     client: "Benchmark Automotive Service",
     industry: "Automotive Repair",
     url: "https://www.benchmarkmissoula.com",
@@ -17,10 +18,11 @@ const CASE_STUDIES = [
     diagnosis: "Google had very few signals confirming the business's relevance and credibility. Its business profile, service categories, website information, local citations, and inbound links were either incomplete or missing.",
     cure: "We rebuilt the Google Business Profile, corrected and completed its categories and business information, strengthened its local listings, and created a new website that aligned with the profile and better represented the shop.",
     result: "Benchmark Automotive now receives calls from Google and its website every day.",
-    image: "/images/benchmark-automotive.png"
+    image: "/images/benchmark-automotive.webp"
   },
   {
     id: "02",
+    slug: "united-formulas",
     client: "United Formulas",
     industry: "Chemical Manufacturing",
     url: "https://www.unitedformulas.com",
@@ -28,10 +30,11 @@ const CASE_STUDIES = [
     diagnosis: "The website wasn't built around how customers actually purchased. Product information was difficult to navigate, online ordering wasn't available, and customers had no quick way to get answers about the products.",
     cure: "We built a complete e-commerce website that made products easier to find, purchase, and reorder. We also added an AI-powered assistant connected to the company's product database, giving customers accurate answers while helping the sales team guide buying decisions.",
     result: "Approximately 200% increase in customer retention, with the website now serving as an everyday sales tool for the United Formulas team.",
-    image: "/images/united-formulas.png"
+    image: "/images/united-formulas.webp"
   },
   {
     id: "03",
+    slug: "accurate-auto-repair",
     client: "Accurate Auto Repair",
     industry: "Auto Repair",
     url: "https://www.accurateautorepair.net",
@@ -39,20 +42,62 @@ const CASE_STUDIES = [
     diagnosis: "Outdated business information had spread across Google Maps, Bing, Yelp, and other major directories. The company also lacked a modern website that could turn local searches into calls.",
     cure: "We corrected and unified their information across the major online listings. Then we built a fast, industry-specific website that made the shop easy to find, understand, and contact from any device.",
     result: "Accurate Auto Repair now has a consistent, credible online presence that is generating 30% more calls.",
-    image: "/images/accurate-auto-repair.png"
+    image: "/images/accurate-auto-repair.webp"
   }
 ];
+
+const workCollectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://truepathdigital.com/work#webpage",
+  url: "https://truepathdigital.com/work",
+  name: "True Path Digital Case Studies",
+  description: "Case studies showing how True Path Digital finds and repairs marketing, website, local visibility, and lead-flow problems.",
+  inLanguage: "en-US",
+  isPartOf: {
+    "@id": "https://truepathdigital.com/#website",
+  },
+  about: {
+    "@id": "https://truepathdigital.com/#business",
+  },
+  mainEntity: {
+    "@type": "ItemList",
+    numberOfItems: CASE_STUDIES.length,
+    itemListElement: CASE_STUDIES.map((study, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `https://truepathdigital.com/work#${study.slug}`,
+      name: study.client,
+      item: {
+        "@type": "CreativeWork",
+        "@id": `https://truepathdigital.com/work#${study.slug}-case-study`,
+        name: `${study.client} case study`,
+        url: `https://truepathdigital.com/work#${study.slug}`,
+        description: study.result,
+        image: `https://truepathdigital.com${study.image}`,
+        creator: {
+          "@id": "https://truepathdigital.com/#business",
+        },
+      },
+    })),
+  },
+};
 
 export default function WorkPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(workCollectionSchema) }}
+      />
       <div className="noise-overlay" />
       <Header />
+      <HashScrollHandler />
       <main className="flex-1 w-full overflow-hidden pt-32 relative z-10">
         
         {/* Hero Section */}
         <section className="px-6 md:px-12 pt-16 pb-24">
-          <motion.div 
+          <MotionDiv
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 20 }}
@@ -65,20 +110,21 @@ export default function WorkPage() {
               Fixing demand leaks. <br />
               <span className="text-muted-text">Driving real revenue.</span>
             </h1>
-          </motion.div>
+          </MotionDiv>
         </section>
 
         {/* Case Studies Gallery */}
         <section className="px-6 md:px-12 pb-32 md:pb-48">
           <div className="mx-auto w-full max-w-[1400px]">
             {CASE_STUDIES.map((study, i) => (
-              <motion.article 
+              <MotionArticle
                 key={study.id}
+                id={study.slug}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ type: "spring", stiffness: 80, damping: 20, delay: i * 0.1 }}
-                className="group relative border-t border-muted-border py-24 first:border-t-0 transition-colors duration-500 hover:bg-surface-alt -mx-6 px-6 md:-mx-12 md:px-12 rounded-3xl lg:rounded-none lg:mx-0 lg:px-6"
+                className="group relative scroll-mt-32 border-t border-muted-border py-24 first:border-t-0 transition-colors duration-500 hover:bg-surface-alt -mx-6 px-6 md:-mx-12 md:px-12 rounded-3xl lg:rounded-none lg:mx-0 lg:px-6"
               >
                 <div className="grid gap-16 md:grid-cols-12 md:gap-8">
                   
@@ -125,21 +171,21 @@ export default function WorkPage() {
                     
                     <div>
                       <h4 className="text-sm font-medium uppercase tracking-widest text-foreground mb-4">Symptom</h4>
-                      <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-muted-text border-l-2 border-primary/20 pl-6 transition-colors duration-300 group-hover:border-primary/50">
+                      <p className="text-lg leading-[1.65] text-muted-text border-l-2 border-primary/20 pl-6 transition-colors duration-300 group-hover:border-primary/50">
                         {study.symptom}
                       </p>
                     </div>
 
                     <div>
                       <h4 className="text-sm font-medium uppercase tracking-widest text-foreground mb-4">Diagnosis</h4>
-                      <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-muted-text border-l-2 border-primary/20 pl-6 transition-colors duration-300 group-hover:border-primary/50">
+                      <p className="text-lg leading-[1.65] text-muted-text border-l-2 border-primary/20 pl-6 transition-colors duration-300 group-hover:border-primary/50">
                         {study.diagnosis}
                       </p>
                     </div>
 
                     <div>
                       <h4 className="text-sm font-medium uppercase tracking-widest text-foreground mb-4">Cure</h4>
-                      <p className="text-[clamp(1.125rem,1.5vw,1.25rem)] leading-relaxed text-foreground border-l-2 border-primary pl-6">
+                      <p className="text-lg leading-[1.65] text-foreground border-l-2 border-primary pl-6">
                         {study.cure}
                       </p>
                     </div>
@@ -147,14 +193,14 @@ export default function WorkPage() {
                   </div>
 
                 </div>
-              </motion.article>
+              </MotionArticle>
             ))}
           </div>
         </section>
 
         {/* Final CTA */}
         <section className="border-t border-muted-border px-6 py-32 md:px-12 md:py-48 bg-foreground text-background">
-          <motion.div 
+          <MotionDiv
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -162,14 +208,14 @@ export default function WorkPage() {
             className="mx-auto flex w-full max-w-4xl flex-col items-center text-center"
           >
             <h2 className="font-serif font-medium text-[clamp(3rem,6vw,5rem)] leading-[1.05] tracking-tight">
-              Let's fix your leaks.
+              Let&apos;s fix your leaks.
             </h2>
             <div className="mt-16">
               <Button href="/#contact" variant="light">
                 Find My Leaks
               </Button>
             </div>
-          </motion.div>
+          </MotionDiv>
         </section>
 
       </main>
