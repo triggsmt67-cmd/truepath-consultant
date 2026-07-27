@@ -1,26 +1,58 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 import Button from "@/components/Button";
 
 export default function HomeContactForm() {
   const [honeypot, setHoneypot] = useState("");
-  const loadedAt = useRef(0);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+  const [message, setMessage] = useState("");
+  const formRef = useRef<HTMLFormElement>(null);
 
-  useEffect(() => {
-    loadedAt.current = Date.now();
-  }, []);
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setStatus("sending");
+    setMessage("");
+
+    const formData = new FormData(event.currentTarget);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...Object.fromEntries(formData),
+          source: "homepage",
+        }),
+      });
+      const result = (await response.json().catch(() => null)) as
+        | { error?: string }
+        | null;
+
+      if (!response.ok) {
+        throw new Error(result?.error || "Your request could not be sent.");
+      }
+
+      formRef.current?.reset();
+      setHoneypot("");
+      setStatus("success");
+      setMessage("Thanks — your request was sent. I’ll be in touch shortly.");
+    } catch (error) {
+      setStatus("error");
+      setMessage(
+        error instanceof Error
+          ? error.message
+          : "Your request could not be sent. Please try again.",
+      );
+    }
+  };
 
   return (
     <form
+      ref={formRef}
       className="w-full max-w-md mx-auto flex flex-col gap-8"
-      onSubmit={(event) => {
-        event.preventDefault();
-        if (honeypot) return;
-        if (Date.now() - loadedAt.current < 2000) return;
-        // Resend integration will be added before this form goes live.
-      }}
+      onSubmit={handleSubmit}
     >
       <div
         className="absolute overflow-hidden"
@@ -109,11 +141,23 @@ export default function HomeContactForm() {
       </div>
 
       <div className="mt-8">
-        <Button type="submit" variant="light" className="w-full justify-center">
-          Find My Leaks
+        <Button
+          type="submit"
+          variant="light"
+          className="w-full justify-center"
+          disabled={status === "sending"}
+        >
+          {status === "sending" ? "Sending..." : "Find My Leaks"}
         </Button>
-        <p className="mt-4 text-center text-xs leading-relaxed text-background/50">
-          I&apos;ll use this information only to reply about your request.
+        <p
+          className={`mt-4 text-center text-xs leading-relaxed ${
+            status === "error" ? "text-red-300" : "text-background/60"
+          }`}
+          role={status === "error" ? "alert" : undefined}
+          aria-live="polite"
+        >
+          {message ||
+            "I’ll use this information only to reply about your request."}
         </p>
       </div>
     </form>

@@ -19,7 +19,7 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://truepathdigital.com"),
+  metadataBase: new URL("https://www.truepathdigital.com"),
   title: {
     default: "True Path Digital | Clearer marketing. Better websites.",
     template: "%s | True Path Digital"
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "HVAC marketing",
     "plumber website design"
   ],
-  authors: [{ name: "Trevor Riggs", url: "https://truepathdigital.com" }],
+  authors: [{ name: "Trevor Riggs", url: "https://www.truepathdigital.com" }],
   creator: "Trevor Riggs",
   publisher: "True Path Digital",
   alternates: {
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "True Path Digital | Clearer marketing. Better websites.",
     description: "True Path Digital helps owner-operated service businesses find the gaps between visibility, customer trust, lead response, and booked work.",
-    url: "https://truepathdigital.com",
+    url: "https://www.truepathdigital.com",
     siteName: "True Path Digital",
     locale: "en_US",
     type: "website",
@@ -82,17 +82,17 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "@id": "https://truepathdigital.com/#business",
+  "@id": "https://www.truepathdigital.com/#business",
   name: "True Path Digital",
-  url: "https://truepathdigital.com",
+  url: "https://www.truepathdigital.com",
   logo: {
     "@type": "ImageObject",
-    "@id": "https://truepathdigital.com/#logo",
-    url: "https://truepathdigital.com/images/logo.png",
+    "@id": "https://www.truepathdigital.com/#logo",
+    url: "https://www.truepathdigital.com/images/logo.png",
     width: 153,
     height: 184,
   },
-  image: "https://truepathdigital.com/images/decision-partner-final.jpg",
+  image: "https://www.truepathdigital.com/images/decision-partner-final.jpg",
   description: "True Path Digital helps owner-operated service businesses find the gaps between visibility, customer trust, lead response, and booked work.",
   telephone: "+1-406-880-6992",
   email: "trevor@truepathdigital.com",
@@ -120,7 +120,7 @@ const localBusinessSchema = {
     { "@type": "State", name: "Montana" },
   ],
   founder: {
-    "@id": "https://truepathdigital.com/#trevor-riggs",
+    "@id": "https://www.truepathdigital.com/#trevor-riggs",
   },
   priceRange: "$$",
   knowsAbout: [
@@ -139,27 +139,27 @@ const localBusinessSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          "@id": "https://truepathdigital.com/services/google-profile#service",
+          "@id": "https://www.truepathdigital.com/services/google-profile#service",
           name: "Google Business Profile Optimization",
-          url: "https://truepathdigital.com/services/google-profile",
+          url: "https://www.truepathdigital.com/services/google-profile",
         },
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          "@id": "https://truepathdigital.com/services/website-builds#service",
+          "@id": "https://www.truepathdigital.com/services/website-builds#service",
           name: "Website Design and Conversion Repair",
-          url: "https://truepathdigital.com/services/website-builds",
+          url: "https://www.truepathdigital.com/services/website-builds",
         },
       },
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          "@id": "https://truepathdigital.com/services/lead-response#service",
+          "@id": "https://www.truepathdigital.com/services/lead-response#service",
           name: "Lead Response and Follow-Up Systems",
-          url: "https://truepathdigital.com/services/lead-response",
+          url: "https://www.truepathdigital.com/services/lead-response",
         },
       },
     ],
@@ -169,12 +169,13 @@ const localBusinessSchema = {
 const founderSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://truepathdigital.com/#trevor-riggs",
+  "@id": "https://www.truepathdigital.com/#trevor-riggs",
   name: "Trevor Riggs",
   jobTitle: "Founder",
-  url: "https://truepathdigital.com/#credibility",
+  url: "https://www.truepathdigital.com/#credibility",
+  image: "https://www.truepathdigital.com/images/trevor-riggs-author.webp",
   worksFor: {
-    "@id": "https://truepathdigital.com/#business",
+    "@id": "https://www.truepathdigital.com/#business",
   },
   knowsAbout: [
     "Local service business marketing",
@@ -188,12 +189,12 @@ const founderSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://truepathdigital.com/#website",
+  "@id": "https://www.truepathdigital.com/#website",
   name: "True Path Digital",
-  url: "https://truepathdigital.com",
+  url: "https://www.truepathdigital.com",
   description: "Practical marketing strategy, websites, local visibility, and lead response systems for owner-operated service businesses.",
   inLanguage: "en-US",
-  publisher: { "@id": "https://truepathdigital.com/#business" },
+  publisher: { "@id": "https://www.truepathdigital.com/#business" },
 };
 
 export default function RootLayout({

@@ -9,6 +9,71 @@ if (wordpressApiUrl.protocol !== "http:" && wordpressApiUrl.protocol !== "https:
 }
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "truepathdigital.com" }],
+        destination: "https://www.truepathdigital.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/blog",
+        destination: "/insights",
+        permanent: true,
+      },
+      {
+        source: "/blog/:slug*",
+        destination: "/insights/:slug*",
+        permanent: true,
+      },
+      {
+        source: "/solutions",
+        destination: "/#services",
+        permanent: true,
+      },
+      {
+        source: "/solutions/local-authority",
+        destination: "/services/google-profile",
+        permanent: true,
+      },
+      {
+        source: "/solutions/review-system",
+        destination: "/services/google-profile",
+        permanent: true,
+      },
+      {
+        source: "/solutions/local-services-ads",
+        destination: "/services/google-profile",
+        permanent: true,
+      },
+      {
+        source: "/solutions/website-conversion",
+        destination: "/services/website-builds",
+        permanent: true,
+      },
+      {
+        source: "/solutions/lead-velocity",
+        destination: "/services/lead-response",
+        permanent: true,
+      },
+      {
+        source: "/solutions/estimate-follow-up",
+        destination: "/services/lead-response",
+        permanent: true,
+      },
+      {
+        source: "/solutions/demand-audit",
+        destination: "/#audit",
+        permanent: true,
+      },
+      {
+        source: "/trust-calculator",
+        destination: "/#audit",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

@@ -10,6 +10,48 @@ import { ArrowLeft, Calendar, Zap } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
+const DEFAULT_META_DESCRIPTION =
+  "Read this field note from True Path Digital.";
+
+const searchTitleBySlug: Record<string, string> = {
+  "service-business-website":
+    "Service Business Websites: Make the Next Step Obvious",
+  "the-leak-every-home-service-business-should-measure":
+    "Missed Calls Are Lost Jobs for Home Service Businesses",
+  "google-profile-is-killing-your-local-visibility":
+    "Inactive Google Profiles Kill Local Visibility",
+  "home-service-booking":
+    "The “More Leads” Trap: Fix Your Booking Rate First",
+  "marketing-attention-is-the-scarce-resource-and-that-changes-everything":
+    "Marketing Attention Is the Scarce Resource",
+  "marketing-tactics-business-owners-can-safely-ignore-in-2026":
+    "5 Marketing Tactics to Stop Using in 2026",
+  "ai-search-visibility-why-local-businesses-are-disappearing":
+    "Why AI Search Ignores Local Businesses It Can’t Trust",
+  "the-digital-inversion-why-your-business-is-vanishing-from-ai-search":
+    "Why Your Business Is Vanishing From AI Search",
+};
+
+function createMetaDescription(excerpt?: string | null): string {
+  const plainText = excerpt
+    ? excerpt
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&nbsp;/gi, " ")
+        .replace(/&amp;/gi, "&")
+        .replace(/&#8217;|&rsquo;/gi, "’")
+        .replace(/&#8220;|&#8221;|&ldquo;|&rdquo;/gi, '"')
+        .replace(/Continue reading[\s\S]*/gi, "")
+        .replace(/\s+/g, " ")
+        .trim()
+    : DEFAULT_META_DESCRIPTION;
+
+  if (plainText.length <= 155) return plainText;
+
+  const shortened = plainText.slice(0, 152);
+  const lastSpace = shortened.lastIndexOf(" ");
+  return `${shortened.slice(0, lastSpace > 110 ? lastSpace : 152).trim()}…`;
+}
+
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({
@@ -31,16 +73,16 @@ export async function generateMetadata({
     };
   }
 
-  const cleanDescription = post.excerpt
-    ? post.excerpt.replace(/<[^>]+>/g, "").replace(/Continue reading.*/g, "").trim()
-    : "Read this field note from True Path Digital.";
+  const cleanDescription = createMetaDescription(post.excerpt);
 
   const imageUrl = post.featuredImage?.node?.sourceUrl;
 
   return {
-    title: post.title,
+    title: {
+      absolute: searchTitleBySlug[post.slug] || post.title,
+    },
     description: cleanDescription,
-    authors: [{ name: "Trevor Riggs", url: "https://truepathdigital.com/#credibility" }],
+    authors: [{ name: "Trevor Riggs", url: "https://www.truepathdigital.com/#credibility" }],
     alternates: {
       canonical: `/insights/${post.slug}`,
     },
@@ -48,7 +90,7 @@ export async function generateMetadata({
       title: post.title,
       description: cleanDescription,
       type: "article",
-      url: `https://truepathdigital.com/insights/${post.slug}`,
+      url: `https://www.truepathdigital.com/insights/${post.slug}`,
       publishedTime: post.date,
       modifiedTime: post.modified || post.date,
       authors: ["Trevor Riggs"],
@@ -118,9 +160,7 @@ export default async function SingleInsightPage({
     notFound();
   }
 
-  const cleanDescription = post.excerpt
-    ? post.excerpt.replace(/<[^>]+>/g, "").replace(/Continue reading.*/g, "").trim()
-    : "Read this field note from True Path Digital.";
+  const cleanDescription = createMetaDescription(post.excerpt);
 
   const imageUrl = post.featuredImage?.node?.sourceUrl;
 
@@ -138,26 +178,26 @@ export default async function SingleInsightPage({
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "@id": `https://truepathdigital.com/insights/${post.slug}#article`,
+    "@id": `https://www.truepathdigital.com/insights/${post.slug}#article`,
     headline: post.title,
     description: cleanDescription,
-    url: `https://truepathdigital.com/insights/${post.slug}`,
+    url: `https://www.truepathdigital.com/insights/${post.slug}`,
     inLanguage: "en-US",
     datePublished: post.date,
     dateModified: post.modified || post.date,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://truepathdigital.com/insights/${post.slug}`,
-      url: `https://truepathdigital.com/insights/${post.slug}`,
+      "@id": `https://www.truepathdigital.com/insights/${post.slug}`,
+      url: `https://www.truepathdigital.com/insights/${post.slug}`,
     },
     isPartOf: {
-      "@id": "https://truepathdigital.com/insights#blog",
+      "@id": "https://www.truepathdigital.com/insights#blog",
     },
     author: {
-      "@id": "https://truepathdigital.com/#trevor-riggs",
+      "@id": "https://www.truepathdigital.com/#trevor-riggs",
     },
     publisher: {
-      "@id": "https://truepathdigital.com/#business",
+      "@id": "https://www.truepathdigital.com/#business",
     },
     ...(imageUrl ? { image: [imageUrl] } : {}),
     ...(takeaways.length > 0 ? { abstract: takeaways.join(". ") + "." } : {}),
@@ -178,19 +218,19 @@ export default async function SingleInsightPage({
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://truepathdigital.com"
+        "item": "https://www.truepathdigital.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Insights",
-        "item": "https://truepathdigital.com/insights"
+        "item": "https://www.truepathdigital.com/insights"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://truepathdigital.com/insights/${post.slug}`
+        "item": `https://www.truepathdigital.com/insights/${post.slug}`
       }
     ]
   };
@@ -239,9 +279,21 @@ export default async function SingleInsightPage({
               <ArrowLeft className="w-4 h-4" /> Back to Insights
             </Link>
             
-            <div className="flex items-center gap-3 text-xs text-muted-text uppercase tracking-widest font-medium mb-6">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-muted-text uppercase tracking-widest font-medium mb-6">
               <Calendar className="w-4 h-4 text-primary" />
               <span>Published {formatDate(post.date)}</span>
+              <span aria-hidden="true" className="text-muted-border">/</span>
+              <span>
+                By{" "}
+                <Link
+                  href="/#credibility"
+                  rel="author"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  Trevor Riggs
+                </Link>
+                {" "}· Founder
+              </span>
             </div>
 
             <h1 className="font-serif font-medium text-[clamp(2.5rem,4.5vw,4rem)] leading-[1.1] tracking-tight text-foreground">
@@ -304,7 +356,13 @@ export default async function SingleInsightPage({
             <div 
               className="article-content text-foreground text-lg leading-relaxed space-y-6"
               data-ai-main-content="true"
-              dangerouslySetInnerHTML={{ __html: sanitizeWordPressHtml(post.content || "") }}
+              dangerouslySetInnerHTML={{
+                __html: sanitizeWordPressHtml(
+                  post.content || "",
+                  post.slug,
+                  post.title,
+                ),
+              }}
             />
 
             {/* FAQ Section */}
@@ -330,6 +388,39 @@ export default async function SingleInsightPage({
                 </div>
               </section>
             )}
+
+            {/* Author Bio */}
+            <section
+              aria-labelledby="author-bio-heading"
+              className="mt-20 border-y border-muted-border py-10"
+            >
+              <div className="flex items-start gap-6 md:gap-8">
+                <Image
+                  src="/images/trevor-riggs-author.webp"
+                  alt="Trevor Riggs, founder of True Path Digital"
+                  width={96}
+                  height={96}
+                  sizes="96px"
+                  className="h-20 w-20 md:h-24 md:w-24 shrink-0 rounded-full object-cover ring-1 ring-muted-border"
+                />
+                <div>
+                  <p className="mb-2 text-xs font-medium uppercase tracking-widest text-primary">
+                    About the author
+                  </p>
+                  <h2
+                    id="author-bio-heading"
+                    className="font-serif text-2xl font-medium text-foreground"
+                  >
+                    Trevor Riggs
+                  </h2>
+                  <p className="mt-2 text-base leading-relaxed text-muted-text">
+                    Trevor is the founder of True Path Digital. He helps
+                    owner-operated service businesses find the gaps between
+                    visibility, customer trust, lead response, and booked work.
+                  </p>
+                </div>
+              </div>
+            </section>
 
             {/* End of Article Conversion Box */}
             <div className="mt-20 border-2 border-primary/30 bg-surface-alt p-8 md:p-12 relative overflow-hidden">

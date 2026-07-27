@@ -11,18 +11,19 @@ This outlines the core brand identity, color palette, typography, and UI pattern
 
 ## 2. Color Palette
 
-The color system is built on a warm, organic "stone" foundation with a strong, earthy primary accent.
+The color system is built on a mineral-paper foundation with restrained industrial undertones. The palette draws from workshop materials—aged paper, oxidized metal, painted machinery, and burnished copper—without becoming rustic or literal.
 
 | Token | Hex Code | Usage / Tailwind Equivalent |
 | :--- | :--- | :--- |
-| **Background** | `#FAFAF9` | Primary page background. (Stone 50) |
-| **Foreground** | `#1C1917` | Primary text, main headings, dark contrast blocks. (Stone 900) |
-| **Primary** | `#A16207` | Call-to-action buttons, active states, emphasized text, eyebrow lines. (Yellow 700 / Ochre) |
-| **Surface Alt** | `#F5F5F4` | Secondary section backgrounds, footers. (Stone 100) |
-| **Muted Text** | `#57534E` | Body copy, secondary text, descriptions. (Stone 600) |
-| **Muted Border** | `#E8ECF0` | Structural dividers, subtle borders between sections. |
+| **Background** | `#F1F0E8` | Primary mineral-paper page background. |
+| **Foreground** | `#20251F` | Olive-charcoal text, headings, and dark contrast blocks. |
+| **Primary** | `#955A32` | Burnished-copper actions, active states, emphasized text, and eyebrow lines. |
+| **Surface Alt** | `#E5E4DB` | Warm putty secondary sections and footers. |
+| **Surface** | `#E2E6DF` | Quiet industrial-sage feature sections. |
+| **Muted Text** | `#5C615A` | Body copy, secondary text, and descriptions. |
+| **Muted Border** | `#D0D1C7` | Structural dividers and subtle borders between sections. |
 
-> **Tip:** When creating assets, rely heavily on the high contrast between **Background** and **Foreground** for readability, using the **Primary** color sparingly to draw the eye to critical actions or key phrases.
+> **Tip:** When creating assets, rely heavily on the high contrast between **Background** and **Foreground** for readability. Use **Primary** sparingly, and reserve **Surface** for occasional moments of rhythm rather than every alternating section.
 
 ---
 

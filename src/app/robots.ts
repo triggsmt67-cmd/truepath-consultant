@@ -30,7 +30,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/api/",
       },
     ],
-    sitemap: "https://truepathdigital.com/sitemap.xml",
-    host: "https://truepathdigital.com",
+    sitemap: "https://www.truepathdigital.com/sitemap.xml",
+    host: "https://www.truepathdigital.com",
   };
 }

@@ -2,7 +2,7 @@
 
 A high-performance marketing consultancy website for **True Path Digital**, built with Next.js (App Router) and a headless WordPress CMS backend. Designed for owner-operated service businesses — HVAC, plumbing, electrical — with an emphasis on AI search visibility and conversion.
 
-**Live:** [truepathdigital.com](https://truepathdigital.com)
+**Live:** [truepathdigital.com](https://www.truepathdigital.com)
 
 ---
 

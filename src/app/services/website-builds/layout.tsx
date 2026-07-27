@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Website Design and Conversion Repair",
     description: "I build and repair websites for local service businesses that turn more visitors into calls, estimates, and booked work.",
-    url: "https://truepathdigital.com/services/website-builds",
+    url: "https://www.truepathdigital.com/services/website-builds",
     type: "website",
     images: [{ url: "/images/website-builds.webp", width: 1200, height: 630, alt: "Custom website design for local service businesses" }],
   },

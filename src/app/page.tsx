@@ -18,36 +18,36 @@ import { ArrowRight, CheckCircle2, TrendingUp, Search, MessageSquare } from "luc
 const homePageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "@id": "https://truepathdigital.com/#webpage",
-  url: "https://truepathdigital.com",
+  "@id": "https://www.truepathdigital.com/#webpage",
+  url: "https://www.truepathdigital.com",
   name: "True Path Digital | Clearer marketing. Better websites.",
   description: "True Path Digital helps owner-operated service businesses find the gaps between visibility, customer trust, lead response, and booked work.",
   inLanguage: "en-US",
   isPartOf: {
-    "@id": "https://truepathdigital.com/#website",
+    "@id": "https://www.truepathdigital.com/#website",
   },
   about: {
-    "@id": "https://truepathdigital.com/#business",
+    "@id": "https://www.truepathdigital.com/#business",
   },
   primaryImageOfPage: {
     "@type": "ImageObject",
-    url: "https://truepathdigital.com/images/hero-carpenter.jpg",
+    url: "https://www.truepathdigital.com/images/hero-carpenter.jpg",
   },
   mainEntity: {
-    "@id": "https://truepathdigital.com/#under-the-hood-audit",
+    "@id": "https://www.truepathdigital.com/#under-the-hood-audit",
   },
 };
 
 const auditServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://truepathdigital.com/#under-the-hood-audit",
+  "@id": "https://www.truepathdigital.com/#under-the-hood-audit",
   name: "Under the Hood Audit",
-  url: "https://truepathdigital.com/#audit",
+  url: "https://www.truepathdigital.com/#audit",
   serviceType: "Marketing and lead-flow diagnostic",
   description: "An independent review of a service business's website, Google Business Profile, local visibility, online reputation, and lead response process, followed by a findings memo, review call, and prioritized 90-day action plan.",
   provider: {
-    "@id": "https://truepathdigital.com/#business",
+    "@id": "https://www.truepathdigital.com/#business",
   },
   audience: {
     "@type": "Audience",
@@ -55,7 +55,7 @@ const auditServiceSchema = {
   },
   offers: {
     "@type": "Offer",
-    url: "https://truepathdigital.com/#contact",
+    url: "https://www.truepathdigital.com/#contact",
     price: "750",
     priceCurrency: "USD",
   },
@@ -347,7 +347,7 @@ export default function Home() {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="group flex flex-col gap-4 border-b border-muted-border py-10 first:pt-0 transition-all duration-500 hover:bg-white -mx-6 px-6 md:-mx-12 md:px-12 lg:mx-0 lg:px-6 lg:rounded-2xl cursor-default"
+                    className="group flex flex-col gap-4 border-b border-muted-border py-10 first:pt-0 transition-all duration-500 hover:bg-background -mx-6 px-6 md:-mx-12 md:px-12 lg:mx-0 lg:px-6 lg:rounded-2xl cursor-default"
                   >
                     <div className="flex items-start gap-8">
                       <span className="text-sm font-medium text-primary pt-1 opacity-50 transition-opacity group-hover:opacity-100">0{i + 1}</span>

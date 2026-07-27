@@ -140,13 +140,13 @@ const faqSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://truepathdigital.com/services/lead-response#service",
+  "@id": "https://www.truepathdigital.com/services/lead-response#service",
   name: "Lead Response and Follow-Up Systems",
-  url: "https://truepathdigital.com/services/lead-response",
+  url: "https://www.truepathdigital.com/services/lead-response",
   provider: {
-    "@id": "https://truepathdigital.com/#business",
+    "@id": "https://www.truepathdigital.com/#business",
   },
-  image: "https://truepathdigital.com/images/lead-response.webp",
+  image: "https://www.truepathdigital.com/images/lead-response.webp",
   serviceType: "CRM and automation",
   category: "Lead response and follow-up consulting",
   description: "Lead response and follow-up systems for local service businesses to stop losing good leads to missed calls and slow follow-up.",

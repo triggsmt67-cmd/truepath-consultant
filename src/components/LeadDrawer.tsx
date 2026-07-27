@@ -10,19 +10,13 @@ import { useFocusTrap } from "@/hooks/useFocusTrap";
 export default function LeadDrawer() {
   const { isOpen, closeDrawer } = useLeadDrawer();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [honeypot, setHoneypot] = useState("");
-  const openedAt = useRef<number>(0);
   const dialogRef = useRef<HTMLDivElement>(null);
   const handleClose = useCallback(() => closeDrawer(), [closeDrawer]);
 
   useFocusTrap(dialogRef, isOpen, handleClose);
-
-  // Reset form state and record open time when drawer opens
-  useEffect(() => {
-    if (isOpen) {
-      openedAt.current = Date.now();
-    }
-  }, [isOpen]);
 
   // Lock body scroll when drawer is open
   useEffect(() => {
@@ -36,23 +30,48 @@ export default function LeadDrawer() {
     };
   }, [isOpen]);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitError("");
 
-    // Anti-spam: honeypot field should be empty
-    if (honeypot) return;
+    const formData = new FormData(e.currentTarget);
 
-    // Anti-spam: reject submissions faster than 2 seconds
-    if (Date.now() - openedAt.current < 2000) return;
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...Object.fromEntries(formData),
+          source: "drawer",
+        }),
+      });
+      const result = (await response.json().catch(() => null)) as
+        | { error?: string }
+        | null;
 
-    // In a real app, this would send data to an API
-    setIsSubmitted(true);
+      if (!response.ok) {
+        throw new Error(result?.error || "Your request could not be sent.");
+      }
+
+      setIsSubmitted(true);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "Your request could not be sent. Please try again.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <AnimatePresence
       onExitComplete={() => {
         setIsSubmitted(false);
+        setIsSubmitting(false);
+        setSubmitError("");
         setHoneypot("");
       }}
     >
@@ -164,11 +183,12 @@ export default function LeadDrawer() {
                       </div>
 
                       <div className="flex flex-col gap-3">
-                        <label htmlFor="drawer-email" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Email Address</label>
+                        <label htmlFor="drawer-email" className="text-xs font-medium text-foreground/70 uppercase tracking-widest">Email Address *</label>
                         <input
                           id="drawer-email"
                           name="email"
                           type="email"
+                          required
                           autoComplete="email"
                           className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors"
                           placeholder="john@example.com"
@@ -184,7 +204,7 @@ export default function LeadDrawer() {
                           required
                           autoComplete="url"
                           className="w-full bg-transparent border-b border-foreground/20 py-2 text-foreground placeholder:text-foreground/30 focus:outline-none focus:border-primary transition-colors"
-                          placeholder="yourwebsite.com"
+                          placeholder="https://yourwebsite.com"
                         />
                       </div>
                       <div className="flex flex-col gap-3">
@@ -198,9 +218,21 @@ export default function LeadDrawer() {
                         ></textarea>
                       </div>
                       <div className="mt-2">
-                        <Button type="submit" variant="primary" className="w-full justify-center">
-                          Send Request
+                        <Button
+                          type="submit"
+                          variant="primary"
+                          className="w-full justify-center"
+                          disabled={isSubmitting}
+                        >
+                          {isSubmitting ? "Sending..." : "Send Request"}
                         </Button>
+                        <p
+                          className="mt-3 min-h-5 text-center text-sm text-red-700"
+                          role={submitError ? "alert" : undefined}
+                          aria-live="polite"
+                        >
+                          {submitError}
+                        </p>
                       </div>
                     </form>
                   </motion.div>

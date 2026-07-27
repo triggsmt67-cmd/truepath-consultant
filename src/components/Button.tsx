@@ -8,7 +8,8 @@ export default function Button({
   variant = 'primary',
   size = 'lg',
   className = '',
-  type = 'button'
+  type = 'button',
+  disabled = false,
 }: { 
   href?: string; 
   onClick?: () => void;
@@ -17,6 +18,7 @@ export default function Button({
   size?: 'sm' | 'lg';
   className?: string;
   type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }) {
   const sizeClasses = size === 'sm' ? "h-10 px-6 text-xs" : "h-14 px-10 text-sm";
   const baseStyles = `group relative inline-flex w-fit items-center justify-center overflow-hidden font-medium uppercase tracking-widest transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] ${sizeClasses} ${className}`;
@@ -33,7 +35,7 @@ export default function Button({
       <span className="absolute inset-0 translate-y-[101%] bg-primary transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-y-0"></span>
       
       {/* Content Container */}
-      <span className="relative flex items-center justify-center gap-3 transition-colors duration-700 group-hover:text-white">
+      <span className="relative flex items-center justify-center gap-3 transition-colors duration-700 group-hover:text-background">
         <span className="transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-x-1">
           {children}
         </span>
@@ -51,7 +53,12 @@ export default function Button({
   }
 
   return (
-    <button type={type} onClick={onClick} className={`${baseStyles} ${variants[variant]}`}>
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`${baseStyles} ${variants[variant]} disabled:cursor-not-allowed disabled:opacity-60`}
+    >
       {innerContent}
     </button>
   );

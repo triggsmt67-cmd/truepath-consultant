@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Google Business Profile Optimization",
-  description: "I help owner-operated service businesses clean up, strengthen, and better manage their Google Business Profiles so they show up better on Google Maps and turn more local searches into calls.",
+  description: "I strengthen Google Business Profiles for owner-operated service businesses so they appear more clearly on Maps and turn local searches into calls.",
   alternates: {
     canonical: "/services/google-profile",
   },
   openGraph: {
     title: "Google Business Profile Optimization",
     description: "I help owner-operated service businesses clean up, strengthen, and better manage their Google Business Profiles so they show up better on Google Maps.",
-    url: "https://truepathdigital.com/services/google-profile",
+    url: "https://www.truepathdigital.com/services/google-profile",
     type: "website",
     images: [{ url: "/images/google-profile.webp", width: 1200, height: 630, alt: "Google Business Profile optimization for local service businesses" }],
   },
