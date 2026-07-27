@@ -116,13 +116,13 @@ const faqSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://www.truepathdigital.com/services/google-profile#service",
+  "@id": "https://truepath406.com/services/google-profile#service",
   name: "Google Business Profile Optimization",
-  url: "https://www.truepathdigital.com/services/google-profile",
+  url: "https://truepath406.com/services/google-profile",
   provider: {
-    "@id": "https://www.truepathdigital.com/#business",
+    "@id": "https://truepath406.com/#business",
   },
-  image: "https://www.truepathdigital.com/images/google-profile.webp",
+  image: "https://truepath406.com/images/google-profile.webp",
   serviceType: "Local Search Optimization",
   category: "Google Business Profile consulting",
   description: "Google Business Profile optimization, category audit, review systems, spam removal, and local search visibility for owner-operated service businesses.",

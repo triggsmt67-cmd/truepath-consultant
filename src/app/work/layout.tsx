@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "My Work | True Path Digital",
     description: "Real case studies showing how I help service businesses fix demand leaks and drive revenue.",
-    url: "https://www.truepathdigital.com/work",
+    url: "https://truepath406.com/work",
     type: "website",
     images: [{ url: "/images/decision-partner-final.jpg", width: 1200, height: 630, alt: "True Path Digital case studies and results" }],
   },

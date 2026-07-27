@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Google Business Profile Optimization",
     description: "I help owner-operated service businesses clean up, strengthen, and better manage their Google Business Profiles so they show up better on Google Maps.",
-    url: "https://www.truepathdigital.com/services/google-profile",
+    url: "https://truepath406.com/services/google-profile",
     type: "website",
     images: [{ url: "/images/google-profile.webp", width: 1200, height: 630, alt: "Google Business Profile optimization for local service businesses" }],
   },

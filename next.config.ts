@@ -14,7 +14,19 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         has: [{ type: "host", value: "truepathdigital.com" }],
-        destination: "https://www.truepathdigital.com/:path*",
+        destination: "https://truepath406.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.truepathdigital.com" }],
+        destination: "https://truepath406.com/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.truepath406.com" }],
+        destination: "https://truepath406.com/:path*",
         permanent: true,
       },
       {

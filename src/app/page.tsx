@@ -18,36 +18,36 @@ import { ArrowRight, CheckCircle2, TrendingUp, Search, MessageSquare } from "luc
 const homePageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "@id": "https://www.truepathdigital.com/#webpage",
-  url: "https://www.truepathdigital.com",
+  "@id": "https://truepath406.com/#webpage",
+  url: "https://truepath406.com",
   name: "True Path Digital | Clearer marketing. Better websites.",
   description: "True Path Digital helps owner-operated service businesses find the gaps between visibility, customer trust, lead response, and booked work.",
   inLanguage: "en-US",
   isPartOf: {
-    "@id": "https://www.truepathdigital.com/#website",
+    "@id": "https://truepath406.com/#website",
   },
   about: {
-    "@id": "https://www.truepathdigital.com/#business",
+    "@id": "https://truepath406.com/#business",
   },
   primaryImageOfPage: {
     "@type": "ImageObject",
-    url: "https://www.truepathdigital.com/images/hero-carpenter.jpg",
+    url: "https://truepath406.com/images/hero-carpenter.jpg",
   },
   mainEntity: {
-    "@id": "https://www.truepathdigital.com/#under-the-hood-audit",
+    "@id": "https://truepath406.com/#under-the-hood-audit",
   },
 };
 
 const auditServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://www.truepathdigital.com/#under-the-hood-audit",
+  "@id": "https://truepath406.com/#under-the-hood-audit",
   name: "Under the Hood Audit",
-  url: "https://www.truepathdigital.com/#audit",
+  url: "https://truepath406.com/#audit",
   serviceType: "Marketing and lead-flow diagnostic",
   description: "An independent review of a service business's website, Google Business Profile, local visibility, online reputation, and lead response process, followed by a findings memo, review call, and prioritized 90-day action plan.",
   provider: {
-    "@id": "https://www.truepathdigital.com/#business",
+    "@id": "https://truepath406.com/#business",
   },
   audience: {
     "@type": "Audience",
@@ -55,7 +55,7 @@ const auditServiceSchema = {
   },
   offers: {
     "@type": "Offer",
-    url: "https://www.truepathdigital.com/#contact",
+    url: "https://truepath406.com/#contact",
     price: "750",
     priceCurrency: "USD",
   },

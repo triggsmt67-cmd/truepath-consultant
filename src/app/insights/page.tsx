@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Insights & Field Notes",
     description: "Practical marketing insights and conversion advice for trade contractors and owner-operators.",
-    url: "https://www.truepathdigital.com/insights",
+    url: "https://truepath406.com/insights",
     type: "website",
     images: [{ url: "/images/decision-partner-final.jpg", width: 1200, height: 630, alt: "True Path Digital marketing insights for service businesses" }],
   },
@@ -57,26 +57,26 @@ export default async function InsightsPage() {
   const blogCollectionSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "@id": "https://www.truepathdigital.com/insights#blog",
+    "@id": "https://truepath406.com/insights#blog",
     name: "True Path Digital Insights & Field Notes",
     description: "Practical marketing insights, profit leak diagnostics, and conversion advice written specifically for trade contractors.",
-    url: "https://www.truepathdigital.com/insights",
+    url: "https://truepath406.com/insights",
     inLanguage: "en-US",
     isPartOf: {
-      "@id": "https://www.truepathdigital.com/#website",
+      "@id": "https://truepath406.com/#website",
     },
     publisher: {
-      "@id": "https://www.truepathdigital.com/#business",
+      "@id": "https://truepath406.com/#business",
     },
     blogPost: posts.slice(0, 20).map((post) => ({
       "@type": "BlogPosting",
-      "@id": `https://www.truepathdigital.com/insights/${post.slug}#article`,
+      "@id": `https://truepath406.com/insights/${post.slug}#article`,
       headline: post.title,
-      url: `https://www.truepathdigital.com/insights/${post.slug}`,
+      url: `https://truepath406.com/insights/${post.slug}`,
       datePublished: post.date,
       dateModified: post.modified || post.date,
       author: {
-        "@id": "https://www.truepathdigital.com/#trevor-riggs",
+        "@id": "https://truepath406.com/#trevor-riggs",
       },
     })),
   };

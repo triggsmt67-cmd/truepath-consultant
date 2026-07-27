@@ -2,7 +2,7 @@
 
 A high-performance marketing consultancy website for **True Path Digital**, built with Next.js (App Router) and a headless WordPress CMS backend. Designed for owner-operated service businesses — HVAC, plumbing, electrical — with an emphasis on AI search visibility and conversion.
 
-**Live:** [truepathdigital.com](https://www.truepathdigital.com)
+**Live:** [truepath406.com](https://truepath406.com)
 
 ---
 
@@ -69,7 +69,8 @@ All three are conditionally rendered — posts without ACF data show no empty se
 
 The `cleanHtmlContent` utility performs render-time transformations:
 - Strips WordPress "more-link" artifacts
-- Rewrites legacy `truepath406.com` domain links to `truepathdigital.com`
+- Normalizes legacy `truepath406.com` and `truepathdigital.com` links to the
+  canonical `https://truepath406.com` host
 - Remaps `/blog/` paths to `/insights/` for URL consistency
 
 ## AI Search Optimization

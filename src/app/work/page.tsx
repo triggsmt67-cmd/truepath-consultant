@@ -49,16 +49,16 @@ const CASE_STUDIES = [
 const workCollectionSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "@id": "https://www.truepathdigital.com/work#webpage",
-  url: "https://www.truepathdigital.com/work",
+  "@id": "https://truepath406.com/work#webpage",
+  url: "https://truepath406.com/work",
   name: "True Path Digital Case Studies",
   description: "Case studies showing how True Path Digital finds and repairs marketing, website, local visibility, and lead-flow problems.",
   inLanguage: "en-US",
   isPartOf: {
-    "@id": "https://www.truepathdigital.com/#website",
+    "@id": "https://truepath406.com/#website",
   },
   about: {
-    "@id": "https://www.truepathdigital.com/#business",
+    "@id": "https://truepath406.com/#business",
   },
   mainEntity: {
     "@type": "ItemList",
@@ -66,17 +66,17 @@ const workCollectionSchema = {
     itemListElement: CASE_STUDIES.map((study, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      url: `https://www.truepathdigital.com/work#${study.slug}`,
+      url: `https://truepath406.com/work#${study.slug}`,
       name: study.client,
       item: {
         "@type": "CreativeWork",
-        "@id": `https://www.truepathdigital.com/work#${study.slug}-case-study`,
+        "@id": `https://truepath406.com/work#${study.slug}-case-study`,
         name: `${study.client} case study`,
-        url: `https://www.truepathdigital.com/work#${study.slug}`,
+        url: `https://truepath406.com/work#${study.slug}`,
         description: study.result,
-        image: `https://www.truepathdigital.com${study.image}`,
+        image: `https://truepath406.com${study.image}`,
         creator: {
-          "@id": "https://www.truepathdigital.com/#business",
+          "@id": "https://truepath406.com/#business",
         },
       },
     })),

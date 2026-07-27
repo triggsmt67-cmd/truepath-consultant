@@ -82,7 +82,7 @@ export async function generateMetadata({
       absolute: searchTitleBySlug[post.slug] || post.title,
     },
     description: cleanDescription,
-    authors: [{ name: "Trevor Riggs", url: "https://www.truepathdigital.com/#credibility" }],
+    authors: [{ name: "Trevor Riggs", url: "https://truepath406.com/#credibility" }],
     alternates: {
       canonical: `/insights/${post.slug}`,
     },
@@ -90,7 +90,7 @@ export async function generateMetadata({
       title: post.title,
       description: cleanDescription,
       type: "article",
-      url: `https://www.truepathdigital.com/insights/${post.slug}`,
+      url: `https://truepath406.com/insights/${post.slug}`,
       publishedTime: post.date,
       modifiedTime: post.modified || post.date,
       authors: ["Trevor Riggs"],
@@ -178,26 +178,26 @@ export default async function SingleInsightPage({
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "@id": `https://www.truepathdigital.com/insights/${post.slug}#article`,
+    "@id": `https://truepath406.com/insights/${post.slug}#article`,
     headline: post.title,
     description: cleanDescription,
-    url: `https://www.truepathdigital.com/insights/${post.slug}`,
+    url: `https://truepath406.com/insights/${post.slug}`,
     inLanguage: "en-US",
     datePublished: post.date,
     dateModified: post.modified || post.date,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.truepathdigital.com/insights/${post.slug}`,
-      url: `https://www.truepathdigital.com/insights/${post.slug}`,
+      "@id": `https://truepath406.com/insights/${post.slug}`,
+      url: `https://truepath406.com/insights/${post.slug}`,
     },
     isPartOf: {
-      "@id": "https://www.truepathdigital.com/insights#blog",
+      "@id": "https://truepath406.com/insights#blog",
     },
     author: {
-      "@id": "https://www.truepathdigital.com/#trevor-riggs",
+      "@id": "https://truepath406.com/#trevor-riggs",
     },
     publisher: {
-      "@id": "https://www.truepathdigital.com/#business",
+      "@id": "https://truepath406.com/#business",
     },
     ...(imageUrl ? { image: [imageUrl] } : {}),
     ...(takeaways.length > 0 ? { abstract: takeaways.join(". ") + "." } : {}),
@@ -218,19 +218,19 @@ export default async function SingleInsightPage({
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.truepathdigital.com"
+        "item": "https://truepath406.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Insights",
-        "item": "https://www.truepathdigital.com/insights"
+        "item": "https://truepath406.com/insights"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://www.truepathdigital.com/insights/${post.slug}`
+        "item": `https://truepath406.com/insights/${post.slug}`
       }
     ]
   };

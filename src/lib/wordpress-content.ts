@@ -355,12 +355,12 @@ export function sanitizeWordPressHtml(
     slug,
   )
     .replace(
-      /https?:\/\/(www\.)?truepath406\.com\/blog\//gi,
-      "https://www.truepathdigital.com/insights/",
+      /https?:\/\/(www\.)?(?:truepath406|truepathdigital)\.com\/blog\//gi,
+      "https://truepath406.com/insights/",
     )
     .replace(
-      /https?:\/\/(www\.)?truepath406\.com\//gi,
-      "https://www.truepathdigital.com/",
+      /https?:\/\/(www\.)?(?:truepath406|truepathdigital)\.com\//gi,
+      "https://truepath406.com/",
     );
 
   return sanitizeHtml(normalizedHtml, {

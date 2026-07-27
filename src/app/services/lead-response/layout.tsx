@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Lead Response and Follow-Up Systems",
     description: "I help local service businesses build simple lead response and follow-up systems so inquiries are acknowledged, tracked, and followed up.",
-    url: "https://www.truepathdigital.com/services/lead-response",
+    url: "https://truepath406.com/services/lead-response",
     type: "website",
     images: [{ url: "/images/lead-response.webp", width: 1200, height: 630, alt: "Lead response and follow-up systems for service businesses" }],
   },

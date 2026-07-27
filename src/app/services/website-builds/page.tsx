@@ -124,13 +124,13 @@ const faqSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://www.truepathdigital.com/services/website-builds#service",
+  "@id": "https://truepath406.com/services/website-builds#service",
   name: "Website Design and Conversion Repair",
-  url: "https://www.truepathdigital.com/services/website-builds",
+  url: "https://truepath406.com/services/website-builds",
   provider: {
-    "@id": "https://www.truepathdigital.com/#business",
+    "@id": "https://truepath406.com/#business",
   },
-  image: "https://www.truepathdigital.com/images/website-builds.webp",
+  image: "https://truepath406.com/images/website-builds.webp",
   serviceType: "Web Development",
   category: "Website strategy, design, and conversion repair",
   description: "Website design and conversion repair for owner-operated local service businesses that turns more visitors into calls, estimates, and booked work.",
