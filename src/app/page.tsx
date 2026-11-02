@@ -31,7 +31,7 @@ const homePageSchema = {
   },
   primaryImageOfPage: {
     "@type": "ImageObject",
-    url: "https://truepath406.com/images/hero-carpenter.jpg",
+    url: "https://truepath406.com/images/hero-auto-repair.jpg",
   },
   mainEntity: {
     "@id": "https://truepath406.com/#under-the-hood-audit",
@@ -138,9 +138,9 @@ export default function Home() {
               className="w-full lg:h-[80vh] h-[50vh]"
             >
               <ScrollImage
-                src="/images/hero-carpenter.jpg"
-                alt="A focused tradesman marking measurements in his workshop"
-                title="Local service business owner — True Path Digital helps tradespeople fix marketing leaks"
+                src="/images/hero-auto-repair.jpg"
+                alt="Two auto repair technicians working under the hood of a car"
+                title="Auto repair technicians working together in a service workshop"
                 containerClassName="w-full h-full"
                 priority
               />

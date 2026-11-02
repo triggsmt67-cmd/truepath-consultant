@@ -11,7 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 1,
       images: [
-        `${baseUrl}/images/hero-carpenter.jpg`,
+        `${baseUrl}/images/hero-auto-repair.jpg`,
         `${baseUrl}/images/decision-partner-final.jpg`,
         `${baseUrl}/images/demand-leak-audit-final.jpg`,
       ],
@@ -42,6 +42,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         `${baseUrl}/images/benchmark-automotive.webp`,
         `${baseUrl}/images/united-formulas.webp`,
         `${baseUrl}/images/accurate-auto-repair.webp`,
+        `${baseUrl}/images/great-falls-heating-air.webp`,
       ],
     },
     {

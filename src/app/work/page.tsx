@@ -10,6 +10,18 @@ import { ArrowRight } from "lucide-react";
 const CASE_STUDIES = [
   {
     id: "01",
+    slug: "great-falls-heating-air",
+    client: "Great Falls Heating and Air",
+    industry: "Residential Heating & Cooling",
+    url: "https://www.greatfallsheatingandair.com/",
+    symptom: "Great Falls Heating and Air needed a website that helped homeowners understand their options and take the next step, whether they needed an urgent furnace repair or were planning a new heating and cooling system.",
+    diagnosis: "Those customers need different information. Someone without heat needs a clear way to call. Someone comparing equipment needs answers about repair, replacement, cold-weather performance, and rebates before requesting an estimate.",
+    cure: "We built a website organized around heating, cooling, and heat pumps, with detailed service guides, practical FAQs, and a source-backed Montana rebate guide. We introduced the owner and his experience, made phone and service-request options easy to find, connected request forms to email, and set up tracking for successful submissions.",
+    result: "A live, mobile-friendly website that explains the services, answers homeowner questions, and gives customers a clear path to call or request work.",
+    image: "/images/great-falls-heating-air.webp"
+  },
+  {
+    id: "02",
     slug: "benchmark-automotive-service",
     client: "Benchmark Automotive Service",
     industry: "Automotive Repair",
@@ -21,7 +33,7 @@ const CASE_STUDIES = [
     image: "/images/benchmark-automotive.webp"
   },
   {
-    id: "02",
+    id: "03",
     slug: "united-formulas",
     client: "United Formulas",
     industry: "Chemical Manufacturing",
@@ -33,7 +45,7 @@ const CASE_STUDIES = [
     image: "/images/united-formulas.webp"
   },
   {
-    id: "03",
+    id: "04",
     slug: "accurate-auto-repair",
     client: "Accurate Auto Repair",
     industry: "Auto Repair",
