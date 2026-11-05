@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Button from "@/components/Button";
 import DrawerButton from "@/components/DrawerButton";
 import Link from "next/link";
 import Image from "next/image";
@@ -427,7 +428,7 @@ export default async function SingleInsightPage({
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -mr-16 -mt-16 pointer-events-none" />
               
               <div className="text-xs font-medium uppercase tracking-widest text-primary mb-3">
-                Diagnostic Next Step
+                Get Help With Your Marketing
               </div>
               
               <h3 className="font-serif text-2xl md:text-3xl font-medium text-foreground mb-4 leading-tight">
@@ -435,12 +436,13 @@ export default async function SingleInsightPage({
               </h3>
               
               <p className="text-muted-text text-base leading-relaxed mb-8 max-w-xl">
-                Stop guessing where your marketing is breaking down. Schedule a 15-minute diagnostic call or order a $750 Under the Hood Audit for your business.
+                Request a short call to talk through what’s happening in your business, or see what’s included in the Under the Hood Audit.
               </p>
               
-              <DrawerButton variant="primary">
-                Find My Leaks
-              </DrawerButton>
+              <div className="flex flex-wrap gap-4">
+                <DrawerButton variant="primary">Request a 15-Minute Call</DrawerButton>
+                <Button href="/#audit" variant="secondary">See What the $750 Audit Covers</Button>
+              </div>
             </div>
 
           </div>

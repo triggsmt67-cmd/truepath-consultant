@@ -11,13 +11,15 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { href: "/work", label: "My Work" },
-  { href: "/#services", label: "Capabilities" },
+  { href: "/#services", label: "Services" },
   { href: "/services/google-profile", label: "Google Profile" },
   { href: "/services/website-builds", label: "Website Builds" },
   { href: "/services/lead-response", label: "Lead Response" },
-  { href: "/#audit", label: "Under the Hood Audit" },
-  { href: "/insights", label: "Insights" },
+  { href: "/#audit", label: "Marketing Audit" },
+  { href: "/insights", label: "Articles" },
 ];
+
+const callToActionLabel = "Request a 15-Minute Call";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -62,32 +64,32 @@ export default function Header() {
           </Link>
           
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-8">
             <Link href="/work" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
               My Work
             </Link>
             <Link href="/#services" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
-              Capabilities
+              Services
             </Link>
             <Link href="/#audit" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
-              Under the Hood Audit
+              Marketing Audit
             </Link>
             <Link href="/insights" className="text-[15px] font-medium tracking-wide hover:text-primary transition-colors">
-              Insights
+              Articles
             </Link>
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Button href="/#contact" variant="primary" size="sm">
-              Find My Leaks
+              {callToActionLabel}
             </Button>
           </div>
 
           {/* Mobile Hamburger */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 -mr-2 text-foreground hover:text-primary transition-colors"
+            className="lg:hidden p-2 -mr-2 text-foreground hover:text-primary transition-colors"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-navigation"
@@ -148,7 +150,7 @@ export default function Header() {
                     openDrawer();
                   }}
                 >
-                  Find My Leaks
+                  {callToActionLabel}
                 </Button>
               </motion.div>
             </motion.nav>

@@ -162,13 +162,13 @@ export default async function InsightsPage() {
         <section className="border-t border-muted-border bg-foreground text-background py-24 px-6 md:px-12 text-center">
           <div className="mx-auto w-full max-w-3xl flex flex-col items-center">
             <h2 className="font-serif font-medium text-[clamp(2.5rem,4.5vw,4rem)] leading-tight mb-6">
-              Ready to fix the leaks in your business?
+              Where are you losing jobs?
             </h2>
             <p className="text-background/80 text-lg leading-relaxed mb-10 max-w-xl">
-              Stop guessing where you are losing jobs. Schedule a brief 15-minute diagnostic call or request an Under the Hood Audit.
+              Request a 15-minute call to talk through where customers might be dropping off and what to look at first.
             </p>
             <Button href="/#contact" variant="light">
-              Find My Leaks
+              Request a 15-Minute Call
             </Button>
           </div>
         </section>

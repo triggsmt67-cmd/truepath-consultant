@@ -102,7 +102,7 @@ export default function LeadDrawer() {
           >
             {/* Header */}
             <div className="flex items-center justify-between p-6 border-b border-muted-border">
-              <h2 id="lead-drawer-title" className="font-serif text-2xl font-medium">Request a Review</h2>
+              <h2 id="lead-drawer-title" className="font-serif text-2xl font-medium">Request a 15-Minute Call</h2>
               <button
                 onClick={closeDrawer}
                 aria-label="Close request form"
@@ -124,9 +124,8 @@ export default function LeadDrawer() {
                     transition={{ duration: 0.3 }}
                   >
                     <div className="mb-10">
-                      <h3 className="font-serif text-3xl font-medium mb-4">Plug the leaks.</h3>
                       <p id="lead-drawer-description" className="text-muted-text leading-relaxed">
-                        Give me a little context on your business and where you feel you are losing jobs. I&apos;ll review your setup and let you know if I can help.
+                        Tell me a little about your business and what you’d like to review. I’ll email you to set up a time.
                       </p>
                     </div>
 
@@ -224,7 +223,7 @@ export default function LeadDrawer() {
                           className="w-full justify-center"
                           disabled={isSubmitting}
                         >
-                          {isSubmitting ? "Sending..." : "Send Request"}
+                          {isSubmitting ? "Sending..." : "Send Call Request"}
                         </Button>
                         <p
                           className="mt-3 min-h-5 text-center text-sm text-red-700"
@@ -250,7 +249,7 @@ export default function LeadDrawer() {
                     </div>
                     <h3 className="font-serif text-3xl font-medium mb-4">Request Sent</h3>
                     <p className="text-muted-text text-lg leading-relaxed mb-10">
-                      Thank you. I have received your information and will be in touch shortly to schedule a review.
+                      Thanks. I’ll email you to set up a time.
                     </p>
                     <Button variant="secondary" onClick={closeDrawer} className="w-full justify-center">
                       Close

@@ -276,7 +276,7 @@ export default function GoogleProfilePage() {
                 </p>
 
                 <Button onClick={() => openDrawer()} variant="primary">
-                  Get Your Google Profile Reviewed
+                  Request a Google Business Profile Review
                 </Button>
               </motion.div>
             </motion.div>
@@ -709,7 +709,7 @@ export default function GoogleProfilePage() {
               You may not need a large SEO campaign. You may need the categories corrected, the services organized, the review process fixed, or the profile and website brought into alignment. Schedule a brief 15-minute Lead Review. I will look at your current profile, identify the most important issues, and explain what I would fix first.
             </p>
             <Button onClick={() => openDrawer()} variant="light">
-              Get Your Google Profile Reviewed
+              Request a Google Business Profile Review
             </Button>
           </div>
         </section>

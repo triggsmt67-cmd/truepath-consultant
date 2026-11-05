@@ -37,7 +37,7 @@ export default function HomeContactForm() {
       formRef.current?.reset();
       setHoneypot("");
       setStatus("success");
-      setMessage("Thanks — your request was sent. I’ll be in touch shortly.");
+      setMessage("Thanks. I’ll email you to set up a time.");
     } catch (error) {
       setStatus("error");
       setMessage(
@@ -147,7 +147,7 @@ export default function HomeContactForm() {
           className="w-full justify-center"
           disabled={status === "sending"}
         >
-          {status === "sending" ? "Sending..." : "Find My Leaks"}
+          {status === "sending" ? "Sending..." : "Send Call Request"}
         </Button>
         <p
           className={`mt-4 text-center text-xs leading-relaxed ${

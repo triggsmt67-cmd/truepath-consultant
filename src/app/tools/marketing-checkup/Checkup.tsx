@@ -77,9 +77,9 @@ export default function Checkup() {
         })}
         <div className={styles.actions}>
           {validated && answered < 7 && <p role="alert" className={styles.error}>Please answer all seven questions. {7 - answered} still need an answer.</p>}
-          <p role="status">{edited ? "Answers changed. Select Show my questions to update your takeaway." : ""}</p>
+          <p role="status">{edited ? "Answers changed. Select Show Questions to Ask My Agency to update your takeaway." : ""}</p>
           <div className={styles.buttons}>
-            <Button type="submit">Show my questions</Button>
+            <Button type="submit">Show Questions to Ask My Agency</Button>
             <button ref={resetRef} type="button" className={styles.textButton} aria-expanded={resetRequested} aria-controls="reset-confirmation" onClick={() => {
               setResetRequested(true);
               requestAnimationFrame(() => cancelRef.current?.focus());

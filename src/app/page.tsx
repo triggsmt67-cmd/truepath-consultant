@@ -104,18 +104,18 @@ export default function Home() {
               className="flex flex-col justify-center"
             >
               <h1 className="max-w-3xl font-serif font-medium text-[clamp(3rem,5vw,5rem)] leading-[1.05] tracking-tight">
-                <MotionSpan variants={itemVariants} className="block text-foreground">I find the marketing leaks</MotionSpan>
-                <MotionSpan variants={itemVariants} className="block text-primary">that are costing you jobs.</MotionSpan>
+                <MotionSpan variants={itemVariants} className="block text-foreground">I help you find out</MotionSpan>
+                <MotionSpan variants={itemVariants} className="block text-primary">why you’re losing jobs.</MotionSpan>
               </h1>
 
               <MotionDiv variants={itemVariants} className="mt-12 flex flex-col items-start gap-8">
                 <p className="max-w-xl text-lg leading-[1.65] text-muted-text">
                   <strong className="font-medium text-foreground">True Path Digital</strong>{" "}
-                  provides websites and practical marketing strategy for owner-operated service businesses. Stop guessing what&apos;s broken and start booking more work.
+                  helps owner-operated service businesses see where customers drop off, from finding you on Google to getting a callback or booking a job.
                 </p>
 
                 <Button href="/#contact" variant="primary">
-                  Find My Leaks
+                  Request a 15-Minute Call
                 </Button>
                 <p className="flex items-center gap-3 text-sm text-muted-text tracking-wide">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 text-primary">
@@ -125,7 +125,7 @@ export default function Home() {
                     {/* Leak droplet inside the glass */}
                     <path d="M8.5 6C8.5 6 7 8 7 9.2C7 10 7.67 10.5 8.5 10.5C9.33 10.5 10 10 10 9.2C10 8 8.5 6 8.5 6Z" fill="currentColor" opacity="0.6" />
                   </svg>
-                  15 minutes. No pitch. We&apos;ll look at where jobs may be leaking.
+                  We’ll spend 15 minutes looking at where customers might be dropping off.
                 </p>
                 <LeadFlowAnimation />
               </MotionDiv>
@@ -171,11 +171,11 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="my-20 border-y border-muted-border py-16 md:my-28 md:py-24">
-              <p className="max-w-6xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] font-medium leading-[1.08] tracking-tight text-foreground">
-                Most of the time, the problem is not effort. It is that too many decisions are being made under pressure, without enough context.
+            <blockquote className="my-20 border-y border-muted-border py-16 text-center md:my-28 md:py-24">
+              <p className="mx-auto max-w-6xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] font-medium leading-[1.08] tracking-tight text-foreground">
+                &ldquo;Most of the time, the problem is not effort. It is that too many decisions are being made under pressure, without enough context.&rdquo;
               </p>
-            </div>
+            </blockquote>
 
             <div>
               <p className="mb-12 max-w-2xl text-lg leading-[1.65] text-muted-text">
@@ -310,7 +310,7 @@ export default function Home() {
 
               <div className="lg:w-5/12 flex flex-col lg:sticky lg:top-32">
                 <h2 className="text-sm font-medium uppercase tracking-widest text-primary mb-8 flex items-center gap-3">
-                  <span className="w-8 h-px bg-primary"></span> Diagnostic Phase
+                  <span className="w-8 h-px bg-primary"></span> $750 Marketing Audit
                 </h2>
                 <h3 className="font-serif font-medium text-[clamp(2.5rem,4vw,3.5rem)] leading-tight tracking-tight mb-8">
                   Under the Hood<br />Audit
@@ -328,11 +328,11 @@ export default function Home() {
                   <span className="text-sm uppercase tracking-widest font-medium text-muted-text">Flat Fee</span>
                 </div>
                 <p className="mt-8 text-base text-muted-text leading-relaxed max-w-md">
-                  An objective, independent review of where you lose visibility, leads, and booked work. Includes a findings memo, review call, and prioritized 90-day action plan.
+                  An independent review of how customers find you, get in touch, and book a job. You’ll get a written summary, a call to go over the findings, and a 90-day plan that shows what to fix first.
                 </p>
                 <div className="mt-12">
                   <Button href="/#contact" variant="secondary">
-                    Find My Leaks
+                    Request a 15-Minute Call
                   </Button>
                 </div>
               </div>
@@ -524,22 +524,22 @@ export default function Home() {
                 Let&apos;s look at what&apos;s getting missed.
               </h2>
               <p className="text-lg leading-[1.65] text-background/80 max-w-md mb-16">
-                Schedule a brief conversation to review your current setup and see if an Under the Hood Audit makes sense for your business.
+                Request a 15-minute call to talk through where you might be missing leads or losing jobs. We can also see if the $750 marketing audit makes sense for your business.
               </p>
 
               <div className="flex flex-col gap-10">
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-background/10 border border-background/20 flex items-center justify-center text-sm font-medium">1</div>
                   <div>
-                    <h4 className="font-serif font-medium text-2xl mb-2">Fill out the brief</h4>
-                    <p className="text-background/60 text-base leading-relaxed">Give me 2 minutes of context on your business so I don&apos;t waste your time.</p>
+                    <h4 className="font-serif font-medium text-2xl mb-2">Tell me a little about your business</h4>
+                    <p className="text-background/60 text-base leading-relaxed">Share what you do and where you think customers are dropping off.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-background/10 border border-background/20 flex items-center justify-center text-sm font-medium">2</div>
                   <div>
-                    <h4 className="font-serif font-medium text-2xl mb-2">15-Minute Diagnostic</h4>
-                    <p className="text-background/60 text-base leading-relaxed">No sales pitch. Just a look under the hood to see if we can help.</p>
+                    <h4 className="font-serif font-medium text-2xl mb-2">A 15-minute call</h4>
+                    <p className="text-background/60 text-base leading-relaxed">I’ll email you to set up a time. We’ll talk through what’s happening and where to start.</p>
                   </div>
                 </div>
               </div>

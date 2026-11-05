@@ -315,7 +315,7 @@ export default function LeadResponsePage() {
 
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
                 <Button onClick={() => openDrawer()} variant="primary" size="lg" className="group">
-                  Review My Response Process
+                  Request a Lead Follow-Up Review
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </motion.div>
@@ -387,7 +387,7 @@ export default function LeadResponsePage() {
           <div className="mx-auto w-full max-w-[1400px]">
             <div className="max-w-3xl mb-24">
               <h2 className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
-                <span className="w-8 h-px bg-primary"></span> The Architecture
+                <span className="w-8 h-px bg-primary"></span> How Your Team Handles New Leads
               </h2>
               <h3 className="font-serif font-medium text-[clamp(2.5rem,4vw,4rem)] leading-tight tracking-tight text-foreground mb-8">
                 What I Build to Improve Lead Response
@@ -709,7 +709,7 @@ export default function LeadResponsePage() {
               </p>
             </div>
             <Button onClick={() => openDrawer()} variant="primary" size="lg" className="group">
-              Review My Response Process
+              Request a Lead Follow-Up Review
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

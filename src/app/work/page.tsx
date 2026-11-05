@@ -119,8 +119,8 @@ export default function WorkPage() {
               <span className="w-8 h-px bg-primary"></span> Our Work
             </h2>
             <h1 className="max-w-4xl font-serif font-medium text-[clamp(3.5rem,6vw,5rem)] leading-[1.05] tracking-tight">
-              Fixing demand leaks. <br />
-              <span className="text-muted-text">Driving real revenue.</span>
+              Recent projects for <br />
+              <span className="text-muted-text">local service businesses.</span>
             </h1>
           </MotionDiv>
         </section>
@@ -220,11 +220,11 @@ export default function WorkPage() {
             className="mx-auto flex w-full max-w-4xl flex-col items-center text-center"
           >
             <h2 className="font-serif font-medium text-[clamp(3rem,6vw,5rem)] leading-[1.05] tracking-tight">
-              Let&apos;s fix your leaks.
+              Let’s talk about where you’re losing jobs.
             </h2>
             <div className="mt-16">
               <Button href="/#contact" variant="light">
-                Find My Leaks
+                Request a 15-Minute Call
               </Button>
             </div>
           </MotionDiv>
