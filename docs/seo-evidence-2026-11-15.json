@@ -2802,5 +2802,35 @@
     "sitemapPages": 26,
     "internalAnchorPaths": 26,
     "productionDeployment": "not performed"
+  },
+  "releaseVerification": {
+    "date": "2026-11-15",
+    "timezone": "America/Denver",
+    "productionUrl": "https://truepath406.com",
+    "technicalReleaseCommit": "bfb51413836decd4c325e289fdaafdb7e1ec6104",
+    "projectId": "prj_aprMAOAUks3TFLlBLPfyER12ywvF",
+    "projectName": "truepath-consultant",
+    "teamId": "team_up31VTGnbAAVTZxGrrnVUWcM",
+    "deploymentId": "dpl_6EvMnsVvU3HT474zD6rjoemQif36",
+    "deploymentStatus": "READY",
+    "framework": "nextjs",
+    "buildDurationSeconds": 19.455,
+    "checks": {
+      "freshBuild": "passed",
+      "lint": "passed",
+      "seoTestsOnLocalProduction": "5/5 passed",
+      "seoTestsOnLiveDomain": "5/5 passed",
+      "sitemapPages": 26,
+      "internalAnchorPaths": 26,
+      "existingWorksheetEmailTests": "10/10 passed; mocked providers",
+      "wwwSitemap": "308 -> canonical sitemap; 200",
+      "wwwLegacyArticle": "3 permanent redirects -> matching canonical insight; 200",
+      "browser": "New footer link opens worksheet and it displays",
+      "wordpressGraphQL": "200; 19 posts; no errors",
+      "errorFatalRuntimeLogs": "No matching entries for this deployment in the checked 15-minute window",
+      "externalLogDrains": 0
+    },
+    "externalChanges": "Public technical release only; no WordPress settings, DNS changes, content edits, real form submissions or emails",
+    "nextStep": "Step 2: inspect WordPress frontend cleanup and prepare concrete changes for approval"
   }
 }

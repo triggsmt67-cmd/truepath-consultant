@@ -7,10 +7,11 @@ A high-performance marketing consultancy website for **True Path Digital**, buil
 ## SEO improvement checklist
 
 Updated November 15, 2026. Work through these steps in order and update the
-checkboxes as each item is completed. The audit and technical fixes are complete
-locally. **Next action: deploy the approved technical fixes and verify Step 1.**
-Trevor approved this production release on November 15, 2026. Live WordPress
-changes remain pending separate approval.
+checkboxes as each item is completed. **Step 1 is complete: the technical fixes
+are deployed and verified on the live site. Next action: Step 2, inspect the
+WordPress frontend cleanup and prepare its exact changes for approval.** Trevor
+approved the public release on November 15, 2026; live WordPress changes remain
+pending separate approval.
 
 Details: [SEO audit and page recommendations](docs/seo-audit-2026-11-15.md)
 and [export data and HTTP evidence](docs/seo-evidence-2026-11-15.json).
@@ -25,12 +26,24 @@ and [export data and HTTP evidence](docs/seo-evidence-2026-11-15.json).
 ### Step 1 Deploy and verify the technical fixes
 
 - [x] Get Trevor's approval to deploy the prepared public-site changes.
-- [ ] Review the diff, rerun the relevant checks if anything has changed, then
+- [x] Review the diff, rerun the relevant checks if anything has changed, then
   deploy. A push to `main` triggers Vercel production deployment.
-- [ ] Verify the live sitemap includes `/checkup` and all current articles;
+- [x] Verify the live sitemap includes `/checkup` and all current articles;
   check the footer link, metadata, preserved article links, redirects, and 404s.
   The tested November 15 sitemap contains 26 URLs; future counts depend on the CMS.
-- [ ] Record the deployment date and commit here: **pending**.
+- [x] Record the deployment date and commit: **November 15, 2026**, technical
+  release [`bfb5141`](https://github.com/triggsmt67-cmd/truepath-consultant/commit/bfb51413836decd4c325e289fdaafdb7e1ec6104),
+  Vercel deployment `dpl_6EvMnsVvU3HT474zD6rjoemQif36` (**READY**, Next.js;
+  build approximately 19 seconds).
+
+Live verification passed: 26 sitemap pages and 26 distinct internal anchor
+paths; canonical tags, metadata, crawl directives, preserved CMS links, nine
+representative redirects, expected 404s, and disabled email previews. The new
+footer link opens the worksheet correctly in the browser. The WordPress API
+still returns all 19 published articles. Build, lint, five SEO tests, and ten
+mocked worksheet/email tests passed; no real email was sent. The deployment's
+available error/fatal log scan returned no entries. No external log drains are
+configured, so this is a release check rather than continuous monitoring.
 
 ### Step 2 Clean up the WordPress frontend
 
