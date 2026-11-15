@@ -51,6 +51,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
       images: [`${baseUrl}/images/decision-partner-final.jpg`],
     },
+    {
+      url: `${baseUrl}/checkup`,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 
   // Dynamic blog posts from WordPress. Let CMS failures surface so a

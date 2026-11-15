@@ -23,6 +23,7 @@ export default function Footer() {
             <li><Link href="/services/website-builds" className="hover:text-primary transition-colors">Website Strategy & Builds</Link></li>
             <li><Link href="/services/lead-response" className="hover:text-primary transition-colors">Lead Response & Follow-Up</Link></li>
             <li><Link href="/insights" className="hover:text-primary transition-colors">Articles</Link></li>
+            <li><Link href="/checkup" className="hover:text-primary transition-colors">Free Marketing Checkup</Link></li>
           </ul>
         </div>
 

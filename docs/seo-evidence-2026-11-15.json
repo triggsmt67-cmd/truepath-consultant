@@ -1,0 +1,2806 @@
+{
+  "reviewDate": "2026-11-15",
+  "scope": "Read-only live checks; source crawl dates remain historical. HTTP/meta checks do not establish Google index selection.",
+  "exports": [
+    {
+      "source": "/Users/trevorriggs/Downloads/truepath406.com-Coverage-Drilldown-2026-11-15 (1).zip",
+      "issue": "Crawled - currently not indexed",
+      "rows": [
+        {
+          "URL": "https://admin.truepath406.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4",
+          "Last crawled": "2026-11-03"
+        },
+        {
+          "URL": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+          "Last crawled": "2026-10-26"
+        },
+        {
+          "URL": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+          "Last crawled": "2026-09-20"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search/",
+          "Last crawled": "2026-09-18"
+        },
+        {
+          "URL": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+          "Last crawled": "2026-09-18"
+        },
+        {
+          "URL": "https://truepath406.com/blog/technician-utilization-profit-leak/",
+          "Last crawled": "2026-09-11"
+        },
+        {
+          "URL": "https://truepath406.com/insights/thin-service-pages-look-generic",
+          "Last crawled": "2026-09-07"
+        },
+        {
+          "URL": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+          "Last crawled": "2026-08-13"
+        },
+        {
+          "URL": "https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything",
+          "Last crawled": "2026-07-27"
+        },
+        {
+          "URL": "https://truepath406.com/insights/the-leak-every-home-service-business-should-measure",
+          "Last crawled": "2026-07-27"
+        },
+        {
+          "URL": "https://truepath406.com/blog/what-ai-cant-replace-the-surprising-value-of-experience/",
+          "Last crawled": "2026-07-24"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/diagnose-a-slow-month/",
+          "Last crawled": "2026-07-18"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/google-profile-is-killing-your-local-visibility/",
+          "Last crawled": "2026-06-21"
+        },
+        {
+          "URL": "https://truepath406.com/privacy-policy/",
+          "Last crawled": "2026-06-09"
+        },
+        {
+          "URL": "https://www.truepath406.com/_next/static/chunks/0o2yz.g67o0jy.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+          "Last crawled": "2026-06-02"
+        },
+        {
+          "URL": "https://www.truepath406.com/_next/static/chunks/0_4i-p_rsg53_.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+          "Last crawled": "2026-06-02"
+        },
+        {
+          "URL": "https://www.truepath406.com/_next/static/chunks/0s76v~4vzoc35.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+          "Last crawled": "2026-06-02"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/",
+          "Last crawled": "2026-05-10"
+        }
+      ]
+    },
+    {
+      "source": "/Users/trevorriggs/Downloads/truepath406.com-Coverage-Drilldown-2026-11-15 (2).zip",
+      "issue": "Page with redirect",
+      "rows": [
+        {
+          "URL": "https://truepath406.com/solutions",
+          "Last crawled": "2026-11-08"
+        },
+        {
+          "URL": "https://truepath406.com/solutions/",
+          "Last crawled": "2026-11-08"
+        },
+        {
+          "URL": "https://www.truepath406.com/solutions/",
+          "Last crawled": "2026-11-08"
+        },
+        {
+          "URL": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility",
+          "Last crawled": "2026-10-26"
+        },
+        {
+          "URL": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility/",
+          "Last crawled": "2026-10-26"
+        },
+        {
+          "URL": "https://truepath406.com/blog/home-service-booking",
+          "Last crawled": "2026-10-26"
+        },
+        {
+          "URL": "https://truepath406.com/blog/home-service-booking/",
+          "Last crawled": "2026-10-26"
+        },
+        {
+          "URL": "https://truepath406.com/blog/service-business-website",
+          "Last crawled": "2026-10-25"
+        },
+        {
+          "URL": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process",
+          "Last crawled": "2026-09-20"
+        },
+        {
+          "URL": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/",
+          "Last crawled": "2026-09-20"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/",
+          "Last crawled": "2026-09-20"
+        },
+        {
+          "URL": "https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+          "Last crawled": "2026-09-18"
+        },
+        {
+          "URL": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business",
+          "Last crawled": "2026-09-18"
+        },
+        {
+          "URL": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business/",
+          "Last crawled": "2026-09-18"
+        },
+        {
+          "URL": "https://truepath406.com/blog/diagnose-a-slow-month/",
+          "Last crawled": "2026-09-11"
+        },
+        {
+          "URL": "https://truepath406.com/blog/technician-utilization-profit-leak",
+          "Last crawled": "2026-09-11"
+        },
+        {
+          "URL": "https://truepath406.com/trust-calculator",
+          "Last crawled": "2026-09-10"
+        },
+        {
+          "URL": "https://truepath406.com/trust-calculator/",
+          "Last crawled": "2026-09-10"
+        },
+        {
+          "URL": "https://www.truepath406.com/trust-calculator/",
+          "Last crawled": "2026-09-10"
+        },
+        {
+          "URL": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+          "Last crawled": "2026-09-09"
+        },
+        {
+          "URL": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+          "Last crawled": "2026-09-09"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+          "Last crawled": "2026-09-09"
+        },
+        {
+          "URL": "https://truepath406.com/solutions/review-system",
+          "Last crawled": "2026-09-08"
+        },
+        {
+          "URL": "https://truepath406.com/blog/thin-service-pages-look-generic/",
+          "Last crawled": "2026-09-07"
+        },
+        {
+          "URL": "http://www.truepath406.com/",
+          "Last crawled": "2026-09-04"
+        },
+        {
+          "URL": "https://www.truepath406.com/",
+          "Last crawled": "2026-09-04"
+        },
+        {
+          "URL": "http://truepath406.com/",
+          "Last crawled": "2026-08-20"
+        },
+        {
+          "URL": "https://truepath406.com/solutions/review-system/",
+          "Last crawled": "2026-08-14"
+        },
+        {
+          "URL": "https://truepath406.com/blog/why-digital-marketing-fails-early",
+          "Last crawled": "2026-08-13"
+        },
+        {
+          "URL": "https://truepath406.com/blog/why-digital-marketing-fails-early/",
+          "Last crawled": "2026-08-13"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/why-digital-marketing-fails-early/",
+          "Last crawled": "2026-08-13"
+        },
+        {
+          "URL": "https://www.truepath406.com/solutions/review-system/",
+          "Last crawled": "2026-08-03"
+        },
+        {
+          "URL": "https://www.truepath406.com/blog/why-digital-marketing-fails-early",
+          "Last crawled": "2026-04-03"
+        }
+      ]
+    },
+    {
+      "source": "/Users/trevorriggs/Downloads/truepath406.com-Coverage-Drilldown-2026-11-15.zip",
+      "issue": "Not found (404)",
+      "rows": [
+        {
+          "URL": "https://admin.truepath406.com/2026/03/",
+          "Last crawled": "2026-10-27"
+        },
+        {
+          "URL": "https://admin.truepath406.com/category/foundational/",
+          "Last crawled": "2026-10-26"
+        },
+        {
+          "URL": "https://admin.truepath406.com/wp-content/themes/twentytwentyone/*",
+          "Last crawled": "2026-10-20"
+        },
+        {
+          "URL": "https://admin.truepath406.com/*",
+          "Last crawled": "2026-07-30"
+        },
+        {
+          "URL": "https://admin.truepath406.com/category/decision-making/",
+          "Last crawled": "2026-07-22"
+        },
+        {
+          "URL": "https://admin.truepath406.com/2026/04/",
+          "Last crawled": "2026-07-20"
+        },
+        {
+          "URL": "https://admin.truepath406.com/category/reputation-scaling/",
+          "Last crawled": "2026-07-19"
+        },
+        {
+          "URL": "https://admin.truepath406.com/category/gmb-optimization/",
+          "Last crawled": "2026-07-18"
+        },
+        {
+          "URL": "https://admin.truepath406.com/wp-json/hostinger-reach/v1/contact",
+          "Last crawled": "2026-07-12"
+        },
+        {
+          "URL": "https://admin.truepath406.com/category/foundational-logic/",
+          "Last crawled": "2026-07-02"
+        },
+        {
+          "URL": "https://truepath406.com/hello-world/",
+          "Last crawled": "2026-05-18"
+        }
+      ]
+    }
+  ],
+  "httpChecks": [
+    {
+      "url": "http://truepath406.com/",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "http://truepath406.com/",
+          "status": 308,
+          "location": "https://truepath406.com/"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "http://www.truepath406.com/",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "http://www.truepath406.com/",
+          "status": 308,
+          "location": "https://www.truepath406.com/"
+        },
+        {
+          "url": "https://www.truepath406.com/",
+          "status": 308,
+          "location": "https://truepath406.com/"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://admin.truepath406.com/",
+      "final": "https://admin.truepath406.com/",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=UTF-8",
+      "title": "Home - Truepath Admin",
+      "canonicals": [
+        "https://admin.truepath406.com/"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      ],
+      "bodySha256": "ea215547a21007181f9e8166e09ab2528b5778f5c264180d18ecbe2054ca56e1"
+    },
+    {
+      "url": "https://admin.truepath406.com/*",
+      "final": "https://truepath406.com/insights/*",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/*",
+          "status": 301,
+          "location": "https://truepath406.com/blog/*"
+        },
+        {
+          "url": "https://truepath406.com/blog/*",
+          "status": 308,
+          "location": "https://truepath406.com/insights/*"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "e9713d44381f170a43f6e730aa7333ebb0f9d02d943ccde2b7ae2a6a690f3b58"
+    },
+    {
+      "url": "https://admin.truepath406.com/2026/03/",
+      "final": "https://truepath406.com/insights/2026/03",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/2026/03/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/2026/03/"
+        },
+        {
+          "url": "https://truepath406.com/blog/2026/03/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/2026/03"
+        },
+        {
+          "url": "https://truepath406.com/blog/2026/03",
+          "status": 308,
+          "location": "https://truepath406.com/insights/2026/03"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://admin.truepath406.com/2026/04/",
+      "final": "https://truepath406.com/insights/2026/04",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/2026/04/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/2026/04/"
+        },
+        {
+          "url": "https://truepath406.com/blog/2026/04/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/2026/04"
+        },
+        {
+          "url": "https://truepath406.com/blog/2026/04",
+          "status": 308,
+          "location": "https://truepath406.com/insights/2026/04"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://admin.truepath406.com/category/decision-making/",
+      "final": "https://truepath406.com/insights/category/decision-making",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/category/decision-making/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/category/decision-making/"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/decision-making/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/category/decision-making"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/decision-making",
+          "status": 308,
+          "location": "https://truepath406.com/insights/category/decision-making"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://admin.truepath406.com/category/foundational-logic/",
+      "final": "https://truepath406.com/insights/category/foundational-logic",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/category/foundational-logic/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/category/foundational-logic/"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/foundational-logic/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/category/foundational-logic"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/foundational-logic",
+          "status": 308,
+          "location": "https://truepath406.com/insights/category/foundational-logic"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://admin.truepath406.com/category/foundational/",
+      "final": "https://truepath406.com/insights/category/foundational",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/category/foundational/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/category/foundational/"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/foundational/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/category/foundational"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/foundational",
+          "status": 308,
+          "location": "https://truepath406.com/insights/category/foundational"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://admin.truepath406.com/category/gmb-optimization/",
+      "final": "https://truepath406.com/insights/category/gmb-optimization",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/category/gmb-optimization/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/category/gmb-optimization/"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/gmb-optimization/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/category/gmb-optimization"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/gmb-optimization",
+          "status": 308,
+          "location": "https://truepath406.com/insights/category/gmb-optimization"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://admin.truepath406.com/category/reputation-scaling/",
+      "final": "https://truepath406.com/insights/category/reputation-scaling",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/category/reputation-scaling/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/category/reputation-scaling/"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/reputation-scaling/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/category/reputation-scaling"
+        },
+        {
+          "url": "https://truepath406.com/blog/category/reputation-scaling",
+          "status": 308,
+          "location": "https://truepath406.com/insights/category/reputation-scaling"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://admin.truepath406.com/feed/",
+      "final": "https://truepath406.com/insights/feed",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/feed/",
+          "status": 301,
+          "location": "https://truepath406.com/blog/feed/"
+        },
+        {
+          "url": "https://truepath406.com/blog/feed/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/feed"
+        },
+        {
+          "url": "https://truepath406.com/blog/feed",
+          "status": 308,
+          "location": "https://truepath406.com/insights/feed"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "75522af9b58724e199d11e00345daf0fd76e8ef964107af7f4787f3ed034242c"
+    },
+    {
+      "url": "https://admin.truepath406.com/robots.txt",
+      "final": "https://admin.truepath406.com/robots.txt",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/plain; charset=utf-8",
+      "bodySha256": "6d1ac41305b0e28cbbf99ef5f3294c42f996a0e03079b2b889a8b7c14af3c90d"
+    },
+    {
+      "url": "https://admin.truepath406.com/sitemap.xml",
+      "final": "https://admin.truepath406.com/sitemap_index.xml",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://admin.truepath406.com/sitemap.xml",
+          "status": 301,
+          "location": "https://admin.truepath406.com/sitemap_index.xml"
+        }
+      ],
+      "contentType": "text/xml; charset=UTF-8",
+      "bodySha256": "9d19c5fd2c7eb4e6393b278d267e674af8df3812b4b38bc0bdb1d7e2c715cc3c"
+    },
+    {
+      "url": "https://admin.truepath406.com/sitemap_index.xml",
+      "final": "https://admin.truepath406.com/sitemap_index.xml",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/xml; charset=UTF-8",
+      "bodySha256": "9d19c5fd2c7eb4e6393b278d267e674af8df3812b4b38bc0bdb1d7e2c715cc3c"
+    },
+    {
+      "url": "https://admin.truepath406.com/wp-content/themes/twentytwentyone/*",
+      "final": "https://admin.truepath406.com/wp-content/themes/twentytwentyone/*",
+      "status": 404,
+      "hops": [],
+      "contentType": "text/html; charset=UTF-8",
+      "bodySha256": "ddcf07ec0e21804abcf32c62f8f5a7c263c9bf5cb4bc148d8f8769c99070fdbb"
+    },
+    {
+      "url": "https://admin.truepath406.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4",
+      "final": "https://admin.truepath406.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4",
+      "status": 200,
+      "hops": [],
+      "contentType": "application/x-javascript",
+      "bodySha256": "063840b4b3f5869e0f0d078bab8bd29cfb3a59ee85e8e3edbbec35a8fe846fd3"
+    },
+    {
+      "url": "https://admin.truepath406.com/wp-json/hostinger-reach/v1/contact",
+      "final": "https://admin.truepath406.com/wp-json/hostinger-reach/v1/contact",
+      "status": 404,
+      "hops": [],
+      "contentType": "application/json; charset=UTF-8",
+      "bodySha256": "321227fe038fc2f282fd904a174fbaf931eb5d763ce64eded0e6a3f31d32119f"
+    },
+    {
+      "url": "https://truepath406.com",
+      "final": "https://truepath406.com",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://truepath406.com/blog/diagnose-a-slow-month/",
+      "final": "https://truepath406.com/insights/diagnose-a-slow-month",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/diagnose-a-slow-month/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/diagnose-a-slow-month"
+        },
+        {
+          "url": "https://truepath406.com/blog/diagnose-a-slow-month",
+          "status": 308,
+          "location": "https://truepath406.com/insights/diagnose-a-slow-month"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Diagnose a Slow Month in Your Service Business",
+      "canonicals": [
+        "https://truepath406.com/insights/diagnose-a-slow-month"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "6c4492e718907f3ab87d89aa3769eabd7e53ce8fd7dc75f68194959c643808fe"
+    },
+    {
+      "url": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility",
+      "final": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility",
+          "status": 308,
+          "location": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Inactive Google Profiles Kill Local Visibility",
+      "canonicals": [
+        "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "0f30b9f7ef766f8958699c0b162aae5666210fa4d5fd8e8d9ee395ebcdf46a4b"
+    },
+    {
+      "url": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility/",
+      "final": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility"
+        },
+        {
+          "url": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility",
+          "status": 308,
+          "location": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Inactive Google Profiles Kill Local Visibility",
+      "canonicals": [
+        "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "0f30b9f7ef766f8958699c0b162aae5666210fa4d5fd8e8d9ee395ebcdf46a4b"
+    },
+    {
+      "url": "https://truepath406.com/blog/home-service-booking",
+      "final": "https://truepath406.com/insights/home-service-booking",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/home-service-booking",
+          "status": 308,
+          "location": "https://truepath406.com/insights/home-service-booking"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "The “More Leads” Trap: Fix Your Booking Rate First",
+      "canonicals": [
+        "https://truepath406.com/insights/home-service-booking"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "e436414c5914ea39501862ffff82dd46f6a6bbd0246175e36ae566c2e03769fe"
+    },
+    {
+      "url": "https://truepath406.com/blog/home-service-booking/",
+      "final": "https://truepath406.com/insights/home-service-booking",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/home-service-booking/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/home-service-booking"
+        },
+        {
+          "url": "https://truepath406.com/blog/home-service-booking",
+          "status": 308,
+          "location": "https://truepath406.com/insights/home-service-booking"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "The “More Leads” Trap: Fix Your Booking Rate First",
+      "canonicals": [
+        "https://truepath406.com/insights/home-service-booking"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "e436414c5914ea39501862ffff82dd46f6a6bbd0246175e36ae566c2e03769fe"
+    },
+    {
+      "url": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "final": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+          "status": 308,
+          "location": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Follow Up on an Estimate (Before It Goes Cold)",
+      "canonicals": [
+        "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "d28005c1db4e3b136c4c92f103dbd21d2f07da77eda4e2429ea986f4c4db1a71"
+    },
+    {
+      "url": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+      "final": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+        },
+        {
+          "url": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+          "status": 308,
+          "location": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Follow Up on an Estimate (Before It Goes Cold)",
+      "canonicals": [
+        "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "d28005c1db4e3b136c4c92f103dbd21d2f07da77eda4e2429ea986f4c4db1a71"
+    },
+    {
+      "url": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process",
+      "final": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process",
+          "status": 308,
+          "location": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Stop Asking Your Team to Ask for Reviews",
+      "canonicals": [
+        "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "83673f1f8b59ab66f70a76ef5ffb79486b2114e5e4f463132092ad2e25781afc"
+    },
+    {
+      "url": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/",
+      "final": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process"
+        },
+        {
+          "url": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process",
+          "status": 308,
+          "location": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Stop Asking Your Team to Ask for Reviews",
+      "canonicals": [
+        "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "83673f1f8b59ab66f70a76ef5ffb79486b2114e5e4f463132092ad2e25781afc"
+    },
+    {
+      "url": "https://truepath406.com/blog/service-business-website",
+      "final": "https://truepath406.com/insights/service-business-website",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/service-business-website",
+          "status": 308,
+          "location": "https://truepath406.com/insights/service-business-website"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Service Business Websites: Make the Next Step Obvious",
+      "canonicals": [
+        "https://truepath406.com/insights/service-business-website"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "300a67b9f9d1e373898fcffbcbc21a68d8bcf50a862bfe3ee59a792c50f7a288"
+    },
+    {
+      "url": "https://truepath406.com/blog/technician-utilization-profit-leak",
+      "final": "https://truepath406.com/insights/technician-utilization-profit-leak",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/technician-utilization-profit-leak",
+          "status": 308,
+          "location": "https://truepath406.com/insights/technician-utilization-profit-leak"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Your Best Techs Are Making You Less Money Than You Think",
+      "canonicals": [
+        "https://truepath406.com/insights/technician-utilization-profit-leak"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "e509b44ec4004cad46c4681e6a52e86fdacfd825c7def63e6283ca876c724f68"
+    },
+    {
+      "url": "https://truepath406.com/blog/technician-utilization-profit-leak/",
+      "final": "https://truepath406.com/insights/technician-utilization-profit-leak",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/technician-utilization-profit-leak/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/technician-utilization-profit-leak"
+        },
+        {
+          "url": "https://truepath406.com/blog/technician-utilization-profit-leak",
+          "status": 308,
+          "location": "https://truepath406.com/insights/technician-utilization-profit-leak"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Your Best Techs Are Making You Less Money Than You Think",
+      "canonicals": [
+        "https://truepath406.com/insights/technician-utilization-profit-leak"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "e509b44ec4004cad46c4681e6a52e86fdacfd825c7def63e6283ca876c724f68"
+    },
+    {
+      "url": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business",
+      "final": "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business",
+          "status": 308,
+          "location": "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "The #1 Profit Leak in a Service Business",
+      "canonicals": [
+        "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "aa8545cbfadd6af73111358cb3b386e4ac7fbb05bf05558de79c0a8c647758bf"
+    },
+    {
+      "url": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business/",
+      "final": "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business"
+        },
+        {
+          "url": "https://truepath406.com/blog/the-1-profit-leak-in-a-service-business",
+          "status": 308,
+          "location": "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "The #1 Profit Leak in a Service Business",
+      "canonicals": [
+        "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "aa8545cbfadd6af73111358cb3b386e4ac7fbb05bf05558de79c0a8c647758bf"
+    },
+    {
+      "url": "https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "final": "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+          "status": 308,
+          "location": "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Your Business Is Vanishing From AI Search",
+      "canonicals": [
+        "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "dcfc407d7a60d08a803eb9bb6e20947e407341e154bbd96ff0332dd4ba949700"
+    },
+    {
+      "url": "https://truepath406.com/blog/thin-service-pages-look-generic/",
+      "final": "https://truepath406.com/insights/thin-service-pages-look-generic",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/thin-service-pages-look-generic/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/thin-service-pages-look-generic"
+        },
+        {
+          "url": "https://truepath406.com/blog/thin-service-pages-look-generic",
+          "status": 308,
+          "location": "https://truepath406.com/insights/thin-service-pages-look-generic"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Thin Service Pages Make Good Businesses Look Generic",
+      "canonicals": [
+        "https://truepath406.com/insights/thin-service-pages-look-generic"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "82a6bfcf7194eb56e3e6d157ce5abe044aca3f7bb4f4118390428f2e15d97366"
+    },
+    {
+      "url": "https://truepath406.com/blog/what-ai-cant-replace-the-surprising-value-of-experience/",
+      "final": "https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/what-ai-cant-replace-the-surprising-value-of-experience/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/what-ai-cant-replace-the-surprising-value-of-experience"
+        },
+        {
+          "url": "https://truepath406.com/blog/what-ai-cant-replace-the-surprising-value-of-experience",
+          "status": 308,
+          "location": "https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "What AI Can’t Replace: The Surprising Value of Experience",
+      "canonicals": [
+        "https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "5fd219cf2c3d3cec9a910e051f434548d88a62faec4a54fc3206d841d71d3b57"
+    },
+    {
+      "url": "https://truepath406.com/blog/why-digital-marketing-fails-early",
+      "final": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/why-digital-marketing-fails-early",
+          "status": 308,
+          "location": "https://truepath406.com/insights/why-digital-marketing-fails-early"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Digital Marketing Fails Early",
+      "canonicals": [
+        "https://truepath406.com/insights/why-digital-marketing-fails-early"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "9d49c6084fa47d976e2bfbf16df2a456315ce605d164450c1c439c29442e97e0"
+    },
+    {
+      "url": "https://truepath406.com/blog/why-digital-marketing-fails-early/",
+      "final": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/blog/why-digital-marketing-fails-early/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/why-digital-marketing-fails-early"
+        },
+        {
+          "url": "https://truepath406.com/blog/why-digital-marketing-fails-early",
+          "status": 308,
+          "location": "https://truepath406.com/insights/why-digital-marketing-fails-early"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Digital Marketing Fails Early",
+      "canonicals": [
+        "https://truepath406.com/insights/why-digital-marketing-fails-early"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "9d49c6084fa47d976e2bfbf16df2a456315ce605d164450c1c439c29442e97e0"
+    },
+    {
+      "url": "https://truepath406.com/checkup",
+      "final": "https://truepath406.com/checkup",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Service Business Marketing Checkup | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/checkup"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "b20edfad0baa42a97ee1e5c6bd1845542a7079203e12b3dc5d4eaaa93db900c3"
+    },
+    {
+      "url": "https://truepath406.com/hello-world/",
+      "final": "https://truepath406.com/hello-world",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://truepath406.com/hello-world/",
+          "status": 308,
+          "location": "https://truepath406.com/hello-world"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://truepath406.com/insights",
+      "final": "https://truepath406.com/insights",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Insights & Field Notes | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/insights"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "6f2611fea60d20be16d31ab19573aafa0341af55c7e94dfcad585823ca0262ff"
+    },
+    {
+      "url": "https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing",
+      "final": "https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why AI Search Ignores Local Businesses It Can’t Trust",
+      "canonicals": [
+        "https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "badf4d5db62ef6bebb1706c078a04d361e41c97470fc5ee7c4d712e53d5990e5"
+    },
+    {
+      "url": "https://truepath406.com/insights/clear-marketing-decisions-for-montana-business-owners",
+      "final": "https://truepath406.com/insights/clear-marketing-decisions-for-montana-business-owners",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Clear marketing decisions for Montana business owners",
+      "canonicals": [
+        "https://truepath406.com/insights/clear-marketing-decisions-for-montana-business-owners"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "9bad59d928097ef8516828e7adae055ec864546c5404de4583c4620a89682cee"
+    },
+    {
+      "url": "https://truepath406.com/insights/diagnose-a-slow-month",
+      "final": "https://truepath406.com/insights/diagnose-a-slow-month",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Diagnose a Slow Month in Your Service Business",
+      "canonicals": [
+        "https://truepath406.com/insights/diagnose-a-slow-month"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "6c4492e718907f3ab87d89aa3769eabd7e53ce8fd7dc75f68194959c643808fe"
+    },
+    {
+      "url": "https://truepath406.com/insights/does-not-exist-seo-audit",
+      "final": "https://truepath406.com/insights/does-not-exist-seo-audit",
+      "status": 404,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "c8bdc506c22837bc589310f8ea10c746a55d05e3bbde6fb2daa16934916a2ac6"
+    },
+    {
+      "url": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "final": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Inactive Google Profiles Kill Local Visibility",
+      "canonicals": [
+        "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "0f30b9f7ef766f8958699c0b162aae5666210fa4d5fd8e8d9ee395ebcdf46a4b"
+    },
+    {
+      "url": "https://truepath406.com/insights/home-service-booking",
+      "final": "https://truepath406.com/insights/home-service-booking",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "The “More Leads” Trap: Fix Your Booking Rate First",
+      "canonicals": [
+        "https://truepath406.com/insights/home-service-booking"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "e436414c5914ea39501862ffff82dd46f6a6bbd0246175e36ae566c2e03769fe"
+    },
+    {
+      "url": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "final": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Follow Up on an Estimate (Before It Goes Cold)",
+      "canonicals": [
+        "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "d28005c1db4e3b136c4c92f103dbd21d2f07da77eda4e2429ea986f4c4db1a71"
+    },
+    {
+      "url": "https://truepath406.com/insights/hvac-marketing-agency-red-flags",
+      "final": "https://truepath406.com/insights/hvac-marketing-agency-red-flags",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Check Your HVAC Marketing Agency: 7 Red Flags",
+      "canonicals": [
+        "https://truepath406.com/insights/hvac-marketing-agency-red-flags"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "3ccf545e57f37c5bf85be2b3dfb563b5a0f38f32ab8de8b2c616b1a20104c4ff"
+    },
+    {
+      "url": "https://truepath406.com/insights/local-service-business-google-visibility",
+      "final": "https://truepath406.com/insights/local-service-business-google-visibility",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Local SEO for Service Businesses: What to Expect",
+      "canonicals": [
+        "https://truepath406.com/insights/local-service-business-google-visibility"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "31760777ba60981a41a6a67850739ccd055a9aafaaade63ae95926c7afdf6662"
+    },
+    {
+      "url": "https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything",
+      "final": "https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Marketing Attention Is the Scarce Resource",
+      "canonicals": [
+        "https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "8774640a5915d13b99e61a9b8a0435fc799bf161dd3b2a3a3d54cfe426970681"
+    },
+    {
+      "url": "https://truepath406.com/insights/marketing-tactics-business-owners-can-safely-ignore-in-2026",
+      "final": "https://truepath406.com/insights/marketing-tactics-business-owners-can-safely-ignore-in-2026",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "5 Marketing Tactics to Stop Using in 2026",
+      "canonicals": [
+        "https://truepath406.com/insights/marketing-tactics-business-owners-can-safely-ignore-in-2026"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "05d141ea3baa15fed4d3e71d8651758ffd11bfb690581042f70f72c33c01b307"
+    },
+    {
+      "url": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "final": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Stop Asking Your Team to Ask for Reviews",
+      "canonicals": [
+        "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "83673f1f8b59ab66f70a76ef5ffb79486b2114e5e4f463132092ad2e25781afc"
+    },
+    {
+      "url": "https://truepath406.com/insights/service-business-website",
+      "final": "https://truepath406.com/insights/service-business-website",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Service Business Websites: Make the Next Step Obvious",
+      "canonicals": [
+        "https://truepath406.com/insights/service-business-website"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "300a67b9f9d1e373898fcffbcbc21a68d8bcf50a862bfe3ee59a792c50f7a288"
+    },
+    {
+      "url": "https://truepath406.com/insights/technician-utilization-profit-leak",
+      "final": "https://truepath406.com/insights/technician-utilization-profit-leak",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Your Best Techs Are Making You Less Money Than You Think",
+      "canonicals": [
+        "https://truepath406.com/insights/technician-utilization-profit-leak"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "e509b44ec4004cad46c4681e6a52e86fdacfd825c7def63e6283ca876c724f68"
+    },
+    {
+      "url": "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business",
+      "final": "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "The #1 Profit Leak in a Service Business",
+      "canonicals": [
+        "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "aa8545cbfadd6af73111358cb3b386e4ac7fbb05bf05558de79c0a8c647758bf"
+    },
+    {
+      "url": "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "final": "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Your Business Is Vanishing From AI Search",
+      "canonicals": [
+        "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "dcfc407d7a60d08a803eb9bb6e20947e407341e154bbd96ff0332dd4ba949700"
+    },
+    {
+      "url": "https://truepath406.com/insights/the-leak-every-home-service-business-should-measure",
+      "final": "https://truepath406.com/insights/the-leak-every-home-service-business-should-measure",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Missed Calls Are Lost Jobs for Home Service Businesses",
+      "canonicals": [
+        "https://truepath406.com/insights/the-leak-every-home-service-business-should-measure"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "4915c86db1327ddf8bfb65d12abf87a05b4e263fafb91988a0eb338983be0722"
+    },
+    {
+      "url": "https://truepath406.com/insights/thin-service-pages-look-generic",
+      "final": "https://truepath406.com/insights/thin-service-pages-look-generic",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Thin Service Pages Make Good Businesses Look Generic",
+      "canonicals": [
+        "https://truepath406.com/insights/thin-service-pages-look-generic"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "82a6bfcf7194eb56e3e6d157ce5abe044aca3f7bb4f4118390428f2e15d97366"
+    },
+    {
+      "url": "https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience",
+      "final": "https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "What AI Can’t Replace: The Surprising Value of Experience",
+      "canonicals": [
+        "https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "5fd219cf2c3d3cec9a910e051f434548d88a62faec4a54fc3206d841d71d3b57"
+    },
+    {
+      "url": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+      "final": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Digital Marketing Fails Early",
+      "canonicals": [
+        "https://truepath406.com/insights/why-digital-marketing-fails-early"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "9d49c6084fa47d976e2bfbf16df2a456315ce605d164450c1c439c29442e97e0"
+    },
+    {
+      "url": "https://truepath406.com/privacy-policy/",
+      "final": "https://truepath406.com/privacy-policy",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://truepath406.com/privacy-policy/",
+          "status": 308,
+          "location": "https://truepath406.com/privacy-policy"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "bodySha256": "efa8d71055a7d0dff588b95aa2f6ae1ab79d471cfe65158928bd671b9ecc60cb"
+    },
+    {
+      "url": "https://truepath406.com/robots.txt",
+      "final": "https://truepath406.com/robots.txt",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/plain; charset=utf-8",
+      "bodySha256": "466f929840773601166cbd31a0b0616acbc9174453e6a2bdad454ff6dbbd7b74"
+    },
+    {
+      "url": "https://truepath406.com/services/google-profile",
+      "final": "https://truepath406.com/services/google-profile",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Google Business Profile Optimization | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/services/google-profile"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "2331211063744f56c2adf37efd27e5ed303c9f62480209ac2af6982e6a68a7d9"
+    },
+    {
+      "url": "https://truepath406.com/services/lead-response",
+      "final": "https://truepath406.com/services/lead-response",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Lead Response and Follow-Up Systems | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/services/lead-response"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "aaef2fee45ff97dc6d6fb7bd477b4879cb65605ff696a8eebb989ddabdecd8c0"
+    },
+    {
+      "url": "https://truepath406.com/services/website-builds",
+      "final": "https://truepath406.com/services/website-builds",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Website Design and Conversion Repair | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/services/website-builds"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "90a600a7796179363c7d858557984f1ee7fa81c874e97beec99defc05fbe8fb1"
+    },
+    {
+      "url": "https://truepath406.com/sitemap.xml",
+      "final": "https://truepath406.com/sitemap.xml",
+      "status": 200,
+      "hops": [],
+      "contentType": "application/xml",
+      "bodySha256": "2ea1ec541026c0f32154fdf0afbaa8df93581d77af47f0eefb0a2f693937867e"
+    },
+    {
+      "url": "https://truepath406.com/solutions",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/solutions",
+          "status": 308,
+          "location": "https://truepath406.com/#services"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://truepath406.com/solutions/",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/solutions/",
+          "status": 308,
+          "location": "https://truepath406.com/solutions"
+        },
+        {
+          "url": "https://truepath406.com/solutions",
+          "status": 308,
+          "location": "https://truepath406.com/#services"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://truepath406.com/solutions/review-system",
+      "final": "https://truepath406.com/services/google-profile",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/solutions/review-system",
+          "status": 308,
+          "location": "https://truepath406.com/services/google-profile"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Google Business Profile Optimization | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/services/google-profile"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "2331211063744f56c2adf37efd27e5ed303c9f62480209ac2af6982e6a68a7d9"
+    },
+    {
+      "url": "https://truepath406.com/solutions/review-system/",
+      "final": "https://truepath406.com/services/google-profile",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/solutions/review-system/",
+          "status": 308,
+          "location": "https://truepath406.com/solutions/review-system"
+        },
+        {
+          "url": "https://truepath406.com/solutions/review-system",
+          "status": 308,
+          "location": "https://truepath406.com/services/google-profile"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Google Business Profile Optimization | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/services/google-profile"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "2331211063744f56c2adf37efd27e5ed303c9f62480209ac2af6982e6a68a7d9"
+    },
+    {
+      "url": "https://truepath406.com/trust-calculator",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/trust-calculator",
+          "status": 308,
+          "location": "https://truepath406.com/#audit"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://truepath406.com/trust-calculator/",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://truepath406.com/trust-calculator/",
+          "status": 308,
+          "location": "https://truepath406.com/trust-calculator"
+        },
+        {
+          "url": "https://truepath406.com/trust-calculator",
+          "status": 308,
+          "location": "https://truepath406.com/#audit"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://truepath406.com/work",
+      "final": "https://truepath406.com/work",
+      "status": 200,
+      "hops": [],
+      "contentType": "text/html; charset=utf-8",
+      "title": "My Work | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/work"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "5fe1639bc63b2c20fe93e24584070308c8765a4b00aa6facbeff69b752543c5f"
+    },
+    {
+      "url": "https://www.truepath406.com/",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/",
+          "status": 308,
+          "location": "https://truepath406.com/"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://www.truepath406.com/_next/static/chunks/0_4i-p_rsg53_.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+      "final": "https://truepath406.com/_next/static/chunks/0_4i-p_rsg53_.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/_next/static/chunks/0_4i-p_rsg53_.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+          "status": 308,
+          "location": "https://truepath406.com/_next/static/chunks/0_4i-p_rsg53_.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx"
+        }
+      ],
+      "contentType": "text/plain; charset=utf-8",
+      "bodySha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    },
+    {
+      "url": "https://www.truepath406.com/_next/static/chunks/0o2yz.g67o0jy.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+      "final": "https://truepath406.com/_next/static/chunks/0o2yz.g67o0jy.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/_next/static/chunks/0o2yz.g67o0jy.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+          "status": 308,
+          "location": "https://truepath406.com/_next/static/chunks/0o2yz.g67o0jy.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx"
+        }
+      ],
+      "contentType": "text/plain; charset=utf-8",
+      "bodySha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    },
+    {
+      "url": "https://www.truepath406.com/_next/static/chunks/0s76v~4vzoc35.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+      "final": "https://truepath406.com/_next/static/chunks/0s76v~4vzoc35.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+      "status": 404,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/_next/static/chunks/0s76v~4vzoc35.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx",
+          "status": 308,
+          "location": "https://truepath406.com/_next/static/chunks/0s76v~4vzoc35.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx"
+        }
+      ],
+      "contentType": "text/plain; charset=utf-8",
+      "bodySha256": "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/",
+      "final": "https://truepath406.com/insights",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/"
+        },
+        {
+          "url": "https://truepath406.com/blog/",
+          "status": 308,
+          "location": "https://truepath406.com/blog"
+        },
+        {
+          "url": "https://truepath406.com/blog",
+          "status": 308,
+          "location": "https://truepath406.com/insights"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Insights & Field Notes | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/insights"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "6f2611fea60d20be16d31ab19573aafa0341af55c7e94dfcad585823ca0262ff"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/diagnose-a-slow-month/",
+      "final": "https://truepath406.com/insights/diagnose-a-slow-month",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/diagnose-a-slow-month/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/diagnose-a-slow-month/"
+        },
+        {
+          "url": "https://truepath406.com/blog/diagnose-a-slow-month/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/diagnose-a-slow-month"
+        },
+        {
+          "url": "https://truepath406.com/blog/diagnose-a-slow-month",
+          "status": 308,
+          "location": "https://truepath406.com/insights/diagnose-a-slow-month"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Diagnose a Slow Month in Your Service Business",
+      "canonicals": [
+        "https://truepath406.com/insights/diagnose-a-slow-month"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "6c4492e718907f3ab87d89aa3769eabd7e53ce8fd7dc75f68194959c643808fe"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/google-profile-is-killing-your-local-visibility/",
+      "final": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/google-profile-is-killing-your-local-visibility/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility/"
+        },
+        {
+          "url": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility"
+        },
+        {
+          "url": "https://truepath406.com/blog/google-profile-is-killing-your-local-visibility",
+          "status": 308,
+          "location": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Inactive Google Profiles Kill Local Visibility",
+      "canonicals": [
+        "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "0f30b9f7ef766f8958699c0b162aae5666210fa4d5fd8e8d9ee395ebcdf46a4b"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+      "final": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/"
+        },
+        {
+          "url": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+        },
+        {
+          "url": "https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+          "status": 308,
+          "location": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "How to Follow Up on an Estimate (Before It Goes Cold)",
+      "canonicals": [
+        "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "d28005c1db4e3b136c4c92f103dbd21d2f07da77eda4e2429ea986f4c4db1a71"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/",
+      "final": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/"
+        },
+        {
+          "url": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process"
+        },
+        {
+          "url": "https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process",
+          "status": 308,
+          "location": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Stop Asking Your Team to Ask for Reviews",
+      "canonicals": [
+        "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "83673f1f8b59ab66f70a76ef5ffb79486b2114e5e4f463132092ad2e25781afc"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search/",
+      "final": "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search/"
+        },
+        {
+          "url": "https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search"
+        },
+        {
+          "url": "https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+          "status": 308,
+          "location": "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Your Business Is Vanishing From AI Search",
+      "canonicals": [
+        "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "dcfc407d7a60d08a803eb9bb6e20947e407341e154bbd96ff0332dd4ba949700"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/why-digital-marketing-fails-early",
+      "final": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/why-digital-marketing-fails-early",
+          "status": 308,
+          "location": "https://truepath406.com/blog/why-digital-marketing-fails-early"
+        },
+        {
+          "url": "https://truepath406.com/blog/why-digital-marketing-fails-early",
+          "status": 308,
+          "location": "https://truepath406.com/insights/why-digital-marketing-fails-early"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Digital Marketing Fails Early",
+      "canonicals": [
+        "https://truepath406.com/insights/why-digital-marketing-fails-early"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "9d49c6084fa47d976e2bfbf16df2a456315ce605d164450c1c439c29442e97e0"
+    },
+    {
+      "url": "https://www.truepath406.com/blog/why-digital-marketing-fails-early/",
+      "final": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/blog/why-digital-marketing-fails-early/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/why-digital-marketing-fails-early/"
+        },
+        {
+          "url": "https://truepath406.com/blog/why-digital-marketing-fails-early/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/why-digital-marketing-fails-early"
+        },
+        {
+          "url": "https://truepath406.com/blog/why-digital-marketing-fails-early",
+          "status": 308,
+          "location": "https://truepath406.com/insights/why-digital-marketing-fails-early"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Why Digital Marketing Fails Early",
+      "canonicals": [
+        "https://truepath406.com/insights/why-digital-marketing-fails-early"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "9d49c6084fa47d976e2bfbf16df2a456315ce605d164450c1c439c29442e97e0"
+    },
+    {
+      "url": "https://www.truepath406.com/robots.txt",
+      "final": "https://truepath406.com/robots.txt",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/robots.txt",
+          "status": 308,
+          "location": "https://truepath406.com/robots.txt"
+        }
+      ],
+      "contentType": "text/plain; charset=utf-8",
+      "bodySha256": "466f929840773601166cbd31a0b0616acbc9174453e6a2bdad454ff6dbbd7b74"
+    },
+    {
+      "url": "https://www.truepath406.com/sitemap.xml",
+      "final": "https://truepath406.com/sitemap.xml",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/sitemap.xml",
+          "status": 308,
+          "location": "https://truepath406.com/sitemap.xml"
+        }
+      ],
+      "contentType": "application/xml",
+      "bodySha256": "2ea1ec541026c0f32154fdf0afbaa8df93581d77af47f0eefb0a2f693937867e"
+    },
+    {
+      "url": "https://www.truepath406.com/solutions/",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/solutions/",
+          "status": 308,
+          "location": "https://truepath406.com/solutions/"
+        },
+        {
+          "url": "https://truepath406.com/solutions/",
+          "status": 308,
+          "location": "https://truepath406.com/solutions"
+        },
+        {
+          "url": "https://truepath406.com/solutions",
+          "status": 308,
+          "location": "https://truepath406.com/#services"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    },
+    {
+      "url": "https://www.truepath406.com/solutions/review-system/",
+      "final": "https://truepath406.com/services/google-profile",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/solutions/review-system/",
+          "status": 308,
+          "location": "https://truepath406.com/solutions/review-system/"
+        },
+        {
+          "url": "https://truepath406.com/solutions/review-system/",
+          "status": 308,
+          "location": "https://truepath406.com/solutions/review-system"
+        },
+        {
+          "url": "https://truepath406.com/solutions/review-system",
+          "status": 308,
+          "location": "https://truepath406.com/services/google-profile"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "Google Business Profile Optimization | True Path Digital",
+      "canonicals": [
+        "https://truepath406.com/services/google-profile"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "2331211063744f56c2adf37efd27e5ed303c9f62480209ac2af6982e6a68a7d9"
+    },
+    {
+      "url": "https://www.truepath406.com/trust-calculator/",
+      "final": "https://truepath406.com/",
+      "status": 200,
+      "hops": [
+        {
+          "url": "https://www.truepath406.com/trust-calculator/",
+          "status": 308,
+          "location": "https://truepath406.com/trust-calculator/"
+        },
+        {
+          "url": "https://truepath406.com/trust-calculator/",
+          "status": 308,
+          "location": "https://truepath406.com/trust-calculator"
+        },
+        {
+          "url": "https://truepath406.com/trust-calculator",
+          "status": 308,
+          "location": "https://truepath406.com/#audit"
+        }
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "title": "True Path Digital | Clearer marketing. Better websites.",
+      "canonicals": [
+        "https://truepath406.com"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        }
+      ],
+      "bodySha256": "fde718ba76e1b7e52f870fc87285a5a335e40ecc266d9f0d72463c2fc2747e95"
+    }
+  ],
+  "adminChildSitemaps": [
+    {
+      "url": "https://admin.truepath406.com/post-sitemap.xml",
+      "status": 404,
+      "final": "https://truepath406.com/insights/post-sitemap.xml"
+    },
+    {
+      "url": "https://admin.truepath406.com/page-sitemap.xml",
+      "status": 404,
+      "final": "https://truepath406.com/insights/page-sitemap.xml"
+    },
+    {
+      "url": "https://admin.truepath406.com/category-sitemap.xml",
+      "status": 404,
+      "final": "https://truepath406.com/insights/category-sitemap.xml"
+    },
+    {
+      "url": "https://admin.truepath406.com/post_tag-sitemap.xml",
+      "status": 404,
+      "final": "https://truepath406.com/insights/post_tag-sitemap.xml"
+    },
+    {
+      "url": "https://admin.truepath406.com/author-sitemap.xml",
+      "status": 404,
+      "final": "https://truepath406.com/insights/author-sitemap.xml"
+    }
+  ],
+  "adminHomepageAnchors": [
+    "#content",
+    "https://admin.truepath406.com/what-ai-cant-replace-the-surprising-value-of-experience/",
+    null,
+    null,
+    null,
+    null,
+    "https://admin.truepath406.com/local-service-business-google-visibility/",
+    "https://admin.truepath406.com/hvac-marketing-agency-red-flags/",
+    "https://admin.truepath406.com/technician-utilization-profit-leak/",
+    "https://admin.truepath406.com/service-business-website/",
+    "https://admin.truepath406.com/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+    "https://admin.truepath406.com/2026/11/",
+    "https://admin.truepath406.com/2026/10/",
+    "https://admin.truepath406.com/2026/07/",
+    "https://admin.truepath406.com/2026/05/",
+    "https://admin.truepath406.com/2026/04/",
+    "https://admin.truepath406.com/2026/03/",
+    "https://admin.truepath406.com/2026/02/",
+    "https://admin.truepath406.com/2026/01/",
+    "https://admin.truepath406.com/2025/12/",
+    "https://admin.truepath406.com/category/ai-used-carefully/",
+    "https://admin.truepath406.com/category/blog/",
+    "https://admin.truepath406.com/category/decision-making/",
+    "https://admin.truepath406.com/category/foundational/",
+    "https://admin.truepath406.com/category/foundational-logic/",
+    "https://admin.truepath406.com/category/gmb-optimization/",
+    "https://admin.truepath406.com/category/paid-growth/",
+    "https://admin.truepath406.com/category/reputation-scaling/",
+    "https://wordpress.org/"
+  ],
+  "articles": [
+    {
+      "slug": "local-service-business-google-visibility",
+      "title": "Local SEO for Service Businesses: What to Expect",
+      "words": 964,
+      "date": "2026-11-04T18:30:50",
+      "modified": "2026-11-05T16:28:59",
+      "contentSha256": "6c238e70bee08daf4278acf7062a91469d86b645dd6be78701fdb373c5da7c9a"
+    },
+    {
+      "slug": "hvac-marketing-agency-red-flags",
+      "title": "How to Check Your HVAC Marketing Agency: 7 Red Flags",
+      "words": 1444,
+      "date": "2026-10-27T21:55:01",
+      "modified": "2026-10-27T21:55:02",
+      "contentSha256": "148969e7794303f702c9aa52334c7361c1ab9a89061f8359fb7c9de775c175ef"
+    },
+    {
+      "slug": "technician-utilization-profit-leak",
+      "title": "Why Your Best Techs Are Making You Less Money Than You Think",
+      "words": 1517,
+      "date": "2026-07-22T16:42:00",
+      "modified": "2026-07-22T19:20:52",
+      "contentSha256": "9b1058bf1dc2923d4cc73b46b0702ddc381e4e5c38593ada967748d7ba7cb0c6"
+    },
+    {
+      "slug": "service-business-website",
+      "title": "Your Service Business Website Has 10 Seconds to Make the Next Step Obvious",
+      "words": 1487,
+      "date": "2026-05-26T19:01:21",
+      "modified": "2026-05-26T19:01:21",
+      "contentSha256": "13a0f8e89f39e68520bb2df1f80cc39d42dfcf70fb803fa9fc4d26dcd4e645c9"
+    },
+    {
+      "slug": "how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "title": "How to Follow Up on an Estimate (Before It Goes Cold)",
+      "words": 1153,
+      "date": "2026-05-15T22:15:32",
+      "modified": "2026-05-16T03:38:01",
+      "contentSha256": "59a3fdb97d19d34f6277669496d2db4695446d407db93b5a70608d1f5e677927"
+    },
+    {
+      "slug": "thin-service-pages-look-generic",
+      "title": "Thin Service Pages Make Good Businesses Look Generic",
+      "words": 1625,
+      "date": "2026-05-11T16:26:06",
+      "modified": "2026-05-11T16:26:07",
+      "contentSha256": "ca809b9da1ff0c7522cd106f333b8d16fe3314065dfd61c5aae13b6e922ca1ba"
+    },
+    {
+      "slug": "reviews-feel-awkward-when-theres-no-process",
+      "title": "Stop Asking Your Team to Ask for Reviews",
+      "words": 1126,
+      "date": "2026-05-03T16:59:47",
+      "modified": "2026-05-04T02:53:33",
+      "contentSha256": "2862fd859e6d5facd5bfc809a888e6a5477d2b110a5a32cb8201b590592bed28"
+    },
+    {
+      "slug": "diagnose-a-slow-month",
+      "title": "How to Diagnose a Slow Month in Your Service Business",
+      "words": 1322,
+      "date": "2026-04-28T20:41:32",
+      "modified": "2026-04-28T20:43:38",
+      "contentSha256": "51b5f1b4d6c83c1d5c47db8f65f21cccc690c1b9882ab0271c62a3609a632764"
+    },
+    {
+      "slug": "the-leak-every-home-service-business-should-measure",
+      "title": "Missed Calls Are Lost Jobs: The Leak Every Home Service Business Should Measure",
+      "words": 1664,
+      "date": "2026-04-27T15:32:54",
+      "modified": "2026-05-01T20:24:29",
+      "contentSha256": "df5a043eb0e8d2c7ffa5ce88ff4acb1b0f16335a6797d95d8d6fec409d0666db"
+    },
+    {
+      "slug": "the-1-profit-leak-in-a-service-business",
+      "title": "The #1 Profit Leak in a Service Business",
+      "words": 959,
+      "date": "2026-03-22T16:37:49",
+      "modified": "2026-05-20T15:54:23",
+      "contentSha256": "e06ca1f1ce1302eb5cb0107105e899673823e3548f0711a1fb3fda849eb585db"
+    },
+    {
+      "slug": "google-profile-is-killing-your-local-visibility",
+      "title": "An Inactive Google Business Profile Is Killing Your Local Visibility",
+      "words": 1327,
+      "date": "2026-03-17T18:00:03",
+      "modified": "2026-03-27T21:15:33",
+      "contentSha256": "be53c60b65e5993897cfd6a3ab45bc870c86bf4acfb6e3d721794bd421c25641"
+    },
+    {
+      "slug": "home-service-booking",
+      "title": "The “More Leads” Trap: Fix Your Home Service Booking Rate First",
+      "words": 1373,
+      "date": "2026-02-13T16:26:39",
+      "modified": "2026-03-15T03:53:01",
+      "contentSha256": "2b7f4367da34f6b862772416d48f49c6e3d68f64d87d59230ade1a64a0beee11"
+    },
+    {
+      "slug": "marketing-attention-is-the-scarce-resource-and-that-changes-everything",
+      "title": "Marketing Attention Is the Scarce Resource (And That Changes Everything)",
+      "words": 1050,
+      "date": "2026-02-01T23:47:08",
+      "modified": "2026-02-01T23:51:20",
+      "contentSha256": "4085694e48db6f29b0e4eee70b4112fd14899c1024958b44ba6e2cd74484e9d3"
+    },
+    {
+      "slug": "marketing-tactics-business-owners-can-safely-ignore-in-2026",
+      "title": "5 Marketing Tactics Small Businesses Should Stop Using in 2026",
+      "words": 869,
+      "date": "2026-01-29T18:00:01",
+      "modified": "2026-02-11T04:27:22",
+      "contentSha256": "2b4958b8ef0b6190fac13d04ddc9da5786e11062f5dbbd6410c61f7af0644484"
+    },
+    {
+      "slug": "ai-search-visibility-why-local-businesses-are-disappearing",
+      "title": "If AI can’t tell whether your business is trustworthy, why would it mention you at all?",
+      "words": 683,
+      "date": "2026-01-29T00:07:40",
+      "modified": "2026-05-15T17:40:43",
+      "contentSha256": "3dde5fafcf39ef923333d8cbc2c5a248db011ee042592312f3b04ada71875114"
+    },
+    {
+      "slug": "why-digital-marketing-fails-early",
+      "title": "Why Digital Marketing Fails Early",
+      "words": 936,
+      "date": "2026-01-27T23:07:29",
+      "modified": "2026-01-29T03:06:42",
+      "contentSha256": "1eb2c3a7dde9a63a7d25af5820125d7b02d07aa874e983dce042b192b7fbd1d5"
+    },
+    {
+      "slug": "the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "title": "The Digital Inversion: Why Your Business is Vanishing from AI Search",
+      "words": 857,
+      "date": "2026-01-22T18:24:05",
+      "modified": "2026-01-22T18:24:06",
+      "contentSha256": "4a1fc9da8a286d804328ce8e33595bab4b2d43da06573dae6340b1127528a564"
+    },
+    {
+      "slug": "clear-marketing-decisions-for-montana-business-owners",
+      "title": "Clear marketing decisions for Montana business owners",
+      "words": 723,
+      "date": "2026-01-21T20:37:07",
+      "modified": "2026-01-29T17:50:29",
+      "contentSha256": "0f3db307a1dbe83e76635018a64e569aea9ed8ff2021d899ad3af8b4a35164ad"
+    },
+    {
+      "slug": "what-ai-cant-replace-the-surprising-value-of-experience",
+      "title": "What AI Can’t Replace: The Surprising Value of Experience",
+      "words": 864,
+      "date": "2025-12-04T16:05:31",
+      "modified": "2026-02-19T19:49:27",
+      "contentSha256": "dd1c7bb61934397f3b01d5f9213c084a6e84069e06255bf72ceadc2b32c2b81b"
+    }
+  ],
+  "contentFindings": [
+    {
+      "slug": "how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "needle": "[Insert link",
+      "excerpt": " The average response time in that audit was 42 hours. Twenty-three percent never responded at all. [Insert link to Harvard Business Review / HBS working paper]\n\n\n\nForty-two hours.\n\n\n\nThat’s an eternity when somebody needs a roof checked after a storm, an AC replaced before the weekend, or a landscaping bid before they commit the budget.\n\n\n\nGoogle’s Local Services Ads guidance points the same direction. Messaging response time can show up in your ads, and consistently fast re"
+    },
+    {
+      "slug": "the-leak-every-home-service-business-should-measure",
+      "needle": "[Insert link",
+      "excerpt": "likely it is to result in a lead, and missed calls can negatively affect that responsiveness score. [Insert link to Google Local Services Ads Help documentation]\n\n\n\nIf you’re running LSAs, a pattern of missed calls may not only cost you the customer in front of you. It may weaken the system bringing you future leads. Worth taking seriously as an operational metric, not just a customer service detail.\n\n\n\n\n\n\n\nYou Can’t Measure What Google Stopped Reporting\n\n\n\nHere’s the compoun"
+    },
+    {
+      "slug": "the-1-profit-leak-in-a-service-business",
+      "needle": "30%",
+      "excerpt": "ind more work. More calls. More estimates. More marketing spend.\n\n\n\nBut if you’re already losing 25–30% of your labor hours to drive time, parts runs, callbacks, and paperwork — adding more jobs doesn’t close the gap. You’re running harder and staying in the same place.\n\n\n\nThe other version of this is pricing. Operators sense something is off, so they try raising rates. Often that’s the right call. But if you don’t know your actual cost per job, you can raise prices and still"
+    },
+    {
+      "slug": "google-profile-is-killing-your-local-visibility",
+      "needle": "expire every 7 days",
+      "excerpt": "ing\n\n\n\nGoogle Posts are short updates that appear directly on your Business Profile. Standard posts expire every 7 days. Most trades owners have never used them.\n\n\n\nThat’s the opportunity.\n\n\n\nPosting once a week — even one or two sentences — puts your profile in a different tier from competitors who aren’t posting at all. You don’t need a graphic. You don’t need a marketing team. A note about current availability, a seasonal reminder, or a line about a recent job is enough.\n\n"
+    },
+    {
+      "slug": "google-profile-is-killing-your-local-visibility",
+      "needle": "quiet, continuous scorecard",
+      "excerpt": " job site photos. Clicked save and moved on.  \n\n\n\nHere’s what that means today: Google is running a quiet, continuous scorecard on that profile. Every week it sits untouched, it signals something — not that your business is established, but that it might be dormant. While you’re ignoring it, the shop two towns over that updates its profile once a week is quietly pulling ahead in the local pack.\n\n\n\nThis isn’t a marketing strategy problem. It’s a free tool that’s either working"
+    },
+    {
+      "slug": "google-profile-is-killing-your-local-visibility",
+      "needle": "[Insert link",
+      "excerpt": "try data puts GBP signals at roughly 32% of map pack ranking factors — the single largest category. [Insert link to Whitespark/BrightLocal local ranking factors report]\n\n\n\nThe local 3-pack — the three businesses Google shows at the top of local search results — captures 42% of all local search clicks.  If your profile isn’t signaling activity, you’re not in it. And 46% of all Google searches have local intent.  That’s a lot of phone calls going to someone who bothered to upda"
+    },
+    {
+      "slug": "home-service-booking",
+      "needle": "Call-to-book rate. Calls received",
+      "excerpt": "evisit the spend.\n\n\n\n\n\n\n\nQ: What’s the single number that tells me where my business is leaking?\n\n\n\nCall-to-book rate. Calls received divided by jobs booked. Most owners track ad spend, reviews, or website traffic — none of those tell you what’s happening at the point where money either shows up or walks away. Run the number for last week. It takes ten minutes and tells you exactly where the leak is.\n"
+    },
+    {
+      "slug": "home-service-booking",
+      "needle": "100 times more likely",
+      "excerpt": "ce call isn’t hours. It’s minutes. Following up within five minutes versus thirty minutes makes you 100 times more likely to book that job. Wait until end of day to return calls, and you’re not competing anymore. That job is already scheduled with someone else.\n\n\n\nSo before you spend another dollar on leads, ask yourself: how many calls did you get last week, and how many turned into booked jobs?\n\n\n\nMost owners don’t know. That’s the first leak.\n\n\n\nWhy “More Leads” Feels Like"
+    },
+    {
+      "slug": "home-service-booking",
+      "needle": "[Insert link",
+      "excerpt": "rators land without realizing it — means 70 cents of every marketing dollar is working against you. [Insert link to industry benchmark source — e.g., ServiceTitan or Hatch benchmark report] You’re paying to generate calls that disappear into a voicemail you’ll return tomorrow.\n\n\n\n\n\n\n\nFix First: Know Your Home Service Booking Rate Before Spending More on Leads\n\n\n\nYou don’t need a CRM to do this. You need one week of honest tracking.\n\n\n\nFor seven days, write down every call tha"
+    },
+    {
+      "slug": "home-service-booking",
+      "needle": "30%",
+      "excerpt": "ck or price shoppers — rather than a booking process that’s bleeding jobs you should have had.\n\n\n\nA 30% home service booking rate on inbound calls — which is where many owner-operators land without realizing it — means 70 cents of every marketing dollar is working against you. [Insert link to industry benchmark source — e.g., ServiceTitan or Hatch benchmark report] You’re paying to generate calls that disappear into a voicemail you’ll return tomorrow.\n\n\n\n\n\n\n\nFix First: Know Y"
+    },
+    {
+      "slug": "why-digital-marketing-fails-early",
+      "needle": "If you want to localize this tighter",
+      "excerpt": "ult. It’s the car you drove onto it—tires bald, engine rattling, hoping momentum would save you.\n\n\n\nIf you want to localize this tighter—city pages, landing copy, or lead magnets for specific Montana niches—that’s an easy next step. This structure holds up. The details are where it gets interesting.\n"
+    },
+    {
+      "slug": "the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "needle": "character-for-character",
+      "excerpt": " gap.\n\n\n\nThe NAP Audit: Check your Name, Address, and Phone number on your top 5 listings. Are they character-for-character identical?\n\n\n\nThe Schema Scan: Use Google’s Rich Results Test tool. If you don’t see “LocalBusiness” markup detected, you are driving on black ice.\n\n\n\n\nThe Reality Check\n\n\n\nFeatureGeneric “Big Box” AgencyTrue Path Digital (Local Expert)StrategyCookie-cutter “National” SEOHyper-Local “Bitterroot” ContextReportingConfusing PDFs with Vanity MetricsClear, AI"
+    },
+    {
+      "slug": "the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "needle": "AI needs",
+      "excerpt": "content looks fine to humans, but to a bot like ChatGPT, it’s a slippery mess of unstructured text. AI needs Schema Markup—think of this as tire chains. It provides the grip. It tells the AI explicitly: “This is a Consultant,” “We are located in Lolo,” “This is our phone number.” Without these “chains,” the AI slides right past you and recommends the guy with the better grip.\n\n\n\n2. The Uncalibrated Compass (Consistency Failure)\n\n\n\nImagine trying to hike to Travelers’ Rest wit"
+    }
+  ],
+  "localValidation": {
+    "build": "passed",
+    "lint": "passed",
+    "seoTests": "5/5 passed",
+    "existingWorksheetEmailTests": "10/10 passed; mocked providers",
+    "sitemapPages": 26,
+    "internalAnchorPaths": 26,
+    "productionDeployment": "not performed"
+  }
+}

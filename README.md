@@ -4,6 +4,104 @@ A high-performance marketing consultancy website for **True Path Digital**, buil
 
 **Live:** [truepath406.com](https://truepath406.com)
 
+## SEO improvement checklist
+
+Updated November 15, 2026. Work through these steps in order and update the
+checkboxes as each item is completed. The audit and technical fixes are complete
+locally. **Next action: deploy the approved technical fixes and verify Step 1.**
+Trevor approved this production release on November 15, 2026. Live WordPress
+changes remain pending separate approval.
+
+Details: [SEO audit and page recommendations](docs/seo-audit-2026-11-15.md)
+and [export data and HTTP evidence](docs/seo-evidence-2026-11-15.json).
+
+### Preparation completed
+
+- [x] Review the three Search Console exports, public pages, and WordPress integration.
+- [x] Add `/checkup` to the local sitemap and footer, correct its social metadata,
+  and preserve editorial article links while normalizing legacy destinations.
+- [x] Pass the production build, lint, five SEO tests, and ten existing worksheet/email tests.
+
+### Step 1 Deploy and verify the technical fixes
+
+- [x] Get Trevor's approval to deploy the prepared public-site changes.
+- [ ] Review the diff, rerun the relevant checks if anything has changed, then
+  deploy. A push to `main` triggers Vercel production deployment.
+- [ ] Verify the live sitemap includes `/checkup` and all current articles;
+  check the footer link, metadata, preserved article links, redirects, and 404s.
+  The tested November 15 sitemap contains 26 URLs; future counts depend on the CMS.
+- [ ] Record the deployment date and commit here: **pending**.
+
+### Step 2 Clean up the WordPress frontend
+
+- [ ] Inspect the redirect rule/plugin/server configuration and prepare the
+  exact changes for approval before modifying live settings.
+- [ ] After approval, keep the irrelevant admin homepage out of search and stop
+  exposing unnecessary archive links and broken backend sitemap destinations.
+  Send actual legacy articles directly to their matching public articles;
+  let nonexistent archives return appropriate 404/410 responses.
+- [ ] Verify GraphQL, REST endpoints needed by the site, images, admin login,
+  previews, and publishing/revalidation still work. Keep APIs accessible.
+
+### Step 3 Gather missing Search Console details and a content baseline
+
+- [ ] Obtain the exact URLs for the two redirect errors, duplicate/canonical
+  cases, discovered-but-not-indexed pages, and noindex exclusions. The supplied
+  exports do not identify these cases.
+- [ ] Inspect important final URLs in Search Console. Record Google's selected
+  canonical and indexing reason rather than inferring them from public HTML.
+- [ ] Save available impressions, clicks, qualified inquiries, and backlink
+  information before content consolidation. Mark unavailable measures as unknown.
+
+### Step 4 Correct the priority articles
+
+- [ ] Prepare revisions for review: fix the booking-rate formula and unsupported
+  response-time claims in **Home Service Booking**, and update the outdated
+  posting advice and ranking claims in **Inactive Google Profile**.
+- [ ] Remove the editing instruction from **Why Digital Marketing Fails Early**;
+  verify source claims in **Estimate Follow-Up** and **Reviews Process**, and
+  reconcile conflicting follow-up advice.
+- [ ] Get approval before updating live WordPress content. Publish approved
+  revisions and verify the public article text, metadata, links, and schema.
+
+### Step 5 Consolidate the overlapping AI search articles
+
+- [ ] Correct and strengthen **AI Search Visibility** as the proposed destination,
+  using current guidance and a documented example. Review the baseline from Step 3.
+- [ ] Get approval before retiring **Digital Inversion** and transferring its
+  useful material into the revised destination.
+- [ ] Add a relevant permanent redirect, update internal links and sitemap
+  inclusion, and verify one final indexable article remains. Do not consolidate
+  into a destination that still contains the same unsupported claims.
+
+### Step 6 Improve supporting content and proof
+
+- [ ] Substantiate portfolio/homepage percentage improvements with dates,
+  baselines, metric definitions, and owner-approved evidence, or prepare narrower
+  claims for approval. Keep visible claims and structured data consistent.
+- [ ] Review the remaining article recommendations in the audit, starting with
+  the Montana marketing-decisions, attention, and dated tactics articles.
+- [ ] Resolve the actual privacy-notice/content need for the missing
+  `/privacy-policy` page. Do not redirect it to unrelated content.
+- [ ] Keep useful service pages and the worksheet; do not delete or noindex
+  pages just to reduce Search Console exclusion counts.
+
+### Step 7 Follow up in Search Console and measure results
+
+- [ ] After Step 1, check the canonical public sitemap submission and inspect
+  important final URLs; request indexing where appropriate. Do not wait for all
+  editorial work to finish before checking the deployed technical fixes.
+- [ ] After approved backend cleanup, remove the obsolete admin sitemap
+  submission. The redundant `www` submission is optional cleanup.
+- [ ] Validate confirmed errors once their specific fixes are live. Leave
+  expected redirects, obsolete resources, and intentional 404s alone.
+- [ ] Recheck after Google recrawls, then review visibility and qualified
+  inquiries over roughly four to six weeks. Record results and the next priority here.
+
+Deployment, live WordPress settings, domain/DNS changes, content removal, and
+major architectural changes require approval under the audit brief. Checking
+off preparation does not authorize these actions.
+
 ---
 
 ## Tech Stack

@@ -173,34 +173,45 @@ const allowedTags = [
   "iframe",
 ];
 
-function isInternalHref(href: string): boolean {
-  if (href.startsWith("/")) return true;
+// Match the relevant page replacements in next.config.ts. Normalize anchors,
+// rather than all HTML, so CMS image/API URLs and external sources stay intact.
+const legacyPagePaths: Record<string, string> = {
+  "/solutions": "/#services",
+  "/solutions/local-authority": "/services/google-profile",
+  "/solutions/review-system": "/services/google-profile",
+  "/solutions/local-services-ads": "/services/google-profile",
+  "/solutions/website-conversion": "/services/website-builds",
+  "/solutions/lead-velocity": "/services/lead-response",
+  "/solutions/estimate-follow-up": "/services/lead-response",
+  "/solutions/demand-audit": "/#audit",
+  "/trust-calculator": "/#audit",
+  "/tools/marketing-checkup": "/checkup",
+  "/tools/hvac-marketing-checkup": "/checkup",
+};
+
+function normalizeInternalHref(href: string): string {
+  if (!href.startsWith("/") && !/^https?:\/\//i.test(href)) return href;
 
   try {
-    const url = new URL(href);
-    return [
-      "truepath406.com",
-      "www.truepath406.com",
-      "truepathdigital.com",
-      "www.truepathdigital.com",
-    ].includes(url.hostname.toLowerCase());
+    const origin = "https://truepath406.com";
+    const url = new URL(href, origin);
+    if (!["truepath406.com", "www.truepath406.com", "truepathdigital.com", "www.truepathdigital.com"].includes(url.hostname.toLowerCase())) {
+      return href;
+    }
+
+    const path = url.pathname.replace(/\/+$/, "") || "/";
+    const destination = legacyPagePaths[path]
+      || (path === "/blog" ? "/insights" : path.replace(/^\/blog\//, "/insights/"));
+    const target = new URL(destination, origin);
+    target.search = url.search;
+    target.hash = url.hash || target.hash;
+
+    return href.startsWith("/") && !href.startsWith("//")
+      ? `${target.pathname}${target.search}${target.hash}`
+      : target.toString();
   } catch {
-    return false;
+    return href;
   }
-}
-
-function unwrapExistingInternalLinks(html: string): string {
-  return html.replace(
-    /<a\b([^>]*)>([\s\S]*?)<\/a>/gi,
-    (fullMatch, attributes: string, content: string) => {
-      const hrefMatch = attributes.match(
-        /\bhref\s*=\s*(?:"([^"]*)"|'([^']*)')/i,
-      );
-      const href = hrefMatch?.[1] ?? hrefMatch?.[2];
-
-      return href && isInternalHref(href) ? content : fullMatch;
-    },
-  );
 }
 
 function insertLink(
@@ -278,7 +289,7 @@ function addCanonicalInternalLinks(html: string, slug?: string): string {
   const linkSpecs = internalLinksBySlug[slug];
   if (!linkSpecs) return html;
 
-  let linkedHtml = unwrapExistingInternalLinks(html);
+  let linkedHtml = html;
 
   for (const linkSpec of linkSpecs) {
     const result = insertLink(linkedHtml, linkSpec);
@@ -350,18 +361,7 @@ export function sanitizeWordPressHtml(
     articleTitle,
   );
 
-  const normalizedHtml = addCanonicalInternalLinks(
-    cleanedHtml,
-    slug,
-  )
-    .replace(
-      /https?:\/\/(www\.)?(?:truepath406|truepathdigital)\.com\/blog\//gi,
-      "https://truepath406.com/insights/",
-    )
-    .replace(
-      /https?:\/\/(www\.)?(?:truepath406|truepathdigital)\.com\//gi,
-      "https://truepath406.com/",
-    );
+  const normalizedHtml = addCanonicalInternalLinks(cleanedHtml, slug);
 
   return sanitizeHtml(normalizedHtml, {
     allowedTags,
@@ -403,6 +403,10 @@ export function sanitizeWordPressHtml(
     ],
     transformTags: {
       a: (tagName, attribs) => {
+        if (attribs.href) {
+          attribs.href = normalizeInternalHref(attribs.href);
+        }
+
         if (attribs.target !== "_blank") {
           return { tagName, attribs };
         }

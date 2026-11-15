@@ -14,6 +14,14 @@ export const metadata: Metadata = {
     title: "Service Business Marketing Checkup | True Path Digital",
     description,
     url: "/checkup",
+    type: "website",
+    images: [{ url: "/images/decision-partner-final.jpg", alt: "True Path Digital marketing checkup" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Service Business Marketing Checkup | True Path Digital",
+    description,
+    images: ["/images/decision-partner-final.jpg"],
   },
 };
 
