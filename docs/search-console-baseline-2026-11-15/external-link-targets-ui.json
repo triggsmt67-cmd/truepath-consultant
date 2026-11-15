@@ -1,0 +1,18 @@
+{
+  "sourceUrl": "https://search.google.com/search-console/links/drilldown?resource_id=sc-domain%3Atruepath406.com&type=EXTERNAL&target=&domain=",
+  "reportText": "Total external links\n\n192\nTop target pages\n\nTarget page\n\t\nIncoming links\t\nLinking sites\n\nhttps://truepath406.com/\n\t192\t6\nRows per page:\n5\n10\n25\n50\n100\n250\n500\n1-1 of 1\n",
+  "tables": [
+    [
+      [
+        "Target page",
+        "Incoming links",
+        "Linking sites"
+      ],
+      [
+        "https://truepath406.com/",
+        "192",
+        "6"
+      ]
+    ]
+  ]
+}

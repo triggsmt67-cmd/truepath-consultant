@@ -1,0 +1,401 @@
+{
+  "reviewedOn": "2026-11-15",
+  "cms": "https://admin.truepath406.com",
+  "publicSite": "https://truepath406.com",
+  "publishedArticles": 19,
+  "status": "passed",
+  "checks": [
+    {
+      "label": "GraphQL returns 19 published posts",
+      "path": "/graphql",
+      "status": 200,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/local-service-business-google-visibility/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/local-service-business-google-visibility",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/service-business-website/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/service-business-website",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/technician-utilization-profit-leak/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/technician-utilization-profit-leak",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/hvac-marketing-agency-red-flags/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/hvac-marketing-agency-red-flags",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/how-to-follow-up-on-an-estimate-before-it-goes-cold/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/reviews-feel-awkward-when-theres-no-process/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/thin-service-pages-look-generic/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/thin-service-pages-look-generic",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/diagnose-a-slow-month/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/diagnose-a-slow-month",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/the-leak-every-home-service-business-should-measure/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/the-leak-every-home-service-business-should-measure",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/the-1-profit-leak-in-a-service-business/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/google-profile-is-killing-your-local-visibility/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/home-service-booking/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/home-service-booking",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/marketing-attention-is-the-scarce-resource-and-that-changes-everything/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/ai-search-visibility-why-local-businesses-are-disappearing/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/why-digital-marketing-fails-early/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/why-digital-marketing-fails-early",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/marketing-tactics-business-owners-can-safely-ignore-in-2026/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/marketing-tactics-business-owners-can-safely-ignore-in-2026",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/clear-marketing-decisions-for-montana-business-owners/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/clear-marketing-decisions-for-montana-business-owners",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/what-ai-cant-replace-the-surprising-value-of-experience/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Published article redirects directly",
+      "path": "/the-digital-inversion-why-your-business-is-vanishing-from-ai-search/",
+      "status": 301,
+      "location": "https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Backend home redirects to public home",
+      "path": "/",
+      "status": 301,
+      "location": "https://truepath406.com/",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/category/foundational/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/2026/04/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/2026/03/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/category/decision-making/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/category/reputation-scaling/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/category/gmb-optimization/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/feed/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "application/rss+xml; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/category/foundational-logic/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/missing-seo-cleanup-check/",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/sitemap_index.xml",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/*",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/wp-content/themes/twentytwentyone/*",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/post_tag-sitemap.xml",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/post-sitemap.xml",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/page-sitemap.xml",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/category-sitemap.xml",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/author-sitemap.xml",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Retired or missing URL returns direct 404",
+      "path": "/wp-sitemap.xml",
+      "status": 404,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Robots permits crawl and advertises no backend sitemap",
+      "path": "/robots.txt",
+      "status": 200,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "label": "Tracking retained; CMS nonce parameter not forwarded",
+      "path": "/service-business-website/?utm_source=seo-check&preview_nonce=test-not-a-secret",
+      "status": 301,
+      "location": "https://truepath406.com/insights/service-business-website?utm_source=seo-check",
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "REST/login path remains available",
+      "path": "/wp-json/",
+      "status": 200,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "label": "REST/login path remains available",
+      "path": "/wp-json/wp/v2/posts?per_page=100&_fields=id,slug,status",
+      "status": 200,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "label": "REST/login path remains available",
+      "path": "/?rest_route=/wp/v2/posts&per_page=1&_fields=id,slug",
+      "status": 200,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "application/json; charset=UTF-8"
+    },
+    {
+      "label": "REST/login path remains available",
+      "path": "/wp-login.php",
+      "status": 200,
+      "location": null,
+      "robots": "noindex, nofollow",
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "label": "Existing featured image loads",
+      "url": "https://admin.truepath406.com/wp-content/uploads/2026/11/ChatGPT-Image-Nov-5-2026-09_27_34-AM.png",
+      "status": 200
+    }
+  ],
+  "robotsBody": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n",
+  "limitations": "HTTP checks do not log in or publish content. Authenticated dashboard/draft preview and saved settings are verified separately in Chrome.",
+  "authenticatedBrowserChecks": {
+    "dashboardAndContentList": "passed",
+    "existingDraftPreview": "passed; existing draft ID 54 rendered on the admin host with article content and admin toolbar",
+    "yoastXmlSitemaps": false,
+    "yoastRestApiEndpoint": true,
+    "htaccessReadback": "approved custom block saved; WordPress-managed block preserved",
+    "backendCachePurge": "Hostinger confirmed Cache cleaned successfully for admin.truepath406.com",
+    "proofImage": "/Users/trevorriggs/Documents/Codex/outputs/truepath-wordpress-step-two-2026-11-15.jpg"
+  },
+  "publicSiteChecks": {
+    "seoTests": "5/5 passed",
+    "sitemapPages": 26,
+    "internalAnchorPaths": 26
+  },
+  "publishingTest": "No article edited or published; full new-publication/revalidation cycle not exercised",
+  "appliedFiles": [
+    {
+      "serverPath": "wp-content/mu-plugins/tpd-headless-frontend.php",
+      "reviewedSourceSha256": "6f4e615e93ca6c0532dabd436a760f6addc0afd8f27313ca3e76faf554cdf0d8"
+    },
+    {
+      "serverPath": "wp-content/mu-plugins/tpd-headless/404.php",
+      "reviewedSourceSha256": "8d7070d28ecbc0ce6b8597cb856a691a6730f21e51a8adbd3d149e85c2783d8a"
+    }
+  ]
+}

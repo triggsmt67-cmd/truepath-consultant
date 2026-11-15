@@ -1,0 +1,95 @@
+{
+  "rows": [
+    [
+      "Reason",
+      "Source\n\ue8fd",
+      "Validation",
+      "Trend",
+      "Pages"
+    ],
+    [
+      "Page with redirect",
+      "Website",
+      "\ue000\nNot Started",
+      "",
+      "33"
+    ],
+    [
+      "Not found (404)",
+      "Website",
+      "\ue000\nNot Started",
+      "",
+      "11"
+    ],
+    [
+      "Excluded by \u2018noindex\u2019 tag",
+      "Website",
+      "\ue000\nNot Started",
+      "",
+      "7"
+    ],
+    [
+      "Redirect error",
+      "Website",
+      "\ue000\nNot Started",
+      "",
+      "2"
+    ],
+    [
+      "Duplicate without user-selected canonical",
+      "Website",
+      "\ue000\nNot Started",
+      "",
+      "1"
+    ],
+    [
+      "Crawled - currently not indexed",
+      "Google systems",
+      "\ue000\nNot Started",
+      "",
+      "18"
+    ],
+    [
+      "Discovered \u2013 currently not indexed",
+      "Google systems",
+      "\ue000\nNot Started",
+      "",
+      "3"
+    ],
+    [
+      "Duplicate, Google chose different canonical than user",
+      "Google systems",
+      "\ue000\nNot Started",
+      "",
+      "1"
+    ],
+    [
+      "Blocked due to access forbidden (403)",
+      "Website",
+      "N/A",
+      "",
+      "0"
+    ],
+    [
+      "Blocked by robots.txt",
+      "Website",
+      "\ue92d\nPassed",
+      "",
+      "0"
+    ],
+    [
+      "Alternative page with proper canonical tag",
+      "Website",
+      "N/A",
+      "",
+      "0"
+    ]
+  ],
+  "sourceUrl": "https://search.google.com/search-console/index?resource_id=sc-domain%3Atruepath406.com",
+  "capturedOn": "2026-11-15",
+  "reportUpdatedDate": "2026-11-08",
+  "indexedPages": 17,
+  "notIndexedPages": 76,
+  "nonzeroReasons": 8,
+  "processingNote": "Removed retained hidden performance-table rows; kept indexing reason table."
+}

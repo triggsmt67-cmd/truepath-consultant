@@ -1,0 +1,20 @@
+{
+  "issue": "redirect-errors",
+  "sourceUrl": "https://search.google.com/search-console/index/drilldown?resource_id=sc-domain%3Atruepath406.com&item_key=CAMYFCAC",
+  "reportUpdatedDate": "2026-11-08",
+  "capturedOn": "2026-11-15",
+  "rows": [
+    [
+      "URL",
+      "Last crawled"
+    ],
+    [
+      "https://www.truepath406.com/blog/ai-search-visibility-why-local-businesses-are-disappearing/",
+      "4 Aug 2026"
+    ],
+    [
+      "https://www.truepath406.com/blog/marketing-attention-is-the-scarce-resource-and-that-changes-everything/",
+      "9 Jun 2026"
+    ]
+  ]
+}

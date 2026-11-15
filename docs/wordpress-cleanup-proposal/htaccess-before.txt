@@ -1,0 +1,37 @@
+# BEGIN LSCACHE
+# END LSCACHE
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+
+# --- BEGIN TP DIGITAL HEADLESS SEO REDIRECTS ---
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. Block indexing entirely on the admin subdomain
+Header set X-Robots-Tag "noindex, nofollow"
+
+# 2. Exclude WordPress critical admin/API/static paths from being redirected
+RewriteCond %{REQUEST_URI} !^/(wp-admin|wp-login\.php|graphql|wp-json|xmlrpc\.php|wp-content|wp-includes|robots\.txt|sitemap.*\.xml) [NC]
+
+# 3. Exclude the root path ("/") from redirecting to /blog/ so your admin login doesn't loop
+RewriteCond %{REQUEST_URI} !^/$
+
+# 4. Redirect all other requests (public posts like /my-post/) to Next.js /blog/my-post
+RewriteRule ^/?(.*)$ https://truepath406.com/blog/$1 [R=301,L]
+</IfModule>
+# --- END TP DIGITAL HEADLESS SEO REDIRECTS ---
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress

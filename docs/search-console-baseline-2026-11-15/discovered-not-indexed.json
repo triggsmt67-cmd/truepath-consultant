@@ -1,0 +1,24 @@
+{
+  "issue": "discovered-not-indexed",
+  "sourceUrl": "https://search.google.com/search-console/index/drilldown?resource_id=sc-domain%3Atruepath406.com&item_key=CAMYFiAC",
+  "reportUpdatedDate": "2026-11-08",
+  "capturedOn": "2026-11-15",
+  "rows": [
+    [
+      "URL",
+      "Last crawled"
+    ],
+    [
+      "https://truepath406.com/insights",
+      "N/A"
+    ],
+    [
+      "https://truepath406.com/insights/local-service-business-google-visibility",
+      "N/A"
+    ],
+    [
+      "https://truepath406.com/work",
+      "N/A"
+    ]
+  ]
+}

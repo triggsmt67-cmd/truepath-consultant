@@ -1,0 +1,164 @@
+{
+  "rows": [
+    [
+      "Top pages",
+      "Clicks",
+      "Impressions",
+      "CTR",
+      "Position"
+    ],
+    [
+      "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "1",
+      "90",
+      "1.1%",
+      "7.8"
+    ],
+    [
+      "https://truepath406.com/",
+      "0",
+      "87",
+      "0%",
+      "7.0"
+    ],
+    [
+      "https://truepath406.com/services/lead-response",
+      "0",
+      "18",
+      "0%",
+      "7.4"
+    ],
+    [
+      "https://truepath406.com/services/website-builds",
+      "0",
+      "17",
+      "0%",
+      "12.6"
+    ],
+    [
+      "https://truepath406.com/blog/diagnose-a-slow-month",
+      "0",
+      "10",
+      "0%",
+      "9.8"
+    ],
+    [
+      "https://truepath406.com/#audit",
+      "0",
+      "8",
+      "0%",
+      "3.9"
+    ],
+    [
+      "https://truepath406.com/#services",
+      "0",
+      "8",
+      "0%",
+      "3.9"
+    ],
+    [
+      "https://truepath406.com/insights",
+      "0",
+      "8",
+      "0%",
+      "3.9"
+    ],
+    [
+      "https://truepath406.com/work",
+      "0",
+      "8",
+      "0%",
+      "3.9"
+    ],
+    [
+      "https://truepath406.com/services/google-profile",
+      "0",
+      "7",
+      "0%",
+      "8.7"
+    ],
+    [
+      "https://truepath406.com/insights/marketing-tactics-business-owners-can-safely-ignore-in-2026\nCopy URL to clipboard\nOpen in new tab\nInspect URL",
+      "0",
+      "3",
+      "0%",
+      "5.7"
+    ],
+    [
+      "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "0",
+      "3",
+      "0%",
+      "8.0"
+    ],
+    [
+      "https://truepath406.com/insights/diagnose-a-slow-month",
+      "0",
+      "3",
+      "0%",
+      "16.3"
+    ],
+    [
+      "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "0",
+      "2",
+      "0%",
+      "9.0"
+    ],
+    [
+      "https://truepath406.com/blog/technician-utilization-profit-leak/",
+      "0",
+      "1",
+      "0%",
+      "1.0"
+    ],
+    [
+      "https://truepath406.com/insights/the-1-profit-leak-in-a-service-business",
+      "0",
+      "1",
+      "0%",
+      "4.0"
+    ],
+    [
+      "https://truepath406.com/insights/thin-service-pages-look-generic",
+      "0",
+      "1",
+      "0%",
+      "4.0"
+    ],
+    [
+      "https://truepath406.com/insights/hvac-marketing-agency-red-flags",
+      "0",
+      "1",
+      "0%",
+      "6.0"
+    ],
+    [
+      "https://truepath406.com/blog/service-business-website/",
+      "0",
+      "1",
+      "0%",
+      "22.0"
+    ],
+    [
+      "https://truepath406.com/insights/clear-marketing-decisions-for-montana-business-owners",
+      "0",
+      "1",
+      "0%",
+      "45.0"
+    ]
+  ],
+  "sourceUrl": "https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Atruepath406.com&breakdown=page&num_of_days=28&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION",
+  "capturedOn": "2026-11-15",
+  "dateRange": {
+    "start": "2026-10-17",
+    "end": "2026-11-13"
+  },
+  "propertyTotals": {
+    "clicks": 1,
+    "impressions": 228,
+    "ctr": "0.4%",
+    "averagePosition": 8.3
+  },
+  "method": "Visible Search Console UI capture; CSV export was blocked by Chrome. URL cell action labels removed only in derived CSV."
+}

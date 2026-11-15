@@ -1,0 +1,16 @@
+{
+  "issue": "google-selected-different-canonical",
+  "sourceUrl": "https://search.google.com/search-console/index/drilldown?resource_id=sc-domain%3Atruepath406.com&item_key=CAMYECAC",
+  "reportUpdatedDate": "2026-11-08",
+  "capturedOn": "2026-11-15",
+  "rows": [
+    [
+      "URL",
+      "Last crawled"
+    ],
+    [
+      "https://www.truepath406.com/blog/service-business-website/",
+      "8 Jun 2026"
+    ]
+  ]
+}

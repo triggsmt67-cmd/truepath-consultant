@@ -1,0 +1,64 @@
+--- a/src/app/insights/[slug]/page.tsx
++++ b/src/app/insights/[slug]/page.tsx
+@@ -20,9 +20,9 @@
+   "the-leak-every-home-service-business-should-measure":
+     "Missed Calls Are Lost Jobs for Home Service Businesses",
+   "google-profile-is-killing-your-local-visibility":
+-    "Inactive Google Profiles Kill Local Visibility",
++    "Google Business Profile Optimization: A Maintenance Checklist",
+   "home-service-booking":
+-    "The “More Leads” Trap: Fix Your Booking Rate First",
++    "Home Service Booking Rate: Find Where Inquiries Get Lost",
+   "marketing-attention-is-the-scarce-resource-and-that-changes-everything":
+     "Marketing Attention Is the Scarce Resource",
+   "marketing-tactics-business-owners-can-safely-ignore-in-2026":
+--- a/src/app/services/google-profile/layout.tsx
++++ b/src/app/services/google-profile/layout.tsx
+@@ -1,22 +1,22 @@
+ import type { Metadata } from "next";
+ 
+ export const metadata: Metadata = {
+-  title: "Google Business Profile Optimization",
+-  description: "I strengthen Google Business Profiles for owner-operated service businesses so they appear more clearly on Maps and turn local searches into calls.",
++  title: "Google Business Profile Optimization in Missoula",
++  description: "Google Business Profile optimization for Missoula service businesses. Review categories, services, reviews, and contact paths. Request a profile review.",
+   alternates: {
+     canonical: "/services/google-profile",
+   },
+   openGraph: {
+-    title: "Google Business Profile Optimization",
+-    description: "I help owner-operated service businesses clean up, strengthen, and better manage their Google Business Profiles so they show up better on Google Maps.",
++    title: "Google Business Profile Optimization in Missoula",
++    description: "Google Business Profile optimization for Missoula service businesses. Review categories, services, reviews, and contact paths. Request a profile review.",
+     url: "https://truepath406.com/services/google-profile",
+     type: "website",
+     images: [{ url: "/images/google-profile.webp", width: 1200, height: 630, alt: "Google Business Profile optimization for local service businesses" }],
+   },
+   twitter: {
+     card: "summary_large_image",
+-    title: "Google Business Profile Optimization | True Path Digital",
+-    description: "I help service businesses clean up and strengthen their Google Business Profiles to turn more local searches into calls.",
++    title: "Google Business Profile Optimization in Missoula | True Path Digital",
++    description: "Google Business Profile optimization for Missoula service businesses. Review categories, services, reviews, and contact paths. Request a profile review.",
+     images: ["/images/google-profile.webp"],
+   },
+ };
+--- a/src/app/services/google-profile/page.tsx
++++ b/src/app/services/google-profile/page.tsx
+@@ -266,13 +266,13 @@
+               </motion.div>
+ 
+               <h1 className="max-w-3xl font-serif font-medium text-[clamp(2.75rem,4.5vw,4.5rem)] leading-[1.08] tracking-tight">
+-                <motion.span variants={itemVariants} className="block text-foreground">Show Up Better</motion.span>
+-                <motion.span variants={itemVariants} className="block text-primary">on Google Maps.</motion.span>
++                <motion.span variants={itemVariants} className="block text-foreground">Google Business Profile</motion.span>
++                <motion.span variants={itemVariants} className="block text-primary">Optimization in Missoula.</motion.span>
+               </h1>
+ 
+               <motion.div variants={itemVariants} className="mt-8 flex flex-col items-start gap-8">
+                 <p className="max-w-xl text-[clamp(1.125rem,1.4vw,1.25rem)] leading-relaxed text-muted-text">
+-                  Your Google Business Profile is often the first thing a potential customer sees. I help owner-operated service businesses clean up, strengthen, and better manage their profiles so they can turn more local searches into phone calls.
++                  I help owner-operated service businesses in Missoula review their Google Business Profile, correct inaccurate details, and make it easier for customers to reach them. Start with categories, services, reviews, and the path from your profile to an inquiry.
+                 </p>
+ 
+                 <Button onClick={() => openDrawer()} variant="primary">

@@ -1,0 +1,16 @@
+{
+  "issue": "duplicate-without-canonical",
+  "sourceUrl": "https://search.google.com/search-console/index/drilldown?resource_id=sc-domain%3Atruepath406.com&item_key=CAMYDyAC",
+  "reportUpdatedDate": "2026-11-08",
+  "capturedOn": "2026-11-15",
+  "rows": [
+    [
+      "URL",
+      "Last crawled"
+    ],
+    [
+      "https://www.truepath406.com/blog/technician-utilization-profit-leak/",
+      "2 Jun 2026"
+    ]
+  ]
+}

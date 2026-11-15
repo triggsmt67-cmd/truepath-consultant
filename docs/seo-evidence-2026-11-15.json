@@ -347,7 +347,8 @@
           "content": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         }
       ],
-      "bodySha256": "ea215547a21007181f9e8166e09ab2528b5778f5c264180d18ecbe2054ca56e1"
+      "bodySha256": "ea215547a21007181f9e8166e09ab2528b5778f5c264180d18ecbe2054ca56e1",
+      "xRobotsTag": "noindex, nofollow"
     },
     {
       "url": "https://admin.truepath406.com/*",
@@ -566,7 +567,8 @@
       "status": 200,
       "hops": [],
       "contentType": "text/plain; charset=utf-8",
-      "bodySha256": "6d1ac41305b0e28cbbf99ef5f3294c42f996a0e03079b2b889a8b7c14af3c90d"
+      "bodySha256": "6d1ac41305b0e28cbbf99ef5f3294c42f996a0e03079b2b889a8b7c14af3c90d",
+      "xRobotsTag": "noindex, nofollow"
     },
     {
       "url": "https://admin.truepath406.com/sitemap.xml",
@@ -580,7 +582,8 @@
         }
       ],
       "contentType": "text/xml; charset=UTF-8",
-      "bodySha256": "9d19c5fd2c7eb4e6393b278d267e674af8df3812b4b38bc0bdb1d7e2c715cc3c"
+      "bodySha256": "9d19c5fd2c7eb4e6393b278d267e674af8df3812b4b38bc0bdb1d7e2c715cc3c",
+      "xRobotsTag": "noindex, nofollow"
     },
     {
       "url": "https://admin.truepath406.com/sitemap_index.xml",
@@ -588,7 +591,8 @@
       "status": 200,
       "hops": [],
       "contentType": "text/xml; charset=UTF-8",
-      "bodySha256": "9d19c5fd2c7eb4e6393b278d267e674af8df3812b4b38bc0bdb1d7e2c715cc3c"
+      "bodySha256": "9d19c5fd2c7eb4e6393b278d267e674af8df3812b4b38bc0bdb1d7e2c715cc3c",
+      "xRobotsTag": "noindex, nofollow"
     },
     {
       "url": "https://admin.truepath406.com/wp-content/themes/twentytwentyone/*",
@@ -596,7 +600,8 @@
       "status": 404,
       "hops": [],
       "contentType": "text/html; charset=UTF-8",
-      "bodySha256": "ddcf07ec0e21804abcf32c62f8f5a7c263c9bf5cb4bc148d8f8769c99070fdbb"
+      "bodySha256": "ddcf07ec0e21804abcf32c62f8f5a7c263c9bf5cb4bc148d8f8769c99070fdbb",
+      "xRobotsTag": "noindex, nofollow"
     },
     {
       "url": "https://admin.truepath406.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4",
@@ -604,7 +609,8 @@
       "status": 200,
       "hops": [],
       "contentType": "application/x-javascript",
-      "bodySha256": "063840b4b3f5869e0f0d078bab8bd29cfb3a59ee85e8e3edbbec35a8fe846fd3"
+      "bodySha256": "063840b4b3f5869e0f0d078bab8bd29cfb3a59ee85e8e3edbbec35a8fe846fd3",
+      "xRobotsTag": "noindex, nofollow"
     },
     {
       "url": "https://admin.truepath406.com/wp-json/hostinger-reach/v1/contact",
@@ -612,7 +618,8 @@
       "status": 404,
       "hops": [],
       "contentType": "application/json; charset=UTF-8",
-      "bodySha256": "321227fe038fc2f282fd904a174fbaf931eb5d763ce64eded0e6a3f31d32119f"
+      "bodySha256": "321227fe038fc2f282fd904a174fbaf931eb5d763ce64eded0e6a3f31d32119f",
+      "xRobotsTag": "noindex, nofollow"
     },
     {
       "url": "https://truepath406.com",
@@ -2832,5 +2839,142 @@
     },
     "externalChanges": "Public technical release only; no WordPress settings, DNS changes, content edits, real form submissions or emails",
     "nextStep": "Step 2: inspect WordPress frontend cleanup and prepare concrete changes for approval"
+  },
+  "step2Inspection": {
+    "date": "2026-11-15",
+    "status": "Completed; approved cleanup applied and verified live on November 15, 2026",
+    "correction": "Original audit missed lowercase x-robots-tag in admin HTTP headers. The original and current admin homepage sends noindex, nofollow; its HTML index, follow directive does not make it indexable.",
+    "redirectOwner": "Root .htaccess, TP DIGITAL HEADLESS SEO REDIRECTS custom block",
+    "rule": "RewriteRule ^/?(.*)$ https://truepath406.com/blog/$1 [R=301,L]",
+    "reading": {
+      "frontPage": "Home (static page)",
+      "postsPage": null,
+      "discourageSearchEngines": false
+    },
+    "yoast": {
+      "xmlSitemaps": true,
+      "restApiEndpoint": true,
+      "plainRedirects": 0
+    },
+    "physicalRobotsTxt": false,
+    "proposal": "docs/wordpress-cleanup-proposal/README.md",
+    "localDraftValidation": {
+      "phpSyntax": "passed (PHP 8.2)",
+      "mockedRoutingChecks": 26,
+      "fullWordPressIntegration": "not run; no installation performed"
+    },
+    "currentHttpChecks": [
+      {
+        "path": "/",
+        "status": 200,
+        "location": null,
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html; charset=UTF-8",
+        "htmlRobots": "<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />"
+      },
+      {
+        "path": "/robots.txt",
+        "status": 200,
+        "location": null,
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/plain; charset=utf-8"
+      },
+      {
+        "path": "/sitemap_index.xml",
+        "status": 200,
+        "location": null,
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/xml; charset=UTF-8"
+      },
+      {
+        "path": "/post-sitemap.xml",
+        "status": 301,
+        "location": "https://truepath406.com/blog/post-sitemap.xml",
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html"
+      },
+      {
+        "path": "/feed/",
+        "status": 301,
+        "location": "https://truepath406.com/blog/feed/",
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html"
+      },
+      {
+        "path": "/2026/03/",
+        "status": 301,
+        "location": "https://truepath406.com/blog/2026/03/",
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html"
+      },
+      {
+        "path": "/category/foundational/",
+        "status": 301,
+        "location": "https://truepath406.com/blog/category/foundational/",
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html"
+      },
+      {
+        "path": "/service-business-website/",
+        "status": 301,
+        "location": "https://truepath406.com/blog/service-business-website/",
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html"
+      },
+      {
+        "path": "/this-page-does-not-exist-seo-audit/",
+        "status": 301,
+        "location": "https://truepath406.com/blog/this-page-does-not-exist-seo-audit/",
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html"
+      },
+      {
+        "path": "/wp-json/",
+        "status": 200,
+        "location": null,
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "application/json; charset=UTF-8"
+      },
+      {
+        "path": "/wp-sitemap.xml",
+        "status": 301,
+        "location": "https://truepath406.com/blog/wp-sitemap.xml",
+        "redirectBy": null,
+        "robots": "noindex, nofollow",
+        "contentType": "text/html"
+      }
+    ]
+  },
+  "step2Release": {
+    "date": "2026-11-15",
+    "timezone": "America/Denver",
+    "status": "live and verified",
+    "scope": "Reviewed .htaccess custom block replacement, two must-use helper files, Yoast XML sitemap feature disabled; existing API and noindex policies retained",
+    "backendChecks": 46,
+    "publishedArticles": 19,
+    "publicSitemapPages": 26,
+    "authenticatedBrowserChecks": {
+      "dashboardAndContentList": "passed",
+      "existingDraftPreview": "passed; existing draft ID 54 rendered on the admin host with article content and admin toolbar",
+      "yoastXmlSitemaps": false,
+      "yoastRestApiEndpoint": true,
+      "htaccessReadback": "approved custom block saved; WordPress-managed block preserved",
+      "backendCachePurge": "Hostinger confirmed Cache cleaned successfully for admin.truepath406.com",
+      "proofImage": "/Users/trevorriggs/Documents/Codex/outputs/truepath-wordpress-step-two-2026-11-15.jpg"
+    },
+    "rollbackFile": "/Users/trevorriggs/.codex/backups/truepath-wordpress-2026-11-15/htaccess-before.txt",
+    "detailedEvidence": "docs/wordpress-cleanup-proposal/live-verification-2026-11-15.json",
+    "publishingTest": "No article edited or published; full new-publication/revalidation cycle not exercised",
+    "nextStep": "Step 3: gather missing Search Console URL details and content-performance baseline"
   }
 }

@@ -1,0 +1,49 @@
+{
+  "capturedOn": "2026-11-15",
+  "scope": "Local proposals only; no deployment performed",
+  "records": 5,
+  "originalHashesMatch": true,
+  "frontendPatchApplies": true,
+  "internalLinkResults": [
+    {
+      "url": "https://truepath406.com/checkup",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/checkup"
+    },
+    {
+      "url": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility"
+    },
+    {
+      "url": "https://truepath406.com/insights/home-service-booking",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/insights/home-service-booking"
+    },
+    {
+      "url": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold"
+    },
+    {
+      "url": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process"
+    },
+    {
+      "url": "https://truepath406.com/insights/service-business-website",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/insights/service-business-website"
+    },
+    {
+      "url": "https://truepath406.com/services/google-profile",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/services/google-profile"
+    },
+    {
+      "url": "https://truepath406.com/services/lead-response",
+      "status": 200,
+      "finalUrl": "https://truepath406.com/services/lead-response"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+
+
+
+You set up your Google Business Profile once — probably two or three years ago. Filled in the address, picked a category, added a phone number. Maybe threw in a few job site photos. Clicked save and moved on.
+
+
+
+
+
+Here’s what that means today: Google is running a quiet, continuous scorecard on that profile. Every week it sits untouched, it signals something — not that your business is established, but that it might be dormant. While you’re ignoring it, the shop two towns over that updates its profile once a week is quietly pulling ahead in the local pack.
+
+
+
+
+
+This isn’t a marketing strategy problem. It’s a free tool that’s either working for you or against you. For most trades owners running on autopilot, it’s working against them.
+
+
+
+
+
+
+
+
+
+Why Your Google Business Profile Ranking Affects Every New Job You Get
+
+
+
+
+
+Google’s local algorithm weighs three things: relevance, distance, and prominence.
+
+
+
+
+
+Distance is fixed — you can’t move your shop. Relevance is mostly a one-time setup job: picking the right categories, listing your actual services. Prominence is where most trades owners quietly bleed.
+
+
+
+
+
+Prominence is Google’s read on how active, trusted, and visible your business is. It pulls in review count, review recency, whether you respond to reviews, how current your information is, and whether your profile signals an ongoing operation. Industry data puts GBP signals at roughly 32% of map pack ranking factors — the single largest category. [Insert link to Whitespark/BrightLocal local ranking factors report]
+
+
+
+
+
+The local 3-pack — the three businesses Google shows at the top of local search results — captures 42% of all local search clicks.  If your profile isn’t signaling activity, you’re not in it. And 46% of all Google searches have local intent.  That’s a lot of phone calls going to someone who bothered to update their hours last month.
+
+
+
+
+
+
+
+
+
+What a Stale Google Business Profile Actually Looks Like
+
+
+
+
+
+Most trades owners assume their profile is “fine” because they set it up correctly. That’s not the same as it being current, active, or competitive. Here’s where inactive profiles lose:
+
+
+
+
+
+Wrong or outdated hours. You added emergency weekend availability. You shifted your schedule seasonally. You changed your hours and forgot to update Google. Customers who call during “closed” hours don’t come back. Google tracks that bounce signal.
+
+
+
+
+
+No recent photos. A profile with job site photos from three years ago doesn’t look established — it looks abandoned. Consistent photo uploads compound over time. Profiles with extensive photo libraries see dramatically higher call volume and direction requests compared to profiles with minimal images. [Insert link to Google/BrightLocal photo engagement data] You don’t need 100 photos today. You need a habit of adding 2–3 per month.
+
+
+
+
+
+Unanswered reviews. 73% of consumers only trust reviews written in the last month. [Insert link to BrightLocal 2024 review survey] Every unanswered review — especially a negative one — signals to Google and to your next customer that no one’s minding the store. One sentence per review is enough. You don’t need a script. Just acknowledge it and move on.
+
+
+
+
+
+An unmonitored Q&A section. Most trades owners don’t know there’s a public Q&A section on their Google profile. Anyone can post a question. Anyone can answer it — competitors, bots, well-meaning neighbors with wrong information. If you’re not seeding it yourself, you’re leaving the floor open to misinformation about your own business.
+
+
+
+
+
+
+
+
+
+Fix First: How to Optimize Your Google Business Profile Before Spending a Dime
+
+
+
+
+
+Before paying for ads, directories, or any local SEO service — fix what’s already broken. This takes 30–60 minutes, not 30 hours.
+
+
+
+
+
+Log into your Google Business Profile and run an honest audit. Complete profiles get 7× more clicks than incomplete ones. [Insert link to Google/BrightLocal completeness data] Not a marginal bump — a structural difference.
+
+
+
+
+
+Steal This — GBP Audit Checklist
+
+
+
+
+
+
+[ ] Business name, address, and phone match exactly what’s on your website and social profiles
+
+
+
+
+
+[ ] Primary category is trade-specific: “Plumber,” “HVAC Contractor,” “Electrician,” “Septic System Service” — not just “Contractor”
+
+
+
+
+
+[ ] Secondary categories cover the specific services you actually want calls for
+
+
+
+
+
+[ ] Hours are current — including seasonal changes and any emergency or after-hours availability
+
+
+
+
+
+[ ] Services section lists your actual services with real descriptions, not a one-line summary
+
+
+
+
+
+[ ] At least 10 photos uploaded, with 2–3 from the past 90 days
+
+
+
+
+
+[ ] Every unanswered review has a response — even the old ones
+
+
+
+
+
+[ ] Q&A section has been reviewed and seeded with 3–5 real questions you’ve answered yourself
+
+
+
+
+
+
+If more than three of those boxes are unchecked, your profile is actively costing you jobs. Fix those before anything else.
+
+
+
+
+
+
+
+
+
+The Weekly Google Post Nobody in Your Market Is Making
+
+
+
+
+
+Google Posts are short updates that appear directly on your Business Profile. Standard posts expire every 7 days. Most trades owners have never used them.
+
+
+
+
+
+That’s the opportunity.
+
+
+
+
+
+Posting once a week — even one or two sentences — puts your profile in a different tier from competitors who aren’t posting at all. You don’t need a graphic. You don’t need a marketing team. A note about current availability, a seasonal reminder, or a line about a recent job is enough.
+
+
+
+
+
+The goal isn’t clever copy. It’s activity signals — proof to Google that your business is running, and a reason for someone scanning your profile to pick up the phone.
+
+
+
+
+
+Steal This — Weekly GBP Post Templates
+
+
+
+
+
+“We’ve got openings next week for [service]. Call [number] to get on the schedule.”
+
+
+
+
+
+“Just finished a [job type] in [neighborhood]. If you’ve been putting yours off, now’s a good time — we’re already in the area. [Number].”
+
+
+
+
+
+“[Season] means [common service need]. Our calendar fills fast — call [number] before it backs up.”
+
+
+
+
+
+None of these are sophisticated. They don’t need to be.
+
+
+
+
+
+
+
+
+
+Two Google Business Profile Upgrades Worth Adding Once the Basics Are Locked In
+
+
+
+
+
+Once your profile is active and the audit checklist is clean, two additions are worth the time:
+
+
+
+
+
+Add your service areas. If you run calls beyond your shop address, list the cities and zip codes you actually serve. This extends your local search visibility without requiring a physical address in each area. Most trades owners leave this blank. Fill it in.
+
+
+
+
+
+Build a review request habit. The trades owners with 80+ reviews didn’t get lucky — they asked. Every job. Every time. With a direct link. Tools like NiceJob or Jobber automate this. If that’s too much right now, do it manually: text the direct link to your next 10 customers after the job wraps. 88% of consumers read Google reviews before making a call. [Insert link to BrightLocal consumer review survey] Review velocity — how recently and how consistently you’re collecting them — is a real ranking signal. One review a month beats 40 reviews from two years ago.
+
+
+
+
+
+
+
+
+
+What a Stale Google Business Profile Is Actually Costing You
+
+
+
+
+
+A stale Google Business Profile isn’t a cosmetic problem. It’s a booked-jobs problem.
+
+
+
+
+
+If competitors consistently show up in the local pack and you don’t, you’re invisible to any customer who doesn’t already know your name. New residents. Homeowners who don’t have a trades number saved. Emergency calls at 9pm where someone searches, sees three options, and dials the first one.
+
+
+
+
+
+You can’t outspend your way into the local pack. You can outwork it. The bar is low.
+
+
+
+
+
+Quick Wins Checklist — Do These This Week
+
+
+
+
+
+
+[ ] Log into Google Business Profile and verify all information is current
+
+
+
+
+
+[ ] Respond to every unanswered review — one sentence minimum
+
+
+
+
+
+[ ] Upload 3–5 current job photos
+
+
+
+
+
+[ ] Write one post: availability, a recent job, or a seasonal reminder
+
+
+
+
+
+[ ] Text your last 5 customers a direct review request link
+
+
+
+
+
+
+One hour. No ad spend. No agency.
+
+
+
+
+
+
+
+
+
+Next step: Run that search today. Screenshot the results. That’s your baseline — it tells you exactly how far back you are and who you’re competing with.
+
+
+
+
+
+

@@ -7,11 +7,26 @@ A high-performance marketing consultancy website for **True Path Digital**, buil
 ## SEO improvement checklist
 
 Updated November 15, 2026. Work through these steps in order and update the
-checkboxes as each item is completed. **Step 1 is complete: the technical fixes
-are deployed and verified on the live site. Next action: Step 2, inspect the
-WordPress frontend cleanup and prepare its exact changes for approval.** Trevor
-approved the public release on November 15, 2026; live WordPress changes remain
-pending separate approval.
+checkboxes as each item is completed. **Steps 1 and 2 are live and verified. Step 3 Search Console collection is
+complete; GA4 and inquiry measurement are deferred.
+Step 4 drafts are prepared; next action: review the exact article and
+Google Profile service-page proposals before publication.**
+Trevor approved both releases on November 15, 2026. Article rewrites,
+consolidation, content removal, and unrelated settings remain separate work.
+
+### November 15 repository checkpoint
+
+- [x] Complete and verify Steps 1 and 2 on the live site and WordPress backend.
+- [x] Complete Step 3 Search Console collection and save the content baseline.
+- [x] Complete Step 4 preparation: five researched article replacements,
+  exact field comparisons, reading preview, and the separate Google Profile
+  service-page proposal.
+- [x] Save the completed work and review artifacts in the Git repository.
+
+Trevor requested this checkpoint and a Vercel rebuild on November 15. The
+article and service-page replacements remain **review-only and unpublished**
+while he reads them. GA4 remains deferred. The remaining publication checkboxes
+and Steps 5–7 below are intentionally still open.
 
 Details: [SEO audit and page recommendations](docs/seo-audit-2026-11-15.md)
 and [export data and HTTP evidence](docs/seo-evidence-2026-11-15.json).
@@ -47,33 +62,80 @@ configured, so this is a release check rather than continuous monitoring.
 
 ### Step 2 Clean up the WordPress frontend
 
-- [ ] Inspect the redirect rule/plugin/server configuration and prepare the
+- [x] Inspect the redirect rule/plugin/server configuration and prepare the
   exact changes for approval before modifying live settings.
-- [ ] After approval, keep the irrelevant admin homepage out of search and stop
-  exposing unnecessary archive links and broken backend sitemap destinations.
+- [x] After approval, retire the irrelevant admin frontend and stop exposing
+  unnecessary archive links and broken backend sitemap destinations. Retain
+  the backend's existing HTTP `noindex, nofollow` policy.
   Send actual legacy articles directly to their matching public articles;
   let nonexistent archives return appropriate 404/410 responses.
-- [ ] Verify GraphQL, REST endpoints needed by the site, images, admin login,
-  previews, and publishing/revalidation still work. Keep APIs accessible.
+- [x] Verify GraphQL, REST reads, images, login, the authenticated dashboard,
+  an existing draft preview, and the public site. Keep APIs accessible and
+  retain the existing publishing and hourly revalidation configuration.
+
+**Applied November 15, 2026, with Trevor's approval.** The
+[Step 2 cleanup and release record](docs/wordpress-cleanup-proposal/README.md)
+contains the before/after `.htaccess`, installed helper and minimal 404 template,
+the Yoast sitemap setting change, and rollback instructions. The two existing
+Hostinger must-use plugins and six regular active plugins were preserved.
+
+Verification passed: **46 backend checks**, including all 19 published article
+redirects and public destinations; direct archive/feed/sitemap 404s; crawlable
+robots.txt without the admin sitemap; GraphQL and REST reads; login, media,
+and tracking parameters. The five SEO tests also passed against the public
+site, covering all 26 sitemap pages and 26 internal paths. Chrome verified
+the saved XML sitemap switch is off, the REST switch remains on, and an
+existing signed-in draft preview renders. Hostinger's cache was cleared only
+for `admin.truepath406.com` to remove cached old redirects and robots output.
+See [HTTP verification evidence](docs/wordpress-cleanup-proposal/live-verification-2026-11-15.json).
+
+Rollback copy: `/Users/trevorriggs/.codex/backups/truepath-wordpress-2026-11-15/htaccess-before.txt`.
+The reviewed baseline is also retained in the cleanup folder. No article was
+edited, deleted, or published for testing; a full new-publication/revalidation
+cycle was not exercised. Search Console submissions remain unchanged.
+
+Correction to the original audit: the admin homepage already sends an HTTP
+`noindex, nofollow` header, despite its conflicting HTML `index, follow` tag.
+The earlier claim that it was indexable missed that HTTP header. The confirmed
+redirect source is the custom block in `.htaccess`, not Yoast's redirect manager.
 
 ### Step 3 Gather missing Search Console details and a content baseline
 
-- [ ] Obtain the exact URLs for the two redirect errors, duplicate/canonical
-  cases, discovered-but-not-indexed pages, and noindex exclusions. The supplied
-  exports do not identify these cases.
-- [ ] Inspect important final URLs in Search Console. Record Google's selected
-  canonical and indexing reason rather than inferring them from public HTML.
-- [ ] Save available impressions, clicks, qualified inquiries, and backlink
-  information before content consolidation. Mark unavailable measures as unknown.
+- [x] Obtain the exact URLs for the two redirect errors, duplicate/canonical
+  cases, discovered-but-not-indexed pages, and seven noindex exclusions.
+- [x] Inspect the three discovered final URLs and two old duplicate URLs.
+  Record Google's selected canonical or N/A and distinguish recorded index data
+  from live HTTP checks. `/work` now reports unknown in Inspection, despite the
+  older discovered-page list.
+- [x] Save three-month and 28-day search performance, canonical content inventory,
+  and available backlink information before consolidation.
+- [ ] Add GA4 and qualified inquiry measurements later. **Deferred by Trevor;
+  unavailable, not zero.** No GA4 setup is included in this step.
+
+[Step 3 baseline, exact URLs, and evidence](docs/search-console-baseline-2026-11-15/README.md)
+records 8 clicks/982 impressions over August 14–November 13 and 1 click/228
+impressions over October 17–November 13. All seven noindex examples are backend
+URLs. Four old error/duplicate examples now reach the correct articles through
+three redirects; shortening those chains remains a technical follow-up.
+No content, indexing requests, or Search Console submissions were changed.
 
 ### Step 4 Correct the priority articles
 
-- [ ] Prepare revisions for review: fix the booking-rate formula and unsupported
+- [x] Prepare revisions for review: fix the booking-rate formula and unsupported
   response-time claims in **Home Service Booking**, and update the outdated
   posting advice and ranking claims in **Inactive Google Profile**.
-- [ ] Remove the editing instruction from **Why Digital Marketing Fails Early**;
+- [x] Prepare removal of the editing instruction from **Why Digital Marketing Fails Early**;
   verify source claims in **Estimate Follow-Up** and **Reviews Process**, and
-  reconcile conflicting follow-up advice.
+  reconcile conflicting follow-up advice in the proposed drafts.
+
+The [Step 4 review package](docs/step-four-article-review-2026-11-15/README.md)
+contains five full replacements, research/source notes, current/proposed fields,
+corrected summaries and FAQs, and an unapplied frontend patch.
+[Open the reading preview](docs/step-four-article-review-2026-11-15/review.html).
+The companion Google Profile service-page proposal targets the Missoula
+optimization phrase with clearer metadata, H1, and introductory copy.
+**Prepared only: no CMS or application source changes have been applied.**
+
 - [ ] Get approval before updating live WordPress content. Publish approved
   revisions and verify the public article text, metadata, links, and schema.
 

@@ -1,0 +1,142 @@
+{
+  "capturedOn": "2026-11-15",
+  "records": [
+    {
+      "issue": "redirect-errors",
+      "chain": [
+        {
+          "url": "https://www.truepath406.com/blog/ai-search-visibility-why-local-businesses-are-disappearing/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/ai-search-visibility-why-local-businesses-are-disappearing/"
+        },
+        {
+          "url": "https://truepath406.com/blog/ai-search-visibility-why-local-businesses-are-disappearing/",
+          "status": 308,
+          "location": "/blog/ai-search-visibility-why-local-businesses-are-disappearing"
+        },
+        {
+          "url": "https://truepath406.com/blog/ai-search-visibility-why-local-businesses-are-disappearing",
+          "status": 308,
+          "location": "/insights/ai-search-visibility-why-local-businesses-are-disappearing"
+        },
+        {
+          "url": "https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing",
+          "status": 200,
+          "location": null,
+          "canonical": "https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing"
+        }
+      ]
+    },
+    {
+      "issue": "redirect-errors",
+      "chain": [
+        {
+          "url": "https://www.truepath406.com/blog/marketing-attention-is-the-scarce-resource-and-that-changes-everything/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/marketing-attention-is-the-scarce-resource-and-that-changes-everything/"
+        },
+        {
+          "url": "https://truepath406.com/blog/marketing-attention-is-the-scarce-resource-and-that-changes-everything/",
+          "status": 308,
+          "location": "/blog/marketing-attention-is-the-scarce-resource-and-that-changes-everything"
+        },
+        {
+          "url": "https://truepath406.com/blog/marketing-attention-is-the-scarce-resource-and-that-changes-everything",
+          "status": 308,
+          "location": "/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything"
+        },
+        {
+          "url": "https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything",
+          "status": 200,
+          "location": null,
+          "canonical": "https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything"
+        }
+      ]
+    },
+    {
+      "issue": "duplicate-without-canonical",
+      "chain": [
+        {
+          "url": "https://www.truepath406.com/blog/technician-utilization-profit-leak/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/technician-utilization-profit-leak/"
+        },
+        {
+          "url": "https://truepath406.com/blog/technician-utilization-profit-leak/",
+          "status": 308,
+          "location": "/blog/technician-utilization-profit-leak"
+        },
+        {
+          "url": "https://truepath406.com/blog/technician-utilization-profit-leak",
+          "status": 308,
+          "location": "/insights/technician-utilization-profit-leak"
+        },
+        {
+          "url": "https://truepath406.com/insights/technician-utilization-profit-leak",
+          "status": 200,
+          "location": null,
+          "canonical": "https://truepath406.com/insights/technician-utilization-profit-leak"
+        }
+      ]
+    },
+    {
+      "issue": "google-selected-different-canonical",
+      "chain": [
+        {
+          "url": "https://www.truepath406.com/blog/service-business-website/",
+          "status": 308,
+          "location": "https://truepath406.com/blog/service-business-website/"
+        },
+        {
+          "url": "https://truepath406.com/blog/service-business-website/",
+          "status": 308,
+          "location": "/blog/service-business-website"
+        },
+        {
+          "url": "https://truepath406.com/blog/service-business-website",
+          "status": 308,
+          "location": "/insights/service-business-website"
+        },
+        {
+          "url": "https://truepath406.com/insights/service-business-website",
+          "status": 200,
+          "location": null,
+          "canonical": "https://truepath406.com/insights/service-business-website"
+        }
+      ]
+    },
+    {
+      "issue": "discovered-not-indexed",
+      "chain": [
+        {
+          "url": "https://truepath406.com/insights",
+          "status": 200,
+          "location": null,
+          "canonical": "https://truepath406.com/insights"
+        }
+      ]
+    },
+    {
+      "issue": "discovered-not-indexed",
+      "chain": [
+        {
+          "url": "https://truepath406.com/insights/local-service-business-google-visibility",
+          "status": 200,
+          "location": null,
+          "canonical": "https://truepath406.com/insights/local-service-business-google-visibility"
+        }
+      ]
+    },
+    {
+      "issue": "discovered-not-indexed",
+      "chain": [
+        {
+          "url": "https://truepath406.com/work",
+          "status": 200,
+          "location": null,
+          "canonical": "https://truepath406.com/work"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+
+
+
+The “ask for a review on every job” advice is technically right and operationally broken.
+
+
+
+
+
+Here’s where it breaks. The customer’s at the front desk. The invoice is printing. Your service writer or tech is debating whether to bring up reviews while the customer’s pulling out a card to pay. It feels like asking for a tip after you already charged them. So they don’t ask. Or they ask in a way so soft the customer half-hears it and walks out.
+
+
+
+
+
+That’s not a confidence problem. That’s a process problem. You’ve built a review system that depends on the most uncomfortable moment of the transaction, and you’ve handed the job to the employees with the least incentive to push it.
+
+
+
+
+
+The fix isn’t a better script. It’s taking the ask off them.
+
+
+
+
+
+Why This Matters More Than It Used To
+
+
+
+
+
+Reviews mattered last year. They matter more this year.
+
+
+
+
+
+Google’s map pack — the three local results that show above the organic ones — leans heavily on review volume, recency, and what the reviews actually say. Google’s AI overviews and search experiences pull from review content too. A shop with twenty fresh reviews mentioning specific services usually shows up above a shop sitting on two hundred reviews from 2021.
+
+
+
+
+
+The cost of a broken review process used to be “we don’t get reviews.” Now it’s “we don’t show up.” That’s a different conversation, and it’s the reason this is worth fixing now.
+
+
+
+
+
+The Real Issue: Your Front Desk Doesn’t Want to Ask
+
+
+
+
+
+Most owners blame the wording. “We need a better line.” “We need to coach the team.”
+
+
+
+
+
+In our shop, that wasn’t the bottleneck. The wording was fine. The team didn’t want to ask, period. And I don’t blame them. Standing across a counter from someone who just paid a real bill and asking for a favor on top is uncomfortable. It feels like a sales pitch tacked onto a transaction that already ended.
+
+
+
+
+
+So we stopped putting it on them.
+
+
+
+
+
+What Actually Worked
+
+
+
+
+
+Two changes.
+
+
+
+
+
+A tap card at the front desk. RFID. Customer touches their phone to it, lands on our Google review page, leaves a review. No employee involvement. Signage above the card explains what it does and asks the customer to leave a review if they were happy with the work. The card is the ask. The employee just rings them out and says thanks.
+
+
+
+
+
+A thank-you text after they leave. A few hours later, sometimes the next morning, the customer gets a text. It thanks them by name, attaches another copy of their invoice, and includes a QR code to our Google review page. The text doesn’t say “leave us a review.” It asks them to tell us how the specific job went — how the brake job felt on the drive home, whether the diagnostic fixed the noise, how the install turned out. Whatever they actually came in for.
+
+
+
+
+
+That second part matters more than people realize. Specific reviews mentioning specific services are the ones that move map-pack rankings. “Great shop, friendly people” is fine. “They diagnosed the brake noise nobody else could find and got it done same-day” is the review Google notices.
+
+
+
+
+
+Why This Beats Asking in Person
+
+
+
+
+
+Customers who are happy will leave a review when given an easy path. BrightLocal’s Local Consumer Review Survey 2026 found 28% of consumers say they’ll always leave a review when asked, and 83% of asked customers actually do.
+
+
+
+
+
+The catch is in the phrasing. “When asked” doesn’t mean “asked to your face.” A piece of signage is an ask. A thank-you text with a QR code is an ask. Those work better than your service writer asking out loud because there’s no social pressure attached to them. The customer responds when it’s convenient, not when it’s awkward for both sides of the counter.
+
+
+
+
+
+The thank-you text also catches the customer who was going to leave a review at the desk, got pulled into traffic or a phone call, and forgot. Without it, those reviews just disappear.
+
+
+
+
+
+The Standard Playbook Mostly Misses This
+
+
+
+
+
+If you read the typical review advice, it tells you to pick a moment, write a clean script, and coach the team to use it consistently. Then it acts surprised when the team doesn’t use it consistently.
+
+
+
+
+
+The realistic version: figure out where the customer is most likely to leave a review — at the counter, right after the experience, or in the day or two after — and put a passive system in front of each one. Signage and a tap card cover the counter. A thank-you text covers the after. Your team isn’t the bottleneck because your team isn’t doing the asking.
+
+
+
+
+
+A Few Things to Get Right
+
+
+
+
+
+Make the path direct. Google supports review links and QR codes for this reason. Every step between “sure, I’ll leave a review” and “review submitted” costs you reviews.
+
+
+
+
+
+Don’t bribe the outcome. Google prohibits incentives in exchange for reviews, and the FTC’s Consumer Reviews and Testimonials Rule (in effect since October 21, 2024) targets fake reviews, sentiment-conditioned incentives, and review suppression. The safer move is also the better one — ask real customers for honest feedback and don’t tilt for stars.
+
+
+
+
+
+Put one person in charge. Not the team. One person who checks whether the thank-you texts are firing, whether new reviews got responses, and whether the tap card is even still working. Shared ownership sounds nice. In practice, it usually means the task slides around until nobody really owns it.
+
+
+
+
+
+Build the follow-up into the system, not into someone’s head. If your current approach depends on somebody remembering when the day gets busy, it isn’t built yet. Whatever tool you use — your shop management software, your CRM, a basic SMS scheduler — the thank-you and the follow-up should fire on their own.
+
+
+
+
+
+What to Audit This Week
+
+
+
+
+
+Pull your last twenty closed jobs and check:
+
+
+
+
+
+
+whether anything went out asking for a review
+
+
+
+
+
+how soon
+
+
+
+
+
+whether it included a direct link or QR code
+
+
+
+
+
+whether a follow-up went out if no review came in
+
+
+
+
+
+whether incoming reviews got a response
+
+
+
+
+
+
+That’ll show you the real leak faster than another meeting about better phrasing.
+
+
+
+
+
+The Real Point
+
+
+
+
+
+Most review systems break at the front desk because they put the ask on the most uncomfortable person at the most uncomfortable moment.
+
+
+
+
+
+Stop doing that. Use signage. Use a tap card. Use a thank-you text with the invoice and a QR code. Let your team ring people out and go home. The customers who want to leave a review will. The ones who needed a small nudge after the fact will too. And the system keeps running whether anyone in the shop remembers it that day or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
