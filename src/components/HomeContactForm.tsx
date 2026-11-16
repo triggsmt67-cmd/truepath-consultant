@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 
 import Button from "@/components/Button";
+import { trackAcceptedInquiry } from "@/lib/analytics";
 
 export default function HomeContactForm() {
   const [honeypot, setHoneypot] = useState("");
@@ -27,13 +28,14 @@ export default function HomeContactForm() {
         }),
       });
       const result = (await response.json().catch(() => null)) as
-        | { error?: string }
+        | { error?: string; inquiryAccepted?: boolean }
         | null;
 
       if (!response.ok) {
         throw new Error(result?.error || "Your request could not be sent.");
       }
 
+      trackAcceptedInquiry(result, "homepage");
       formRef.current?.reset();
       setHoneypot("");
       setStatus("success");

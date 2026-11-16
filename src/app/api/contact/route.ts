@@ -148,5 +148,6 @@ export async function POST(request: Request) {
     );
   }
 
-  return Response.json({ ok: true });
+  // Count an inquiry only after the mail provider accepts the request.
+  return Response.json({ ok: true, inquiryAccepted: true });
 }

@@ -3,6 +3,7 @@ import { Newsreader, Figtree } from "next/font/google";
 import "./globals.css";
 import { LeadDrawerProvider } from "@/context/LeadDrawerContext";
 import LeadDrawer from "@/components/LeadDrawer";
+import AnalyticsTracking from "@/components/AnalyticsTracking";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 const newsreader = Newsreader({
@@ -240,6 +241,7 @@ gtag('js', new Date());`,
         />
       </head>
       <body className="font-sans bg-background text-foreground flex flex-col min-h-screen">
+        <AnalyticsTracking />
         <LeadDrawerProvider>
           {children}
           <LeadDrawer />

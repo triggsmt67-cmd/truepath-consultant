@@ -6,6 +6,7 @@ import { X, CheckCircle2 } from "lucide-react";
 import Button from "./Button";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useFocusTrap } from "@/hooks/useFocusTrap";
+import { trackAcceptedInquiry } from "@/lib/analytics";
 
 export default function LeadDrawer() {
   const { isOpen, closeDrawer } = useLeadDrawer();
@@ -47,13 +48,14 @@ export default function LeadDrawer() {
         }),
       });
       const result = (await response.json().catch(() => null)) as
-        | { error?: string }
+        | { error?: string; inquiryAccepted?: boolean }
         | null;
 
       if (!response.ok) {
         throw new Error(result?.error || "Your request could not be sent.");
       }
 
+      trackAcceptedInquiry(result, "drawer");
       setIsSubmitted(true);
     } catch (error) {
       setSubmitError(
