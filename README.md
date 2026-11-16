@@ -14,6 +14,10 @@ graphics and downloads. The Google Profile service-page update is also published
 Trevor approved these releases on November 15, 2026. Article rewrites,
 consolidation, content removal, and unrelated settings remain separate work.
 
+Google’s current SEO Starter Guide, Search Essentials, and relevant spam policies
+were reviewed before the Lead Response page work. Use the
+[working checklist](docs/seo-working-standard-2026-11-15.md) for the next revisions.
+
 ### November 15 repository checkpoint
 
 - [x] Complete and verify Steps 1 and 2 on the live site and WordPress backend.
@@ -162,6 +166,17 @@ The remaining three article revisions are unapplied.
   Search Console queries; verify content, metadata, links, schema, and inquiry controls.
 - [ ] Get approval for the remaining three article revisions before publication;
   verify their text, metadata, links, and schema.
+
+### Lead Response and Follow-Up service page
+
+Trevor authorized full revision and publication using the current Google SEO
+and generative AI guidance. The exact-page Search Console baseline is 82
+impressions and zero clicks; only two brand-like query rows are visible.
+The revision explains inquiry ownership, next action, due time, and backups,
+with a handoff map and blank worksheet.
+[Release, research, resources, and verification](docs/lead-response-service-2026-11-15/README.md).
+
+- [ ] Publish and verify the lead response service-page revision and downloads.
 
 ### Step 5 Consolidate the overlapping AI search articles
 

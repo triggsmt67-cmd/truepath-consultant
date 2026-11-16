@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Button from "@/components/Button";
@@ -8,7 +9,7 @@ import { useLeadDrawer } from "@/context/LeadDrawerContext";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { useServicePhase } from "@/hooks/useServicePhase";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, CheckCircle2, AlertTriangle, AlertCircle, Quote, Target, Search, ShieldCheck, Mail, LineChart, MessageSquare, ClipboardCheck, BellRing, PhoneCall, Workflow, Clock } from "lucide-react";
+import { CheckCircle2, AlertTriangle, AlertCircle, Target, Search, ShieldCheck, Mail, LineChart, MessageSquare, ClipboardCheck, BellRing, PhoneCall, Workflow, Clock } from "lucide-react";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -16,58 +17,26 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Will automated messages sound robotic?",
+      "name": "What does your lead response and follow-up service include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "They should not. The messages are written in plain language that fits the business’s normal communication style. They should sound like a useful acknowledgment from the company, not a corporate chatbot."
+        "text": "I review how inquiries arrive, assign responsibility for the next step, and set up the agreed workflow in suitable tools. Depending on the scope, that can include missed-call handling, form notifications, estimate follow-up, reminders, and a shared inquiry view. We define the work after reviewing your current process and software."
       }
     },
     {
       "@type": "Question",
-      "name": "Does automation replace calling the lead?",
+      "name": "Will this bring me new leads?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Automation can acknowledge the inquiry, collect details, and remind the team to respond. A real call or personal message is still important for many service inquiries. The purpose is to prevent silence, not eliminate human contact."
+        "text": "This service improves how your business handles inquiries it already receives. Advertising and lead generation are separate work. If the real issue is too few suitable inquiries, we should identify that before building more follow-up automation."
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need to change my phone number?",
+      "name": "Do I need a new CRM or phone number?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily. Some systems can work with an existing business number. Others use call forwarding, number porting, a connected texting number, or a new tracked line."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can customers text my existing landline?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In some cases, business texting can be enabled on an existing landline or VoIP number. That depends on the provider and whether the number is eligible."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How quickly should we respond to a new lead?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The first goal is usually immediate acknowledgment followed by a real response as soon as someone qualified is available. A promise the team cannot consistently keep is worse than a clear and realistic expectation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often should we follow up on an estimate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The follow-up timing should reflect urgency, job size, customer decision process, and normal sales cycle. The messages should be useful and limited. They should not feel like pressure."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What software do I need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "That depends on the current setup. Possible tools include your existing CRM, Jobber, Housecall Pro, ServiceTitan, or a shared inbox. The first question is whether the current tools can support the process with better setup."
+        "text": "We check your existing setup first. A shared tracker may be enough for a small team; another business may need its CRM configured differently. Keeping or changing a phone number depends on the provider, number capabilities, and proposed workflow. I confirm those details before recommending a change."
       }
     },
     {
@@ -75,63 +44,55 @@ const faqSchema = {
       "name": "Can this work with Jobber, Housecall Pro, or ServiceTitan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Often, yes. The exact options depend on the platform, subscription plan, integrations, APIs, phone setup, and desired workflow. I confirm what the platform can support before defining the project scope."
+        "text": "I review your specific account, plan, phone setup, and available integrations before committing to a workflow. Naming a platform does not mean every feature or connection is supported. If a requested step cannot work reliably in your setup, I explain the limitation and the available options."
       }
     },
     {
       "@type": "Question",
-      "name": "Will my technicians have to learn complicated software?",
+      "name": "How quickly should we respond to a new inquiry?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not if the system is designed properly. The workflow should match the team’s actual capacity. A technically impressive system that nobody uses is not a successful system."
+        "text": "Set a response window your team can meet during its actual working hours. Track when the inquiry arrived and when a person first attempted a useful response. Keep automated acknowledgments separate from that measure. After-hours messages should explain when someone will respond, without implying that a crew has been dispatched."
       }
     },
     {
       "@type": "Question",
-      "name": "Can the system respond after hours?",
+      "name": "How often should we follow up on an estimate?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. It can acknowledge the inquiry, explain business hours, request additional details, and set an expectation for the next response. It should not promise emergency service unless you provide it."
+        "text": "Agree on the next contact when you send the estimate. Record the date, channel, and person responsible. A customer waiting for financing needs a different next step from someone ready to schedule. Pause the sequence when the customer replies, books, declines, or asks to stop. Silence alone does not tell you why they have not decided."
       }
     },
     {
       "@type": "Question",
-      "name": "Can customers opt out of text messages?",
+      "name": "Will customers receive automatic texts after every missed call?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Customers need a clear way to opt out, and the system should respect that choice. Text communication follows applicable consent and messaging requirements."
+        "text": "Only where the phone setup and messaging permissions support that workflow. Before enabling texts, I review permission collection, sender setup, opt-out handling, and what happens if delivery fails. A missed call should not automatically enroll someone in a promotional sequence. Calling back or using another agreed channel may be the right next step."
       }
     },
     {
       "@type": "Question",
-      "name": "Can this help with missed calls from existing customers too?",
+      "name": "What happens when the person assigned is unavailable?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The system can acknowledge calls from both new and existing customers, routing differently based on the type of inquiry."
+        "text": "The workflow needs a backup. We define who takes over, when an overdue inquiry is flagged, and how the next person sees the customer history. Sending an office notification is only useful if someone is responsible for acting on it."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you automate review requests too?",
+      "name": "How much does setup cost, and how long does it take?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Review requests can be triggered after a job is marked complete or after another appropriate milestone. It links directly to your Google Business Profile."
+        "text": "Both depend on the number of inquiry sources, users, systems, and integrations involved. The initial 15-minute Lead Review helps identify the priorities. Implementation is separate work with an agreed scope, price, and timing. Software subscriptions or provider charges are identified separately where they apply."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you guarantee that this will increase bookings?",
+      "name": "How will we know whether the system is helping?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. A response system cannot guarantee every lead will hire you. But it can reduce preventable losses caused by silence, forgotten follow-up, unclear ownership, and inconsistent handling."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does setup take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A simple missed-call setup may be completed quickly. A larger system involving CRMs, team assignments, reporting, and integrations takes longer. The scope is defined before implementation begins."
+        "text": "Track unique inquiries, assignment gaps, first human response attempts, overdue next steps, and recorded outcomes. Keep booked work separate from acknowledgments and delivered messages. A response system cannot guarantee bookings: availability, service fit, pricing, and the customer’s decision still matter."
       }
     }
   ]
@@ -141,7 +102,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://truepath406.com/services/lead-response#service",
-  name: "Lead Response and Follow-Up Systems",
+  name: "Lead Response and Follow-Up Services",
   url: "https://truepath406.com/services/lead-response",
   provider: {
     "@id": "https://truepath406.com/#business",
@@ -149,7 +110,7 @@ const serviceSchema = {
   image: "https://truepath406.com/images/lead-response.webp",
   serviceType: "CRM and automation",
   category: "Lead response and follow-up consulting",
-  description: "Lead response and follow-up systems for local service businesses to stop losing good leads to missed calls and slow follow-up.",
+  description: "Lead response and follow-up workflow review and setup for Missoula and Montana service businesses, including inquiry ownership, missed-call handling, estimate follow-up, and outcome tracking.",
   areaServed: [
     { "@type": "City", name: "Missoula" },
     { "@type": "State", name: "Montana" },
@@ -162,91 +123,91 @@ const serviceSchema = {
 
 const failureReasons = [
   {
-    title: "The Missed-Call & After-Hours Trap",
-    desc: "The phone rings when you are under a vehicle or speaking with a customer. The missed call isn't the problem—the problem is the caller receives no acknowledgment and has no reason to wait."
+    title: "Missed Calls Have No Next Step",
+    desc: "The phone rings while you are on a job. Without a callback task and a person responsible, that inquiry can sit until someone remembers it."
   },
   {
     title: "Website Leads Sit in an Inbox",
-    desc: "Forms often send an email that lands in spam, gets missed after hours, or creates confusion between the office and the owner. The lead disappears without anyone realizing it."
+    desc: "A form email can reach the office without anyone accepting responsibility. Check that delivery creates a visible task for a named person."
   },
   {
     title: "Estimates Go Cold",
-    desc: "You visit the property, prepare an estimate, send it—and wait. Without a calm follow-up process, you assume the customer said no, when they never actually made a decision at all."
+    desc: "An estimate is sent with no agreed next contact. The customer’s decision remains unknown, while the office has no date or reason to follow up."
   },
   {
-    title: "Memory & Sticky Note Chaos",
-    desc: "Informal systems work until you get busy. Suddenly, customer details are scattered across phones, texts, and inboxes, and follow-up dates are entirely missed."
+    title: "The Same Inquiry Lives in Several Places",
+    desc: "A customer calls and submits a form about the same job. Link those contacts so two people do not send conflicting messages or count two opportunities."
   },
   {
     title: "There Is No Clear Lead Owner",
-    desc: "If nobody knows who responds first, who qualifies the lead, or who prepares the estimate, leads remain open without anyone actively pushing them forward."
+    desc: "An alert sent to everyone can leave ownership unclear. One person needs to accept the inquiry, with a backup when that person is unavailable."
   },
   {
     title: "Follow-Up Is Completely Inconsistent",
-    desc: "Some leads receive several messages; others receive none. This inconsistency makes it impossible to know if you're losing jobs because of pricing, or simply because of slow response."
+    desc: "An unanswered inquiry needs a defined next step. A customer who has replied or declined needs the old sequence stopped and the record updated."
   }
 ];
 
 const methodologySteps = [
   {
     icon: <Search className="w-8 h-8 text-primary" />,
-    title: "Lead Response Audit",
-    desc: "I review the current process from first contact through booking. The goal is to identify exactly where leads wait, disappear, duplicate, or lose momentum."
+    title: "Inquiry-to-Booking Review",
+    desc: "I trace a recent inquiry from its source to its current status. We check where it arrived, who saw it, who acted, and what is due next. Any gaps become the starting point for the work."
   },
   {
     icon: <Target className="w-8 h-8 text-primary" />,
     title: "Lead Assignment & Ownership",
-    desc: "I create a simple process that makes one person responsible for each inquiry—by location, service, or shift—so it's obvious who owns the next step."
+    desc: "We define an owner for each inquiry and a backup for absences or overdue tasks. Assignment includes acceptance, so an alert is not mistaken for a completed handoff."
   },
   {
     icon: <Workflow className="w-8 h-8 text-primary" />,
     title: "Unified Lead View",
-    desc: "I consolidate lead information into one reliable view (a CRM, shared inbox, or lightweight tracker) so the team knows exactly what is scheduled, open, won, or lost."
+    desc: "I help organize the record in a CRM, shared inbox, or simple tracker. Repeated contacts about the same job stay together, with the current status and next action visible."
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-primary" />,
     title: "Lead Qualification",
-    desc: "Not every inquiry is a good fit. We collect enough info (location, urgency, photos) to prioritize the lead without interrogating the customer."
+    desc: "We agree on the details needed to decide the next step, such as service, location, availability, and urgency. A booking is confirmed only when the business can actually take the work."
   },
   {
     icon: <MessageSquare className="w-8 h-8 text-primary" />,
-    title: "Instant Missed-Call Response",
-    desc: "When a call is missed, the caller receives a natural text acknowledging them, keeping the conversation open until the team can properly respond."
+    title: "Missed-Call Handling",
+    desc: "I set up the agreed callback task and, where supported and appropriate, an acknowledgment. Texting depends on the number, provider, messaging permissions, and opt-out setup. Failed delivery needs a fallback."
   },
   {
     icon: <Mail className="w-8 h-8 text-primary" />,
     title: "Website Lead Confirmation",
-    desc: "Forms trigger an immediate text or email confirmation setting expectations for response timing, while immediately notifying the responsible employee."
+    desc: "The customer gets an appropriate confirmation and response expectation. The responsible person gets the inquiry details and a task. We test receipt and routing instead of assuming a successful form submission reached the office."
   },
   {
     icon: <Clock className="w-8 h-8 text-primary" />,
     title: "After-Hours Acknowledgment",
-    desc: "Inquiries outside working hours receive a clear message explaining when you will respond and what to do in an emergency, creating confidence instantly."
+    desc: "The acknowledgment reflects your actual hours and the next staffed response window. It does not promise emergency attendance or a confirmed appointment that your team has not accepted."
   },
   {
     icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
     title: "Estimate Follow-Up Sequences",
-    desc: "I build calm, practical follow-up sequences for sent proposals. The goal isn't to pressure the customer, but to prevent good estimates from being forgotten."
+    desc: "We record the agreed next contact, its purpose, and the person responsible. Follow-up should help the customer decide. Replies, bookings, declines, and stop requests change or end the sequence."
   },
   {
     icon: <PhoneCall className="w-8 h-8 text-primary" />,
     title: "New-Lead Follow-Up",
-    desc: "If a customer doesn't respond to the first callback, a short sequence (a second text, a voicemail, an email) makes reasonable attempts before closing the lead out."
+    desc: "We choose reasonable attempts through appropriate channels and a stopping point. A no-reply status stays distinct from a confirmed decline; the record should show what is known."
   },
   {
     icon: <BellRing className="w-8 h-8 text-primary" />,
     title: "Appointment Reminders",
-    desc: "Confirmations and reminders (arrival windows, prep instructions) are automated to reduce confusion and prevent avoidable no-shows."
+    desc: "Where the tools support it, reminders use the confirmed appointment details. Changes, cancellations, and customer replies need to reach the person managing the schedule."
   },
   {
     icon: <CheckCircle2 className="w-8 h-8 text-primary" />,
     title: "Review Request System",
-    desc: "After the job is complete, the system automatically sends a direct Google review link at the right time based on the real customer experience."
+    desc: "If included in the scope, a completed-job milestone can trigger a neutral invitation for honest feedback. The process should not reward reviews or select customers based on an expected positive rating."
   },
   {
     icon: <LineChart className="w-8 h-8 text-primary" />,
     title: "Basic Reporting & Tracking",
-    desc: "I setup tracking to answer practical questions: How many leads arrived? How quickly did we respond? How many estimates were followed up? Reporting that supports decisions."
+    desc: "I set up a useful record of unique inquiries, assignment, human response attempts, overdue actions, and outcomes. Automated acknowledgments and delivered messages are recorded separately from booked jobs."
   }
 ];
 
@@ -281,12 +242,12 @@ export default function LeadResponsePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(serviceSchema) }}
       />
-      <div className="noise-overlay" />
+      <div className="noise-overlay" style={{ width: "100%" }} />
       <Header />
       <main className="flex-1 w-full overflow-x-clip pt-32 relative z-10">
 
         {/* Hero Section */}
-        <section className="relative flex flex-col justify-center px-6 md:px-12 py-16 md:py-24 border-b border-muted-border">
+        <section className="relative flex flex-col justify-center px-6 md:px-12 py-16 border-b border-muted-border">
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
 
             <motion.div
@@ -297,28 +258,28 @@ export default function LeadResponsePage() {
             >
               <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium tracking-wide mb-8 border border-primary/20">
                 <BellRing className="w-4 h-4" />
-                Response & Follow-Up
+                Missoula, Montana
               </motion.div>
 
-              <motion.h1 variants={itemVariants} className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-medium leading-[1.05] tracking-tight text-foreground mb-8">
-                Stop Losing Good Leads to Missed Calls & Slow Follow-Up.
+              <motion.h1 variants={itemVariants} className="font-serif text-[clamp(2.5rem,4.2vw,4rem)] font-medium leading-[1.05] tracking-tight text-foreground mb-8">
+                Lead Response & <span className="whitespace-nowrap">Follow-Up</span> for Service Businesses.
               </motion.h1>
 
               <motion.div variants={itemVariants} className="space-y-6 text-lg text-muted-text leading-relaxed mb-10">
                 <p>
-                  Most local service businesses do not lose leads because nobody is interested. They lose them because the phone rings at the wrong time, an estimate is never followed up, or nobody is clearly responsible for the next step.
+                  I help owner-operated service businesses in Missoula and across Montana set up missed-call handling, inquiry assignment, and estimate follow-up.
                 </p>
                 <p>
-                  I help local service businesses build simple response systems that ensure inquiries are acknowledged, assigned, and followed up without adding unnecessary software.
+                  Every open inquiry needs an owner, a next step, and a due time your team can work with.
                 </p>
               </motion.div>
 
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
                 <Button onClick={() => openDrawer()} variant="primary" size="lg" className="group">
                   Request a Lead Follow-Up Review
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </motion.div>
+              <p className="mt-5 text-sm leading-relaxed text-muted-text">A 15-minute conversation to identify the first useful change.</p>
             </motion.div>
 
             <motion.div
@@ -329,7 +290,7 @@ export default function LeadResponsePage() {
             >
               <ScrollImage
                 src="/images/lead-response.webp"
-                alt="Lead response systems and CRM dashboard for local businesses"
+                alt="Contractor checking a tablet beside a work truck at a job site"
                 title="Lead response and follow-up systems for service business owners"
                 containerClassName="w-full h-full"
                 priority
@@ -343,12 +304,12 @@ export default function LeadResponsePage() {
         <section className="border-b border-muted-border bg-surface-alt px-6 py-24 md:px-12 md:py-36">
           <div className="mx-auto w-full max-w-[1400px]">
             <div className="max-w-3xl mb-16">
-              <h2 className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
+              <p className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
                 <span className="w-8 h-px bg-primary"></span> The Reality
-              </h2>
-              <h3 className="font-serif font-medium text-[clamp(2.25rem,4vw,3.5rem)] leading-[1.15] tracking-tight text-foreground">
+              </p>
+              <h2 className="font-serif font-medium text-[clamp(2.25rem,4vw,3.5rem)] leading-[1.15] tracking-tight text-foreground">
                 Where Lead Response Breaks Down
-              </h3>
+              </h2>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -356,7 +317,7 @@ export default function LeadResponsePage() {
                 <div key={i} className="border border-muted-border bg-background p-8 flex flex-col justify-between">
                   <div>
                     <span className="text-sm font-medium text-primary mb-4 block">0{i + 1}</span>
-                    <h4 className="font-serif text-2xl font-medium mb-4 text-foreground">{item.title}</h4>
+                    <h3 className="font-serif text-2xl font-medium mb-4 text-foreground">{item.title}</h3>
                     <p className="text-muted-text leading-relaxed text-base">{item.desc}</p>
                   </div>
                 </div>
@@ -365,20 +326,48 @@ export default function LeadResponsePage() {
           </div>
         </section>
 
-        {/* The Cost Quote (Supports the section above) */}
-        <section className="px-6 py-24 md:py-32 border-b border-muted-border bg-background relative overflow-hidden flex items-center justify-center">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary/5" aria-hidden="true">
-            <Quote className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] rotate-180" strokeWidth={1} />
-          </div>
-          <div className="mx-auto w-full max-w-4xl text-center relative z-10 px-4">
-            <blockquote className="space-y-8">
-              <p className="font-serif text-[clamp(1.75rem,3.5vw,3.25rem)] font-medium leading-tight text-foreground">
-                &ldquo;The business continues paying for expensive advertising while good opportunities quietly disappear between the first inquiry and the booked job.&rdquo;
-              </p>
-              <footer className="text-base md:text-lg text-muted-text uppercase tracking-widest font-medium">
-                More traffic will not repair a <span className="text-primary font-bold">broken response process</span>.
-              </footer>
-            </blockquote>
+        <section id="handoff-map" aria-labelledby="handoff-heading" className="px-6 py-24 md:px-12 bg-background border-b border-muted-border scroll-mt-24">
+          <div className="mx-auto w-full max-w-[1400px]">
+            <div className="max-w-3xl mb-12">
+              <p className="text-sm uppercase tracking-widest text-primary font-medium mb-5">The inquiry handoff map</p>
+              <h2 id="handoff-heading" className="font-serif text-[clamp(2rem,3.5vw,3rem)] leading-tight font-medium mb-6">Owner. Next step. Due time.</h2>
+              <p className="text-lg leading-relaxed text-muted-text">Open a recent inquiry and look for those three things. If one is missing, that is a useful place to start. This map shows the handoffs a response system needs to keep track of.</p>
+            </div>
+            <ol className="grid md:grid-cols-3 xl:grid-cols-5 gap-4">
+              {[
+                { title: "Capture", text: "Keep the inquiry and its source in one record. Link repeated calls and forms about the same job.", color: "#436454" },
+                { title: "Assign", text: "Name the person taking responsibility. Confirm acceptance and identify the backup.", color: "#955a32" },
+                { title: "Set the next step", text: "Record a specific action and due time that fits your working hours and capacity.", color: "#536c7e" },
+                { title: "Follow up", text: "Act on the agreed plan. Update or stop the sequence when the customer responds.", color: "#765d79" },
+                { title: "Record the outcome", text: "Keep booked, deciding, declined, no capacity, and no reply distinct. Record what you know.", color: "#796229" },
+              ].map((step, index) => (
+                <li key={step.title} className="p-6 border border-muted-border border-t-4 bg-surface-alt" style={{ borderTopColor: step.color }}>
+                  <p className="text-sm font-medium text-primary mb-5">0{index + 1}</p>
+                  <h3 className="font-serif text-2xl font-medium mb-4">{step.title}</h3>
+                  <p className="text-muted-text leading-relaxed">{step.text}</p>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-5 bg-foreground text-background p-6 md:px-8 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+              <p className="font-medium">Due time missed or task unaccepted?</p>
+              <p className="text-background/85">Flag it for the backup. Keep the history with the inquiry.</p>
+            </div>
+            <div className="mt-10 grid lg:grid-cols-2 gap-8 lg:gap-16">
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="font-serif text-2xl font-medium mb-4">What a useful task looks like</h3>
+                <p className="text-muted-text leading-relaxed">“Casey: call about the repair request Wednesday by 9 a.m. to confirm the service area and arrange an estimate if we have capacity. Morgan takes over if the task is not accepted.”</p>
+                <p className="text-sm text-muted-text leading-relaxed mt-4">Fictional example, not a client result or a universal response-time target. A confirmation message does not mean the customer has spoken with your team or booked a job.</p>
+              </div>
+              <div>
+                <h3 className="font-serif text-2xl font-medium mb-4">Use it with your team</h3>
+                <p className="text-muted-text leading-relaxed mb-5">Save the one-page map and use the blank handoff sheet to trace a recent inquiry. Keep customer details in your own approved system.</p>
+                <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium">
+                  <a href="/downloads/lead-response-handoff-map.png" className="underline underline-offset-4 hover:text-primary">Download the map (PNG)</a>
+                  <a href="/downloads/lead-response-handoff-map.svg" className="underline underline-offset-4 hover:text-primary">Scalable map (SVG)</a>
+                  <a href="/downloads/lead-response-handoff-sheet.csv" className="underline underline-offset-4 hover:text-primary">Blank handoff sheet (CSV)</a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -386,14 +375,14 @@ export default function LeadResponsePage() {
         <section className="px-6 py-24 md:px-12 md:py-32 bg-surface-alt border-b border-muted-border relative">
           <div className="mx-auto w-full max-w-[1400px]">
             <div className="max-w-3xl mb-24">
-              <h2 className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
+              <p className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
                 <span className="w-8 h-px bg-primary"></span> How Your Team Handles New Leads
+              </p>
+              <h2 className="font-serif font-medium text-[clamp(2.5rem,4vw,4rem)] leading-tight tracking-tight text-foreground mb-8">
+                What the Setup Can Include
               </h2>
-              <h3 className="font-serif font-medium text-[clamp(2.5rem,4vw,4rem)] leading-tight tracking-tight text-foreground mb-8">
-                What I Build to Improve Lead Response
-              </h3>
               <p className="text-lg text-muted-text leading-[1.65]">
-                I do not begin by forcing you into a complicated software platform. I begin by reviewing where inquiries come from, who is responsible for them, and where they lose momentum.
+                We start with your current process and tools. The review identifies which steps need attention; the agreed scope determines what I configure, connect, or document.
               </p>
             </div>
 
@@ -574,15 +563,15 @@ export default function LeadResponsePage() {
 
           <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-16 lg:gap-24 relative z-10">
 
-            {/* What a Good Result Looks Like */}
+            {/* What We Check Before Calling It Ready */}
             <div>
               <h2 className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-12">
-                What a Good Result Looks Like
+                What We Check Before Calling It Ready
               </h2>
 
               <div className="mb-10 text-background/80 text-lg leading-relaxed">
                 <p>
-                  A useful system creates a clear, repeatable path. The goal is to make sure good opportunities do not disappear for preventable reasons.
+                  A useful setup needs to work when the office is busy, a message fails, or the usual person is away. These checks make the handoff testable:
                 </p>
               </div>
 
@@ -594,12 +583,12 @@ export default function LeadResponsePage() {
                 className="grid gap-4"
               >
                 {[
-                  "Fewer unanswered inquiries",
-                  "Immediate, automated acknowledgment",
-                  "Clear, designated lead ownership",
-                  "More consistent call-backs & follow-ups",
-                  "Fewer forgotten prospects & lost quotes",
-                  "Drastically reduced administrative stress"
+                  "Test inquiries reach the correct person",
+                  "Each open record has an owner, action, and due time",
+                  "A backup handles an overdue or unaccepted task",
+                  "Replies and stop requests update the workflow",
+                  "Duplicate contacts stay attached to one inquiry",
+                  "The team can find the status and recorded outcome"
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -626,7 +615,7 @@ export default function LeadResponsePage() {
 
               <div className="text-background/80 text-lg leading-relaxed mb-8">
                 <p>
-                  Lead response systems are built for owner-operated and family-run local service businesses that receive estimates or appointment requests.
+                  I’m Trevor Riggs, based in Missoula. This service is for owner-operated and family-run businesses handling calls, service requests, appointments, or estimates. We work around the people and capacity you actually have.
                 </p>
               </div>
 
@@ -694,23 +683,35 @@ export default function LeadResponsePage() {
           </div>
         </section>
 
+        <section aria-labelledby="measure-heading" className="px-6 py-20 md:px-12 border-b border-muted-border">
+          <div className="max-w-[1400px] mx-auto grid lg:grid-cols-2 gap-12 lg:gap-24">
+            <div>
+              <h2 id="measure-heading" className="font-serif text-3xl md:text-4xl font-medium mb-6">Measure the handoff all the way through.</h2>
+              <p className="text-lg text-muted-text leading-relaxed">Keep the received time, first human response attempt, next action, due time, and outcome. An automated reply belongs in its own field. Count repeated contacts about the same job as one inquiry, so the record tells you where work is waiting.</p>
+            </div>
+            <div className="text-muted-text leading-relaxed space-y-5">
+              <p>For a deeper review, use the <Link href="/insights/home-service-booking" className="text-foreground underline underline-offset-4 hover:text-primary">30-inquiry booking audit</Link>. For sent estimates, see the <Link href="/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold" className="text-foreground underline underline-offset-4 hover:text-primary">estimate follow-up guide</Link>.</p>
+              <p>Before enabling messages, we check the chosen provider’s sender, permission, opt-out, and delivery handling. For example, <a href="https://www.twilio.com/docs/messaging/tutorials/advanced-opt-out" className="text-foreground underline underline-offset-4 hover:text-primary">Twilio documents how opt-out events reach an application</a>. The surrounding workflow needs to handle that event too.</p>
+            </div>
+          </div>
+        </section>
+
         {/* Start With a Review Section (Actionable Review) */}
         <section className="px-6 py-20 md:px-12 md:py-24 bg-surface-alt border-b border-muted-border">
           <div className="mx-auto w-full max-w-4xl text-center">
             <h2 className="font-serif text-3xl md:text-4xl font-medium leading-tight mb-6">
-              Start With a Lead Response Review
+              Start With a 15-Minute Lead Review
             </h2>
             <div className="text-lg text-muted-text leading-relaxed space-y-6 mb-10">
               <p>
-                You may not need more leads. You may just need to answer the leads you already have more consistently.
+                Bring your current phone and form setup, the tools your team uses, and a recent example of an inquiry that stalled. We will trace the handoff and identify what I would address first.
               </p>
               <p>
-                I will review how calls, forms, messages, and estimates currently move through your business and identify the points where opportunities are going cold.
+                Use the request form’s “Biggest Challenge” field to describe what is happening. I’ll email you to arrange the conversation. Implementation is separate work with an agreed scope, price, and timing.
               </p>
             </div>
             <Button onClick={() => openDrawer()} variant="primary" size="lg" className="group">
               Request a Lead Follow-Up Review
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
         </section>
@@ -719,7 +720,7 @@ export default function LeadResponsePage() {
         <section className="px-6 py-24 md:px-12 md:py-32">
           <div className="mx-auto w-full max-w-4xl">
             <h2 className="font-serif text-[clamp(2.5rem,4vw,3.5rem)] font-medium leading-tight mb-16 text-center">
-              Frequently Asked Questions
+              Questions About Lead Response and Follow-Up
             </h2>
             <div className="space-y-12">
               {faqSchema.mainEntity.map((faq, i) => (

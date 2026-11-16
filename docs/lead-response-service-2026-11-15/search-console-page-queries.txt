@@ -1,0 +1,64 @@
+Captured November 15, 2026 (America/Denver)
+Exact page filter: https://truepath406.com/services/lead-response
+Report: https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Atruepath406.com&num_of_months=3&page=!https%3A%2F%2Ftruepath406.com%2Fservices%2Flead-response&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION
+
+
+Total clicks
+0
+
+
+Total impressions
+82
+
+
+Average CTR
+0%
+
+
+Average position
+7.8
+
+Daily
+14/08/2026
+27/08/2026
+09/09/2026
+22/09/2026
+05/10/2026
+18/10/2026
+31/10/2026
+13/11/2026
+Chart, containing counts of Total clicks, Total impressions, Average CTR and Average position from 14 August 2026 to 13 November 2026
+info
+Get more details on your site's performance in generative AI features on Google Search
+Open report
+chevron_forward
+QUERIES
+PAGES
+COUNTRIES
+DEVICES
+SEARCH APPEARANCE
+DAYS
+
+Top queries
+	
+Clicks
+	
+Impressions
+	
+CTR
+	
+Position
+
+true path leads	0	7	0%	9.9
+truepath leads	0	5	0%	9.8
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-2 of 2
+Previous page
+Next page

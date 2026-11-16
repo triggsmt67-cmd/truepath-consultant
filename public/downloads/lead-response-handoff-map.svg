@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440" role="img" aria-labelledby="title desc">
+<title id="title">The inquiry handoff map: owner, next step, due time</title>
+<desc id="desc">Five steps: capture, assign, set the next step, follow up, and record the outcome. If a task is overdue or unaccepted, flag it for the backup. Automated replies are separate from human responses and booked work.</desc>
+<rect width="1080" height="1440" fill="#f1f0e8"/>
+<g font-family="Arial, Helvetica, sans-serif" fill="#20251f">
+<text x="64" y="65" fill="#955a32" font-size="19" letter-spacing="3" font-weight="700">TRUE PATH DIGITAL / TEAM REFERENCE</text>
+<text x="64" y="124" font-family="Georgia, serif" font-size="49">The inquiry handoff map</text>
+<text x="64" y="178" font-size="30" font-weight="700">Owner. Next step. Due time.</text>
+<text x="64" y="212" font-size="21" fill="#5c615a">Give every open inquiry all three.</text>
+<rect x="64" y="240" width="952" height="160" rx="12" fill="#fffefa" stroke="#d0d1c7"/>
+ <rect x="64" y="240" width="8" height="160" rx="4" fill="#436454"/>
+ <circle cx="121" cy="291" r="26" fill="#436454"/>
+ <text x="121" y="299" text-anchor="middle" fill="#fffefa" font-size="23" font-weight="700">1</text>
+ <text x="170" y="292" font-size="32" font-weight="700" fill="#436454">Capture</text>
+ <text x="170" y="336" font-size="25">One inquiry, with its source.</text>
+ <text x="170" y="372" font-size="22" fill="#5c615a">Link repeated calls and forms about the same job.</text>
+ <path d="M540 405v17m-6-6 6 6 6-6" fill="none" stroke="#8c9287" stroke-width="2.5"/>
+<rect x="64" y="428" width="952" height="160" rx="12" fill="#fffefa" stroke="#d0d1c7"/>
+ <rect x="64" y="428" width="8" height="160" rx="4" fill="#955a32"/>
+ <circle cx="121" cy="479" r="26" fill="#955a32"/>
+ <text x="121" y="487" text-anchor="middle" fill="#fffefa" font-size="23" font-weight="700">2</text>
+ <text x="170" y="480" font-size="32" font-weight="700" fill="#955a32">Assign</text>
+ <text x="170" y="524" font-size="25">One named person accepts responsibility.</text>
+ <text x="170" y="560" font-size="22" fill="#5c615a">Identify the backup before the usual owner is away.</text>
+ <path d="M540 593v17m-6-6 6 6 6-6" fill="none" stroke="#8c9287" stroke-width="2.5"/>
+<rect x="64" y="616" width="952" height="160" rx="12" fill="#fffefa" stroke="#d0d1c7"/>
+ <rect x="64" y="616" width="8" height="160" rx="4" fill="#536c7e"/>
+ <circle cx="121" cy="667" r="26" fill="#536c7e"/>
+ <text x="121" y="675" text-anchor="middle" fill="#fffefa" font-size="23" font-weight="700">3</text>
+ <text x="170" y="668" font-size="32" font-weight="700" fill="#536c7e">Set the next step</text>
+ <text x="170" y="712" font-size="25">Write the action and its due time.</text>
+ <text x="170" y="748" font-size="22" fill="#5c615a">Use actual working hours and available capacity.</text>
+ <path d="M540 781v17m-6-6 6 6 6-6" fill="none" stroke="#8c9287" stroke-width="2.5"/>
+<rect x="64" y="804" width="952" height="160" rx="12" fill="#fffefa" stroke="#d0d1c7"/>
+ <rect x="64" y="804" width="8" height="160" rx="4" fill="#765d79"/>
+ <circle cx="121" cy="855" r="26" fill="#765d79"/>
+ <text x="121" y="863" text-anchor="middle" fill="#fffefa" font-size="23" font-weight="700">4</text>
+ <text x="170" y="856" font-size="32" font-weight="700" fill="#765d79">Follow up</text>
+ <text x="170" y="900" font-size="25">Act on the agreed plan.</text>
+ <text x="170" y="936" font-size="22" fill="#5c615a">Replies, bookings, declines, and stop requests change the plan.</text>
+ <path d="M540 969v17m-6-6 6 6 6-6" fill="none" stroke="#8c9287" stroke-width="2.5"/>
+<rect x="64" y="992" width="952" height="160" rx="12" fill="#fffefa" stroke="#d0d1c7"/>
+ <rect x="64" y="992" width="8" height="160" rx="4" fill="#796229"/>
+ <circle cx="121" cy="1043" r="26" fill="#796229"/>
+ <text x="121" y="1051" text-anchor="middle" fill="#fffefa" font-size="23" font-weight="700">5</text>
+ <text x="170" y="1044" font-size="32" font-weight="700" fill="#796229">Record the outcome</text>
+ <text x="170" y="1088" font-size="25">Booked / deciding / declined / no capacity / no reply</text>
+ <text x="170" y="1124" font-size="22" fill="#5c615a">Keep unknown reasons unknown.</text>
+ 
+<rect x="64" y="1214" width="952" height="116" rx="10" fill="#20251f"/>
+<text x="94" y="1255" font-size="25" fill="#f1f0e8" font-weight="700">Due time missed or task unaccepted?</text>
+<text x="94" y="1296" font-size="23" fill="#f1f0e8">Flag it for the backup. Keep the history with the inquiry.</text>
+<text x="64" y="1372" font-size="20" fill="#5c615a">An automated reply is separate from a human response or booked job.</text>
+<text x="64" y="1410" font-size="19" fill="#5c615a">truepath406.com/services/lead-response</text>
+</g></svg>

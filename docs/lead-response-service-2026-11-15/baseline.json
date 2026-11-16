@@ -1,0 +1,38 @@
+{
+  "capturedLocalDate": "2026-11-15",
+  "page": "https://truepath406.com/services/lead-response",
+  "startDate": "2026-08-14",
+  "endDate": "2026-11-13",
+  "searchType": "Web",
+  "exactPageFilter": true,
+  "totals": {
+    "impressions": 82,
+    "clicks": 0,
+    "ctr": 0,
+    "averagePositionUI": 7.8,
+    "averagePositionOriginalExport": 7.84
+  },
+  "visibleQueries": [
+    {
+      "query": "true path leads",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr": 0,
+      "positionUI": 9.9
+    },
+    {
+      "query": "truepath leads",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr": 0,
+      "positionUI": 9.8
+    }
+  ],
+  "limitations": [
+    "Only 12 of 82 impressions attributed to visible query rows.",
+    "Brand-like queries do not establish searcher intent or nonbrand service demand.",
+    "Zero clicks in a small sample does not establish cause.",
+    "GA4 and inquiry measurement deferred by owner; not zero."
+  ],
+  "indexingBefore": "URL is on Google; Page is indexed; HTTPS."
+}

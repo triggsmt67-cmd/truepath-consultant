@@ -31,6 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/services/lead-response`,
+      lastModified: "2026-11-15",
       changeFrequency: "monthly",
       priority: 0.9,
       images: [`${baseUrl}/images/lead-response.webp`],
