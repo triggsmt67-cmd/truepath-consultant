@@ -218,6 +218,15 @@ export default function RootLayout({
     >
       <head>
         <script
+          id="google-tag-init"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());`,
+          }}
+        />
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-TCVKPSGD" />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(localBusinessSchema) }}
         />
