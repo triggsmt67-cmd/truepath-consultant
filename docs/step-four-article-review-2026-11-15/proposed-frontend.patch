@@ -1,11 +1,8 @@
 --- a/src/app/insights/[slug]/page.tsx
 +++ b/src/app/insights/[slug]/page.tsx
-@@ -20,9 +20,9 @@
+@@ -20,7 +20,7 @@
    "the-leak-every-home-service-business-should-measure":
      "Missed Calls Are Lost Jobs for Home Service Businesses",
-   "google-profile-is-killing-your-local-visibility":
--    "Inactive Google Profiles Kill Local Visibility",
-+    "Google Business Profile Optimization: A Maintenance Checklist",
    "home-service-booking":
 -    "The “More Leads” Trap: Fix Your Booking Rate First",
 +    "Home Service Booking Rate: Find Where Inquiries Get Lost",

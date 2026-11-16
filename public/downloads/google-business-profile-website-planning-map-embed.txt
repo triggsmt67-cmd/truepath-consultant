@@ -1,0 +1,8 @@
+<!-- Optional reference image. Adjust display size to suit your website. -->
+<a href="https://truepath406.com/insights/google-profile-is-killing-your-local-visibility">
+  <img src="https://truepath406.com/downloads/google-business-profile-website-planning-map.png"
+       alt="30-page website planning example for a fictional plumbing business"
+       width="1086" height="1448" style="max-width:100%;height:auto;" />
+</a>
+<p>Website planning map by <a href="https://truepath406.com/insights/google-profile-is-killing-your-local-visibility">True Path Digital</a>.
+This is an example, not a required page count.</p>

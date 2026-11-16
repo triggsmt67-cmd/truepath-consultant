@@ -9,8 +9,8 @@ A high-performance marketing consultancy website for **True Path Digital**, buil
 Updated November 15, 2026. Work through these steps in order and update the
 checkboxes as each item is completed. **Steps 1 and 2 are live and verified. Step 3 Search Console collection is
 complete; GA4 and inquiry measurement are deferred.
-Step 4 drafts are prepared; next action: review the exact article and
-Google Profile service-page proposals before publication.**
+The Step 4 Google Profile article is published with its reference map;
+the other four articles and service-page proposals await review.**
 Trevor approved both releases on November 15, 2026. Article rewrites,
 consolidation, content removal, and unrelated settings remain separate work.
 
@@ -24,8 +24,9 @@ consolidation, content removal, and unrelated settings remain separate work.
 - [x] Save the completed work and review artifacts in the Git repository.
 
 Trevor requested this checkpoint and a Vercel rebuild on November 15. The
-article and service-page replacements remain **review-only and unpublished**
-while he reads them. GA4 remains deferred. The remaining publication checkboxes
+remaining article and service-page replacements remain **review-only and unpublished**
+while he reads them. The subsequently approved Google Profile article is
+published separately; see its release record below. GA4 remains deferred. The remaining publication checkboxes
 and Steps 5–7 below are intentionally still open.
 
 Details: [SEO audit and page recommendations](docs/seo-audit-2026-11-15.md)
@@ -134,10 +135,18 @@ corrected summaries and FAQs, and an unapplied frontend patch.
 [Open the reading preview](docs/step-four-article-review-2026-11-15/review.html).
 The companion Google Profile service-page proposal targets the Missoula
 optimization phrase with clearer metadata, H1, and introductory copy.
-**Prepared only: no CMS or application source changes have been applied.**
+**Google Profile article approved and published November 15.** Trevor reviewed
+the owner-friendly rewrite and authorized a colorful website planning map and
+WordPress publication. The map includes 30 numbered example pages, a text
+equivalent, PNG/CSV downloads, and optional image-and-credit markup. The
+frontend now uses the WordPress article title.
+[Google Profile article and map release record](docs/google-profile-map-2026-11-15/README.md).
+The other four article revisions and the service-page proposal remain unapplied.
 
-- [ ] Get approval before updating live WordPress content. Publish approved
-  revisions and verify the public article text, metadata, links, and schema.
+- [x] Publish the approved Google Profile article and its matching summary/FAQ
+  fields with the reference map.
+- [ ] Get approval for the remaining four article revisions and service-page
+  proposal before publication; verify their text, metadata, links, and schema.
 
 ### Step 5 Consolidate the overlapping AI search articles
 

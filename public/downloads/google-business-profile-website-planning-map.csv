@@ -1,0 +1,31 @@
+Page number,Page idea,Parent page number,Section,Publish only when
+1,Home,,Home,The page answers a real customer need and accurately represents your business
+2,Services,1,Services,The page answers a real customer need and accurately represents your business
+3,Drain cleaning,2,Services,The page answers a real customer need and accurately represents your business
+4,Leak repair,2,Services,The page answers a real customer need and accurately represents your business
+5,Water heater repair,2,Services,The page answers a real customer need and accurately represents your business
+6,Water heater replacement,2,Services,The page answers a real customer need and accurately represents your business
+7,Fixture installation,2,Services,The page answers a real customer need and accurately represents your business
+8,Service areas,1,Service areas,The page answers a real customer need and accurately represents your business
+9,Missoula,8,Service areas,You serve this location and have useful local details
+10,Lolo,8,Service areas,You serve this location and have useful local details
+11,Frenchtown,8,Service areas,You serve this location and have useful local details
+12,Work,1,Work,The page answers a real customer need and accurately represents your business
+13,Drain blockage case study,12,Work,You have real completed work to explain
+14,Leak repair case study,12,Work,You have real completed work to explain
+15,Water heater installation,12,Work,You have real completed work to explain
+16,Advice,1,Advice,The page answers a real customer need and accurately represents your business
+17,Repair or replace the water heater?,16,Advice,The page answers a real customer need and accurately represents your business
+18,Why drains keep clogging,16,Advice,The page answers a real customer need and accurately represents your business
+19,Find your water shutoff,16,Advice,The page answers a real customer need and accurately represents your business
+20,What happens at a service visit?,16,Advice,The page answers a real customer need and accurately represents your business
+21,How estimates work,16,Advice,The page answers a real customer need and accurately represents your business
+22,About,1,About,The page answers a real customer need and accurately represents your business
+23,Meet the team,22,About,The page answers a real customer need and accurately represents your business
+24,Licenses and insurance,22,About,These are genuine current credentials
+25,Customer reviews,22,About,The page answers a real customer need and accurately represents your business
+26,Contact,1,Contact,The page answers a real customer need and accurately represents your business
+27,Request service,26,Contact,The page answers a real customer need and accurately represents your business
+28,Service FAQs,26,Contact,The page answers a real customer need and accurately represents your business
+29,Privacy,,Utility pages,The page answers a real customer need and accurately represents your business
+30,Accessibility,,Utility pages,The page answers a real customer need and accurately represents your business

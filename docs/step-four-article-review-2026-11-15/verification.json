@@ -45,5 +45,13 @@
       "status": 200,
       "finalUrl": "https://truepath406.com/services/lead-response"
     }
-  ]
+  ],
+  "googleProfileReviewRevision": {
+    "date": "2026-11-15",
+    "status": "local draft; not published or pushed",
+    "angle": "Owners can write a useful profile from the questions they already answer on the phone.",
+    "emDashesInProposedArticleAndPublishingFields": 0,
+    "stockPhraseScan": "passed; one deliberately generic example is explicitly contrasted with useful copy",
+    "sourceFilesChanged": false
+  }
 }

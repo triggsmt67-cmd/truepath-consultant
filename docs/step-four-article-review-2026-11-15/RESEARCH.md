@@ -4,12 +4,21 @@ Researched November 15, 2026. Sources are platform documentation unless noted.
 The examples and operating routines in the drafts are editorial proposals, not
 measured client results. They do not imply Google has tested these workflows.
 
+Review revision: Trevor requested an owner-friendly Google Profile guide built
+around knowing the steps and how to structure content. The latest draft now
+includes fictional description, service, and post examples. It was rechecked
+against Google's current category and services guidance and audited for tone
+and em dashes. This local revision supersedes the earlier maintenance-only
+angle below; it is not published.
+
 ## Source register
 
 | Source | Supported use | Editorial consequence |
 |---|---|---|
 | [Google: local ranking](https://support.google.com/business/answer/7091?hl=en) | Ranking guidance and its limits | Remove the weekly-inactivity scorecard and guaranteed posting/ranking claims. |
 | [Google: business representation](https://support.google.com/business/answer/3038177?hl=en) | Accurate identity, categories, and eligible business locations | Replace exact-character matching and service-area expansion promises with accurate representation. |
+| [Google: categories](https://support.google.com/business/answer/7249669?hl=en) | Primary and additional category selection | Choose specific accurate available categories rather than one for every service. |
+| [Google: services editor](https://support.google.com/business/answer/9455399?hl=en) | Available service entries and details | Show how individual descriptions differ from the business overview. |
 | [Google: posts](https://support.google.com/business/answer/7342169?hl=en) | Current post archive behavior | Correct the old seven-day claim; use useful updates without promising rank improvements. |
 | [Google: profile performance](https://support.google.com/business/answer/9918094?hl=en) | Metric definitions and report scope | Separate profile interactions from actual inquiries and booked work. |
 | [Google: Maps contribution policy](https://support.google.com/contributionpolicy/answer/7400114?hl=en) | Review solicitation limits | Replace positive-only selection, prescribed review wording, incentives, and pressure. |
@@ -47,7 +56,7 @@ Assign distinct purposes:
 | Existing page | Reader's decision | Proposed focus |
 |---|---|---|
 | `/services/google-profile` | Should I hire True Path to help? | Google Business Profile Optimization in Missoula; accurate scope and profile-review CTA. |
-| Existing Google Profile article | What should I check in a profile I already manage? | Maintenance, customer path, ownership, and measurement. |
+| Existing Google Profile article | How can I write and organize a useful profile myself? | A practical order of work with business-description, service-entry, and post examples, followed by a contact check. |
 | Existing Local SEO article | What should I expect from broader local SEO work or an agency? | Keep its expectations/reporting purpose; no replacement is included here. |
 
 This is a plan to distinguish intent. The available data does not prove that

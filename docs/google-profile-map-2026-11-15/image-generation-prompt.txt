@@ -1,0 +1,37 @@
+Create a polished, colorful editorial reference infographic, portrait 2400 by 3200 pixels or higher, with immaculate readable typeset text and an actual hierarchical tree diagram. Brand: TRUE PATH DIGITAL. Professional field-guide aesthetic, warm ivory background, dark forest green type, bright but restrained coral, teal, mustard, violet, blue and mint branch colors. Flat vector-like boxes and connector lines, generous whitespace, no photographs, no decorative 3D effects. This is a saveable website-planning resource for service-business owners, NOT a Google-branded diagram. No Google logo. Show EXACTLY 30 numbered page nodes, numbers 01 through 30 once each. Do not invent extra pages.
+Exact headline: "Plan a website around the work you do"
+Exact subtitle: "A 30-page example for a fictional plumbing business"
+Small top eyebrow: "TRUE PATH DIGITAL  /  WEBSITE FIELD GUIDE"
+At top a single root node: "01  HOME"
+Connect root to SIX branch trees arranged in a balanced two-column by three-row grid. Each branch tree has a parent page node and children stacked underneath, with clear tree connector lines. All numbered text below is verbatim. The branch color must distinguish each tree. Parent node and all children belong to that branch. Do not repeat parent node elsewhere.
+LEFT TOP teal:
+"02  Services"
+children "03  Drain cleaning", "04  Leak repair", "05  Water heater repair", "06  Water heater replacement", "07  Fixture installation"
+Small unnumbered branch caption: "Profile services -> clear service pages"
+RIGHT TOP coral:
+"08  Service areas"
+children "09  Missoula", "10  Lolo", "11  Frenchtown"
+Small unnumbered branch caption: "Only where you work and have useful local detail"
+LEFT MIDDLE blue:
+"12  Work"
+children "13  Drain blockage case study", "14  Leak repair case study", "15  Water heater installation"
+Small unnumbered branch caption: "Real jobs, photos and explanations"
+RIGHT MIDDLE mustard:
+"16  Advice"
+children "17  Repair or replace the water heater?", "18  Why drains keep clogging", "19  Find your water shutoff", "20  What happens at a service visit?", "21  How estimates work"
+Small unnumbered branch caption: "Answer the questions customers ask"
+LEFT BOTTOM violet:
+"22  About"
+children "23  Meet the team", "24  Licenses and insurance", "25  Customer reviews"
+Small unnumbered branch caption: "Accurate business details and genuine proof"
+RIGHT BOTTOM green:
+"26  Contact"
+children "27  Request service", "28  Service FAQs"
+Small unnumbered branch caption: "Make the next step easy"
+Below the main tree a distinct footer group labeled "Utility pages" containing two numbered nodes:
+"29  Privacy" and "30  Accessibility"
+Footer reference note, exact wording: "Use this as a planning menu, not a page quota. Google does not require 30 pages or a matching page for every profile service."
+Credit line: "Created by True Path Digital  |  truepath406.com"
+Use perfectly spelled text. No em dashes. Ensure every node and every caption fits without clipping. Large enough text to read in a full-resolution download. Clearly structured as a hierarchy, not a statistical area treemap.
+
+Mode: built-in image_gen. A second built-in edit connected the four lower branches to Home while preserving all labels.

@@ -1,0 +1,12 @@
+{
+  "postId": 153,
+  "titleMatches": true,
+  "renderedTextMatchesApproved": true,
+  "acfFieldsMatchAfterLineEndingNormalization": true,
+  "bodyEmDashes": 0,
+  "pageRecords": 30,
+  "changedPostIds": [
+    153
+  ],
+  "note": "WordPress renders block comments and typography; FAQ line endings are normalized to compare."
+}
