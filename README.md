@@ -10,7 +10,7 @@ Updated November 15, 2026. Work through these steps in order and update the
 checkboxes as each item is completed. **Steps 1 and 2 are live and verified. Step 3 Search Console collection is
 complete; GA4 and inquiry measurement are deferred.
 The Step 4 Google Profile and Booking articles are published with reference
-graphics and downloads. The Google Profile and Lead Response service-page updates are also published; three article revisions remain.**
+graphics and downloads. All three service-page updates are also published; three article revisions remain.**
 Trevor approved these releases on November 15, 2026. Article rewrites,
 consolidation, content removal, and unrelated settings remain separate work.
 
@@ -194,7 +194,12 @@ Future service-page revisions should follow the buyer’s decision rather than
 a fixed section sequence, FAQ count, or word count. Shared branding can stay.
 [Baseline, redesign decisions, sources, and release checks](docs/website-builds-service-2026-11-15/README.md).
 
-- [ ] Publish and verify the Website Strategy and Builds page and decision map.
+- [x] Publish and verify the Website Strategy and Builds page and decision map.
+
+Live verification passed: six matching expandable FAQs/schema, two map downloads,
+form controls, desktop/tablet/mobile layouts, and five SEO checks across 26
+sitemap pages and 38 internal paths. Google accepted the indexing request.
+Ranking and qualified-inquiry gains remain unmeasured.
 
 ### Step 5 Consolidate the overlapping AI search articles
 

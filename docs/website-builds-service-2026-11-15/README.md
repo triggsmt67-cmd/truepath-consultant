@@ -45,3 +45,14 @@ No provider integration or new measurement setup was activated. Prices, timing, 
 ## Verification and follow-up
 
 Local production build/TypeScript and ESLint passed. The page was inspected at 1440, 768, and 390 pixels; client and scroll widths matched. The request form opened/closed without submitting an inquiry. A native FAQ opened with Enter and closed with Enter. The decision graphic was revised from “Specific problem?” to “Focused fix enough?” to make its branching question clearer. Final release checks are recorded below after publication. Review search outcomes after recrawl and about four to six weeks, approximately December 13–27, using equal 28-day windows and the exact page filter. Assess query mix, impressions, CTR, clicks, and positions together. Concurrent releases, seasonality, and small samples limit attribution. Qualified inquiry outcomes are not yet measured. Do not describe this content release as a proven ranking improvement.
+
+## Published and verified
+
+- Source commit `af2d78684142be1f56201276887ad44f86acc8ad`; Vercel production deployment `dpl_2iUuuNY9RmnBm4ofVBrnAPyRxuHj`, **READY**, assigned to `truepath406.com`.
+- Production build/TypeScript and ESLint passed. All five production SEO checks passed across 26 sitemap pages and 38 internal paths, including CMS article HTML, metadata, robots, redirects, and expected 404s. Existing optional editorial-link phrase warnings remain informational. [Check output](seo-checks.txt).
+- Targeted live checks passed: HTTP 200, self-canonical, index/follow, exact new title/H1/description, six native expandable answers matching FAQ schema, Service name, 829 main-content words, zero em dashes, retained example link, and the sitemap revision date. [Verification JSON](live-verification.json).
+- Both public map downloads return 200 and match the local bytes; SVG XML parses. The PNG is 94,692 bytes. The original vector and generator remain editable in Git.
+- Desktop, tablet, and mobile visual checks passed; no horizontal overflow. Both request buttons fit on mobile. The live request form opened and closed without sending an inquiry. Native FAQs were tested with Enter. No runtime errors were returned in the selected Vercel scan range. Field Core Web Vitals and business conversion outcomes were not newly measured.
+- Search Console confirmed **Indexing requested** after live URL checking. [Evidence](indexing-request.txt). This is not proof of recrawl completion or a ranking gain.
+- Screenshot: `/Users/trevorriggs/Documents/Codex/outputs/truepath-website-builds-live-2026-11-15.jpg`. Before screenshot: `/Users/trevorriggs/Documents/Codex/outputs/truepath-website-builds-before-2026-11-15.jpg`.
+- WordPress articles, the other two service-page designs, tracking, and external settings were not changed. This release establishes a distinct direction for this page and a less formulaic editorial standard for future work.

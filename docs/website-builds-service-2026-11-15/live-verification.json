@@ -1,0 +1,46 @@
+{
+  "dateLocal": "2026-11-15",
+  "url": "https://truepath406.com/services/website-builds",
+  "status": 200,
+  "title": "Conversion-Focused Web Design in Missoula | True Path Digital",
+  "description": "Website strategy, focused repairs, and custom builds for Missoula service businesses. Make services clear and inquiries easier. Request a website review.",
+  "h1": "Conversion-focused web design in Missoula.",
+  "canonical": "https://truepath406.com/services/website-builds",
+  "robots": "index, follow",
+  "faqCount": 6,
+  "nativeDisclosureCount": 6,
+  "allFaqAnswersMatchAvailableContent": true,
+  "mainContentEmDashCount": 0,
+  "mainWords": 829,
+  "previousMainWords": 1418,
+  "wordReductionPercent": 41.5,
+  "sitemapLastModified": "2026-11-15",
+  "resources": [
+    {
+      "file": "website-repair-or-rebuild-map.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 94692,
+      "sha256": "654d50a3f1967beafe54592d5bb93a25290354bcd0a44052fd1d6bc162cce53c"
+    },
+    {
+      "file": "website-repair-or-rebuild-map.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 3066,
+      "sha256": "7d5a0721809e094739580a927cbe69ff74a2c4780591374b893156f963899602"
+    }
+  ],
+  "localBrowserChecks": "1440px, 768px, 390px; no horizontal overflow. Review form opens/closes; native FAQ toggles with Enter. Diagram and text equivalent reviewed.",
+  "sourceCommit": "af2d78684142be1f56201276887ad44f86acc8ad",
+  "deploymentId": "dpl_2iUuuNY9RmnBm4ofVBrnAPyRxuHj",
+  "productionSeoChecks": {
+    "passed": 5,
+    "failed": 0,
+    "sitemapPages": 26,
+    "internalPaths": 38
+  },
+  "liveFormCheck": "Existing request form opened and closed; no inquiry submitted.",
+  "indexingRequest": "Search Console showed Indexing requested after live URL checking.",
+  "runtimeErrorScan": "No runtime errors returned in the selected range."
+}
