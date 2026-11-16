@@ -1,0 +1,472 @@
+Browser tab: 589472698, Title: "IndexNow - Bing Webmaster Tools", URL: "https://www.bing.com/webmasters/indexnow?siteUrl=https://truepath406.com/".
+0 AXWebArea IndexNow - Bing Webmaster Tools, URL: bing.com/webmasters/indexnow?siteUrl=https://truepath406.com/
+	1 container
+		2 container root
+			3 container
+				4 link Description: Skip to main content, Value: bing.com/webmasters/indexnow?siteUrl=https://truepath406.com/#content
+				5 pop up button (collapsed) Description: Show Bing tools, Help: Bing Tools, Secondary Actions: Expand
+				6 image white bwt logo microsoft bing webmaster
+				7 pop up button (collapsed) Description: Copilot, Help: Copilot in Bing Webmaster Tools, Secondary Actions: Expand
+				8 pop up button (collapsed) Description: Notifications, Secondary Actions: Expand
+				9 pop up button (collapsed) Description: Help, Secondary Actions: Expand
+				10 pop up button (collapsed) Description: Feedback, Secondary Actions: Expand
+				11 pop up button (collapsed) Description: Settings, Secondary Actions: Expand
+				12 pop up button (collapsed) Description: Profile, ID: targetButton, Secondary Actions: Expand
+					13 image
+			14 container
+				15 pop up button (collapsed) Description: Select website, Secondary Actions: Expand
+					16 text truepath406.com/
+				17 container Main menu
+					18 outline
+						19 row (selectable) Home
+							20 text Home
+						21 row (selectable) Search Performance
+							22 text Search Performance
+						23 row (selectable) AI Performance BETA
+							24 text AI Performance
+							25 text BETA
+						26 row (selectable) URL Inspection
+							27 text URL Inspection
+						28 row (selectable) Site Explorer
+							29 text Site Explorer
+						30 row (selectable) Sitemaps
+							31 text Sitemaps
+						32 row (selected) IndexNow
+							33 text IndexNow
+						34 row (selectable) Backlinks
+							35 text Backlinks
+						36 row (selectable) Keyword Research
+							37 text Keyword Research
+						38 row (selectable) Recommendations
+							39 text Recommendations
+						40 row (selectable) Site Scan
+							41 text Site Scan
+						42 row (selectable, expanded) Description: Configuration, ID: accordionItem46, Secondary Actions: Collapse
+							43 text CONFIGURATION
+						93 container
+							94 row (selectable) Crawl Control
+								95 text Crawl Control
+							96 row (selectable) Block URLs
+								97 text Block URLs
+						44 row (selectable, collapsed) Description: Tools & Enhancements, ID: accordionItem50, Secondary Actions: Expand
+							45 text TOOLS & ENHANCEMENTS
+						46 row (selectable, collapsed) Description: Security & Privacy, ID: accordionItem54, Secondary Actions: Expand
+							47 text SECURITY & PRIVACY
+						48 row (selectable) User management
+							49 text User management
+						50 row (selectable) Microsoft Clarity
+							51 text Microsoft Clarity
+			52 container content
+				98 heading IndexNow, Value: 2
+					99 text IndexNow
+				127 container
+					128 heading URLs submitted in last 17 hours, Value: 4
+						129 text URLs submitted in last 17 hours
+					130 button Info
+					131 text 28
+					132 heading Sources, Value: 4
+						133 text Sources
+					134 text Self
+				108 heading Submitted Urls list(shows latest 1000 urls), Value: 3
+					109 text Submitted Urls list(shows latest 1000 urls)
+				110 button Export
+					111 text Export
+				112 table Submitted Urls list
+					113 row URL, sortable Submitted, sortable, sorted descending order Source Source Details, sortable
+						114 cell
+							115 button Description: URL, sortable, ID: header1155-1
+								116 text URL
+						117 cell
+							118 button Description: Submitted, sortable, sorted descending order, ID: header1155-2
+								119 text Submitted
+						120 cell Source Source
+							135 container
+								136 text Source
+								137 pop up button (collapsed) Description: Source, Secondary Actions: Expand
+						124 cell
+							125 button Description: Details, sortable, ID: header1155-4
+								126 text Details
+					138 row https://truepath406.com/ URL actions Today at 10:38 Self View, ID: row2326-0
+						139 container
+							140 cell
+								141 container
+									142 text https://truepath406.com/
+									143 container URL actions
+										144 button Description: Copy, ID: copyButton2331
+										145 button Open in new tab
+										146 button Inspect URL
+							147 cell
+								148 text Today at 10:38
+							149 cell
+								150 text Self
+							151 cell
+								152 button View
+					153 row https://truepath406.com/checkup URL actions Today at 10:38 Self View, ID: row2326-1
+						154 container
+							155 cell
+								156 container
+									157 text https://truepath406.com/checkup
+									158 container URL actions
+										159 button Description: Copy, ID: copyButton2342
+										160 button Open in new tab
+										161 button Inspect URL
+							162 cell
+								163 text Today at 10:38
+							164 cell
+								165 text Self
+							166 cell
+								167 button View
+					168 row https://truepath406.com/insights URL actions Today at 10:38 Self View, ID: row2326-2
+						169 container
+							170 cell
+								171 container
+									172 text https://truepath406.com/insights
+									173 container URL actions
+										174 button Description: Copy, ID: copyButton2353
+										175 button Open in new tab
+										176 button Inspect URL
+							177 cell
+								178 text Today at 10:38
+							179 cell
+								180 text Self
+							181 cell
+								182 button View
+					183 row ID: row2326-3, https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing URL actions Today at 10:38 Self View
+						184 container
+							185 cell
+								186 container
+									187 text https://truepath406.com/insights/ai-search-visibility-why-local-businesses-are-disappearing
+									188 container URL actions
+										189 button Description: Copy, ID: copyButton2364
+										190 button Open in new tab
+										191 button Inspect URL
+							192 cell
+								193 text Today at 10:38
+							194 cell
+								195 text Self
+							196 cell
+								197 button View
+					198 row ID: row2326-4, https://truepath406.com/insights/businesses-in-chatgpt-for-service-businesses URL actions Today at 10:38 Self View
+						199 container
+							200 cell
+								201 container
+									202 text https://truepath406.com/insights/businesses-in-chatgpt-for-service-businesses
+									203 container URL actions
+										204 button Description: Copy, ID: copyButton2375
+										205 button Open in new tab
+										206 button Inspect URL
+							207 cell
+								208 text Today at 10:38
+							209 cell
+								210 text Self
+							211 cell
+								212 button View
+					213 row ID: row2326-5, https://truepath406.com/insights/clear-marketing-decisions-for-montana-business-owners URL actions Today at 10:38 Self View
+						214 container
+							215 cell
+								216 container
+									217 text https://truepath406.com/insights/clear-marketing-decisions-for-montana-business-owners
+									218 container URL actions
+										219 button Description: Copy, ID: copyButton2386
+										220 button Open in new tab
+										221 button Inspect URL
+							222 cell
+								223 text Today at 10:38
+							224 cell
+								225 text Self
+							226 cell
+								227 button View
+					228 row https://truepath406.com/insights/diagnose-a-slow-month URL actions Today at 10:38 Self View, ID: row2326-6
+						229 container
+							230 cell
+								231 container
+									232 text https://truepath406.com/insights/diagnose-a-slow-month
+									233 container URL actions
+										234 button Description: Copy, ID: copyButton2397
+										235 button Open in new tab
+										236 button Inspect URL
+							237 cell
+								238 text Today at 10:38
+							239 cell
+								240 text Self
+							241 cell
+								242 button View
+					243 row ID: row2326-7, https://truepath406.com/insights/google-profile-is-killing-your-local-visibility URL actions Today at 10:38 Self View
+						244 container
+							245 cell
+								246 container
+									247 text https://truepath406.com/insights/google-profile-is-killing-your-local-visibility
+									248 container URL actions
+										249 button Description: Copy, ID: copyButton2408
+										250 button Open in new tab
+										251 button Inspect URL
+							252 cell
+								253 text Today at 10:38
+							254 cell
+								255 text Self
+							256 cell
+								257 button View
+					258 row https://truepath406.com/insights/home-service-booking URL actions Today at 10:38 Self View, ID: row2326-8
+						259 container
+							260 cell
+								261 container
+									262 text https://truepath406.com/insights/home-service-booking
+									263 container URL actions
+										264 button Description: Copy, ID: copyButton2419
+										265 button Open in new tab
+										266 button Inspect URL
+							267 cell
+								268 text Today at 10:38
+							269 cell
+								270 text Self
+							271 cell
+								272 button View
+					273 row ID: row2326-9, https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold URL actions Today at 10:38 Self View
+						274 container
+							275 cell
+								276 container
+									277 text https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold
+									278 container URL actions
+										279 button Description: Copy, ID: copyButton2430
+										280 button Open in new tab
+										281 button Inspect URL
+							282 cell
+								283 text Today at 10:38
+							284 cell
+								285 text Self
+							286 cell
+								287 button View
+					288 row ID: row2326-10, https://truepath406.com/insights/hvac-marketing-agency-red-flags URL actions Today at 10:38 Self View
+						289 container
+							290 cell
+								291 container
+									292 text https://truepath406.com/insights/hvac-marketing-agency-red-flags
+									293 container URL actions
+										294 button Description: Copy, ID: copyButton2441
+										295 button Open in new tab
+										296 button Inspect URL
+							297 cell
+								298 text Today at 10:38
+							299 cell
+								300 text Self
+							301 cell
+								302 button View
+					303 row ID: row2326-11, https://truepath406.com/insights/local-service-business-google-visibility URL actions Today at 10:38 Self View
+						304 container
+							305 cell
+								306 container
+									307 text https://truepath406.com/insights/local-service-business-google-visibility
+									308 container URL actions
+										309 button Description: Copy, ID: copyButton2452
+										310 button Open in new tab
+										311 button Inspect URL
+							312 cell
+								313 text Today at 10:38
+							314 cell
+								315 text Self
+							316 cell
+								317 button View
+					318 row ID: row2326-12, https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything URL actions Today at 10:38 Self View
+						319 container
+							320 cell
+								321 container
+									322 text https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything
+									323 container URL actions
+										324 button Description: Copy, ID: copyButton2463
+										325 button Open in new tab
+										326 button Inspect URL
+							327 cell
+								328 text Today at 10:38
+							329 cell
+								330 text Self
+							331 cell
+								332 button View
+					333 row ID: row2326-13, https://truepath406.com/insights/marketing-tactics-business-owners-can-safely-ignore-in-2026 URL actions Today at 10:38 Self View
+						334 container
+							335 cell
+								336 container
+									337 text https://truepath406.com/insights/marketing-tactics-business-owners-can-safely-ignore-in-2026
+									338 container URL actions
+										339 button Description: Copy, ID: copyButton2474
+										340 button Open in new tab
+										341 button Inspect URL
+							342 cell
+								343 text Today at 10:38
+							344 cell
+								345 text Self
+							346 cell
+								347 button View
+					348 row ID: row2326-14, https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process URL actions Today at 10:38 Self View
+						349 container
+							350 cell
+								351 container
+									352 text https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process
+									353 container URL actions
+										354 button Description: Copy, ID: copyButton2485
+										355 button Open in new tab
+										356 button Inspect URL
+							357 cell
+								358 text Today at 10:38
+							359 cell
+								360 text Self
+							361 cell
+								362 button View
+					363 row https://truepath406.com/insights/service-business-website URL actions Today at 10:38 Self View, ID: row2326-15
+						364 container
+							365 cell
+								366 container
+									367 text https://truepath406.com/insights/service-business-website
+									368 container URL actions
+										369 button Description: Copy, ID: copyButton2496
+										370 button Open in new tab
+										371 button Inspect URL
+							372 cell
+								373 text Today at 10:38
+							374 cell
+								375 text Self
+							376 cell
+								377 button View
+					378 row ID: row2326-16, https://truepath406.com/insights/technician-utilization-profit-leak URL actions Today at 10:38 Self View
+						379 container
+							380 cell
+								381 container
+									382 text https://truepath406.com/insights/technician-utilization-profit-leak
+									383 container URL actions
+										384 button Description: Copy, ID: copyButton2507
+										385 button Open in new tab
+										386 button Inspect URL
+							387 cell
+								388 text Today at 10:38
+							389 cell
+								390 text Self
+							391 cell
+								392 button View
+					393 row ID: row2326-17, https://truepath406.com/insights/the-1-profit-leak-in-a-service-business URL actions Today at 10:38 Self View
+						394 container
+							395 cell
+								396 container
+									397 text https://truepath406.com/insights/the-1-profit-leak-in-a-service-business
+									398 container URL actions
+										399 button Description: Copy, ID: copyButton2518
+										400 button Open in new tab
+										401 button Inspect URL
+							402 cell
+								403 text Today at 10:38
+							404 cell
+								405 text Self
+							406 cell
+								407 button View
+					408 row ID: row2326-18, https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search URL actions Today at 10:38 Self View
+						409 container
+							410 cell
+								411 container
+									412 text https://truepath406.com/insights/the-digital-inversion-why-your-business-is-vanishing-from-ai-search
+									413 container URL actions
+										414 button Description: Copy, ID: copyButton2529
+										415 button Open in new tab
+										416 button Inspect URL
+							417 cell
+								418 text Today at 10:38
+							419 cell
+								420 text Self
+							421 cell
+								422 button View
+					423 row ID: row2326-19, https://truepath406.com/insights/the-leak-every-home-service-business-should-measure URL actions Today at 10:38 Self View
+						424 container
+							425 cell
+								426 container
+									427 text https://truepath406.com/insights/the-leak-every-home-service-business-should-measure
+									428 container URL actions
+										429 button Description: Copy, ID: copyButton2540
+										430 button Open in new tab
+										431 button Inspect URL
+							432 cell
+								433 text Today at 10:38
+							434 cell
+								435 text Self
+							436 cell
+								437 button View
+					438 row ID: row2326-20, https://truepath406.com/insights/thin-service-pages-look-generic URL actions Today at 10:38 Self View
+						439 container
+							440 cell
+								441 container
+									442 text https://truepath406.com/insights/thin-service-pages-look-generic
+									443 container URL actions
+										444 button Description: Copy, ID: copyButton2551
+										445 button Open in new tab
+										446 button Inspect URL
+							447 cell
+								448 text Today at 10:38
+							449 cell
+								450 text Self
+							451 cell
+								452 button View
+					453 row ID: row2326-21, https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience URL actions Today at 10:38 Self View
+						454 container
+							455 cell
+								456 container
+									457 text https://truepath406.com/insights/what-ai-cant-replace-the-surprising-value-of-experience
+									458 container URL actions
+										459 button Description: Copy, ID: copyButton2562
+										460 button Open in new tab
+										461 button Inspect URL
+							462 cell
+								463 text Today at 10:38
+							464 cell
+								465 text Self
+							466 cell
+								467 button View
+					468 row ID: row2326-22, https://truepath406.com/insights/why-digital-marketing-fails-early URL actions Today at 10:38 Self View
+						469 container
+							470 cell
+								471 container
+									472 text https://truepath406.com/insights/why-digital-marketing-fails-early
+									473 container URL actions
+										474 button Description: Copy, ID: copyButton2573
+										475 button Open in new tab
+										476 button Inspect URL
+							477 cell
+								478 text Today at 10:38
+							479 cell
+								480 text Self
+							481 cell
+								482 button View
+					483 row https://truepath406.com/services/chatgpt-business-profile URL actions Today at 10:38 Self View, ID: row2326-23
+						484 container
+							485 cell
+								486 container
+									487 text https://truepath406.com/services/chatgpt-business-profile
+									488 container URL actions
+										489 button Description: Copy, ID: copyButton2584
+										490 button Open in new tab
+										491 button Inspect URL
+							492 cell
+								493 text Today at 10:38
+							494 cell
+								495 text Self
+							496 cell
+								497 button View
+					498 row https://truepath406.com/services/google-profile URL actions Today at 10:38 Self View, ID: row2326-24
+						499 container
+							500 cell
+								501 container
+									502 text https://truepath406.com/services/google-profile
+									503 container URL actions
+										504 button Description: Copy, ID: copyButton2595
+										505 button Open in new tab
+										506 button Inspect URL
+							507 cell
+								508 text Today at 10:38
+							509 cell
+								510 text Self
+							511 cell
+								512 button View
+				513 container
+					514 text Rows per page
+					515 combo box (collapsed) Description: Rows per page, Value: 25, ID: Dropdown1481, Secondary Actions: Expand
+						516 text 25
+					517 text 1  —  25  of 28
+					518 button (disabled) Go to previous Page
+					519 button Go to next Page
+
+The focused UI element is 32 row (selected) IndexNow

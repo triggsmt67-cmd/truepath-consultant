@@ -53,3 +53,17 @@ Sources: [IndexNow protocol](https://www.indexnow.org/documentation), [IndexNow 
 - A missing state artifact initializes the migration inventory; expired existing state fails closed for review. Normal state artifacts are retained 90 days and refreshed on successful runs. Each run's public-URL result log is retained 30 days.
 - Bing accepted the separate indexing request for the new ChatGPT guide (visible “Indexing requested.”). Bing had no explicit entries under Configuration → Block URLs.
 - Started a ten-URL Site Scan named “November 16 canonical SEO fixes,” scoped to the homepage, four service pages, Work, Insights and three recently updated articles. No subdomain crawl was requested; email scan updates were unchecked. Initial status: Queued.
+
+## Final verified result
+
+- Follow-up code commit `5a036bbba1d33303e086661f28b8fb171980bbf1`, production deployment `dpl_36ugx3oCZVuDYrSwMPUgmuvHejds`: READY.
+- Deployment-triggered run [43920467211](https://github.com/triggsmt67-cmd/truepath-consultant/actions/runs/43920467211) completed successfully. IndexNow returned **HTTP 200** for the 28 canonical URLs. It uploaded both the result and persistent state artifact. Exact response: verified-run/latest-result.json.
+- Manual verification run [43920587278](https://github.com/triggsmt67-cmd/truepath-consultant/actions/runs/43920587278) restored history from run 43920467211, checked all 28 pages, found **zero changed URLs**, and made no further notification request. Exact result: no-change-run/latest-result.json. A local dry-run against the restored state also found zero changes.
+- Bing Sitemaps now shows **Success**, last crawled November 16, and **28 URLs discovered** for the canonical sitemap. Screenshot: bing-sitemap-success.jpg. The redundant www sitemap still redirects correctly and was left intact; there is no technical need to delete it for the canonical sitemap to work.
+- Bing IndexNow now visibly shows **28 submitted URLs**, Source **Self**. Screenshots and full visible text: bing-indexnow-confirmed.jpg / bing-indexnow-confirmed.txt. This confirms Bing received notifications; it does not establish indexing of every URL.
+- The ten-URL Site Scan remained **Queued** at the last check. No completed scan results were assumed. The new guide's stored Blocked result remains unresolved until Bing reprocesses it, despite its passing live fetch and accepted indexing request.
+- No new private API keys, access tokens, paid service, or subscriber tracking were added. The IndexNow verification key is served as a public verification file by design. GitHub's existing scoped job token is used only to restore prior workflow artifacts.
+
+### Maintenance
+
+Use `npm run indexnow:check` for a read-only live-content check; `npm run indexnow` sends notifications when differences are present. Normal publishing needs no manual command: successful production deployments trigger the workflow, and WordPress-only changes are detected by its daily check. See the [workflow](https://github.com/triggsmt67-cmd/truepath-consultant/actions/workflows/indexnow.yml) for future results/failures. An unchanged run intentionally has no HTTP submission status.

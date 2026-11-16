@@ -415,3 +415,16 @@ Open [http://localhost:3000](http://localhost:3000).
 ## Deployment
 
 Deployed via Vercel with automatic builds on push to `main`. WordPress images are served through Next.js Image Optimization via the `remotePatterns` config in `next.config.ts`.
+
+## Bing and IndexNow — November 16, 2026
+
+Bing accepted the canonical sitemap and reports Success with 28 URLs discovered.
+IndexNow is installed and automatically checks the live site after successful
+production deployments and daily for WordPress changes. Its verified run received
+HTTP 200 for 28 canonical URLs; the next run restored its history and sent zero
+duplicate notifications. Bing's IndexNow screen confirms all 28 submissions.
+
+[Setup, exact evidence, remaining Bing issues and maintenance](docs/bing-indexnow-2026-11-16/README.md).
+The new ChatGPT guide still has an unresolved stored Bing Blocked status despite
+a passing live test; re-indexing was requested. The ten-page Bing scan is queued.
+Neither submission receipt nor live indexability proves indexing or AI citations.
