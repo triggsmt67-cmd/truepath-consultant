@@ -10,8 +10,8 @@ Updated November 15, 2026. Work through these steps in order and update the
 checkboxes as each item is completed. **Steps 1 and 2 are live and verified. Step 3 Search Console collection is
 complete; GA4 and inquiry measurement are deferred.
 The Step 4 Google Profile and Booking articles are published with reference
-graphics and downloads; three articles and the service-page proposal remain.**
-Trevor approved both releases on November 15, 2026. Article rewrites,
+graphics and downloads. The Google Profile service-page update is also published; three article revisions remain.**
+Trevor approved these releases on November 15, 2026. Article rewrites,
 consolidation, content removal, and unrelated settings remain separate work.
 
 ### November 15 repository checkpoint
@@ -24,9 +24,9 @@ consolidation, content removal, and unrelated settings remain separate work.
 - [x] Save the completed work and review artifacts in the Git repository.
 
 Trevor requested this checkpoint and a Vercel rebuild on November 15. The
-remaining article and service-page replacements remain **review-only and unpublished**
+remaining three article replacements remain **review-only and unpublished**
 while he reads them. The subsequently approved Google Profile and Booking
-articles are published separately; see their release records below. GA4 remains deferred. The remaining publication checkboxes
+articles and the Google Profile service-page update are published separately; see their release records below. GA4 remains deferred. The remaining publication checkboxes
 and Steps 5–7 below are intentionally still open.
 
 Details: [SEO audit and page recommendations](docs/seo-audit-2026-11-15.md)
@@ -131,10 +131,10 @@ No content, indexing requests, or Search Console submissions were changed.
 
 The [Step 4 review package](docs/step-four-article-review-2026-11-15/README.md)
 contains five full replacements, research/source notes, current/proposed fields,
-corrected summaries and FAQs, and an unapplied frontend patch.
+corrected summaries and FAQs, and the frontend release status.
 [Open the reading preview](docs/step-four-article-review-2026-11-15/review.html).
-The companion Google Profile service-page proposal targets the Missoula
-optimization phrase with clearer metadata, H1, and introductory copy.
+The companion Google Profile service-page update is approved and published. It uses exact-page Search Console queries to improve the local offer, metadata, H1, review scope, example, and FAQs.
+[Service-page release and search baseline](docs/google-profile-service-2026-11-15/README.md).
 **Google Profile article approved and published November 15.** Trevor reviewed
 the owner-friendly rewrite and authorized a colorful website planning map and
 WordPress publication. The map includes 30 numbered example pages, a text
@@ -149,14 +149,16 @@ It now includes a reconciled 30-inquiry example, five outcome groups, a referenc
 graphic, blank and filled CSV worksheets, and five corrected FAQs.
 Live verification passed: article metadata, body, five FAQs/schema, all five
 resource files, and five SEO checks across 26 sitemap pages and 33 internal paths.
-The remaining three article revisions and service-page proposal are unapplied.
+The remaining three article revisions are unapplied.
 
 - [x] Publish the approved Google Profile article and its matching summary/FAQ
   fields with the reference map.
 - [x] Research, rewrite, illustrate, and publish the Booking article and its
   corrected formula, summaries, FAQs, and worksheet downloads.
-- [ ] Get approval for the remaining three article revisions and service-page
-  proposal before publication; verify their text, metadata, links, and schema.
+- [x] Improve and publish the Google Profile service page using its exact-page
+  Search Console queries; verify content, metadata, links, schema, and inquiry controls.
+- [ ] Get approval for the remaining three article revisions before publication;
+  verify their text, metadata, links, and schema.
 
 ### Step 5 Consolidate the overlapping AI search articles
 

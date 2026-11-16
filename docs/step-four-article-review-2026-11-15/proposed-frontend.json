@@ -1,15 +1,12 @@
 {
-  "status": "proposal only; not applied",
+  "status": "released; no pending frontend patch",
   "service": {
     "url": "https://truepath406.com/services/google-profile",
     "title": "Google Business Profile Optimization in Missoula",
-    "description": "Google Business Profile optimization for Missoula service businesses. Review categories, services, reviews, and contact paths. Request a profile review.",
+    "description": "Google Business Profile optimization for Missoula service businesses. Improve categories, services, reviews, and website alignment. Request a profile review.",
     "h1": "Google Business Profile Optimization in Missoula.",
-    "intro": "I help owner-operated service businesses in Missoula review their Google Business Profile, correct inaccurate details, and make it easier for customers to reach them. Start with categories, services, reviews, and the path from your profile to an inquiry."
+    "intro": "I help Missoula service businesses correct their Google Business Profile, organize the services they actually offer, and give customers a clear path to call or request work. Start with the profile, then check that the website backs it up."
   },
-  "files": [
-    "src/app/insights/[slug]/page.tsx",
-    "src/app/services/google-profile/layout.tsx",
-    "src/app/services/google-profile/page.tsx"
-  ]
+  "files": [],
+  "releaseRecord": "../google-profile-service-2026-11-15/README.md"
 }

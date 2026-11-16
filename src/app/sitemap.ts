@@ -18,6 +18,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/services/google-profile`,
+      lastModified: "2026-11-15",
       changeFrequency: "monthly",
       priority: 0.9,
       images: [`${baseUrl}/images/google-profile.webp`],

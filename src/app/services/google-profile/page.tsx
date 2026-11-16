@@ -8,7 +8,8 @@ import { useLeadDrawer } from "@/context/LeadDrawerContext";
 import { serializeJsonLd } from "@/lib/json-ld";
 import { useServicePhase } from "@/hooks/useServicePhase";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, Search, CheckCircle2, ShieldAlert, BarChart3, AlertTriangle, AlertCircle, Wrench, RefreshCw, MessageSquare, Quote } from "lucide-react";
+import Link from "next/link";
+import { MapPin, Search, CheckCircle2, ShieldAlert, BarChart3, AlertTriangle, AlertCircle, Wrench, RefreshCw, MessageSquare } from "lucide-react";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -16,18 +17,34 @@ const faqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How long does Google Business Profile optimization take?",
+      "name": "What does Google Business Profile optimization include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The initial review and cleanup can often be completed within a few weeks, depending on the number of issues, the availability of business documentation, and whether Google requires reverification. Visibility improvements may appear relatively quickly after major errors are corrected, but there is no guaranteed timeline. Competitive markets, weak websites, limited reviews, proximity, and other factors can affect how quickly results change."
+        "text": "I check categories, services, business details, service areas, reviews, photos, and the link to your website. The work depends on what is wrong or missing. A profile with an incorrect category needs a different fix from one that gets attention but sends customers to a confusing website. We agree on the cleanup scope after the initial review."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you guarantee that I will rank in the Google Map Pack?",
+      "name": "How can my business rank better on Google Maps in Missoula?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No credible consultant can guarantee a specific Google Maps ranking. Google controls the search results, and rankings vary by search term, searcher location, competition, relevance, distance, and prominence. What I can do is identify preventable weaknesses, improve the profile’s accuracy and relevance, strengthen supporting signals, and give the business a better foundation for local search."
+        "text": "Start with accurate business information, categories that match your work, useful service details, and honest customer reviews. Your website should clearly explain the same services and where you provide them. Google says local results mainly depend on relevance, distance, and popularity. I can improve the information customers and Google have to work with, but I cannot change where the searcher is or guarantee a Map Pack position."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does Google Business Profile optimization take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Timing depends on the issues, access to the profile, business documentation, and whether Google requires verification. I explain the work and timing after the review. Completing the cleanup and seeing a change in rankings are different milestones. Google controls when changes appear and how the business ranks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Google Business Profile optimization cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The scope determines the price. Correcting business details is different from organizing services, building a review process, or resolving a verification issue. Start with the 15-minute Lead Review so I can identify the priorities and explain the proposed work and cost before cleanup begins."
       }
     },
     {
@@ -35,63 +52,39 @@ const faqSchema = {
       "name": "Do I need a physical storefront?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Not necessarily. Google allows eligible service-area businesses to hide their address when customers are not served at that location. A plumber, electrician, HVAC company, cleaning company, or mobile repair business may be able to operate as a service-area business. The profile still needs to represent a real, eligible business. Virtual offices, mailboxes, and locations where the company does not maintain a legitimate presence may not qualify."
+        "text": "Eligible businesses that travel to customers can have a service-area profile. If customers are not served at your address, the address should be hidden. A home-based plumber or cleaner does not need to rent a storefront just to have a profile. The business still has to meet Google’s eligibility rules; a mailbox or virtual office is not a substitute for an eligible business location."
       }
     },
     {
       "@type": "Question",
-      "name": "How large should my service area be?",
+      "name": "Will adding more service areas make me rank across Montana?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your service area should reflect where the company realistically works. Listing every city in a large region does not automatically make the business rank in those locations. The profile, website, reviews, job history, proximity, competition, and actual operating footprint all play a role. A focused and accurate service area is usually more credible than an exaggerated one."
+        "text": "Listing a town does not guarantee visibility there. Use the areas where you actually take jobs. Distance from the searcher still matters, along with relevance and popularity. I check whether your profile and website describe the same operating area, rather than adding cities you do not serve or creating duplicate profiles for each town."
       }
     },
     {
       "@type": "Question",
-      "name": "Can you remove negative reviews?",
+      "name": "Can you remove negative reviews or competitor listings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Legitimate negative reviews generally cannot be removed simply because the business disagrees with them. Reviews may be reportable when they violate Google’s policies, such as spam, harassment, conflicts of interest, impersonation, or content unrelated to a real customer experience. Google decides whether a review is removed. I can help identify possible policy violations, submit appropriate reports, improve the business’s response, and build a steady process for earning more honest customer feedback."
+        "text": "Google decides what gets removed. An honest negative review is not removable simply because a business dislikes it. If a review or listing appears to violate a specific policy, I can help document the issue and use the appropriate reporting process. There is no promise of removal. For legitimate feedback, a calm response and a fair process for inviting honest reviews are more useful."
       }
     },
     {
       "@type": "Question",
-      "name": "Should I respond to every review?",
+      "name": "How many Google reviews do I need?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "In most cases, yes. Responses show that the business is engaged and gives you an opportunity to thank customers, address concerns, and demonstrate professionalism to future readers. The replies do not need to be long. They should sound human, specific, and appropriate to the review."
+        "text": "There is no universal target. Compare your profile with businesses providing the same service in your actual market, then build a repeatable process for requesting honest feedback from customers. Google says more reviews and positive ratings can help local ranking. Do not buy reviews, offer rewards, or send invitations only to people expected to leave a positive review."
       }
     },
     {
       "@type": "Question",
-      "name": "How many reviews do I need?",
+      "name": "How does my website support my Google Business Profile?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There is no universal number. The useful comparison is not an arbitrary benchmark. It is the competitive landscape in your service category and local market. A business with 40 recent, detailed reviews may look strong in one town and weak in another. Review recency, quality, relevance, overall rating, response behavior, and consistency all matter alongside total volume."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do Google posts improve rankings?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Google does not guarantee that frequent posts will improve rankings. Posts can still be useful for communicating offers, seasonal services, company updates, events, and important customer information. They should be treated as a customer communication tool, not as a shortcut to the top of the Map Pack."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does adding keywords to my business name help?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Only use the real-world name of the business. Adding service keywords, city names, or promotional language that are not part of the legitimate business name can violate Google’s guidelines and create suspension risk. A keyword-stuffed name may sometimes appear to perform well temporarily, but it is not a sound long-term strategy."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does my website affect my Google Business Profile?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your website helps Google and customers understand your services, location, expertise, and legitimacy. Strong service pages, accurate contact information, clear local context, useful content, and consistent business details can support the profile. The profile and website should reinforce each other rather than provide conflicting information."
+        "text": "A customer should be able to confirm the service, coverage area, and next step after clicking through. I check for matching business details, clear service pages, and a working contact route. You do not need a separate page for every keyword or every town. Each page should answer a real customer question and describe work you actually offer."
       }
     },
     {
@@ -99,15 +92,7 @@ const faqSchema = {
       "name": "Can you help if my profile has been suspended?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, depending on the cause. The first step is to identify the likely policy or verification issue. That may involve the business name, address, documentation, eligibility, duplicate profiles, or recent changes. Reinstatement is controlled by Google and cannot be guaranteed. A careful review and properly documented appeal give the business a better chance than repeatedly changing information or submitting incomplete requests."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is Google Business Profile optimization the same as local SEO?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It is one part of local SEO. Local visibility can also depend on your website, location and service pages, reviews, business citations, local links, on-page content, technical website health, proximity to the searcher, competition, and overall online prominence. The profile is often the most visible part of local search, but it does not operate alone."
+        "text": "I can review possible policy and verification issues, including the name, address, eligibility, duplicates, and supporting documentation. The next step depends on the cause. Google controls reinstatement, so I cannot guarantee approval or a recovery date. Bring the suspension notice to the review before making repeated profile changes or creating another listing."
       }
     }
   ]
@@ -117,7 +102,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://truepath406.com/services/google-profile#service",
-  name: "Google Business Profile Optimization",
+  name: "Google Business Profile Optimization in Missoula",
   url: "https://truepath406.com/services/google-profile",
   provider: {
     "@id": "https://truepath406.com/#business",
@@ -125,7 +110,7 @@ const serviceSchema = {
   image: "https://truepath406.com/images/google-profile.webp",
   serviceType: "Local Search Optimization",
   category: "Google Business Profile consulting",
-  description: "Google Business Profile optimization, category audit, review systems, spam removal, and local search visibility for owner-operated service businesses.",
+  description: "Google Business Profile review and optimization for Missoula and Montana service businesses: categories, business details, services, honest review processes, and website alignment.",
   areaServed: [
     { "@type": "City", name: "Missoula" },
     { "@type": "State", name: "Montana" },
@@ -146,7 +131,7 @@ const failureReasons = [
     desc: "Listing only a category gives Google and customers little context. Clearly detailing your actual services helps customers instantly know you can solve their specific problem."
   },
   {
-    title: "No Consistent Review Process",
+    title: "Reviews Depend on Remembering to Ask",
     desc: "Without a simple review process, you collect few reviews while competitors appear more established. A steady stream of honest customer feedback is essential for local trust."
   },
   {
@@ -158,8 +143,8 @@ const failureReasons = [
     desc: "Your profile and website should tell the exact same story. Conflicting details, buried services, or missing locations create uncertainty for search engines and customers."
   },
   {
-    title: "Competitor Spam Taking Map Results",
-    desc: "Some markets are crowded with listings using fake locations or keyword-stuffed names. We document and report these clear violations through proper Google channels."
+    title: "Possible Policy Violations in Local Results",
+    desc: "A listing may use an ineligible location or a name that does not match the real business. I document specific concerns and report them through Google. Removal is Google’s decision."
   }
 ];
 
@@ -186,12 +171,12 @@ const methodologySteps = [
   },
   {
     title: "Review Generation System",
-    desc: "I create a straightforward process your team can actually use. Depending on the business, that may include a direct review link, QR code, text-message wording, email wording, staff instructions, recommended timing, and a simple follow-up sequence. The system should fit naturally into the customer experience, not depend on you remembering to ask.",
+    desc: "I help put a neutral review invitation into your normal job-completion process. That can include a direct review link, QR code, invitation wording, timing, and a person responsible for sending it. Ask for honest feedback without rewards, pressure, suggested review text, or filtering out customers who may be unhappy.",
     icon: <MessageSquare className="w-6 h-6 text-primary" />
   },
   {
     title: "Review Response Guidance",
-    desc: "Responding to reviews shows customers that someone is paying attention. I can help create a practical response process that keeps replies professional, specific, and consistent without making them sound automated. Responses can also reinforce useful context, like the service performed, when it belongs naturally in the conversation.",
+    desc: "Responding to reviews shows customers that someone is paying attention. I can help create a practical response process that keeps replies professional, specific, and consistent without making them sound automated. Replies should address the feedback without repeating private customer or job details.",
     icon: <CheckCircle2 className="w-6 h-6 text-primary" />
   },
   {
@@ -201,7 +186,7 @@ const methodologySteps = [
   },
   {
     title: "Competitor and Spam Review",
-    desc: "I review the local map results for suspicious listings, duplicates, false locations, or obvious business-name violations. When there is a reasonable basis for a report, I document the issue and use the appropriate Google reporting process. I do not promise Google will remove every listing, but I ensure it is properly reported.",
+    desc: "I review the local map results for suspicious listings, duplicates, false locations, or obvious business-name violations. When there is a reasonable basis for a report, I document the issue and use the appropriate Google reporting process. I do not promise Google will remove every listing, and reports need specific policy grounds.",
     icon: <AlertTriangle className="w-6 h-6 text-primary" />
   },
   {
@@ -211,7 +196,7 @@ const methodologySteps = [
   },
   {
     title: "Tracking and Conversion Review",
-    desc: "Visibility matters, but calls and booked work matter more. Where appropriate, I review how the profile is currently generating activity, including calls, website visits, direction requests, messages, and search terms. This helps separate a ranking problem from a conversion or lead-handling problem.",
+    desc: "I review the available profile search terms, call-button clicks, website clicks, and other relevant interactions. A call-button click is not proof of an answered call or a booked job. We compare those signals with your inquiry and job records where available. Business Profile performance can include activity from Google Ads as well as organic results.",
     icon: <BarChart3 className="w-6 h-6 text-primary" />
   }
 ];
@@ -247,7 +232,7 @@ export default function GoogleProfilePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: serializeJsonLd(serviceSchema) }}
       />
-      <div className="noise-overlay" />
+      <div className="noise-overlay" style={{ width: "100%" }} />
       <Header />
       <main className="flex-1 w-full overflow-x-clip pt-32 relative z-10">
 
@@ -262,22 +247,23 @@ export default function GoogleProfilePage() {
               className="flex flex-col justify-center"
             >
               <motion.div variants={itemVariants} className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
-                <span className="w-8 h-px bg-primary"></span> Profile Optimization
+                <span className="w-8 h-px bg-primary"></span> Missoula, Montana
               </motion.div>
 
-              <h1 className="max-w-3xl font-serif font-medium text-[clamp(2.75rem,4.5vw,4.5rem)] leading-[1.08] tracking-tight">
-                <motion.span variants={itemVariants} className="block text-foreground">Show Up Better</motion.span>
-                <motion.span variants={itemVariants} className="block text-primary">on Google Maps.</motion.span>
+              <h1 className="max-w-3xl font-serif font-medium text-[clamp(2.5rem,4.2vw,4rem)] leading-[1.08] tracking-tight">
+                <motion.span variants={itemVariants} className="block text-foreground">Google Business Profile</motion.span>{" "}
+                <motion.span variants={itemVariants} className="block text-primary">Optimization in Missoula.</motion.span>
               </h1>
 
               <motion.div variants={itemVariants} className="mt-8 flex flex-col items-start gap-8">
                 <p className="max-w-xl text-[clamp(1.125rem,1.4vw,1.25rem)] leading-relaxed text-muted-text">
-                  Your Google Business Profile is often the first thing a potential customer sees. I help owner-operated service businesses clean up, strengthen, and better manage their profiles so they can turn more local searches into phone calls.
+                  I help Missoula service businesses correct their Google Business Profile, organize the services they actually offer, and give customers a clear path to call or request work. Start with the profile, then check that the website backs it up.
                 </p>
 
                 <Button onClick={() => openDrawer()} variant="primary">
                   Request a Google Business Profile Review
                 </Button>
+                <p className="max-w-xl text-sm leading-relaxed text-muted-text">A 15-minute Lead Review to identify what needs attention. I’ll email you to arrange a time.</p>
               </motion.div>
             </motion.div>
 
@@ -289,7 +275,7 @@ export default function GoogleProfilePage() {
             >
               <ScrollImage
                 src="/images/google-profile.webp"
-                alt="Google Profile optimization analysis on tablet"
+                alt="Service technician checking a business listing on a phone"
                 title="Google Business Profile optimization for local service businesses in Missoula, Montana"
                 containerClassName="w-full h-full"
                 priority
@@ -303,12 +289,12 @@ export default function GoogleProfilePage() {
         <section className="border-t border-muted-border bg-surface-alt px-6 py-24 md:px-12 md:py-36">
           <div className="mx-auto w-full max-w-[1400px]">
             <div className="max-w-3xl mb-16">
-              <h2 className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
+              <p className="text-sm font-medium uppercase tracking-widest text-primary mb-6 flex items-center gap-3">
                 <span className="w-8 h-px bg-primary"></span> Common Pitfalls
+              </p>
+              <h2 className="font-serif font-medium text-[clamp(2.25rem,4vw,3.5rem)] leading-[1.15] tracking-tight text-foreground">
+                Where a Google Business Profile Can Lose Customers
               </h2>
-              <h3 className="font-serif font-medium text-[clamp(2.25rem,4vw,3.5rem)] leading-[1.15] tracking-tight text-foreground">
-                Why Some Google Business Profiles Fail to Generate Consistent Calls
-              </h3>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -316,7 +302,7 @@ export default function GoogleProfilePage() {
                 <div key={i} className="border border-muted-border bg-background p-8 flex flex-col justify-between">
                   <div>
                     <span className="text-sm font-medium text-primary mb-4 block">0{i + 1}</span>
-                    <h4 className="font-serif text-2xl font-medium mb-4 text-foreground">{item.title}</h4>
+                    <h3 className="font-serif text-2xl font-medium mb-4 text-foreground">{item.title}</h3>
                     <p className="text-muted-text leading-relaxed text-base">{item.desc}</p>
                   </div>
                 </div>
@@ -325,20 +311,31 @@ export default function GoogleProfilePage() {
           </div>
         </section>
 
-        {/* The Cost Quote (Supports the section above) */}
-        <section className="px-6 py-24 md:py-32 border-y border-muted-border bg-background relative overflow-hidden flex items-center justify-center">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-primary/5" aria-hidden="true">
-            <Quote className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] rotate-180" strokeWidth={1} />
-          </div>
-          <div className="mx-auto w-full max-w-4xl text-center relative z-10 px-4">
-            <blockquote className="space-y-8">
-              <p className="font-serif text-[clamp(1.75rem,3.5vw,3.25rem)] font-medium leading-tight text-foreground">
-                &ldquo;An inaccurate or incomplete Google Profile means a ready-to-buy customer may never even reach your website.&rdquo;
-              </p>
-              <footer className="text-base md:text-lg text-muted-text uppercase tracking-widest font-medium">
-                Optimization is not just an SEO task &mdash; it is a <span className="text-primary font-bold">trust and conversion</span> problem.
-              </footer>
-            </blockquote>
+        {/* A practical example of profile and website alignment */}
+        <section aria-labelledby="profile-path-heading" className="px-6 py-24 md:px-12 border-y border-muted-border bg-background">
+          <div className="mx-auto w-full max-w-[1400px]">
+            <div className="max-w-3xl mb-12">
+              <p className="text-sm font-medium uppercase tracking-widest text-primary mb-5">The profile-to-website check</p>
+              <h2 id="profile-path-heading" className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-6">One service. A clear path to the right job.</h2>
+              <p className="text-lg text-muted-text leading-relaxed">If a customer finds you for water heater replacement, can they confirm that you do that work, serve their area, and know how to reach you? I check the whole path before recommending more content.</p>
+            </div>
+            <ol className="grid md:grid-cols-3 gap-6">
+              {[
+                { label: "01 / Google Profile", title: "Name the actual service", text: "A plumber lists water heater replacement as a service and describes the work clearly. The business name stays its real-world name.", color: "border-t-primary" },
+                { label: "02 / Website", title: "Explain the same work", text: "The linked website makes water heater replacement easy to find. The service page explains what is included and where the company takes jobs.", color: "border-t-[#4d6b5f]" },
+                { label: "03 / Inquiry", title: "Make the next step clear", text: "A working phone link or request form lets the customer describe the job. The business confirms coverage and availability before promising a visit.", color: "border-t-foreground" },
+              ].map((step) => (
+                <li key={step.label} className={`border border-muted-border border-t-4 ${step.color} bg-surface-alt p-7 md:p-8`}>
+                  <p className="text-xs font-medium uppercase tracking-widest text-primary mb-5">{step.label}</p>
+                  <h3 className="font-serif text-2xl font-medium mb-4">{step.title}</h3>
+                  <p className="text-muted-text leading-relaxed">{step.text}</p>
+                </li>
+              ))}
+            </ol>
+            <div className="mt-8 grid lg:grid-cols-2 gap-6 text-sm leading-relaxed text-muted-text">
+              <p>Illustrative plumbing example, not a client result. Only list work you provide. The service list helps customers understand your business; adding a phrase does not guarantee a ranking.</p>
+              <p>Working on this yourself? Use the <Link href="/insights/google-profile-is-killing-your-local-visibility" className="text-foreground underline underline-offset-4 decoration-primary hover:text-primary">Google Business Profile optimization guide</Link> and its <a href="/downloads/google-business-profile-website-planning-map.png" className="text-foreground underline underline-offset-4 decoration-primary hover:text-primary">30-page website planning map</a>. The map is an example structure, not a target page count.</p>
+            </div>
           </div>
         </section>
 
@@ -347,10 +344,10 @@ export default function GoogleProfilePage() {
           <div className="mx-auto w-full max-w-[1400px]">
             <div className="max-w-3xl mb-20">
               <h2 className="font-serif text-[clamp(2.5rem,4vw,3.5rem)] font-medium leading-tight mb-6">
-                What I Do to Improve Your Local Visibility
+                What Your Google Profile Cleanup Can Include
               </h2>
               <p className="text-lg text-muted-text leading-relaxed">
-                I do not hand you a generic report filled with charts and leave you to figure out the next step. I review the profile, identify the weaknesses that matter, and make practical improvements to the setup. The exact work depends on the business, market, and condition of the existing profile.
+                I review the profile against your actual business, identify what needs attention, and agree on the work with you. These are the areas I check. The review determines which changes are needed.
               </p>
             </div>
 
@@ -571,7 +568,7 @@ export default function GoogleProfilePage() {
                   "Stronger alignment with your website",
                   "Reduced suspension & compliance risks",
                   "Clearer performance tracking",
-                  "A frictionless path from search to a phone call"
+                  "A clear path from the profile to an inquiry"
                 ].map((item, i) => (
                   <motion.div
                     key={i}
@@ -591,7 +588,7 @@ export default function GoogleProfilePage() {
 
               <div className="mt-12 pt-8 border-t border-background/20 text-background/70 text-base leading-relaxed">
                 <p>
-                  Search visibility can never be guaranteed. Rankings vary based on relevance, distance, prominence, competition, location, search history, and other factors controlled by Google. The goal is to remove preventable weaknesses and give the business a stronger local search foundation.
+                  Google controls local rankings. Accurate information, a useful website, and honest reviews give customers better reasons to consider you, but no cleanup can promise a particular position or a fixed number of calls.
                 </p>
               </div>
             </div>
@@ -604,7 +601,7 @@ export default function GoogleProfilePage() {
 
               <div className="text-background/80 text-lg leading-relaxed mb-8">
                 <p>
-                  Optimization is best suited for owner-operated and family-run service businesses that depend on customers within a defined geographic area.
+                  I’m Trevor Riggs, based in Missoula. I work with owner-operated and family-run service businesses in Missoula and across Montana. The review starts with the services you provide and the places where you actually take jobs.
                 </p>
               </div>
 
@@ -678,12 +675,33 @@ export default function GoogleProfilePage() {
 
 
 
+        <section aria-labelledby="review-scope-heading" className="px-6 py-24 md:px-12 bg-surface-alt border-b border-muted-border">
+          <div className="mx-auto w-full max-w-[1400px] grid lg:grid-cols-2 gap-12 lg:gap-24">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-widest text-primary mb-5">Start with a review</p>
+              <h2 id="review-scope-heading" className="font-serif text-[clamp(2rem,3.5vw,3rem)] font-medium leading-tight mb-6">Find the issue before paying for more work.</h2>
+              <p className="text-lg text-muted-text leading-relaxed">In the 15-minute Lead Review, we look at the profile, the services you want more inquiries for, and the page customers reach after clicking through. I explain the first issues I would address. It is an initial conversation; the cleanup itself is separate work with an agreed scope.</p>
+            </div>
+            <div className="border border-muted-border bg-background p-8 md:p-10">
+              <h3 className="font-serif text-2xl font-medium mb-6">Bring these to the conversation</h3>
+              <ul className="space-y-4 text-muted-text leading-relaxed list-disc pl-5">
+                <li>Your Google Maps profile link and website address.</li>
+                <li>The services you want more of, plus the towns where you actually take jobs.</li>
+                <li>What concerns you: visibility, incorrect information, few inquiries, or a verification notice.</li>
+                <li>Any available profile performance or inquiry records. If you have none, we start with the information we can check.</li>
+              </ul>
+              <p className="mt-6 pt-6 border-t border-muted-border text-sm leading-relaxed text-muted-text">In the form’s “Biggest Challenge” field, mention your Google profile and the service you want to discuss. I’ll email you to arrange a time.</p>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="px-6 py-24 md:px-12 md:py-32">
           <div className="mx-auto w-full max-w-4xl">
             <h2 className="font-serif text-[clamp(2.5rem,4vw,3.5rem)] font-medium leading-tight mb-16 text-center">
-              Frequently Asked Questions
+              Questions About Google Business Profile Optimization
             </h2>
+            <p className="text-muted-text leading-relaxed mb-12">The work follows Google’s <a href="https://support.google.com/business/answer/3038177?hl=en" className="underline underline-offset-4 hover:text-primary">business representation guidelines</a>, <a href="https://support.google.com/business/answer/7091?hl=en" className="underline underline-offset-4 hover:text-primary">local ranking guidance</a>, and <a href="https://support.google.com/contributionpolicy/answer/7400114?hl=en" className="underline underline-offset-4 hover:text-primary">review policies</a>. See its <a href="https://support.google.com/business/answer/9918094?hl=en" className="underline underline-offset-4 hover:text-primary">performance definitions</a> for what profile interactions measure.</p>
             <div className="space-y-12">
               {faqSchema.mainEntity.map((faq, idx) => (
                 <div key={idx} className="border-b border-muted-border pb-10">
@@ -706,7 +724,7 @@ export default function GoogleProfilePage() {
               Start With a Google Profile Review
             </h2>
             <p className="text-background/80 text-lg leading-relaxed mb-10 max-w-xl">
-              You may not need a large SEO campaign. You may need the categories corrected, the services organized, the review process fixed, or the profile and website brought into alignment. Schedule a brief 15-minute Lead Review. I will look at your current profile, identify the most important issues, and explain what I would fix first.
+              Tell me which services you want more inquiries for and what is happening now. Use the request form to arrange a 15-minute Lead Review. I will look at the profile with you, explain what I would fix first, and discuss whether cleanup work makes sense.
             </p>
             <Button onClick={() => openDrawer()} variant="light">
               Request a Google Business Profile Review

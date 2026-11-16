@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Google Business Profile Optimization",
-  description: "I strengthen Google Business Profiles for owner-operated service businesses so they appear more clearly on Maps and turn local searches into calls.",
+  title: "Google Business Profile Optimization in Missoula",
+  description: "Google Business Profile optimization for Missoula service businesses. Improve categories, services, reviews, and website alignment. Request a profile review.",
   alternates: {
     canonical: "/services/google-profile",
   },
   openGraph: {
-    title: "Google Business Profile Optimization",
-    description: "I help owner-operated service businesses clean up, strengthen, and better manage their Google Business Profiles so they show up better on Google Maps.",
+    title: "Google Business Profile Optimization in Missoula",
+    description: "Google Business Profile optimization for Missoula service businesses. Improve categories, services, reviews, and website alignment. Request a profile review.",
     url: "https://truepath406.com/services/google-profile",
     type: "website",
     images: [{ url: "/images/google-profile.webp", width: 1200, height: 630, alt: "Google Business Profile optimization for local service businesses" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Google Business Profile Optimization | True Path Digital",
-    description: "I help service businesses clean up and strengthen their Google Business Profiles to turn more local searches into calls.",
+    title: "Google Business Profile Optimization in Missoula | True Path Digital",
+    description: "Google Business Profile optimization for Missoula service businesses. Improve categories, services, reviews, and website alignment. Request a profile review.",
     images: ["/images/google-profile.webp"],
   },
 };

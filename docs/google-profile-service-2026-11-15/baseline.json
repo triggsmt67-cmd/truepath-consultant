@@ -1,0 +1,37 @@
+{
+  "capturedLocalDate": "2026-11-15",
+  "page": "https://truepath406.com/services/google-profile",
+  "report": "Google Search Console, Search results, Web, exact page filter",
+  "startDate": "2026-08-14",
+  "endDate": "2026-11-13",
+  "pageTotals": {
+    "clicks": 0,
+    "impressions": 57,
+    "ctr": 0,
+    "averagePositionUI": 15.1,
+    "averagePositionOriginalExport": 15.11
+  },
+  "visibleQueries": [
+    {
+      "query": "google business profile optimization missoula",
+      "clicks": 0,
+      "impressions": 24,
+      "ctr": 0,
+      "averagePositionUI": 21.6
+    },
+    {
+      "query": "rank on google maps in missoula mt",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0,
+      "averagePositionUI": 23.2
+    }
+  ],
+  "limitations": [
+    "Only two visible query rows, accounting for 29 of 57 impressions. Search Console omits some query data.",
+    "Web search positions are not Google Maps profile rankings.",
+    "Small sample cannot establish why no clicks occurred or prove absent keyword demand.",
+    "GA4 and qualified inquiry measurement deferred by owner."
+  ],
+  "indexInspectionBeforeRelease": "URL is on Google; Page is indexed; HTTPS (observed same session)."
+}
