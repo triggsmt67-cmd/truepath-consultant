@@ -42,7 +42,7 @@ const auditServiceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://truepath406.com/#under-the-hood-audit",
-  name: "Under the Hood Audit",
+  name: "Marketing Audit (Under the Hood Audit)",
   url: "https://truepath406.com/#audit",
   serviceType: "Marketing and lead-flow diagnostic",
   description: "An independent review of a service business's website, Google Business Profile, local visibility, online reputation, and lead response process, followed by a findings memo, review call, and prioritized 90-day action plan.",
@@ -526,6 +526,12 @@ export default function Home() {
               <p className="text-lg leading-[1.65] text-background/80 max-w-md mb-16">
                 Request a 15-minute call to talk through where you might be missing leads or losing jobs. We can also see if the $750 marketing audit makes sense for your business.
               </p>
+
+              <div className="text-background/80 leading-relaxed max-w-md mb-12 space-y-3">
+                <p>True Path Digital is a service-area marketing consultancy based in Lolo, Montana. I meet with clients at their business or online, by appointment.</p>
+                <p>On-site consulting in Lolo, Missoula, Hamilton, and Polson. Remote consulting is available across Montana, including Kalispell; travel beyond the local service area by arrangement.</p>
+                <p>Monday–Friday, 9:00 a.m.–5:00 p.m. Mountain Time. Closed Saturday and Sunday.</p>
+              </div>
 
               <div className="flex flex-col gap-10">
                 <div className="flex items-start gap-6">

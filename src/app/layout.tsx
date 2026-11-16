@@ -102,22 +102,26 @@ const localBusinessSchema = {
     telephone: "+1-406-880-6992",
     email: "trevor@truepath406.com",
     contactType: "sales",
-    areaServed: "US",
+    areaServed: "Montana",
     availableLanguage: "English",
   },
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Missoula",
+    addressLocality: "Lolo",
     addressRegion: "MT",
     addressCountry: "US",
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 46.8721,
-    longitude: -113.994,
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    opens: "09:00",
+    closes: "17:00",
   },
   areaServed: [
+    { "@type": "City", name: "Lolo" },
     { "@type": "City", name: "Missoula" },
+    { "@type": "City", name: "Hamilton" },
+    { "@type": "City", name: "Polson" },
     { "@type": "State", name: "Montana" },
   ],
   founder: {
@@ -136,6 +140,15 @@ const localBusinessSchema = {
     "@type": "OfferCatalog",
     name: "Services",
     itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          "@id": "https://truepath406.com/#under-the-hood-audit",
+          name: "Marketing Audit (Under the Hood Audit)",
+          url: "https://truepath406.com/#audit",
+        },
+      },
       {
         "@type": "Offer",
         itemOffered: {
