@@ -91,7 +91,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const to = process.env.CONTACT_EMAIL_TO ?? "trevor@truepathconsultants.com";
+  const to = process.env.CONTACT_EMAIL_TO ?? "trevor@truepath406.com";
   const from =
     process.env.CONTACT_EMAIL_FROM ??
     "True Path Consultants <website@truepath406.com>";

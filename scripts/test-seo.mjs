@@ -81,6 +81,9 @@ test('production sitemap, pages, metadata, internal links and redirects', { skip
     assert.match(html, /<title>[^<]+<\/title>/);
     assert.match(html, /name="description" content="[^"]+"/);
     assert.equal((html.match(/<h1(?:\s|>)/g) || []).length, 1, url);
+    assert.ok(html.includes('href="mailto:trevor@truepath406.com"'), `Contact email link: ${url}`);
+    assert.match(html, /"email"\s*:\s*"trevor@truepath406\.com"/, `Contact schema: ${url}`);
+    assert.doesNotMatch(html, /trevor@truepath(?:digital|consultants)\.com/i, `Obsolete contact email: ${url}`);
     pages.set(parsed.pathname, html);
   }
   const article = pages.get('/insights/thin-service-pages-look-generic');
@@ -90,6 +93,11 @@ test('production sitemap, pages, metadata, internal links and redirects', { skip
   const checkup = pages.get('/checkup');
   assert.ok(checkup?.includes('property="og:url" content="https://truepath406.com/checkup"'));
   assert.ok(checkup.includes('name="twitter:title" content="Service Business Marketing Checkup | True Path Digital"'));
+  const contactResource = await get('/llms.txt');
+  assert.equal(contactResource.status, 200);
+  const contactText = await contactResource.text();
+  assert.ok(contactText.includes('trevor@truepath406.com'));
+  assert.doesNotMatch(contactText, /trevor@truepath(?:digital|consultants)\.com/i);
   const robots = await (await get('/robots.txt')).text();
   assert.ok(robots.includes(`Sitemap: ${canonicalOrigin}/sitemap.xml`));
   assert.ok(!/^Disallow:\s*\/\s*$/m.test(robots));
@@ -128,5 +136,5 @@ test('production sitemap, pages, metadata, internal links and redirects', { skip
   for (const path of internalPaths) {
     assert.equal((await get(path, { redirect: 'manual' })).status, 200, `Internal link: ${path}`);
   }
-  console.log(`Verified ${urls.length} sitemap pages, ${internalPaths.size} internal paths, metadata, CMS article HTML, robots, redirects and 404s.`);
+  console.log(`Verified ${urls.length} sitemap pages, ${internalPaths.size} internal paths, metadata, contact email, CMS article HTML, robots, redirects and 404s.`);
 });

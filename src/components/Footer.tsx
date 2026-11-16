@@ -30,7 +30,7 @@ export default function Footer() {
         <div>
           <h4 className="text-sm font-medium uppercase tracking-widest mb-6">Contact</h4>
           <ul className="space-y-4 text-muted-text">
-            <li><a href="mailto:trevor@truepathdigital.com" className="hover:text-primary transition-colors">trevor@truepathdigital.com</a></li>
+            <li><a href="mailto:trevor@truepath406.com" className="hover:text-primary transition-colors">trevor@truepath406.com</a></li>
             <li><a href="tel:+14068806992" className="hover:text-primary transition-colors">(406) 880-6992</a></li>
             <li>Missoula, Montana</li>
           </ul>

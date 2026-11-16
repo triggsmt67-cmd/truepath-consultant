@@ -95,11 +95,11 @@ const localBusinessSchema = {
   image: "https://truepath406.com/images/decision-partner-final.jpg",
   description: "True Path Digital helps owner-operated service businesses find the gaps between visibility, customer trust, lead response, and booked work.",
   telephone: "+1-406-880-6992",
-  email: "trevor@truepathdigital.com",
+  email: "trevor@truepath406.com",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "+1-406-880-6992",
-    email: "trevor@truepathdigital.com",
+    email: "trevor@truepath406.com",
     contactType: "sales",
     areaServed: "US",
     availableLanguage: "English",

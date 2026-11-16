@@ -336,11 +336,19 @@ Create a `.env.local` file with:
 
 ```bash
 WORDPRESS_API_URL=https://admin.truepath406.com
+CONTACT_EMAIL_TO=trevor@truepath406.com
 ```
 
 `WORDPRESS_API_URL` is server-only and may be either the WordPress base URL or
 the full `/graphql` endpoint. The production default above is used when the
 variable is not set.
+
+The canonical contact email is **trevor@truepath406.com**. The shared footer,
+email links, business/contact schema, public contact resource, and contact-form
+recipient use this address. `CONTACT_EMAIL_TO` is server-only and defaults to
+that address. The local configuration and `.env.example` match it.
+Recipient routing for both the homepage and review drawer is checked with
+`node --test scripts/test-contact-email.mjs` using mocked sends.
 
 ## Development
 
