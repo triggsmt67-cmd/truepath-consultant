@@ -264,7 +264,7 @@ export default async function SingleInsightPage({
           dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqSchema) }}
         />
       )}
-      <div className="noise-overlay" />
+      <div className="noise-overlay" style={{ width: "100%" }} />
       <Header />
       <main className="flex-1 w-full overflow-hidden pt-32 relative z-10" data-ai-content="article" data-ai-slug={post.slug}>
         
