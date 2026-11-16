@@ -265,7 +265,12 @@ intentional backend noindex, and legitimate removed-resource 404s were preserved
   a correctly sized article cover, and a reusable blank business fact sheet.
   Use an eligibility-first offer, owner-approved facts and a labeled fictional
   appliance-repair example. No OpenAI affiliation or ranking promises.
-- [ ] Finish production deployment verification and record the release below.
+- [x] Publish and verify both live pages, current metadata and canonical URLs,
+  all 28 sitemap pages and 43 internal paths, the downloads, and the existing
+  inquiry route. Correct the article overlay's confirmed horizontal-scroll
+  issue and verify the live phone, tablet and desktop widths. WordPress remains
+  editable and its public content API is healthy. Content release `f03be9c`;
+  layout follow-up `1b950c4`.
 - [ ] After crawl/data collection, review the two exact pages' queries and
   inquiries. Current Search Console `chatgpt` query filter has no reported
   impressions through November 13; this is not a market-demand estimate.
