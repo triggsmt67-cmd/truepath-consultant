@@ -66,7 +66,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://truepath406.com/services/website-builds#service",
-  "name": "Conversion-Focused Web Design in Missoula",
+  "name": "Website Design and Conversion Repair",
   "url": "https://truepath406.com/services/website-builds",
   "provider": {
     "@id": "https://truepath406.com/#business"

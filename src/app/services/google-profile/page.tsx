@@ -102,7 +102,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://truepath406.com/services/google-profile#service",
-  name: "Google Business Profile Optimization in Missoula",
+  name: "Google Business Profile Optimization",
   url: "https://truepath406.com/services/google-profile",
   provider: {
     "@id": "https://truepath406.com/#business",

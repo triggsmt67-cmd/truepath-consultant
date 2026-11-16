@@ -102,7 +102,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://truepath406.com/services/lead-response#service",
-  name: "Lead Response and Follow-Up Services",
+  name: "Lead Response and Follow-Up Systems",
   url: "https://truepath406.com/services/lead-response",
   provider: {
     "@id": "https://truepath406.com/#business",
