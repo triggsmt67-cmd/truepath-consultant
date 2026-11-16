@@ -54,6 +54,19 @@ The only application-code change removes this article's obsolete hard-coded
 search title so WordPress controls its metadata. The remaining three articles
 and separate Google Profile service-page proposal are not applied.
 
-Lint and four local SEO checks passed before release. The deployment and live
-verification results will be recorded after the public frontend finishes
-updating. A CMS save alone does not verify the public article or downloads.
+Production deployment **dpl_ECiVBVXPKCuggmTqW3UcDcALTeFt** is **READY** on
+`truepath406.com`, built from commit `8792595d26304361244c020ff59d82b1b0f6451d`.
+The live title, description, social titles, canonical, revised body, map, five
+FAQs/FAQ schema, and original publication date passed checks. All five resource
+files return 200 and match the committed bytes. Both images are 1024 by 1536;
+each CSV contains 30 data rows. [Live verification](live-verification.json).
+
+Lint and all five SEO checks passed, covering **26 sitemap pages and 33 distinct
+internal paths**. The graphic loads at full resolution and fits the article
+column; the outcome list retains five list items. The saved article reopens in
+the authenticated WordPress editor. No live form submission was needed.
+
+The available error/fatal runtime-log scan returned no matching entries. No
+external log drains are configured, so this is a release check rather than
+continuous monitoring. Publication is complete. Later documentation-only
+rebuilds serve the same approved article and assets.

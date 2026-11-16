@@ -1,0 +1,61 @@
+{
+  "clientDate": "2026-11-15",
+  "article": "https://truepath406.com/insights/home-service-booking",
+  "status": 200,
+  "title": "Home Service Booking Rate: Follow Your Last 30 Inquiries",
+  "faqCount": 5,
+  "datePublished": "2026-02-13T16:26:39",
+  "canonicalVerified": true,
+  "unsupportedMultiplierAbsent": true,
+  "mapPresent": true,
+  "downloads": [
+    {
+      "url": "https://truepath406.com/downloads/home-service-booking-inquiry-map.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1653001,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "url": "https://truepath406.com/downloads/home-service-booking-inquiry-map.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 200500,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "url": "https://truepath406.com/downloads/home-service-booking-audit-template.csv",
+      "status": 200,
+      "contentType": "text/csv; charset=utf-8",
+      "bytes": 735
+    },
+    {
+      "url": "https://truepath406.com/downloads/home-service-booking-audit-example.csv",
+      "status": 200,
+      "contentType": "text/csv; charset=utf-8",
+      "bytes": 3681
+    },
+    {
+      "url": "https://truepath406.com/downloads/home-service-booking-inquiry-map-embed.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 539
+    }
+  ],
+  "deploymentId": "dpl_ECiVBVXPKCuggmTqW3UcDcALTeFt",
+  "commit": "8792595d26304361244c020ff59d82b1b0f6451d",
+  "descriptionVerified": true,
+  "socialTitlesVerified": true,
+  "seoTests": {
+    "passed": 5,
+    "sitemapPages": 26,
+    "internalPaths": 33
+  },
+  "runtimeErrorScan": "No error/fatal logs found for the release deployment."
+}

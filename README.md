@@ -147,6 +147,8 @@ The Booking article was then authorized for full completion and publication:
 [Booking guide and inquiry-map release record](docs/booking-guide-2026-11-15/README.md).
 It now includes a reconciled 30-inquiry example, five outcome groups, a reference
 graphic, blank and filled CSV worksheets, and five corrected FAQs.
+Live verification passed: article metadata, body, five FAQs/schema, all five
+resource files, and five SEO checks across 26 sitemap pages and 33 internal paths.
 The remaining three article revisions and service-page proposal are unapplied.
 
 - [x] Publish the approved Google Profile article and its matching summary/FAQ
