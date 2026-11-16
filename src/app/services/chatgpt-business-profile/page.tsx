@@ -60,6 +60,8 @@ export default function ChatGPTBusinessProfilePage() {
           <div className="text-muted-text leading-relaxed space-y-5">
             <p>Business profiles and Business Agents have different eligibility rules. OpenAI currently limits Business Agents to eligible U.S. ecommerce and online service businesses. A local company should not assume it can create an agent because it has a website.</p>
             <p>We check the options shown for your actual business in Business Hub. If setup is unavailable, I’ll explain that and identify useful preparation you can keep. We agree on any paid work before it starts.</p>
+            <h3 className="font-serif text-2xl font-medium text-foreground">Why I’d prepare early</h3>
+            <p>I think there’s real value in getting ready while these tools develop. We can check eligibility, correct your business facts, and make the relevant website pages agree now. If ChatGPT becomes a bigger source of local recommendations, you’ll have a foundation you understand and can keep improving. That preparation is the early advantage I’d help you build.</p>
             <p className="text-sm">See <a className="underline underline-offset-4 hover:text-primary" href="https://openai.com/business/businesses-in-chatgpt/">OpenAI’s current eligibility overview</a>. Approval, review timing, recommendations, and customer inquiries remain outside my control.</p>
           </div>
         </div>
