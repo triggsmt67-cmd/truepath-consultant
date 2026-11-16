@@ -141,6 +141,8 @@ WordPress publication. The map includes 30 numbered example pages, a text
 equivalent, PNG/CSV downloads, and optional image-and-credit markup. The
 frontend now uses the WordPress article title.
 [Google Profile article and map release record](docs/google-profile-map-2026-11-15/README.md).
+Live verification passed: revised title/body, four FAQs and schema, all four
+downloads, and five SEO checks across 26 sitemap pages and 29 internal paths.
 The other four article revisions and the service-page proposal remain unapplied.
 
 - [x] Publish the approved Google Profile article and its matching summary/FAQ

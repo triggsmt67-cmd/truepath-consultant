@@ -52,6 +52,18 @@ application-code change removes this article's old hard-coded search title,
 allowing the current WordPress title to drive metadata. The service-page copy
 and other four articles remain unapplied.
 
-The production deployment and final live checks are tracked in this task's
-completion report. Do not treat CMS save confirmation alone as proof that the
-public frontend or its download URLs have finished updating.
+Production deployment **dpl_7fpxKnmmu3ZpvcLRueTFKh4p8YdN** is **READY** on
+`truepath406.com`, built from commit `7dae377c0cefb0f6977b2919a3712a087ce5b56a`.
+The public article's title, canonical, revised body, map, four FAQs/FAQ schema,
+and original publication date passed live checks. All four downloadable files
+return 200 and match the committed bytes; both image formats are 1086 by 1448.
+[Live verification](live-verification.json).
+
+All five SEO checks passed against production, covering **26 sitemap pages and
+29 distinct internal paths**. Lint passed. The deployment's available error/fatal
+runtime-log scan returned no matching entries. No external log drains are
+configured, so this is a release check rather than continuous monitoring.
+
+The publication is complete. Any later documentation-only rebuild serves the
+same approved article and assets. This does not complete the other four
+editorial revisions or the separate service-page proposal.

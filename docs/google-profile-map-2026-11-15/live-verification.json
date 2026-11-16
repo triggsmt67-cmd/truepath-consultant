@@ -1,0 +1,47 @@
+{
+  "clientDate": "2026-11-15",
+  "article": "https://truepath406.com/insights/google-profile-is-killing-your-local-visibility",
+  "status": 200,
+  "title": "Google Business Profile Optimization: Build a Better Profile",
+  "faqCount": 4,
+  "datePublished": "2026-03-17T18:00:03",
+  "canonicalVerified": true,
+  "oldScorecardAbsent": true,
+  "mapPresent": true,
+  "downloads": [
+    {
+      "url": "https://truepath406.com/downloads/google-business-profile-website-planning-map.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 1865624,
+      "dimensions": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "url": "https://truepath406.com/downloads/google-business-profile-website-planning-map.webp",
+      "status": 200,
+      "contentType": "image/webp",
+      "bytes": 222136,
+      "dimensions": [
+        1086,
+        1448
+      ]
+    },
+    {
+      "url": "https://truepath406.com/downloads/google-business-profile-website-planning-map.csv",
+      "status": 200,
+      "contentType": "text/csv; charset=utf-8",
+      "bytes": 3074
+    },
+    {
+      "url": "https://truepath406.com/downloads/google-business-profile-website-planning-map-embed.txt",
+      "status": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "bytes": 615
+    }
+  ],
+  "deploymentId": "dpl_7fpxKnmmu3ZpvcLRueTFKh4p8YdN",
+  "commit": "7dae377c0cefb0f6977b2919a3712a087ce5b56a"
+}
