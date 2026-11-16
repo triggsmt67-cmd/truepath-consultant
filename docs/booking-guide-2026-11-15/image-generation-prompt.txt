@@ -1,0 +1,27 @@
+Generate a polished colorful editorial infographic, portrait layout, exact readable text, professional reusable field guide for True Path Digital. Warm ivory background, deep forest green typography, teal, coral, mustard, blue, violet outcome colors. Clean flat diagram, elegant large legible type, generous spacing. No photographs. No em dashes. All numbers are an explicitly fictional example, NOT industry research.
+Top eyebrow exact: "TRUE PATH DIGITAL / BOOKING FIELD GUIDE"
+Headline exact: "Where did the last 30 inquiries go?"
+Subtitle exact: "A fictional plumbing example. Follow the outcomes before changing the budget."
+At top, show a small reconciliation flow:
+"40 contact records"
+then an exclusion box "Remove 6 repeat contacts + 4 spam or unrelated requests"
+then clearly connect down to the main parent node:
+"30 eligible inquiries"
+subcaption "Distinct requests for work the business offers in its service area"
+From the 30 node, draw five branching connector lines into FIVE generously sized horizontal outcome cards stacked vertically. A big count on each card, the status next to it, then one smaller action. Exactly these five cards, counts must total 30:
+TEAL/GREEN: "12  Booked" with action "Confirm the appointment"
+BLUE: "6  Still deciding" with action "Agree the next contact"
+MUSTARD: "5  No capacity" with action "Review schedule and coverage"
+CORAL: "4  Customer declined" with action "Record the stated reason"
+VIOLET: "3  No reply yet" with action "Follow up as agreed"
+Below these five cards, a large clear calculation:
+"12 booked ÷ 30 eligible × 100 = 40% so far"
+A distinct insight panel:
+"9 inquiries are still open"
+"6 still deciding + 3 with no reply are not confirmed losses."
+Footer exact:
+"Snapshot, not a final close rate. Use consistent definitions and a review date."
+Credit exact: "Created by True Path Digital | truepath406.com"
+Do not add icons that imply revenue, guaranteed growth, or an industry benchmark. Do not change counts or label all 18 unbooked requests as lost. Make every line legible and uncut. Actual connected hierarchy from contact records through eligibility to five outcome groups. Distinctive professionally designed reference image suitable for an article download.
+
+Mode: built-in image_gen.

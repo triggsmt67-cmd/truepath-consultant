@@ -9,8 +9,8 @@ A high-performance marketing consultancy website for **True Path Digital**, buil
 Updated November 15, 2026. Work through these steps in order and update the
 checkboxes as each item is completed. **Steps 1 and 2 are live and verified. Step 3 Search Console collection is
 complete; GA4 and inquiry measurement are deferred.
-The Step 4 Google Profile article is published with its reference map;
-the other four articles and service-page proposals await review.**
+The Step 4 Google Profile and Booking articles are published with reference
+graphics and downloads; three articles and the service-page proposal remain.**
 Trevor approved both releases on November 15, 2026. Article rewrites,
 consolidation, content removal, and unrelated settings remain separate work.
 
@@ -25,8 +25,8 @@ consolidation, content removal, and unrelated settings remain separate work.
 
 Trevor requested this checkpoint and a Vercel rebuild on November 15. The
 remaining article and service-page replacements remain **review-only and unpublished**
-while he reads them. The subsequently approved Google Profile article is
-published separately; see its release record below. GA4 remains deferred. The remaining publication checkboxes
+while he reads them. The subsequently approved Google Profile and Booking
+articles are published separately; see their release records below. GA4 remains deferred. The remaining publication checkboxes
 and Steps 5–7 below are intentionally still open.
 
 Details: [SEO audit and page recommendations](docs/seo-audit-2026-11-15.md)
@@ -143,11 +143,17 @@ frontend now uses the WordPress article title.
 [Google Profile article and map release record](docs/google-profile-map-2026-11-15/README.md).
 Live verification passed: revised title/body, four FAQs and schema, all four
 downloads, and five SEO checks across 26 sitemap pages and 29 internal paths.
-The other four article revisions and the service-page proposal remain unapplied.
+The Booking article was then authorized for full completion and publication:
+[Booking guide and inquiry-map release record](docs/booking-guide-2026-11-15/README.md).
+It now includes a reconciled 30-inquiry example, five outcome groups, a reference
+graphic, blank and filled CSV worksheets, and five corrected FAQs.
+The remaining three article revisions and service-page proposal are unapplied.
 
 - [x] Publish the approved Google Profile article and its matching summary/FAQ
   fields with the reference map.
-- [ ] Get approval for the remaining four article revisions and service-page
+- [x] Research, rewrite, illustrate, and publish the Booking article and its
+  corrected formula, summaries, FAQs, and worksheet downloads.
+- [ ] Get approval for the remaining three article revisions and service-page
   proposal before publication; verify their text, metadata, links, and schema.
 
 ### Step 5 Consolidate the overlapping AI search articles

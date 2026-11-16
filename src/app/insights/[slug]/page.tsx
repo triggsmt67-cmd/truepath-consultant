@@ -19,8 +19,6 @@ const searchTitleBySlug: Record<string, string> = {
     "Service Business Websites: Make the Next Step Obvious",
   "the-leak-every-home-service-business-should-measure":
     "Missed Calls Are Lost Jobs for Home Service Businesses",
-  "home-service-booking":
-    "The “More Leads” Trap: Fix Your Booking Rate First",
   "marketing-attention-is-the-scarce-resource-and-that-changes-everything":
     "Marketing Attention Is the Scarce Resource",
   "marketing-tactics-business-owners-can-safely-ignore-in-2026":

@@ -1,14 +1,3 @@
---- a/src/app/insights/[slug]/page.tsx
-+++ b/src/app/insights/[slug]/page.tsx
-@@ -20,7 +20,7 @@
-   "the-leak-every-home-service-business-should-measure":
-     "Missed Calls Are Lost Jobs for Home Service Businesses",
-   "home-service-booking":
--    "The “More Leads” Trap: Fix Your Booking Rate First",
-+    "Home Service Booking Rate: Find Where Inquiries Get Lost",
-   "marketing-attention-is-the-scarce-resource-and-that-changes-everything":
-     "Marketing Attention Is the Scarce Resource",
-   "marketing-tactics-business-owners-can-safely-ignore-in-2026":
 --- a/src/app/services/google-profile/layout.tsx
 +++ b/src/app/services/google-profile/layout.tsx
 @@ -1,22 +1,22 @@

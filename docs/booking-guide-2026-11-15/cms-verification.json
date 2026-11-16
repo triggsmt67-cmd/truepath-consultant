@@ -1,0 +1,11 @@
+{
+  "postId": 134,
+  "changedPostIds": [
+    134
+  ],
+  "approvedTextMatchesAfterRenderNormalization": true,
+  "acfFieldsMatchAfterLineEndingNormalization": true,
+  "emDashesInBody": 0,
+  "faqCount": 5,
+  "exampleArithmeticReconciles": true
+}

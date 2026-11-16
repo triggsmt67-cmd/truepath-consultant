@@ -1,0 +1,15 @@
+{
+  "contactRecords": 40,
+  "repeatContacts": 6,
+  "spamOrUnrelated": 4,
+  "eligible": 30,
+  "outcomes": {
+    "Booked": 12,
+    "Still deciding": 6,
+    "No capacity": 5,
+    "Customer declined": 4,
+    "No reply yet": 3
+  },
+  "bookingRatePercent": 40,
+  "openOutcomes": 9
+}

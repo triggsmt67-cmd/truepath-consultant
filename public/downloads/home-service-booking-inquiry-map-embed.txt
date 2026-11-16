@@ -1,0 +1,8 @@
+<!-- Optional reference image. Adjust its display size for your page. -->
+<a href="https://truepath406.com/insights/home-service-booking">
+  <img src="https://truepath406.com/downloads/home-service-booking-inquiry-map.png"
+       alt="Fictional 30-inquiry booking audit with five outcome groups"
+       width="1024" height="1536" style="max-width:100%;height:auto;" />
+</a>
+<p>Inquiry audit graphic by <a href="https://truepath406.com/insights/home-service-booking">True Path Digital</a>.
+Fictional example, not an industry benchmark.</p>

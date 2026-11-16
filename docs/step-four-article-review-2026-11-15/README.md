@@ -1,7 +1,7 @@
 # Step 4 — Priority article corrections for review
 
-Prepared November 15, 2026. **Google Profile article approved and published;
-other four articles and the service-page proposal remain review-only.**
+Prepared November 15, 2026. **Google Profile and Booking articles published;
+three articles and the service-page proposal remain review-only.**
 
 Open [the reading preview](review.html) to see all five complete proposed
 articles, their current body text, exact title/excerpt/summary/FAQ changes, and
@@ -60,7 +60,7 @@ client result is proposed in this step.
 ## Approval and eventual release
 
 Review the five replacements and the separately identified service-page
-proposal. The Google Profile article is approved and published. The remaining changes
+proposal. The Google Profile and Booking articles are approved and published. The remaining changes
 wait for Trevor's approval, as requested. No additional
 approval is needed to read or revise these local drafts.
 
@@ -77,3 +77,11 @@ Update the README with the actual release and verification result.
 
 Research and artifact checks are not evidence of live publication. GA4 and
 inquiry measurement remain deferred. AI-search consolidation is still Step 5.
+
+## Booking publication
+
+Trevor authorized completion and publication of the next priority article using
+the same workflow. Home Service Booking was selected because of the reversed
+formula and unsupported claims. The [Booking release record](../booking-guide-2026-11-15/README.md)
+contains the final article, source research, image prompt, downloads, rollback
+content, and verification. The other three articles remain pending.
