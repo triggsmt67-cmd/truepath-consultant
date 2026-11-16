@@ -1,0 +1,49 @@
+{
+  "dateLocal": "2026-11-15",
+  "url": "https://truepath406.com/services/lead-response",
+  "status": 200,
+  "title": "Lead Response and Follow-Up Services | True Path Digital",
+  "description": "Lead response and follow-up services for local service businesses. Set up inquiry ownership, missed-call handling, and estimate follow-up. Request a review.",
+  "h1": "Lead Response & Follow-Up for Service Businesses.",
+  "canonical": "https://truepath406.com/services/lead-response",
+  "robots": "index, follow",
+  "faqCount": 10,
+  "allFaqAnswersMatchVisibleText": true,
+  "mainContentEmDashCount": 0,
+  "sitemapLastModified": "2026-11-15",
+  "workflowAndFictionalExamplePresent": true,
+  "resources": [
+    {
+      "file": "lead-response-handoff-map.png",
+      "status": 200,
+      "type": "image/png",
+      "bytes": 170667,
+      "sha256": "5e049e55f7db0162f7456ac281fb2b82edbceaa7db1b7caba286eb5e0e1892b1"
+    },
+    {
+      "file": "lead-response-handoff-map.svg",
+      "status": 200,
+      "type": "image/svg+xml",
+      "bytes": 4804,
+      "sha256": "29114145e04fa4e3de285d1960e3a70733e52c9aa0eb09a05fa787c0a2bfc6c6"
+    },
+    {
+      "file": "lead-response-handoff-sheet.csv",
+      "status": 200,
+      "type": "text/csv; charset=utf-8",
+      "bytes": 646,
+      "sha256": "cb5a1536fa93f17f44c097af0e431c3cc31f6960a8ce895f2ce7df90aea9e384"
+    }
+  ],
+  "browserVerification": "Desktop and 390px mobile checked. Both review buttons fit. Existing form opens/closes; no live inquiry sent.",
+  "sourceCommit": "322c56f1402ca9381c884cd3b483f50c854af563",
+  "deploymentId": "dpl_J7FJD6UhK4hvBB2Nm6nikKiXZimZ",
+  "productionSeoChecks": {
+    "passed": 5,
+    "failed": 0,
+    "sitemapPages": 26,
+    "internalPaths": 36
+  },
+  "runtimeErrorScan": "No runtime errors returned in the selected range.",
+  "indexingRequest": "Search Console confirmed addition to a priority crawl queue; recrawl and ranking outcomes not yet established."
+}

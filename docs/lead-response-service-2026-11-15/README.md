@@ -46,6 +46,17 @@ Public resources live under `/downloads/`. They do not collect data or require a
 
 ## Verification and measurement
 
-Local production build/TypeScript and desktop/mobile checks passed. ESLint and final production checks are recorded below after release. At a 390px viewport, client and scroll widths both measured 375px; both review buttons fit within that width. The existing inquiry form opens and closes; no inquiry was submitted.
+Local production build/TypeScript and desktop/mobile checks passed. ESLint passed without warnings. Final production checks are recorded below. At a 390px viewport, client and scroll widths both measured 375px; both review buttons fit within that width. The existing inquiry form opens and closes; no inquiry was submitted.
 
 After Google recrawls, compare equal 28-day windows using the exact page filter. Review impressions, query mix, CTR, clicks, and positions together after approximately four to six weeks (December 13–27, 2026). Small counts, seasonality, and other page changes limit causal conclusions. Qualified inquiry outcomes remain unmeasured until the deferred measurement work is completed. No recurring automation was created. Field Core Web Vitals were not newly measured.
+
+## Publication completed and verified
+
+- Production source commit `322c56f1402ca9381c884cd3b483f50c854af563`, Vercel deployment `dpl_J7FJD6UhK4hvBB2Nm6nikKiXZimZ`: **READY**, assigned to `truepath406.com`. The production build compiled and passed TypeScript.
+- Five production SEO checks passed across 26 sitemap pages and 36 internal paths, including CMS article HTML, metadata, robots, redirects, and expected 404s. Existing optional editorial-link phrase warnings are informational. [Check output](seo-checks.txt).
+- Targeted live checks passed: HTTP 200, self-canonical, index/follow, new title/H1/description, ten visible FAQ answers matching schema, Service schema name, example and review scope, zero em dashes in main content, and the sitemap revision date. [Verification JSON](live-verification.json).
+- All three public downloads return 200 and match the local files byte for byte. SVG XML parses. CSV has 15 empty inquiry rows with 16 consistent fields; no customer data.
+- Live review form opened and closed correctly, without submitting an inquiry. Desktop and mobile checks passed. Vercel returned no runtime errors in the selected scan range. This is point-in-time verification, not proof of future uptime or performance.
+- Google accepted the indexing request and added the URL to a priority crawl queue. [Confirmation](indexing-request.txt). The page was already indexed; this is not proof that the new version has been recrawled or its ranking has improved.
+- Screenshot: `/Users/trevorriggs/Documents/Codex/outputs/truepath-lead-response-live-2026-11-15.jpg`.
+- WordPress posts, live messaging systems, provider settings, and tracking configuration were not changed. No inquiry or message was sent. Future content and measurement work remain separate.

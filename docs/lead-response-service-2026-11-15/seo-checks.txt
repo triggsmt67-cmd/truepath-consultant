@@ -1,0 +1,19 @@
+Internal link phrase "how real people read service pages" was not found in "thin-service-pages-look-generic".
+Internal link phrase "service area pages" was not found in "thin-service-pages-look-generic".
+Internal link phrase "review snippets" was not found in "thin-service-pages-look-generic".
+Internal link phrase "real photos" was not found in "thin-service-pages-look-generic".
+Internal link phrase "response time" was not found in "how-to-follow-up-on-an-estimate-before-it-goes-cold".
+✔ preserves editorial internal links while normalizing old public URLs (2.056375ms)
+✔ normalizes legacy services, relative blog links, query strings and fragments (0.2995ms)
+✔ leaves external, API and media URLs intact and still sanitizes unsafe HTML (0.403042ms)
+✔ supplementary links never nest inside existing editorial anchors (0.407709ms)
+Verified 26 sitemap pages, 36 internal paths, metadata, CMS article HTML, robots, redirects and 404s.
+✔ production sitemap, pages, metadata, internal links and redirects (16557.835584ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16812.691417

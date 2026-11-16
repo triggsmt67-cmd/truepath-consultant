@@ -10,7 +10,7 @@ Updated November 15, 2026. Work through these steps in order and update the
 checkboxes as each item is completed. **Steps 1 and 2 are live and verified. Step 3 Search Console collection is
 complete; GA4 and inquiry measurement are deferred.
 The Step 4 Google Profile and Booking articles are published with reference
-graphics and downloads. The Google Profile service-page update is also published; three article revisions remain.**
+graphics and downloads. The Google Profile and Lead Response service-page updates are also published; three article revisions remain.**
 Trevor approved these releases on November 15, 2026. Article rewrites,
 consolidation, content removal, and unrelated settings remain separate work.
 
@@ -176,7 +176,12 @@ The revision explains inquiry ownership, next action, due time, and backups,
 with a handoff map and blank worksheet.
 [Release, research, resources, and verification](docs/lead-response-service-2026-11-15/README.md).
 
-- [ ] Publish and verify the lead response service-page revision and downloads.
+- [x] Publish and verify the lead response service-page revision and downloads.
+
+Live verification passed: ten matching FAQs/schema, three downloads, desktop
+and mobile layout, inquiry-form controls, and five SEO checks across 26 sitemap
+pages and 36 internal paths. Google accepted the indexing request. Ranking and
+inquiry outcomes remain to be assessed after recrawl and a comparable period.
 
 ### Step 5 Consolidate the overlapping AI search articles
 

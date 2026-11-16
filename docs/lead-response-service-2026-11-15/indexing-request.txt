@@ -1,0 +1,4 @@
+November 15, 2026 (America/Denver)
+URL: https://truepath406.com/services/lead-response
+Search Console confirmed: Indexing requested. URL was added to a priority crawl queue.
+This confirms the request, not a completed recrawl or ranking change.
