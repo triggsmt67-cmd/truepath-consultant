@@ -8,7 +8,7 @@ A high-performance marketing consultancy website for **True Path Digital**, buil
 
 Updated November 15, 2026. Work through these steps in order and update the
 checkboxes as each item is completed. **Steps 1 and 2 are live and verified. Step 3 Search Console collection is
-complete; GA4 and inquiry measurement are deferred.
+complete; basic GA4 tracking is live as of November 16; inquiry conversion measurement remains pending.
 The Step 4 Google Profile and Booking articles are published with reference
 graphics and downloads. All three service-page updates are also published; three article revisions remain.**
 Trevor approved these releases on November 15, 2026. Article rewrites,
@@ -30,7 +30,7 @@ were reviewed before the Lead Response page work. Use the
 Trevor requested this checkpoint and a Vercel rebuild on November 15. The
 remaining three article replacements remain **review-only and unpublished**
 while he reads them. The subsequently approved Google Profile and Booking
-articles and the Google Profile service-page update are published separately; see their release records below. GA4 remains deferred. The remaining publication checkboxes
+articles and the Google Profile service-page update are published separately; see their release records below. Basic GA4 tracking is now live; see [the November 16 setup record](docs/analytics-2026-11-16/README.md). The remaining publication checkboxes
 and Steps 5–7 below are intentionally still open.
 
 Details: [SEO audit and page recommendations](docs/seo-audit-2026-11-15.md)
