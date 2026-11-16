@@ -277,6 +277,11 @@ intentional backend noindex, and legitimate removed-resource 404s were preserved
 
 [Research, publication package and verification record](docs/businesses-in-chatgpt-2026-11-15/README.md).
 
+November 15 follow-up: the approved early-readiness opinion section is published
+and verified on the live Business Hub article. The local article and publication
+record are synchronized. The section explains potential preparation benefits;
+it does not claim an established early-adopter ranking boost.
+
 Deployment, live WordPress settings, domain/DNS changes, content removal, and
 major architectural changes require approval under the audit brief. Checking
 off preparation does not authorize these actions.

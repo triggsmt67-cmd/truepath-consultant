@@ -36,3 +36,10 @@ This is independent True Path consulting, not an OpenAI partnership or proof tha
 - Screenshots saved under `/Users/trevorriggs/Documents/Codex/outputs/truepath-businesses-chatgpt-2026-11-15/`. Browser viewport overrides were cleared after checks; both new public pages are left open for review.
 
 Publication and technical verification are complete. Google indexing, rankings and business outcomes are not yet established. No new per-URL indexing requests were submitted in this run; the three separate repaired GSC categories were submitted and remain Validation started. Follow-up content recommendations for the older unindexed articles remain open in the separate validation review.
+
+
+### Early-readiness opinion follow-up, November 15
+
+- [x] Added the approved “Why I think getting ready early matters” section near the beginning of the ChatGPT Business Hub guide, before the eligibility section. It presents Trevor’s opinion about preparation and learning, with conditional future benefits.
+- [x] Published WordPress post 253, refreshed the production `wordpress` cache tag, and verified the exact paragraph on the public page (HTTP 200). Search title, H1, canonical, excerpt and featured image remain intact. WordPress visual blocks remain editable; the live page has no horizontal overflow at the normal desktop viewport.
+- [x] Synced the local article, serialized blocks and public CMS snapshot. Saved the prior blocks for recovery and a live screenshot at `Documents/Codex/outputs/truepath-businesses-chatgpt-2026-11-15/early-readiness-live.jpg`. No application-code change was needed.
