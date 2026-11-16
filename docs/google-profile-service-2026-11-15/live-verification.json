@@ -1,0 +1,19 @@
+{
+  "url": "https://truepath406.com/services/google-profile",
+  "status": 200,
+  "title": "Google Business Profile Optimization in Missoula | True Path Digital",
+  "description": "Google Business Profile optimization for Missoula service businesses. Improve categories, services, reviews, and website alignment. Request a profile review.",
+  "h1": "Google Business Profile Optimization in Missoula.",
+  "canonical": "https://truepath406.com/services/google-profile",
+  "robots": "index, follow",
+  "faqCount": 10,
+  "allFaqAnswersMatchVisibleText": true,
+  "mainContentEmDashCount": 0,
+  "sitemapLastModified": "2026-11-15",
+  "deploymentId": "dpl_4ukKUbrASZTuet2LQqDVPVRicJvi",
+  "sourceCommit": "60d773ca2ef739d1e03e311a04e4ee8f0b588684",
+  "existingProductionSeoTests": "5 passed; 26 sitemap pages and 33 internal paths",
+  "runtimeErrorScan": "No runtime errors returned in selected time range",
+  "browser": "Live review form opens and closes; no inquiry submitted. Desktop and 390px mobile layout checked; no horizontal overflow.",
+  "indexingRequest": "Confirmed by Search Console; added to priority crawl queue, not yet proof of a recrawl."
+}
