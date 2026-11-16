@@ -43,3 +43,10 @@ Publication and technical verification are complete. Google indexing, rankings a
 - [x] Added the approved “Why I think getting ready early matters” section near the beginning of the ChatGPT Business Hub guide, before the eligibility section. It presents Trevor’s opinion about preparation and learning, with conditional future benefits.
 - [x] Published WordPress post 253, refreshed the production `wordpress` cache tag, and verified the exact paragraph on the public page (HTTP 200). Search title, H1, canonical, excerpt and featured image remain intact. WordPress visual blocks remain editable; the live page has no horizontal overflow at the normal desktop viewport.
 - [x] Synced the local article, serialized blocks and public CMS snapshot. Saved the prior blocks for recovery and a live screenshot at `Documents/Codex/outputs/truepath-businesses-chatgpt-2026-11-15/early-readiness-live.jpg`. No application-code change was needed.
+
+
+### Service-page early-preparation follow-up, November 15
+
+- Added “Why I’d prepare early” within the eligibility section of `/services/chatgpt-business-profile`. The short opinion explains how eligibility checks, corrected business facts and consistent website pages can prepare an owner for possible future local discovery. It does not promise an early-adopter ranking boost.
+- Published code commit `7acb115`; Vercel deployment `dpl_3gFatFj7pphBs3jd1dKqUDqSU5E3` reached READY in production. Lint and production build passed. The public page returns HTTP 200 with the new paragraph, existing search title and self-canonical. Live phone layout has equal client/scroll widths (375/375), and the section was checked in the browser.
+- Screenshot: `/Users/trevorriggs/Documents/Codex/outputs/truepath-businesses-chatgpt-2026-11-15/service-early-preparation-live.jpg`.

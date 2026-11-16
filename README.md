@@ -397,6 +397,12 @@ that address. The local configuration and `.env.example` match it.
 Recipient routing for both the homepage and review drawer is checked with
 `node --test scripts/test-contact-email.mjs` using mocked sends.
 
+## November 15 stopping point
+
+- [x] Both ChatGPT pages are live with the approved early-preparation perspective. The service-page follow-up passed lint/build and live content, metadata, canonical and phone-layout checks. See the linked publication record for evidence.
+- [x] Stop the local project dev server for the night and save the work to Git. Production remains online.
+- Next session: work through the documented public editing artifacts and unsupported claims in the older articles, then continue the prepared article corrections. Search Console’s three repair validations remain started; indexing/ranking outcomes are still pending. GA4 remains deferred.
+
 ## Development
 
 ```bash
