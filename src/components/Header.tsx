@@ -15,6 +15,7 @@ const navLinks = [
   { href: "/services/google-profile", label: "Google Profile" },
   { href: "/services/website-builds", label: "Website Builds" },
   { href: "/services/lead-response", label: "Lead Response" },
+  { href: "/services/chatgpt-business-profile", label: "ChatGPT Profile Help" },
   { href: "/#audit", label: "Marketing Audit" },
   { href: "/insights", label: "Articles" },
 ];

@@ -139,6 +139,15 @@ const localBusinessSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
+          "@id": "https://truepath406.com/services/chatgpt-business-profile#service",
+          name: "ChatGPT Business Profile Readiness and Setup Help",
+          url: "https://truepath406.com/services/chatgpt-business-profile",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
           "@id": "https://truepath406.com/services/google-profile#service",
           name: "Google Business Profile Optimization",
           url: "https://truepath406.com/services/google-profile",

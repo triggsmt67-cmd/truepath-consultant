@@ -1,0 +1,77 @@
+info
+Not found (404)
+These pages aren't indexed or served on Google
+LEARN MORE
+First detected: 04/04/2026
+Finished fixing?
+VALIDATE FIX
+Affected pages
+12
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+12
+8
+4
+0
+Examples
+
+
+URL
+	
+Last crawled
+
+https://admin.truepath406.com/category/ai-used-carefully/
+	12 Nov 2026
+
+https://admin.truepath406.com/2025/12/
+	12 Nov 2026
+
+https://admin.truepath406.com/category/foundational/
+	26 Oct 2026
+
+https://admin.truepath406.com/wp-content/themes/twentytwentyone/*
+	20 Oct 2026
+
+https://admin.truepath406.com/*
+	30 Jul 2026
+
+https://admin.truepath406.com/category/decision-making/
+	22 Jul 2026
+
+https://admin.truepath406.com/2026/04/
+	20 Jul 2026
+
+https://admin.truepath406.com/category/reputation-scaling/
+	19 Jul 2026
+
+https://admin.truepath406.com/category/gmb-optimization/
+	18 Jul 2026
+
+https://admin.truepath406.com/wp-json/hostinger-reach/v1/contact
+
+
+
+	12 Jul 2026
+
+
+https://admin.truepath406.com/category/foundational-logic/
+	2 Jul 2026
+
+https://truepath406.com/hello-world/
+	18 May 2026
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-12 of 12
+

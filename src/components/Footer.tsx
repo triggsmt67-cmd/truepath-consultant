@@ -22,6 +22,7 @@ export default function Footer() {
             <li><Link href="/services/google-profile" className="hover:text-primary transition-colors">Google Profile & Local Search</Link></li>
             <li><Link href="/services/website-builds" className="hover:text-primary transition-colors">Website Strategy & Builds</Link></li>
             <li><Link href="/services/lead-response" className="hover:text-primary transition-colors">Lead Response & Follow-Up</Link></li>
+            <li><Link href="/services/chatgpt-business-profile" className="hover:text-primary transition-colors">ChatGPT Business Profile Help</Link></li>
             <li><Link href="/insights" className="hover:text-primary transition-colors">Articles</Link></li>
             <li><Link href="/checkup" className="hover:text-primary transition-colors">Free Marketing Checkup</Link></li>
           </ul>

@@ -15,6 +15,8 @@ const DEFAULT_META_DESCRIPTION =
   "Read this field note from True Path Digital.";
 
 const searchTitleBySlug: Record<string, string> = {
+  "businesses-in-chatgpt-for-service-businesses":
+    "ChatGPT Business Hub: How to Claim Your Business",
   "service-business-website":
     "Service Business Websites: Make the Next Step Obvious",
   "the-leak-every-home-service-business-should-measure":

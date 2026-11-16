@@ -1,0 +1,140 @@
+info
+Page with redirect
+These pages aren't indexed or served on Google
+LEARN MORE
+First detected: 04/04/2026
+Finished fixing?
+VALIDATE FIX
+Affected pages
+33
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+45
+30
+15
+0
+Examples
+
+
+URL
+	
+Last crawled
+
+https://truepath406.com/trust-calculator
+	12 Nov 2026
+
+https://truepath406.com/trust-calculator/
+	12 Nov 2026
+
+https://www.truepath406.com/trust-calculator/
+	12 Nov 2026
+
+http://truepath406.com/
+	11 Nov 2026
+
+https://truepath406.com/solutions
+	8 Nov 2026
+
+https://truepath406.com/solutions/
+	8 Nov 2026
+
+https://www.truepath406.com/solutions/
+	8 Nov 2026
+
+https://truepath406.com/blog/google-profile-is-killing-your-local-visibility
+	26 Oct 2026
+
+https://truepath406.com/blog/google-profile-is-killing-your-local-visibility/
+	26 Oct 2026
+
+https://truepath406.com/blog/home-service-booking
+	26 Oct 2026
+
+https://truepath406.com/blog/home-service-booking/
+	26 Oct 2026
+
+https://truepath406.com/blog/service-business-website
+	25 Oct 2026
+
+https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process
+
+
+
+	20 Sept 2026
+
+
+https://truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/
+	20 Sept 2026
+
+https://www.truepath406.com/blog/reviews-feel-awkward-when-theres-no-process/
+	20 Sept 2026
+
+https://truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search
+	18 Sept 2026
+
+https://truepath406.com/blog/the-1-profit-leak-in-a-service-business
+	18 Sept 2026
+
+https://truepath406.com/blog/the-1-profit-leak-in-a-service-business/
+	18 Sept 2026
+
+https://truepath406.com/blog/diagnose-a-slow-month/
+	11 Sept 2026
+
+https://truepath406.com/blog/technician-utilization-profit-leak
+	11 Sept 2026
+
+https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold
+	9 Sept 2026
+
+https://truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/
+	9 Sept 2026
+
+https://www.truepath406.com/blog/how-to-follow-up-on-an-estimate-before-it-goes-cold/
+	9 Sept 2026
+
+https://truepath406.com/solutions/review-system
+	8 Sept 2026
+
+https://truepath406.com/blog/thin-service-pages-look-generic/
+	7 Sept 2026
+
+http://www.truepath406.com/
+	4 Sept 2026
+
+https://www.truepath406.com/
+	4 Sept 2026
+
+https://truepath406.com/solutions/review-system/
+	14 Aug 2026
+
+https://truepath406.com/blog/why-digital-marketing-fails-early
+	13 Aug 2026
+
+https://truepath406.com/blog/why-digital-marketing-fails-early/
+	13 Aug 2026
+
+https://www.truepath406.com/blog/why-digital-marketing-fails-early/
+	13 Aug 2026
+
+https://www.truepath406.com/solutions/review-system/
+	3 Aug 2026
+
+https://www.truepath406.com/blog/why-digital-marketing-fails-early
+	3 Apr 2026
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-33 of 33
+

@@ -1,0 +1,1182 @@
+- banner:
+  - button:
+    - generic "Open menu":
+  - link:
+    - /url: /trends?geo=US&hl=en-GB
+  - link "Home":
+    - /url: /trends/?geo=US&hl=en-GB
+    - text: Home
+  - link "Explore":
+    - /url: /trends/explore?geo=US&hl=en-GB
+    - text: Explore
+  - link "Trending now":
+    - /url: /trends/trendingsearches/daily?geo=US&hl=en-GB
+    - text: Trending now
+  - button "Share":
+    - generic: share
+  - button "feedback":
+    - generic: feedback
+  - button "Google apps":
+  - generic: info
+  - generic: Classic Explore is expiring soon.
+  - generic: Switch to the new Explore page to find search terms and discover trends.
+  - link "Go to new Explore":
+    - /url: /explore
+  - button "Dismiss":
+    - generic: close_24px
+  - generic: •
+  - listbox:
+    - searchbox "Add a search term": ChatGPT business profile
+  - status
+  - button:
+  - generic: Search term
+  - generic: •
+  - listbox:
+    - searchbox "Add a search term": ChatGPT Business Hub
+  - status
+  - button:
+  - generic: Search term
+  - generic: •
+  - listbox:
+    - searchbox "Add a search term": Businesses in ChatGPT
+  - status
+  - button:
+  - generic: Search term
+  - button "Add a search term for comparison":
+    - generic: Add comparison
+  - button "United States":
+    - generic: United States
+    - generic: ▼
+  - 'listbox "Select time period: Past 7 days"':
+    - generic: Past 7 days
+    - generic: ▼
+  - button "All categories":
+    - generic: All categories
+    - generic: ▼
+  - 'listbox "Select stories location: Web Search"':
+    - generic: Web Search
+    - generic: ▼
+  - generic "ChatGPT business profile":
+    - generic: ChatGPT business profile
+  - generic "ChatGPT Business Hub":
+    - generic: ChatGPT Business Hub
+  - generic "Businesses in ChatGPT":
+    - generic: Businesses in ChatGPT
+  - generic: United States, Past 7 days
+- text: Interest over time
+- button "help_outline":
+  - generic: help_outline
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- generic "A chart.":
+  - img "A chart.":
+    - generic: Average
+  - generic "A tabular representation of the data in the chart.":
+    - table:
+      - rowgroup:
+        - row "x1 ChatGPT business profile ChatGPT Business Hub Businesses in ChatGPT":
+          - columnheader "x1"
+          - columnheader "ChatGPT business profile"
+          - columnheader "ChatGPT Business Hub"
+          - columnheader "Businesses in ChatGPT"
+      - rowgroup:
+        - row "Average 5 11 2":
+          - cell "Average"
+          - cell "5"
+          - cell "11"
+          - cell "2"
+- generic "A chart.":
+  - img "A chart.":
+    - generic: ‪8 Nov at 21…
+    - generic: ‪11 Nov at 11:00‬
+    - generic: ‪14 Nov at 01:00‬
+    - generic: "25"
+    - generic: "50"
+    - generic: "75"
+    - generic: "100"
+  - generic "A tabular representation of the data in the chart.":
+    - table:
+      - rowgroup:
+        - row "x y1 y2 y3":
+          - columnheader "x"
+          - columnheader "y1"
+          - columnheader "y2"
+          - columnheader "y3"
+      - rowgroup:
+        - row "‪8 Nov at 21:00‬ 0 0 0":
+          - cell "‪8 Nov at 21:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪8 Nov at 22:00‬ 0 0 0":
+          - cell "‪8 Nov at 22:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪8 Nov at 23:00‬ 0 0 0":
+          - cell "‪8 Nov at 23:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 00:00‬ 0 0 0":
+          - cell "‪9 Nov at 00:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 01:00‬ 0 0 0":
+          - cell "‪9 Nov at 01:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 02:00‬ 0 0 0":
+          - cell "‪9 Nov at 02:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 03:00‬ 0 0 0":
+          - cell "‪9 Nov at 03:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 04:00‬ 0 0 0":
+          - cell "‪9 Nov at 04:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 05:00‬ 0 0 0":
+          - cell "‪9 Nov at 05:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 06:00‬ 0 0 0":
+          - cell "‪9 Nov at 06:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 07:00‬ 0 0 0":
+          - cell "‪9 Nov at 07:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 08:00‬ 0 0 0":
+          - cell "‪9 Nov at 08:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 09:00‬ 0 0 0":
+          - cell "‪9 Nov at 09:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 10:00‬ 0 0 0":
+          - cell "‪9 Nov at 10:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 11:00‬ 0 0 0":
+          - cell "‪9 Nov at 11:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 12:00‬ 0 0 0":
+          - cell "‪9 Nov at 12:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 13:00‬ 0 0 0":
+          - cell "‪9 Nov at 13:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 14:00‬ 0 0 0":
+          - cell "‪9 Nov at 14:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 15:00‬ 0 0 0":
+          - cell "‪9 Nov at 15:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 16:00‬ 0 0 0":
+          - cell "‪9 Nov at 16:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 17:00‬ 0 0 0":
+          - cell "‪9 Nov at 17:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 18:00‬ 0 0 0":
+          - cell "‪9 Nov at 18:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 19:00‬ 0 0 0":
+          - cell "‪9 Nov at 19:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 20:00‬ 0 0 0":
+          - cell "‪9 Nov at 20:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 21:00‬ 0 0 0":
+          - cell "‪9 Nov at 21:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 22:00‬ 0 0 0":
+          - cell "‪9 Nov at 22:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪9 Nov at 23:00‬ 0 0 0":
+          - cell "‪9 Nov at 23:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 00:00‬ 0 0 0":
+          - cell "‪10 Nov at 00:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 01:00‬ 0 0 0":
+          - cell "‪10 Nov at 01:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 02:00‬ 0 0 0":
+          - cell "‪10 Nov at 02:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 03:00‬ 0 0 0":
+          - cell "‪10 Nov at 03:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 04:00‬ 0 0 0":
+          - cell "‪10 Nov at 04:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 05:00‬ 0 0 0":
+          - cell "‪10 Nov at 05:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 06:00‬ 0 0 0":
+          - cell "‪10 Nov at 06:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 07:00‬ 0 0 0":
+          - cell "‪10 Nov at 07:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 08:00‬ 0 13 0":
+          - cell "‪10 Nov at 08:00‬"
+          - cell "0"
+          - cell "13"
+          - cell "0"
+        - row "‪10 Nov at 09:00‬ 0 0 0":
+          - cell "‪10 Nov at 09:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 10:00‬ 0 0 0":
+          - cell "‪10 Nov at 10:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪10 Nov at 11:00‬ 0 18 16":
+          - cell "‪10 Nov at 11:00‬"
+          - cell "0"
+          - cell "18"
+          - cell "16"
+        - row "‪10 Nov at 12:00‬ 0 16 11":
+          - cell "‪10 Nov at 12:00‬"
+          - cell "0"
+          - cell "16"
+          - cell "11"
+        - row "‪10 Nov at 13:00‬ 0 30 13":
+          - cell "‪10 Nov at 13:00‬"
+          - cell "0"
+          - cell "30"
+          - cell "13"
+        - row "‪10 Nov at 14:00‬ 0 23 0":
+          - cell "‪10 Nov at 14:00‬"
+          - cell "0"
+          - cell "23"
+          - cell "0"
+        - row "‪10 Nov at 15:00‬ 0 20 16":
+          - cell "‪10 Nov at 15:00‬"
+          - cell "0"
+          - cell "20"
+          - cell "16"
+        - row "‪10 Nov at 16:00‬ 0 22 12":
+          - cell "‪10 Nov at 16:00‬"
+          - cell "0"
+          - cell "22"
+          - cell "12"
+        - row "‪10 Nov at 17:00‬ 0 26 14":
+          - cell "‪10 Nov at 17:00‬"
+          - cell "0"
+          - cell "26"
+          - cell "14"
+        - row "‪10 Nov at 18:00‬ 18 26 0":
+          - cell "‪10 Nov at 18:00‬"
+          - cell "18"
+          - cell "26"
+          - cell "0"
+        - row "‪10 Nov at 19:00‬ 18 46 17":
+          - cell "‪10 Nov at 19:00‬"
+          - cell "18"
+          - cell "46"
+          - cell "17"
+        - row "‪10 Nov at 20:00‬ 17 51 17":
+          - cell "‪10 Nov at 20:00‬"
+          - cell "17"
+          - cell "51"
+          - cell "17"
+        - row "‪10 Nov at 21:00‬ 36 57 25":
+          - cell "‪10 Nov at 21:00‬"
+          - cell "36"
+          - cell "57"
+          - cell "25"
+        - row "‪10 Nov at 22:00‬ 0 53 0":
+          - cell "‪10 Nov at 22:00‬"
+          - cell "0"
+          - cell "53"
+          - cell "0"
+        - row "‪10 Nov at 23:00‬ 0 37 0":
+          - cell "‪10 Nov at 23:00‬"
+          - cell "0"
+          - cell "37"
+          - cell "0"
+        - row "‪11 Nov at 00:00‬ 0 66 0":
+          - cell "‪11 Nov at 00:00‬"
+          - cell "0"
+          - cell "66"
+          - cell "0"
+        - row "‪11 Nov at 01:00‬ 0 0 0":
+          - cell "‪11 Nov at 01:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪11 Nov at 02:00‬ 0 0 0":
+          - cell "‪11 Nov at 02:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪11 Nov at 03:00‬ 0 0 0":
+          - cell "‪11 Nov at 03:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪11 Nov at 04:00‬ 0 0 0":
+          - cell "‪11 Nov at 04:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪11 Nov at 05:00‬ 0 51 0":
+          - cell "‪11 Nov at 05:00‬"
+          - cell "0"
+          - cell "51"
+          - cell "0"
+        - row "‪11 Nov at 06:00‬ 27 84 25":
+          - cell "‪11 Nov at 06:00‬"
+          - cell "27"
+          - cell "84"
+          - cell "25"
+        - row "‪11 Nov at 07:00‬ 29 57 19":
+          - cell "‪11 Nov at 07:00‬"
+          - cell "29"
+          - cell "57"
+          - cell "19"
+        - row "‪11 Nov at 08:00‬ 31 56 22":
+          - cell "‪11 Nov at 08:00‬"
+          - cell "31"
+          - cell "56"
+          - cell "22"
+        - row "‪11 Nov at 09:00‬ 21 51 17":
+          - cell "‪11 Nov at 09:00‬"
+          - cell "21"
+          - cell "51"
+          - cell "17"
+        - row "‪11 Nov at 10:00‬ 19 38 18":
+          - cell "‪11 Nov at 10:00‬"
+          - cell "19"
+          - cell "38"
+          - cell "18"
+        - row "‪11 Nov at 11:00‬ 25 31 11":
+          - cell "‪11 Nov at 11:00‬"
+          - cell "25"
+          - cell "31"
+          - cell "11"
+        - row "‪11 Nov at 12:00‬ 21 27 12":
+          - cell "‪11 Nov at 12:00‬"
+          - cell "21"
+          - cell "27"
+          - cell "12"
+        - row "‪11 Nov at 13:00‬ 20 41 15":
+          - cell "‪11 Nov at 13:00‬"
+          - cell "20"
+          - cell "41"
+          - cell "15"
+        - row "‪11 Nov at 14:00‬ 18 28 10":
+          - cell "‪11 Nov at 14:00‬"
+          - cell "18"
+          - cell "28"
+          - cell "10"
+        - row "‪11 Nov at 15:00‬ 11 21 0":
+          - cell "‪11 Nov at 15:00‬"
+          - cell "11"
+          - cell "21"
+          - cell "0"
+        - row "‪11 Nov at 16:00‬ 15 20 0":
+          - cell "‪11 Nov at 16:00‬"
+          - cell "15"
+          - cell "20"
+          - cell "0"
+        - row "‪11 Nov at 17:00‬ 13 17 11":
+          - cell "‪11 Nov at 17:00‬"
+          - cell "13"
+          - cell "17"
+          - cell "11"
+        - row "‪11 Nov at 18:00‬ 13 23 0":
+          - cell "‪11 Nov at 18:00‬"
+          - cell "13"
+          - cell "23"
+          - cell "0"
+        - row "‪11 Nov at 19:00‬ 11 13 0":
+          - cell "‪11 Nov at 19:00‬"
+          - cell "11"
+          - cell "13"
+          - cell "0"
+        - row "‪11 Nov at 20:00‬ 0 24 0":
+          - cell "‪11 Nov at 20:00‬"
+          - cell "0"
+          - cell "24"
+          - cell "0"
+        - row "‪11 Nov at 21:00‬ 0 36 17":
+          - cell "‪11 Nov at 21:00‬"
+          - cell "0"
+          - cell "36"
+          - cell "17"
+        - row "‪11 Nov at 22:00‬ 0 0 0":
+          - cell "‪11 Nov at 22:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪11 Nov at 23:00‬ 35 61 0":
+          - cell "‪11 Nov at 23:00‬"
+          - cell "35"
+          - cell "61"
+          - cell "0"
+        - row "‪12 Nov at 00:00‬ 0 0 0":
+          - cell "‪12 Nov at 00:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 01:00‬ 0 0 0":
+          - cell "‪12 Nov at 01:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 02:00‬ 0 0 0":
+          - cell "‪12 Nov at 02:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 03:00‬ 0 0 0":
+          - cell "‪12 Nov at 03:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 04:00‬ 40 0 0":
+          - cell "‪12 Nov at 04:00‬"
+          - cell "40"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 05:00‬ 0 36 0":
+          - cell "‪12 Nov at 05:00‬"
+          - cell "0"
+          - cell "36"
+          - cell "0"
+        - row "‪12 Nov at 06:00‬ 18 33 22":
+          - cell "‪12 Nov at 06:00‬"
+          - cell "18"
+          - cell "33"
+          - cell "22"
+        - row "‪12 Nov at 07:00‬ 22 36 0":
+          - cell "‪12 Nov at 07:00‬"
+          - cell "22"
+          - cell "36"
+          - cell "0"
+        - row "‪12 Nov at 08:00‬ 24 41 0":
+          - cell "‪12 Nov at 08:00‬"
+          - cell "24"
+          - cell "41"
+          - cell "0"
+        - row "‪12 Nov at 09:00‬ 17 35 13":
+          - cell "‪12 Nov at 09:00‬"
+          - cell "17"
+          - cell "35"
+          - cell "13"
+        - row "‪12 Nov at 10:00‬ 17 30 0":
+          - cell "‪12 Nov at 10:00‬"
+          - cell "17"
+          - cell "30"
+          - cell "0"
+        - row "‪12 Nov at 11:00‬ 25 37 0":
+          - cell "‪12 Nov at 11:00‬"
+          - cell "25"
+          - cell "37"
+          - cell "0"
+        - row "‪12 Nov at 12:00‬ 0 24 0":
+          - cell "‪12 Nov at 12:00‬"
+          - cell "0"
+          - cell "24"
+          - cell "0"
+        - row "‪12 Nov at 13:00‬ 13 35 0":
+          - cell "‪12 Nov at 13:00‬"
+          - cell "13"
+          - cell "35"
+          - cell "0"
+        - row "‪12 Nov at 14:00‬ 13 26 10":
+          - cell "‪12 Nov at 14:00‬"
+          - cell "13"
+          - cell "26"
+          - cell "10"
+        - row "‪12 Nov at 15:00‬ 0 11 10":
+          - cell "‪12 Nov at 15:00‬"
+          - cell "0"
+          - cell "11"
+          - cell "10"
+        - row "‪12 Nov at 16:00‬ 0 15 0":
+          - cell "‪12 Nov at 16:00‬"
+          - cell "0"
+          - cell "15"
+          - cell "0"
+        - row "‪12 Nov at 17:00‬ 0 12 0":
+          - cell "‪12 Nov at 17:00‬"
+          - cell "0"
+          - cell "12"
+          - cell "0"
+        - row "‪12 Nov at 18:00‬ 10 12 0":
+          - cell "‪12 Nov at 18:00‬"
+          - cell "10"
+          - cell "12"
+          - cell "0"
+        - row "‪12 Nov at 19:00‬ 0 13 0":
+          - cell "‪12 Nov at 19:00‬"
+          - cell "0"
+          - cell "13"
+          - cell "0"
+        - row "‪12 Nov at 20:00‬ 0 0 0":
+          - cell "‪12 Nov at 20:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 21:00‬ 0 0 0":
+          - cell "‪12 Nov at 21:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 22:00‬ 0 0 0":
+          - cell "‪12 Nov at 22:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪12 Nov at 23:00‬ 0 0 0":
+          - cell "‪12 Nov at 23:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 00:00‬ 0 0 0":
+          - cell "‪13 Nov at 00:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 01:00‬ 0 0 0":
+          - cell "‪13 Nov at 01:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 02:00‬ 0 0 0":
+          - cell "‪13 Nov at 02:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 03:00‬ 0 0 0":
+          - cell "‪13 Nov at 03:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 04:00‬ 0 0 0":
+          - cell "‪13 Nov at 04:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 05:00‬ 0 0 0":
+          - cell "‪13 Nov at 05:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 06:00‬ 20 19 0":
+          - cell "‪13 Nov at 06:00‬"
+          - cell "20"
+          - cell "19"
+          - cell "0"
+        - row "‪13 Nov at 07:00‬ 20 41 0":
+          - cell "‪13 Nov at 07:00‬"
+          - cell "20"
+          - cell "41"
+          - cell "0"
+        - row "‪13 Nov at 08:00‬ 13 28 0":
+          - cell "‪13 Nov at 08:00‬"
+          - cell "13"
+          - cell "28"
+          - cell "0"
+        - row "‪13 Nov at 09:00‬ 15 26 10":
+          - cell "‪13 Nov at 09:00‬"
+          - cell "15"
+          - cell "26"
+          - cell "10"
+        - row "‪13 Nov at 10:00‬ 0 18 0":
+          - cell "‪13 Nov at 10:00‬"
+          - cell "0"
+          - cell "18"
+          - cell "0"
+        - row "‪13 Nov at 11:00‬ 13 18 0":
+          - cell "‪13 Nov at 11:00‬"
+          - cell "13"
+          - cell "18"
+          - cell "0"
+        - row "‪13 Nov at 12:00‬ 15 14 0":
+          - cell "‪13 Nov at 12:00‬"
+          - cell "15"
+          - cell "14"
+          - cell "0"
+        - row "‪13 Nov at 13:00‬ 20 23 0":
+          - cell "‪13 Nov at 13:00‬"
+          - cell "20"
+          - cell "23"
+          - cell "0"
+        - row "‪13 Nov at 14:00‬ 0 14 0":
+          - cell "‪13 Nov at 14:00‬"
+          - cell "0"
+          - cell "14"
+          - cell "0"
+        - row "‪13 Nov at 15:00‬ 9 14 0":
+          - cell "‪13 Nov at 15:00‬"
+          - cell "9"
+          - cell "14"
+          - cell "0"
+        - row "‪13 Nov at 16:00‬ 0 13 0":
+          - cell "‪13 Nov at 16:00‬"
+          - cell "0"
+          - cell "13"
+          - cell "0"
+        - row "‪13 Nov at 17:00‬ 0 0 0":
+          - cell "‪13 Nov at 17:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 18:00‬ 0 12 0":
+          - cell "‪13 Nov at 18:00‬"
+          - cell "0"
+          - cell "12"
+          - cell "0"
+        - row "‪13 Nov at 19:00‬ 0 0 0":
+          - cell "‪13 Nov at 19:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 20:00‬ 0 0 0":
+          - cell "‪13 Nov at 20:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 21:00‬ 0 0 0":
+          - cell "‪13 Nov at 21:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 22:00‬ 0 0 0":
+          - cell "‪13 Nov at 22:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪13 Nov at 23:00‬ 0 0 0":
+          - cell "‪13 Nov at 23:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 00:00‬ 0 0 0":
+          - cell "‪14 Nov at 00:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 01:00‬ 0 0 0":
+          - cell "‪14 Nov at 01:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 02:00‬ 0 0 0":
+          - cell "‪14 Nov at 02:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 03:00‬ 0 0 0":
+          - cell "‪14 Nov at 03:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 04:00‬ 100 0 0":
+          - cell "‪14 Nov at 04:00‬"
+          - cell "100"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 05:00‬ 0 0 0":
+          - cell "‪14 Nov at 05:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 06:00‬ 0 0 0":
+          - cell "‪14 Nov at 06:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 07:00‬ 0 17 0":
+          - cell "‪14 Nov at 07:00‬"
+          - cell "0"
+          - cell "17"
+          - cell "0"
+        - row "‪14 Nov at 08:00‬ 0 0 0":
+          - cell "‪14 Nov at 08:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 09:00‬ 0 0 0":
+          - cell "‪14 Nov at 09:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 10:00‬ 0 0 0":
+          - cell "‪14 Nov at 10:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 11:00‬ 0 0 0":
+          - cell "‪14 Nov at 11:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 12:00‬ 0 0 0":
+          - cell "‪14 Nov at 12:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 13:00‬ 0 0 0":
+          - cell "‪14 Nov at 13:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 14:00‬ 0 0 0":
+          - cell "‪14 Nov at 14:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 15:00‬ 0 0 0":
+          - cell "‪14 Nov at 15:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 16:00‬ 0 0 0":
+          - cell "‪14 Nov at 16:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 17:00‬ 0 13 0":
+          - cell "‪14 Nov at 17:00‬"
+          - cell "0"
+          - cell "13"
+          - cell "0"
+        - row "‪14 Nov at 18:00‬ 0 0 0":
+          - cell "‪14 Nov at 18:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 19:00‬ 0 0 0":
+          - cell "‪14 Nov at 19:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 20:00‬ 0 0 0":
+          - cell "‪14 Nov at 20:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 21:00‬ 0 0 0":
+          - cell "‪14 Nov at 21:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 22:00‬ 0 0 0":
+          - cell "‪14 Nov at 22:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪14 Nov at 23:00‬ 0 0 0":
+          - cell "‪14 Nov at 23:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 00:00‬ 0 0 0":
+          - cell "‪15 Nov at 00:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 01:00‬ 0 0 0":
+          - cell "‪15 Nov at 01:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 02:00‬ 0 0 0":
+          - cell "‪15 Nov at 02:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 03:00‬ 0 0 0":
+          - cell "‪15 Nov at 03:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 04:00‬ 0 0 0":
+          - cell "‪15 Nov at 04:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 05:00‬ 0 0 0":
+          - cell "‪15 Nov at 05:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 06:00‬ 0 0 0":
+          - cell "‪15 Nov at 06:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 07:00‬ 0 0 0":
+          - cell "‪15 Nov at 07:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 08:00‬ 0 0 0":
+          - cell "‪15 Nov at 08:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 09:00‬ 0 0 0":
+          - cell "‪15 Nov at 09:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 10:00‬ 0 0 0":
+          - cell "‪15 Nov at 10:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 11:00‬ 0 0 0":
+          - cell "‪15 Nov at 11:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 12:00‬ 15 0 0":
+          - cell "‪15 Nov at 12:00‬"
+          - cell "15"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 13:00‬ 0 16 0":
+          - cell "‪15 Nov at 13:00‬"
+          - cell "0"
+          - cell "16"
+          - cell "0"
+        - row "‪15 Nov at 14:00‬ 0 0 0":
+          - cell "‪15 Nov at 14:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 15:00‬ 0 0 0":
+          - cell "‪15 Nov at 15:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 16:00‬ 0 0 0":
+          - cell "‪15 Nov at 16:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 17:00‬ 0 0 0":
+          - cell "‪15 Nov at 17:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 18:00‬ 0 0 0":
+          - cell "‪15 Nov at 18:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 19:00‬ 0 10 0":
+          - cell "‪15 Nov at 19:00‬"
+          - cell "0"
+          - cell "10"
+          - cell "0"
+        - row "‪15 Nov at 20:00‬ 0 0 0":
+          - cell "‪15 Nov at 20:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+        - row "‪15 Nov at 21:00‬ 0 0 0":
+          - cell "‪15 Nov at 21:00‬"
+          - cell "0"
+          - cell "0"
+          - cell "0"
+- generic: Compared breakdown by sub-region
+- 'listbox "Select resolution: Sub-region"':
+  - generic: Sub-region
+  - generic: ▼
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- generic: ChatGPT business profile
+- generic: ChatGPT Business Hub
+- generic: Businesses in ChatGPT
+- img "A chart."
+- text: Colour intensity represents percentage of searches
+- link "LEARN MORE":
+  - /url: https://support.google.com/trends/answer/4355212
+- text: ▼
+- generic: "Sort:"
+- 'listbox "Sort by term: Interest for ChatGPT business profile"':
+  - generic: Interest for ChatGPT business profile
+  - generic: ▼
+- button "1 Alabama":
+  - generic: "1"
+  - generic: Alabama
+- button "2 Indiana":
+  - generic: "2"
+  - generic: Indiana
+- button "3 South Carolina":
+  - generic: "3"
+  - generic: South Carolina
+- button "4 Missouri":
+  - generic: "4"
+  - generic: Missouri
+- button "5 Maryland":
+  - generic: "5"
+  - generic: Maryland
+- button "Previous" [disabled]
+- text: Showing 1–5 of 31 subregions
+- button "Next"
+- generic: ChatGPT business profile
+- generic: Interest by sub-region
+- button "help_outline":
+  - generic: help_outline
+- 'listbox "Select resolution: Sub-region"':
+  - generic: Sub-region
+  - generic: ▼
+- button "List view"
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- img "A chart."
+- text: Related queries
+- button "help_outline":
+  - generic: help_outline
+- 'listbox "Select bullets view: Rising"':
+  - generic: Rising
+  - generic: ▼
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- generic "Explore chat gpt business hub":
+  - link "1 chat gpt business hub Breakout":
+    - /url: /trends/explore?q=chat+gpt+business+hub&date=now+7-d&geo=US
+    - generic: "1"
+    - generic: chat gpt business hub
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore business hub chatgpt":
+  - link "2 business hub chatgpt +500%":
+    - /url: /trends/explore?q=business+hub+chatgpt&date=now+7-d&geo=US
+    - generic: "2"
+    - generic: business hub chatgpt
+    - generic: +500%
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore business hub":
+  - link "3 business hub +400%":
+    - /url: /trends/explore?q=business+hub&date=now+7-d&geo=US
+    - generic: "3"
+    - generic: business hub
+    - generic: +400%
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore chat gpt business":
+  - link "4 chat gpt business +160%":
+    - /url: /trends/explore?q=chat+gpt+business&date=now+7-d&geo=US
+    - generic: "4"
+    - generic: chat gpt business
+    - generic: +160%
+  - button "more_vert":
+    - generic: more_vert
+- generic: ChatGPT Business Hub
+- generic: Interest by sub-region
+- button "help_outline":
+  - generic: help_outline
+- 'listbox "Select resolution: Sub-region"':
+  - generic: Sub-region
+  - generic: ▼
+- button "List view"
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- img "A chart."
+- text: Related queries
+- button "help_outline":
+  - generic: help_outline
+- 'listbox "Select bullets view: Rising"':
+  - generic: Rising
+  - generic: ▼
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- generic "Explore chatgpt claim business":
+  - link "1 chatgpt claim business Breakout":
+    - /url: /trends/explore?q=chatgpt+claim+business&date=now+7-d&geo=US
+    - generic: "1"
+    - generic: chatgpt claim business
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore chatgpt business hub claim":
+  - link "2 chatgpt business hub claim Breakout":
+    - /url: /trends/explore?q=chatgpt+business+hub+claim&date=now+7-d&geo=US
+    - generic: "2"
+    - generic: chatgpt business hub claim
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore gpt business hub":
+  - link "3 gpt business hub Breakout":
+    - /url: /trends/explore?q=gpt+business+hub&date=now+7-d&geo=US
+    - generic: "3"
+    - generic: gpt business hub
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore chatgpt business profile":
+  - link "4 chatgpt business profile Breakout":
+    - /url: /trends/explore?q=chatgpt+business+profile&date=now+7-d&geo=US
+    - generic: "4"
+    - generic: chatgpt business profile
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore chat gpt business hub":
+  - link "5 chat gpt business hub Breakout":
+    - /url: /trends/explore?q=chat+gpt+business+hub&date=now+7-d&geo=US
+    - generic: "5"
+    - generic: chat gpt business hub
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- button "Previous" [disabled]
+- text: Showing 1–5 of 18 queries
+- button "Next"
+- generic: Businesses in ChatGPT
+- generic: Interest by sub-region
+- button "help_outline":
+  - generic: help_outline
+- 'listbox "Select resolution: Sub-region"':
+  - generic: Sub-region
+  - generic: ▼
+- button "List view"
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- img "A chart."
+- text: Related queries
+- button "help_outline":
+  - generic: help_outline
+- 'listbox "Select bullets view: Rising"':
+  - generic: Rising
+  - generic: ▼
+- button "file_download":
+  - generic: file_download
+- button "code":
+  - generic: code
+- button "share":
+  - generic: share
+- generic "Explore introducing businesses in chatgpt":
+  - link "1 introducing businesses in chatgpt Breakout":
+    - /url: /trends/explore?q=introducing+businesses+in+chatgpt&date=now+7-d&geo=US
+    - generic: "1"
+    - generic: introducing businesses in chatgpt
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore chatgpt business hub":
+  - link "2 chatgpt business hub Breakout":
+    - /url: /trends/explore?q=chatgpt+business+hub&date=now+7-d&geo=US
+    - generic: "2"
+    - generic: chatgpt business hub
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore chatgpt business profile":
+  - link "3 chatgpt business profile Breakout":
+    - /url: /trends/explore?q=chatgpt+business+profile&date=now+7-d&geo=US
+    - generic: "3"
+    - generic: chatgpt business profile
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert
+- generic "Explore chatgpt search console":
+  - link "4 chatgpt search console Breakout":
+    - /url: /trends/explore?q=chatgpt+search+console&date=now+7-d&geo=US
+    - generic: "4"
+    - generic: chatgpt search console
+    - generic: Breakout
+  - button "more_vert":
+    - generic: more_vert

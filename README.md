@@ -225,15 +225,52 @@ Ranking and qualified-inquiry gains remain unmeasured.
 
 ### Step 7 Follow up in Search Console and measure results
 
+November 15 follow-up: **Validation started** for Redirect error (2 URLs),
+Duplicate without user-selected canonical (1), and Google chose a different
+canonical (1). Google has not yet passed these repairs. All eight canonical
+articles from the crawled/unindexed report were individually inspected:
+successful fetch, indexing allowed, correct canonical, still unindexed.
+Insights, Work, and the Local SEO guide remain discovered/unindexed with no
+crawl recorded. [Per-page findings and validation evidence](docs/search-console-validation-2026-11-15/README.md).
+
+The next editorial priorities include public drafting notes in Profit Leak and
+Why Marketing Fails Early, a literal source-link placeholder in the phone-leak
+article, and unsupported claims in Reviews and Thin Service Pages. These are
+documented findings, not completed content repairs. Expected redirects,
+intentional backend noindex, and legitimate removed-resource 404s were preserved.
+
 - [ ] After Step 1, check the canonical public sitemap submission and inspect
   important final URLs; request indexing where appropriate. Do not wait for all
   editorial work to finish before checking the deployed technical fixes.
 - [ ] After approved backend cleanup, remove the obsolete admin sitemap
   submission. The redundant `www` submission is optional cleanup.
-- [ ] Validate confirmed errors once their specific fixes are live. Leave
+- [x] Submit validation for the confirmed repaired redirect/canonical categories.
+  All three started November 15; passing remains pending. Leave
   expected redirects, obsolete resources, and intentional 404s alone.
+- [x] Individually inspect the 11 important crawled/discovered article and page
+  URLs and record separate editorial/technical follow-up recommendations.
 - [ ] Recheck after Google recrawls, then review visibility and qualified
   inquiries over roughly four to six weeks. Record results and the next priority here.
+
+### Step 8 Businesses in ChatGPT service and owner guide
+
+- [x] Research the November 10 OpenAI beta using current policies, operational
+  setup help, terms, launch coverage, and YouTube. Record feature limits and
+  separate third-party predictions from supported capabilities.
+- [x] Research keywords using a U.S. seven-day Google Trends comparison,
+  rising related queries, search-result language and this site's Search Console
+  baseline. Assign commercial profile-setup intent to the service and Business
+  Hub/claim intent to the guide. [Keyword research and exact tags](docs/businesses-in-chatgpt-2026-11-15/KEYWORDS.md).
+- [x] Create the service page and a WordPress guide, an original readiness map,
+  a correctly sized article cover, and a reusable blank business fact sheet.
+  Use an eligibility-first offer, owner-approved facts and a labeled fictional
+  appliance-repair example. No OpenAI affiliation or ranking promises.
+- [ ] Finish production deployment verification and record the release below.
+- [ ] After crawl/data collection, review the two exact pages' queries and
+  inquiries. Current Search Console `chatgpt` query filter has no reported
+  impressions through November 13; this is not a market-demand estimate.
+
+[Research, publication package and verification record](docs/businesses-in-chatgpt-2026-11-15/README.md).
 
 Deployment, live WordPress settings, domain/DNS changes, content removal, and
 major architectural changes require approval under the audit brief. Checking

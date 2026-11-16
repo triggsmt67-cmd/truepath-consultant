@@ -1,0 +1,46 @@
+info
+Discovered – currently not indexed
+These pages aren't indexed or served on Google
+LEARN MORE
+First detected: 04/04/2026
+Finished fixing?
+VALIDATE FIX
+Affected pages
+3
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+3
+2
+1
+0
+Examples
+
+
+URL
+	
+Last crawled
+
+https://truepath406.com/insights
+	N/A
+
+https://truepath406.com/insights/local-service-business-google-visibility
+	N/A
+
+https://truepath406.com/work
+	N/A
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-3 of 3
+

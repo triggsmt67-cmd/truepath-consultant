@@ -1,0 +1,87 @@
+
+Not indexed
+79
+8 reasons
+
+
+Indexed
+15
+
+Impressions
+Pages
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+120
+80
+40
+0
+1
+1
+check_circle
+View data about indexed pages
+
+info_filled
+Why pages aren’t indexed
+Pages that aren’t indexed can’t be served on Google
+
+Reason
+	Source
+
+	Validation
+	Trend	
+Pages
+Page with redirect	Website	
+
+Not Started
+		33
+Not found (404)	Website	
+
+Not Started
+		12
+Excluded by ‘noindex’ tag	Website	
+
+Not Started
+		7
+Redirect error	Website	
+
+Not Started
+		2
+Duplicate without user-selected canonical	Website	
+
+Not Started
+		1
+Crawled - currently not indexed	Google systems	
+
+Not Started
+		20
+Discovered – currently not indexed	Google systems	
+
+Not Started
+		3
+Duplicate, Google chose different canonical than user	Google systems	
+
+Not Started
+		1
+Blocked due to access forbidden (403)	Website	
+N/A
+		0
+Blocked by robots.txt	Website	
+
+Passed
+		0
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-10 of 11
+

@@ -49,6 +49,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       ],
     },
     {
+      url: `${baseUrl}/services/chatgpt-business-profile`,
+      lastModified: "2026-11-15",
+      changeFrequency: "monthly",
+      priority: 0.8,
+      images: [`${baseUrl}/downloads/chatgpt-business-readiness-map.png`],
+    },
+    {
       url: `${baseUrl}/insights`,
       changeFrequency: "weekly",
       priority: 0.8,

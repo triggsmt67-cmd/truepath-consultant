@@ -1,0 +1,58 @@
+info
+Excluded by ‘noindex’ tag
+These pages aren't indexed or served on Google
+LEARN MORE
+First detected: 04/04/2026
+Finished fixing?
+VALIDATE FIX
+Affected pages
+7
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+12
+8
+4
+0
+Examples
+
+
+URL
+	
+Last crawled
+
+https://admin.truepath406.com/2026/03/
+	12 Nov 2026
+
+https://admin.truepath406.com/google-profile-is-killing-your-local-visibility/
+	26 Oct 2026
+
+https://admin.truepath406.com/home-service-booking/
+	26 Oct 2026
+
+https://admin.truepath406.com/the-1-profit-leak-in-a-service-business/
+	18 Sept 2026
+
+https://admin.truepath406.com/service-business-website/
+	17 Jul 2026
+
+https://admin.truepath406.com/?s={search_term_string}
+	7 Jul 2026
+
+https://admin.truepath406.com/
+	12 Apr 2026
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-7 of 7
+

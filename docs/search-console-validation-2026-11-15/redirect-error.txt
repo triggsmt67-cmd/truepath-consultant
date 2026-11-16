@@ -1,0 +1,43 @@
+info
+Redirect error
+These pages aren't indexed or served on Google
+LEARN MORE
+First detected: 10/04/2026
+Finished fixing?
+VALIDATE FIX
+Affected pages
+2
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+12
+8
+4
+0
+Examples
+
+
+URL
+	
+Last crawled
+
+https://www.truepath406.com/blog/ai-search-visibility-why-local-businesses-are-disappearing/
+	4 Aug 2026
+
+https://www.truepath406.com/blog/marketing-attention-is-the-scarce-resource-and-that-changes-everything/
+	9 Jun 2026
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-2 of 2
+

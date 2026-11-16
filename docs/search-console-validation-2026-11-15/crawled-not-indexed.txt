@@ -1,0 +1,101 @@
+info
+Crawled - currently not indexed
+These pages aren't indexed or served on Google
+LEARN MORE
+First detected: 04/04/2026
+Finished fixing?
+VALIDATE FIX
+Affected pages
+20
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+24
+16
+8
+0
+Examples
+
+
+URL
+	
+Last crawled
+
+https://admin.truepath406.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4
+	3 Nov 2026
+
+https://truepath406.com/insights/google-profile-is-killing-your-local-visibility
+	26 Oct 2026
+
+https://truepath406.com/blog/service-business-website/
+	25 Oct 2026
+
+https://truepath406.com/insights/reviews-feel-awkward-when-theres-no-process
+	20 Sept 2026
+
+https://www.truepath406.com/blog/the-digital-inversion-why-your-business-is-vanishing-from-ai-search/
+	18 Sept 2026
+
+https://truepath406.com/insights/how-to-follow-up-on-an-estimate-before-it-goes-cold
+	18 Sept 2026
+
+https://truepath406.com/insights/the-1-profit-leak-in-a-service-business
+	18 Sept 2026
+
+https://truepath406.com/blog/technician-utilization-profit-leak/
+	11 Sept 2026
+
+https://truepath406.com/insights/thin-service-pages-look-generic
+	7 Sept 2026
+
+https://truepath406.com/insights/why-digital-marketing-fails-early
+	13 Aug 2026
+
+https://truepath406.com/insights/marketing-attention-is-the-scarce-resource-and-that-changes-everything
+	27 Jul 2026
+
+https://truepath406.com/insights/the-leak-every-home-service-business-should-measure
+	27 Jul 2026
+
+https://truepath406.com/blog/what-ai-cant-replace-the-surprising-value-of-experience/
+
+
+
+	24 Jul 2026
+
+
+https://www.truepath406.com/blog/diagnose-a-slow-month/
+	18 Jul 2026
+
+https://www.truepath406.com/blog/google-profile-is-killing-your-local-visibility/
+	21 Jun 2026
+
+https://truepath406.com/privacy-policy/
+	9 Jun 2026
+
+https://www.truepath406.com/_next/static/chunks/0o2yz.g67o0jy.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx
+	2 Jun 2026
+
+https://www.truepath406.com/_next/static/chunks/0_4i-p_rsg53_.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx
+	2 Jun 2026
+
+https://www.truepath406.com/_next/static/chunks/0s76v~4vzoc35.js?dpl=dpl_3zai7MAq1ADMX56zA1jbkMHhVkZx
+	2 Jun 2026
+
+https://www.truepath406.com/blog/
+	10 May 2026
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-20 of 20
+

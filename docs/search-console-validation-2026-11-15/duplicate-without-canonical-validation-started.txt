@@ -1,0 +1,41 @@
+info
+Duplicate without user-selected canonical
+These pages aren't indexed or served on Google
+LEARN MORE
+
+Validation started
+Started: 15/11/2026
+SEE DETAILS
+Affected pages
+1
+17/08/2026
+29/08/2026
+10/09/2026
+22/09/2026
+04/10/2026
+16/10/2026
+28/10/2026
+09/11/2026
+3
+2
+1
+0
+Examples
+
+
+URL
+	
+Last crawled
+
+https://www.truepath406.com/blog/technician-utilization-profit-leak/
+	2 Jun 2026
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-1 of 1
+
