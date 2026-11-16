@@ -1,0 +1,63 @@
+Captured November 15, 2026 (America/Denver)
+Exact page filter: https://truepath406.com/services/website-builds
+Report: https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Atruepath406.com&num_of_months=3&page=!https%3A%2F%2Ftruepath406.com%2Fservices%2Fwebsite-builds&metrics=CLICKS%2CIMPRESSIONS%2CCTR%2CPOSITION
+
+
+Total clicks
+0
+
+
+Total impressions
+50
+
+
+Average CTR
+0%
+
+
+Average position
+12.1
+
+Daily
+14/08/2026
+27/08/2026
+09/09/2026
+22/09/2026
+05/10/2026
+18/10/2026
+31/10/2026
+13/11/2026
+Chart, containing counts of Total clicks, Total impressions, Average CTR and Average position from 14 August 2026 to 13 November 2026
+info
+Get more details on your site's performance in generative AI features on Google Search
+Open report
+chevron_forward
+QUERIES
+PAGES
+COUNTRIES
+DEVICES
+SEARCH APPEARANCE
+DAYS
+
+Top queries
+	
+Clicks
+	
+Impressions
+	
+CTR
+	
+Position
+
+conversion focused web design missoula	0	9	0%	36.9
+Rows per page:
+5
+10
+25
+50
+100
+250
+500
+1-1 of 1
+Previous page
+Next page

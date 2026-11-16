@@ -1,0 +1,31 @@
+{
+  "dateLocal": "2026-11-15",
+  "page": "https://truepath406.com/services/website-builds",
+  "searchType": "Web",
+  "startDate": "2026-08-14",
+  "endDate": "2026-11-13",
+  "exactPageFilter": true,
+  "totals": {
+    "clicks": 0,
+    "impressions": 50,
+    "ctr": 0,
+    "averagePositionUI": 12.1,
+    "averagePositionOriginalExport": 12.08
+  },
+  "visibleQueries": [
+    {
+      "query": "conversion focused web design missoula",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "positionUI": 36.9
+    }
+  ],
+  "limitations": [
+    "Visible query covers 9 of 50 impressions; remaining queries unknown.",
+    "Small counts do not establish why no clicks occurred.",
+    "No claim of ranking benefit from increased length or novel layout.",
+    "GA4 and inquiry measurement deferred by owner."
+  ],
+  "indexingBefore": "URL is on Google; Page is indexed; HTTPS."
+}

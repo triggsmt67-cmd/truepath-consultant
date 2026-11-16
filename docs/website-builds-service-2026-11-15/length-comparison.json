@@ -1,0 +1,6 @@
+{
+  "beforeMainWords": 1418,
+  "afterMainWords": 829,
+  "reductionPercent": 41.5,
+  "method": "Same main-content word-token count, includes all FAQ answers even when collapsed. Shortening is an editorial choice, not a Google word-count target."
+}

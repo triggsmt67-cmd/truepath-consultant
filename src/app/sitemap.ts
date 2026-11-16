@@ -25,6 +25,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/services/website-builds`,
+      lastModified: "2026-11-15",
       changeFrequency: "monthly",
       priority: 0.9,
       images: [`${baseUrl}/images/website-builds.webp`],

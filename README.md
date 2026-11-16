@@ -183,6 +183,19 @@ and mobile layout, inquiry-form controls, and five SEO checks across 26 sitemap
 pages and 36 internal paths. Google accepted the indexing request. Ranking and
 inquiry outcomes remain to be assessed after recrawl and a comparable period.
 
+### Website Strategy and Builds service page
+
+Trevor requested a shorter, distinct page after noticing repeated service-page
+layouts. The revision uses the exact-page Search Console query “conversion
+focused web design missoula,” an editorial repair/restructure/rebuild guide,
+a custom decision map, and six compact questions. Main copy is 829 words,
+down from 1,418; length is an editorial choice, not a ranking target.
+Future service-page revisions should follow the buyer’s decision rather than
+a fixed section sequence, FAQ count, or word count. Shared branding can stay.
+[Baseline, redesign decisions, sources, and release checks](docs/website-builds-service-2026-11-15/README.md).
+
+- [ ] Publish and verify the Website Strategy and Builds page and decision map.
+
 ### Step 5 Consolidate the overlapping AI search articles
 
 - [ ] Correct and strengthen **AI Search Visibility** as the proposed destination,

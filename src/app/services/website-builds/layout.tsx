@@ -1,22 +1,22 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website Design and Conversion Repair",
-  description: "I build and repair websites for local service businesses that turn more visitors into calls, estimates, and booked work. No templates. No filler pages.",
+  title: "Conversion-Focused Web Design in Missoula",
+  description: "Website strategy, focused repairs, and custom builds for Missoula service businesses. Make services clear and inquiries easier. Request a website review.",
   alternates: {
     canonical: "/services/website-builds",
   },
   openGraph: {
-    title: "Website Design and Conversion Repair",
-    description: "I build and repair websites for local service businesses that turn more visitors into calls, estimates, and booked work.",
+    title: "Conversion-Focused Web Design in Missoula",
+    description: "Website strategy, focused repairs, and custom builds for Missoula service businesses. Make services clear and inquiries easier. Request a website review.",
     url: "https://truepath406.com/services/website-builds",
     type: "website",
     images: [{ url: "/images/website-builds.webp", width: 1200, height: 630, alt: "Custom website design for local service businesses" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Website Design and Conversion Repair | True Path Digital",
-    description: "I build and repair websites for service businesses that turn visitors into booked work.",
+    title: "Conversion-Focused Web Design in Missoula | True Path Digital",
+    description: "Website strategy, focused repairs, and custom builds for Missoula service businesses. Make services clear and inquiries easier. Request a website review.",
     images: ["/images/website-builds.webp"],
   },
 };

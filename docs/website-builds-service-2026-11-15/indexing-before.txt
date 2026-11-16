@@ -1,0 +1,15 @@
+check_circle
+URL is on Google
+It can appear in Google Search results (if not subject to a manual action or removal request) with all relevant enhancements. Learn more
+VIEW CRAWLED PAGE
+Page changed?
+REQUEST INDEXING
+check_circle
+Page indexing
+Page is indexed
+
+Enhancements and experience
+check_circle
+HTTPS
+Page is served over HTTPS
+
