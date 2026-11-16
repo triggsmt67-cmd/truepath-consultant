@@ -1,0 +1,44 @@
+name: Notify IndexNow of website changes
+
+on:
+  deployment_status:
+  schedule:
+    - cron: '43 13 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: github.event_name != 'deployment_status' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: .indexnow/state.json
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: indexnow-v1-
+      - name: Check live content and notify only changed URLs
+        run: node scripts/indexnow.mjs
+      - uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830
+        if: success()
+        with:
+          path: .indexnow/state.json
+          key: indexnow-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: indexnow-result
+          path: .indexnow/latest-result.json
+          retention-days: 30
+          include-hidden-files: true
