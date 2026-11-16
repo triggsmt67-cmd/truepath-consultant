@@ -42,3 +42,14 @@ Release/first-run results are recorded below after deployment. Bing must still r
 To stop automatic notifications, disable the Notify IndexNow workflow in GitHub Actions. To remove the installation entirely, revert the key file/config/script/workflow changes and deploy. Do not remove the verification file while pending submissions still rely on it.
 
 Sources: [IndexNow protocol](https://www.indexnow.org/documentation), [IndexNow FAQ](https://www.indexnow.org/faq), [Bing sitemap and AI-search guidance](https://blogs.bing.com/webmaster/2025/7/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search/), [OpenAI crawler guidance](https://developers.openai.com/api/docs/bots).
+
+## Initial release and verification
+
+- Code commit `49fcf22bbd94204f5a711d5bde4ddf09e86699ed`, Vercel production deployment `dpl_9dRCLcaD6nPqFPkq7H2o89dW1b9s`: READY and assigned to truepath406.com.
+- Public key file: HTTP 200, text/plain, exact key content confirmed (key-verification.json).
+- Initial automatic deployment-status run [43919553161](https://github.com/triggsmt67-cmd/truepath-consultant/actions/runs/43919553161) submitted all 28 canonical pages following the recent site migration/rebuild. IndexNow returned HTTP 202, accepted pending validation. That is receipt, not proof of indexing. Exact result is saved in first-run/latest-result.json.
+- The run's logs revealed that GitHub cache is unsupported for deployment_status events without a branch/tag ref. The follow-up replaces cache with state artifacts from successful runs of this exact workflow on main. Actions have read-only contents/actions permissions; no new credentials are stored. Node 24 action versions are pinned to verified official commits.
+- Notifications run after successful Production deployments, daily at 13:43 UTC (6:43 a.m. Mountain Standard Time on this date), and on manual workflow dispatch. WordPress-only changes are picked up on the daily check after frontend revalidation, not immediately on publication. Unchanged fingerprints are skipped. HTTP 202 URLs remain pending for retry with a minimum five-minute interval.
+- A missing state artifact initializes the migration inventory; expired existing state fails closed for review. Normal state artifacts are retained 90 days and refreshed on successful runs. Each run's public-URL result log is retained 30 days.
+- Bing accepted the separate indexing request for the new ChatGPT guide (visible “Indexing requested.”). Bing had no explicit entries under Configuration → Block URLs.
+- Started a ten-URL Site Scan named “November 16 canonical SEO fixes,” scoped to the homepage, four service pages, Work, Insights and three recently updated articles. No subdomain crawl was requested; email scan updates were unchecked. Initial status: Queued.
