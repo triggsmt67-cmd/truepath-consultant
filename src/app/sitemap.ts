@@ -66,6 +66,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: "2026-11-17",
+      changeFrequency: "yearly",
+      priority: 0.2,
+    },
   ];
 
   // Dynamic blog posts from WordPress. Let CMS failures surface so a

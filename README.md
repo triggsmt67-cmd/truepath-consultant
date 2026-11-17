@@ -218,8 +218,10 @@ Ranking and qualified-inquiry gains remain unmeasured.
   claims for approval. Keep visible claims and structured data consistent.
 - [ ] Review the remaining article recommendations in the audit, starting with
   the Montana marketing-decisions, attention, and dated tactics articles.
-- [ ] Resolve the actual privacy-notice/content need for the missing
-  `/privacy-policy` page. Do not redirect it to unrelated content.
+- [x] Added a dedicated `/privacy-policy` page on November 17, 2026 covering
+  inquiries, optional Checkup email delivery, Google Analytics, hosting, and privacy
+  requests. Linked from the footer and forms and included in the sitemap. See
+  `docs/privacy-policy-2026-11-17.md` for release verification.
 - [ ] Keep useful service pages and the worksheet; do not delete or noindex
   pages just to reduce Search Console exclusion counts.
 

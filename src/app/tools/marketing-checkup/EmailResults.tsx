@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
 import Button from "@/components/Button";
 import type { Answer } from "@/lib/marketing-checkup";
 import styles from "./checkup.module.css";
@@ -69,7 +70,7 @@ export default function EmailResults({ answers }: { answers: Answer[] }) {
           setError("");
           requestId.current = null;
         }} />
-        <p id="email-privacy" className={styles.emailPrivacy}>By choosing Email me my results, you send your email address and answers to True Path and its email provider to deliver this copy. This does not sign you up for marketing emails.</p>
+        <p id="email-privacy" className={styles.emailPrivacy}>By choosing Email me my results, you send your email address and answers to True Path and its email provider to deliver this copy. This does not sign you up for marketing emails. <Link href="/privacy-policy" className="underline underline-offset-4">Privacy Policy</Link></p>
         {error && <p id="email-error" role="alert" className={styles.error}>{error}</p>}
         <Button type="submit" disabled={status === "sending"}>{status === "sending" ? "Sending…" : "Email me my results"}</Button>
       </form>}

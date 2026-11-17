@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 import Button from "@/components/Button";
 import { trackAcceptedInquiry } from "@/lib/analytics";
@@ -160,6 +161,9 @@ export default function HomeContactForm() {
         >
           {message ||
             "I’ll use this information only to reply about your request."}
+        </p>
+        <p className="mt-3 text-center text-xs text-background/70">
+          <Link href="/privacy-policy" className="underline underline-offset-4">Privacy Policy</Link>
         </p>
       </div>
     </form>

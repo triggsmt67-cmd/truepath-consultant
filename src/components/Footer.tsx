@@ -43,8 +43,9 @@ export default function Footer() {
         </div>
       </div>
       
-      <div className="max-w-[1400px] mx-auto mt-20 pt-8 border-t border-muted-border text-sm text-muted-text">
+      <div className="max-w-[1400px] mx-auto mt-20 pt-8 border-t border-muted-border text-sm text-muted-text flex flex-col sm:flex-row sm:justify-between gap-4">
         <p>&copy; {new Date().getFullYear()} True Path Digital. All rights reserved.</p>
+        <Link href="/privacy-policy" className="underline underline-offset-4 hover:text-primary transition-colors">Privacy Policy</Link>
       </div>
     </footer>
   );

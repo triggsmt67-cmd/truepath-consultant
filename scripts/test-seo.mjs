@@ -65,6 +65,7 @@ test('production sitemap, pages, metadata, internal links and redirects', { skip
   // Only page loc elements, excluding image:loc.
   const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => match[1]);
   assert.ok(urls.includes(`${canonicalOrigin}/checkup`));
+  assert.ok(urls.includes(`${canonicalOrigin}/privacy-policy`));
   assert.ok(urls.some((url) => url.includes('/insights/')));
   assert.equal(new Set(urls).size, urls.length);
   const pages = new Map();
@@ -117,7 +118,7 @@ test('production sitemap, pages, metadata, internal links and redirects', { skip
     assert.equal(response.status, 308, from);
     assert.equal(new URL(response.headers.get('location'), base).pathname + new URL(response.headers.get('location'), base).hash, to, from);
   }
-  for (const path of ['/hello-world', '/privacy-policy', '/insights/does-not-exist-seo-audit']) {
+  for (const path of ['/hello-world', '/insights/does-not-exist-seo-audit']) {
     assert.equal((await get(path)).status, 404, path);
   }
   for (const path of ['/tools/marketing-checkup/email-preview', '/tools/hvac-marketing-checkup/email-preview']) {

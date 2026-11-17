@@ -1,6 +1,7 @@
 "use client";
 
 import { useLeadDrawer } from "@/context/LeadDrawerContext";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, CheckCircle2 } from "lucide-react";
 import Button from "./Button";
@@ -227,6 +228,10 @@ export default function LeadDrawer() {
                         >
                           {isSubmitting ? "Sending..." : "Send Call Request"}
                         </Button>
+                        <p className="mt-4 text-center text-xs text-muted-text leading-relaxed">
+                          I’ll use this information to reply about your request. {" "}
+                          <Link href="/privacy-policy" onClick={closeDrawer} className="underline underline-offset-4 hover:text-primary">Privacy Policy</Link>
+                        </p>
                         <p
                           className="mt-3 min-h-5 text-center text-sm text-red-700"
                           role={submitError ? "alert" : undefined}
