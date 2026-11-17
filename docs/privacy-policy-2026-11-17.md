@@ -46,4 +46,13 @@ to expect this real page instead of its former 404.
 
 Target: existing Git integration, `main`, `triggsmt67-cmd/truepath-consultant`,
 Vercel project `truepath-consultant` in `trevor-riggs-projects`, production domain
-https://truepath406.com. Live release verification is recorded after deployment.
+https://truepath406.com.
+
+Released code commit `e3d60bb03dc2a2cfa14b0a1daed295d281defd63` through production
+deployment `dpl_J4fqvnQTYiPsKQjafFagsmSGPucd`, READY with the custom domain assigned;
+build approximately 20 seconds. Live policy returned HTTP 200 with the November 17
+content and correct self-canonical. `/privacy-policy/` returns 308 to that page.
+The live homepage and Checkup contain policy links; the sitemap includes the page.
+`SEO_BASE_URL=https://truepath406.com node --test scripts/test-seo.mjs` passed 5/5,
+verifying all 29 sitemap pages and 44 internal paths. Google recrawl/indexing is a
+separate process and was not claimed or requested during this repair.
